@@ -216,7 +216,7 @@
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Widgets
-                <span class="right badge badge-danger">New</span>
+                <span class="right badge badge-danger">New Ain Mariena</span>
               </p>
             </a>
           </li>
