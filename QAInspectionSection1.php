@@ -9,7 +9,7 @@
   <link rel="shortcut icon" href="assets/images/logo5s-122x125.png" type="image/x-icon">
   <meta name="description" content="Web Site Creator Description">
   
-  <title>Inspection</title>
+  <title>5S Audit | Seksyen 1</title>
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons-bold/mobirise-icons-bold.css">
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
@@ -22,6 +22,31 @@
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
   
+<!-- style for collapsible category & question part -->
+  <style>
+.collapsible {
+  background-color: #252d78;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: none;
+  background-color: #6e7cff;
+}
+</style>
   
   
 </head>
@@ -66,8 +91,132 @@
 </section>
 
 <section class="cid-rPxomWSNoR">
+<br><br>
+<center>
+  <h5>SEKSYEN 1: KEPERLUAN UTAMA PELAKSANAAN</h5>
+  <br>
+  <br>
 
-    <div class="container">
+<button type="button" style="width: 90%" class="collapsible">Kategori 1: Fail Program</button>
+<div class="content" style="width: 90%">
+<table class="table" style="width: 100%;" align="center">    
+      <tr>
+      <th>Perkara</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+      <th>Gambar</th>    
+      </tr>
+    
+      <tr>
+      <td>Maklumat Lengkap dan Terkini (Merujuk pada Senarai Semak Dokumen)<p id="s1category1"required></p></td>
+      <td><input type="radio" id="answer1s1c1" name="answer1" value="yes"></td>
+      <td><input type="radio" id="answer2s1c1"  name="answer1" value="yes"></td>
+      <td><input type="radio" id="answer3s1c1"  name="answer1" value="yes"></td>
+      <td><input type="radio" id="answer4s1c1"  name="answer1" value="yes"></td>
+      <td><input type="radio" id="answer5s1c1"  name="answer1" value="yes"></td>
+      <td><input type="file" name="imagescategory1">
+      </tr>
+    </table>
+    Catatan:<br>
+    <textarea name="catatans1category1" cols="100" rows="3"></textarea>
+    <br>
+    <br>
+    <input type="Submit" name="Submit">
+    <br><br>
+</div>
+
+
+<button type="button" style="width: 90%" class="collapsible">Kategori 2: Sudut 5S</button>
+<div class="content" style="width: 90%">
+<table class="table" style="width: 100%;" align="center">    
+      <tr>
+      <th>Perkara</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+      <th>Gambar</th>    
+      </tr>
+    
+      <tr>
+      <td>Maklumat Lengkap dan Terkini (Merujuk pada Senarai Semak Dokumen)<p id="s1category2" required></p></td>
+      <td><input type="radio" id="answer1s1c2" name="answer2" value="yes"></td>
+      <td><input type="radio" id="answer2s1c2"  name="answer2" value="yes"></td>
+      <td><input type="radio" id="answer3s1c2"  name="answer2" value="yes"></td>
+      <td><input type="radio" id="answer4s1c2"  name="answer2" value="yes"></td>
+      <td><input type="radio" id="answer5s1c2"  name="answer2" value="yes"></td>
+      <td><input type="file" name="imagescategory2">
+      </tr>
+    </table>
+    Catatan:<br>
+    <textarea name="catatans1category1" cols="100" rows="3"></textarea>
+    <br>
+    <br>
+    <input type="Submit" name="Submit">
+    <br><br>
+</div>
+
+
+
+<button type="button" style="width: 90%" class="collapsible">Kategori 3: Kaizen</button>
+<div class="content" style="width: 90%">
+<table class="table" style="width: 100%;" align="center">    
+      <tr>
+      <th>Perkara</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+      <th>Gambar</th>    
+      </tr>
+    
+      <tr>
+      <td>Penambahbaikan, Kreativiti dan Inovasi<p id="s1category3" required></p></td>
+      <td><input type="radio" id="answer1s1c3" name="answer3" value="yes"></td>
+      <td><input type="radio" id="answer2s1c3"  name="answer3" value="yes"></td>
+      <td><input type="radio" id="answer3s1c3"  name="answer3" value="yes"></td>
+      <td><input type="radio" id="answer4s1c3"  name="answer3 value="yes"></td>
+      <td><input type="radio" id="answer5s1c3"  name="answer3" value="yes"></td>
+      <td><input type="file" name="imagess1category3">
+      </tr>
+    </table>
+    Catatan:<br>
+    <textarea name="catatans1category1" cols="100" rows="3"></textarea>
+    <br>
+    <br>
+    <input type="Submit" name="Submit">
+    <br><br>
+</div>
+
+<br><br>
+<div class="mbr-section-btn text-center"><a class="btn btn-primary display-4" href="QAInspectionSection2.php">SEKSYEN 2</a></div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+</center>
+
+
+<!--     <div class="container">
         <div class="media-container-row">
 
             <div class="card  col-12 col-md-6 col-lg-4">
@@ -90,8 +239,8 @@
                 <div class="card-box align-center">
                     <h4 class="card-title mbr-fonts-style display-7">QUALITY ASSURANCE</h4>
                     <p class="mbr-text mbr-fonts-style display-7">5S audit form to inspect the facilities required in quality assurance.</p>
-                    <div class="mbr-section-btn text-center"><a class="btn btn-primary display-4" href="QAInspectionSection1.php">
-                            START INSPECTION</a></a></div>
+                    <div class="mbr-section-btn text-center"><a class="btn btn-primary display-4">
+                            START INSPECTION</a></div>
                 </div>
             </div>
 
@@ -108,7 +257,7 @@
                 </div>
             </div>       
         </div>
-    </div>
+    </div> -->
 </section>
 
 <section once="footers" class="cid-rPwjkLZhDD" id="footer7-i">
