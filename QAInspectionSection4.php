@@ -99,6 +99,9 @@
 
 <button type="button" style="width: 90%" class="collapsible">Kategori 1: Lantai/Dinding</button>
 <div class="content" style="width: 90%">
+<br>
+<div align="right"> Jumlah markah: /15</div>
+<br>
 <table class="table" style="width: 100%;" align="center">    
       <tr>
       <th>Perkara</th>
@@ -152,6 +155,9 @@
 <button type="button" style="width: 90%" class="collapsible">Kategori 2: Peralatan dan Mesin
 </button>
 <div class="content" style="width: 90%">
+<br>
+<div align="right"> Jumlah markah: /30</div>
+<br>
 <table class="table" style="width: 100%;" align="center">    
       <tr>
       <th>Perkara</th>
@@ -236,6 +242,9 @@
 <button type="button" style="width: 90%" class="collapsible">Kategori 3: Bahan
 </button>
 <div class="content" style="width: 90%">
+<br>
+<div align="right"> Jumlah markah: /10</div>
+<br>
 <table class="table" style="width: 100%;" align="center">    
       <tr>
       <th>Perkara</th>
@@ -278,6 +287,9 @@
 <button type="button" style="width: 90%" class="collapsible">Kategori 4: Tempat Rekod/Dokumen
 </button>
 <div class="content" style="width: 90%">
+<br>
+<div align="right"> Jumlah markah: /10</div>
+<br>
 <table class="table" style="width: 100%;" align="center">    
       <tr>
       <th>Perkara</th>
@@ -320,6 +332,9 @@
 <button type="button" style="width: 90%" class="collapsible">Kategori 5: Maklumat Visual
 </button>
 <div class="content" style="width: 90%">
+<br>
+<div align="right"> Jumlah markah: /5</div>
+<br>
 <table class="table" style="width: 100%;" align="center">    
       <tr>
       <th>Perkara</th>
@@ -353,6 +368,9 @@
 <button type="button" style="width: 90%" class="collapsible">Kategori 6: Keselamatan
 </button>
 <div class="content" style="width: 90%">
+<br>
+<div align="right"> Jumlah markah: /5</div>
+<br>
 <table class="table" style="width: 100%;" align="center">    
       <tr>
       <th>Perkara</th>
@@ -385,6 +403,9 @@
 <button type="button" style="width: 90%" class="collapsible">Kategori 7: Seragam
 </button>
 <div class="content" style="width: 90%">
+<br>
+<div align="right"> Jumlah markah: /5</div>
+<br>
 <table class="table" style="width: 100%;" align="center">    
       <tr>
       <th>Perkara</th>
@@ -417,6 +438,9 @@
 <button type="button" style="width: 90%" class="collapsible">Kategori 8: Sentiasa Amal
 </button>
 <div class="content" style="width: 90%">
+<br>
+<div align="right"> Jumlah markah: /5</div>
+<br>
 <table class="table" style="width: 100%;" align="center">    
       <tr>
       <th>Perkara</th>
@@ -449,6 +473,9 @@
 <button type="button" style="width: 90%" class="collapsible">Kategori 9: Impak
 </button>
 <div class="content" style="width: 90%">
+<br>
+<div align="right"> Jumlah markah: /5</div>
+<br>
 <table class="table" style="width: 100%;" align="center">    
       <tr>
       <th>Perkara</th>
@@ -477,9 +504,12 @@
     <input type="Submit" name="Submit">
     <br><br>
 </div>
-
-
-<br><br>
+<br>
+<br>
+<br>
+<div align="center"> Jumlah markah Seksyen 4: /90</div>
+<br>
+<br>
 <div class="mbr-section-btn text-center"><a class="btn btn-primary display-4" href="QAInspectionSection5.php">SEKSYEN 5</a></div>
 
 <script>

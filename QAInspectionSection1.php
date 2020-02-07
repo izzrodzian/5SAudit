@@ -99,6 +99,9 @@
 
 <button type="button" style="width: 90%" class="collapsible">Kategori 1: Fail Program</button>
 <div class="content" style="width: 90%">
+<br>
+<div align="right"> Jumlah markah: /5</div>
+<br>
 <table class="table" style="width: 100%;" align="center">    
       <tr>
       <th>Perkara</th>
@@ -131,6 +134,9 @@
 
 <button type="button" style="width: 90%" class="collapsible">Kategori 2: Sudut 5S</button>
 <div class="content" style="width: 90%">
+<br>
+<div align="right"> Jumlah markah: /5</div>
+<br>
 <table class="table" style="width: 100%;" align="center">    
       <tr>
       <th>Perkara</th>
@@ -164,6 +170,9 @@
 
 <button type="button" style="width: 90%" class="collapsible">Kategori 3: Kaizen</button>
 <div class="content" style="width: 90%">
+<br>
+<div align="right"> Jumlah markah: /5</div>
+<br>
 <table class="table" style="width: 100%;" align="center">    
       <tr>
       <th>Perkara</th>
@@ -192,8 +201,12 @@
     <input type="Submit" name="Submit">
     <br><br>
 </div>
-
-<br><br>
+<br>
+<br>
+<br>
+<div align="center"> Jumlah markah Seksyen 1: /15</div>
+<br>
+<br>
 <div class="mbr-section-btn text-center"><a class="btn btn-primary display-4" href="QAInspectionSection2.php">SEKSYEN 2</a></div>
 
 <script>

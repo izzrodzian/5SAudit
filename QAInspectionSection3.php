@@ -99,6 +99,9 @@
 
 <button type="button" style="width: 90%" class="collapsible">Kategori 1: Tempat Simpanan</button>
 <div class="content" style="width: 90%">
+<br>
+<div align="right"> Jumlah markah: /35</div>
+<br>
 <table class="table" style="width: 100%;" align="center">    
       <tr>
       <th>Perkara</th>
@@ -191,6 +194,9 @@
 <button type="button" style="width: 90%" class="collapsible">Kategori 2: Keselamatan
 </button>
 <div class="content" style="width: 90%">
+<br>
+<div align="right"> Jumlah markah: /10</div>
+<br>
 <table class="table" style="width: 100%;" align="center">    
       <tr>
       <th>Perkara</th>
@@ -234,6 +240,9 @@
 <button type="button" style="width: 90%" class="collapsible">Kategori 3: Seragam
 </button>
 <div class="content" style="width: 90%">
+<br>
+<div align="right"> Jumlah markah: /10</div>
+<br>
 <table class="table" style="width: 100%;" align="center">    
       <tr>
       <th>Perkara</th>
@@ -276,6 +285,9 @@
 <button type="button" style="width: 90%" class="collapsible">Kategori 4: Sentiasa Amal
 </button>
 <div class="content" style="width: 90%">
+<br>
+<div align="right"> Jumlah markah: /5</div>
+<br>
 <table class="table" style="width: 100%;" align="center">    
       <tr>
       <th>Perkara</th>
@@ -308,6 +320,9 @@
 <button type="button" style="width: 90%" class="collapsible">Kategori 5: Impak
 </button>
 <div class="content" style="width: 90%">
+<br>
+<div align="right"> Jumlah markah: /5</div>
+<br>
 <table class="table" style="width: 100%;" align="center">    
       <tr>
       <th>Perkara</th>
@@ -336,8 +351,12 @@
     <input type="Submit" name="Submit">
     <br><br>
 </div>
-
-<br><br>
+<br>
+<br>
+<br>
+<div align="center"> Jumlah markah Seksyen 3: /65</div>
+<br>
+<br>
 <div class="mbr-section-btn text-center"><a class="btn btn-primary display-4" href="QAInspectionSection4.php">SEKSYEN 4</a></div>
 
 <script>

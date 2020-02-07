@@ -100,6 +100,9 @@
 <button type="button" style="width: 90%" class="collapsible">Kategori 1: Kaunter/Lobi/Koridor/Tangga
 </button>
 <div class="content" style="width: 90%">
+<br>
+<div align="right"> Jumlah markah: /10</div>
+<br>
 <table class="table" style="width: 100%;" align="center">    
       <tr>
       <th>Perkara</th>
@@ -143,6 +146,9 @@
 <button type="button" style="width: 90%" class="collapsible">Kategori 2: Bilik Mesyuarat/Bilik VIP
 </button>
 <div class="content" style="width: 90%">
+<br>
+<div align="right"> Jumlah markah: /15</div>
+<br>
 <table class="table" style="width: 100%;" align="center">    
       <tr>
       <th>Perkara</th>
@@ -196,6 +202,9 @@
 <button type="button" style="width: 90%" class="collapsible">Kategori 3: Bilik Latihan/Simulasi
 </button>
 <div class="content" style="width: 90%">
+<br>
+<div align="right"> Jumlah markah: /15</div>
+<br>
 <table class="table" style="width: 100%;" align="center">    
       <tr>
       <th>Perkara</th>
@@ -248,6 +257,9 @@
 <button type="button" style="width: 90%" class="collapsible">Kategori 4:Kantin/Pantri
 </button>
 <div class="content" style="width: 90%">
+<br>
+<div align="right"> Jumlah markah: /15</div>
+<br>
 <table class="table" style="width: 100%;" align="center">    
       <tr>
       <th>Perkara</th>
@@ -300,6 +312,9 @@
 <button type="button" style="width: 90%" class="collapsible">Kategori 5: Surau/Ruang Solat
 </button>
 <div class="content" style="width: 90%">
+<br>
+<div align="right"> Jumlah markah: /15</div>
+<br>
 <table class="table" style="width: 100%;" align="center">    
       <tr>
       <th>Perkara</th>
@@ -353,6 +368,9 @@
 <button type="button" style="width: 90%" class="collapsible">Kategori 6: Tandas/Bilik Mandi
 </button>
 <div class="content" style="width: 90%">
+<br>
+<div align="right"> Jumlah markah: /15</div>
+<br>
 <table class="table" style="width: 100%;" align="center">    
       <tr>
       <th>Perkara</th>
@@ -405,6 +423,9 @@
 <button type="button" style="width: 90%" class="collapsible">Kategori 7: Bilik Kecemasan/Bilik Rehat/Penginapan
 </button>
 <div class="content" style="width: 90%">
+<br>
+<div align="right"> Jumlah markah: /15</div>
+<br>
 <table class="table" style="width: 100%;" align="center">    
       <tr>
       <th>Perkara</th>
@@ -458,6 +479,9 @@
 <button type="button" style="width: 90%" class="collapsible">Kategori 8: Pusat Sumber
 </button>
 <div class="content" style="width: 90%">
+<br>
+<div align="right"> Jumlah markah: /15</div>
+<br>
 <table class="table" style="width: 100%;" align="center">    
       <tr>
       <th>Perkara</th>
@@ -511,6 +535,9 @@
 <button type="button" style="width: 90%" class="collapsible">Kategori 9: Dewan
 </button>
 <div class="content" style="width: 90%">
+<br>
+<div align="right"> Jumlah markah: /15</div>
+<br>
 <table class="table" style="width: 100%;" align="center">    
       <tr>
       <th>Perkara</th>
@@ -564,6 +591,9 @@
 <button type="button" style="width: 90%" class="collapsible">Kategori 10: Bilik Gimnasium
 </button>
 <div class="content" style="width: 90%">
+<br>
+<div align="right"> Jumlah markah: /15</div>
+<br>
 <table class="table" style="width: 100%;" align="center">    
       <tr>
       <th>Perkara</th>
@@ -617,6 +647,9 @@
 <button type="button" style="width: 90%" class="collapsible">Kategori 11: Keselamatan
 </button>
 <div class="content" style="width: 90%">
+<br>
+<div align="right"> Jumlah markah: /5</div>
+<br>
 <table class="table" style="width: 100%;" align="center">    
       <tr>
       <th>Perkara</th>
@@ -649,6 +682,9 @@
 <button type="button" style="width: 90%" class="collapsible">Kategori 12: Seragam
 </button>
 <div class="content" style="width: 90%">
+<br>
+<div align="right"> Jumlah markah: /5</div>
+<br>
 <table class="table" style="width: 100%;" align="center">    
       <tr>
       <th>Perkara</th>
@@ -681,6 +717,9 @@
 <button type="button" style="width: 90%" class="collapsible">Kategori 13: Sentiasa Amal
 </button>
 <div class="content" style="width: 90%">
+<br>
+<div align="right"> Jumlah markah: /5</div>
+<br>
 <table class="table" style="width: 100%;" align="center">    
       <tr>
       <th>Perkara</th>
@@ -713,6 +752,9 @@
 <button type="button" style="width: 90%" class="collapsible">Kategori 14: Impak
 </button>
 <div class="content" style="width: 90%">
+<br>
+<div align="right"> Jumlah markah: /5</div>
+<br>
 <table class="table" style="width: 100%;" align="center">    
       <tr>
       <th>Perkara</th>
@@ -741,9 +783,12 @@
     <input type="Submit" name="Submit">
     <br><br>
 </div>
-
-
-<br><br>
+<br>
+<br>
+<br>
+<div align="center"> Jumlah markah Seksyen 6: /165</div>
+<br>
+<br>
 <div class="mbr-section-btn text-center"><a class="btn btn-primary display-4" href="Report.php">SELESAI</a></div>
 
 <script>
