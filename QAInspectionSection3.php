@@ -318,24 +318,14 @@
       <th>5</th>
       <th>Gambar</th>    
       </tr>
-    
-      <tr>
-      <td>Kerjasama dan sikap positif untuk amalan berterusan.<p id="q1s3category5"required></p></td>
-      <td><input type="radio" id="answer1q1s3c5" name="answer32" value="yes"></td>
-      <td><input type="radio" id="answer2q1s3c5"  name="answer32" value="yes"></td>
-      <td><input type="radio" id="answer3q1s3c5"  name="answer32" value="yes"></td>
-      <td><input type="radio" id="answer4q1s3c5"  name="answer32" value="yes"></td>
-      <td><input type="radio" id="answer5q1s3c5"  name="answer32" value="yes"></td>
-      <td><input type="file" name="images1s3category5">
-      </tr>
 
       <tr>
       <td>Penambahbaikkan yang dibuat memberikan kesan melalui (Produktiviti/Kualiti/Penghantaran/Kos /Keselamatan/Moral/Inovasi)<p id="q2s3category5"required></p></td>
-      <td><input type="radio" id="answer1q2s3c5" name="answer33" value="yes"></td>
-      <td><input type="radio" id="answer2q2s3c5"  name="answer33" value="yes"></td>
-      <td><input type="radio" id="answer3q2s3c5"  name="answer33" value="yes"></td>
-      <td><input type="radio" id="answer4q2s3c5"  name="answer33" value="yes"></td>
-      <td><input type="radio" id="answer5q2s3c5"  name="answer33" value="yes"></td>
+      <td><input type="radio" id="answer1q2s3c5" name="answer32" value="yes"></td>
+      <td><input type="radio" id="answer2q2s3c5"  name="answer32" value="yes"></td>
+      <td><input type="radio" id="answer3q2s3c5"  name="answer32" value="yes"></td>
+      <td><input type="radio" id="answer4q2s3c5"  name="answer32" value="yes"></td>
+      <td><input type="radio" id="answer5q2s3c5"  name="answer32" value="yes"></td>
       <td><input type="file" name="images2s3category5">
       </tr>
     </table>

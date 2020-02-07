@@ -112,31 +112,31 @@
     
       <tr>
       <td>Kawasan bersih dan tiada item tidak perlu.<p id="q1s5category1"required></p></td>
-      <td><input type="radio" id="answer1q1s5c1" name="answer52" value="yes"></td>
-      <td><input type="radio" id="answer2q1s5c1"  name="answer52" value="yes"></td>
-      <td><input type="radio" id="answer3q1s5c1"  name="answer52" value="yes"></td>
-      <td><input type="radio" id="answer4q1s5c1"  name="answer52" value="yes"></td>
-      <td><input type="radio" id="answer5q1s5c1"  name="answer52" value="yes"></td>
+      <td><input type="radio" id="answer1q1s5c1" name="answer51" value="yes"></td>
+      <td><input type="radio" id="answer2q1s5c1"  name="answer51" value="yes"></td>
+      <td><input type="radio" id="answer3q1s5c1"  name="answer51" value="yes"></td>
+      <td><input type="radio" id="answer4q1s5c1"  name="answer51" value="yes"></td>
+      <td><input type="radio" id="answer5q1s5c1"  name="answer51" value="yes"></td>
       <td><input type="file" name="images1s5category1">
       </tr>
 
       <tr>
       <td>Kekemasan selesa dan memuaskan.<p id="q2s5category1"required></p></td>
-      <td><input type="radio" id="answer1q2s5c1" name="answer53" value="yes"></td>
-      <td><input type="radio" id="answer2q2s5c1"  name="answer53" value="yes"></td>
-      <td><input type="radio" id="answer3q2s5c1"  name="answer53" value="yes"></td>
-      <td><input type="radio" id="answer4q2s5c1"  name="answer53" value="yes"></td>
-      <td><input type="radio" id="answer5q2s5c1"  name="answer53" value="yes"></td>
+      <td><input type="radio" id="answer1q2s5c1" name="answer52" value="yes"></td>
+      <td><input type="radio" id="answer2q2s5c1"  name="answer52" value="yes"></td>
+      <td><input type="radio" id="answer3q2s5c1"  name="answer52" value="yes"></td>
+      <td><input type="radio" id="answer4q2s5c1"  name="answer52" value="yes"></td>
+      <td><input type="radio" id="answer5q2s5c1"  name="answer52" value="yes"></td>
       <td><input type="file" name="images2s5category1">
       </tr>
 
       <tr>
       <td>Aspek keselamatan (kawalan) diutamakan.<p id="q3s5category1"required></p></td>
-      <td><input type="radio" id="answer1q3s5c1" name="answer54" value="yes"></td>
-      <td><input type="radio" id="answer2q3s5c1"  name="answer54" value="yes"></td>
-      <td><input type="radio" id="answer3q3s5c1"  name="answer54" value="yes"></td>
-      <td><input type="radio" id="answer4q3s5c1"  name="answer54" value="yes"></td>
-      <td><input type="radio" id="answer5q3s5c1"  name="answer54" value="yes"></td>
+      <td><input type="radio" id="answer1q3s5c1" name="answer53" value="yes"></td>
+      <td><input type="radio" id="answer2q3s5c1"  name="answer53" value="yes"></td>
+      <td><input type="radio" id="answer3q3s5c1"  name="answer53" value="yes"></td>
+      <td><input type="radio" id="answer4q3s5c1"  name="answer53" value="yes"></td>
+      <td><input type="radio" id="answer5q3s5c1"  name="answer53" value="yes"></td>
       <td><input type="file" name="images3s5category1">
       </tr>
     </table>
@@ -165,21 +165,21 @@
     
       <tr>
       <td>Kawasan bersih dan tiada item tidak perlu.<p id="q1s5category2"required></p></td>
-      <td><input type="radio" id="answer1q1s5c2" name="answer55" value="yes"></td>
-      <td><input type="radio" id="answer2q1s5c2"  name="answer55" value="yes"></td>
-      <td><input type="radio" id="answer3q1s5c2"  name="answer55" value="yes"></td>
-      <td><input type="radio" id="answer4q1s5c2"  name="answer55" value="yes"></td>
-      <td><input type="radio" id="answer5q1s5c2"  name="answer55" value="yes"></td>
+      <td><input type="radio" id="answer1q1s5c2" name="answer54" value="yes"></td>
+      <td><input type="radio" id="answer2q1s5c2"  name="answer54" value="yes"></td>
+      <td><input type="radio" id="answer3q1s5c2"  name="answer54" value="yes"></td>
+      <td><input type="radio" id="answer4q1s5c2"  name="answer54" value="yes"></td>
+      <td><input type="radio" id="answer5q1s5c2"  name="answer54" value="yes"></td>
       <td><input type="file" name="images1s5category2">
       </tr>
 
       <tr>
       <td>Sentiasa terjaga dan kekemasan memuaskan.<p id="q2s5category2"required></p></td>
-      <td><input type="radio" id="answer1q2s5c2" name="answer56" value="yes"></td>
-      <td><input type="radio" id="answer2q2s5c2"  name="answer56" value="yes"></td>
-      <td><input type="radio" id="answer3q2s5c2"  name="answer56" value="yes"></td>
-      <td><input type="radio" id="answer4q2s5c2"  name="answer56" value="yes"></td>
-      <td><input type="radio" id="answer5q2s5c2"  name="answer56" value="yes"></td>
+      <td><input type="radio" id="answer1q2s5c2" name="answer55" value="yes"></td>
+      <td><input type="radio" id="answer2q2s5c2"  name="answer55" value="yes"></td>
+      <td><input type="radio" id="answer3q2s5c2"  name="answer55" value="yes"></td>
+      <td><input type="radio" id="answer4q2s5c2"  name="answer55" value="yes"></td>
+      <td><input type="radio" id="answer5q2s5c2"  name="answer55" value="yes"></td>
       <td><input type="file" name="images2s5category2">
       </tr>
     </table>
@@ -208,21 +208,21 @@
     
       <tr>
       <td>Mempunyai tempat pembuangan sisa yang memuaskan mengikut keperluan undang-undang. <p id="q1s5category3"required></p></td>
-      <td><input type="radio" id="answer1q1s5c3" name="answer57" value="yes"></td>
-      <td><input type="radio" id="answer2q1s5c3"  name="answer57" value="yes"></td>
-      <td><input type="radio" id="answer3q1s5c3"  name="answer57" value="yes"></td>
-      <td><input type="radio" id="answer4q1s5c3"  name="answer57" value="yes"></td>
-      <td><input type="radio" id="answer5q1s5c3"  name="answer57" value="yes"></td>
+      <td><input type="radio" id="answer1q1s5c3" name="answer56" value="yes"></td>
+      <td><input type="radio" id="answer2q1s5c3"  name="answer56" value="yes"></td>
+      <td><input type="radio" id="answer3q1s5c3"  name="answer56" value="yes"></td>
+      <td><input type="radio" id="answer4q1s5c3"  name="answer56" value="yes"></td>
+      <td><input type="radio" id="answer5q1s5c3"  name="answer56" value="yes"></td>
       <td><input type="file" name="images1s5category3">
       </tr>
 
     <tr>
       <td>Sentiasa bersih, kemas dan terjaga.<p id="q2s5category3"required></p></td>
-      <td><input type="radio" id="answer1q2s5c3" name="answer58" value="yes"></td>
-      <td><input type="radio" id="answer2q2s5c3"  name="answer58" value="yes"></td>
-      <td><input type="radio" id="answer3q2s5c3"  name="answer58" value="yes"></td>
-      <td><input type="radio" id="answer4q2s5c3"  name="answer58" value="yes"></td>
-      <td><input type="radio" id="answer5q2s5c3"  name="answer58" value="yes"></td>
+      <td><input type="radio" id="answer1q2s5c3" name="answer57" value="yes"></td>
+      <td><input type="radio" id="answer2q2s5c3"  name="answer57" value="yes"></td>
+      <td><input type="radio" id="answer3q2s5c3"  name="answer57" value="yes"></td>
+      <td><input type="radio" id="answer4q2s5c3"  name="answer57" value="yes"></td>
+      <td><input type="radio" id="answer5q2s5c3"  name="answer57" value="yes"></td>
       <td><input type="file" name="images2s5category3">
       </tr>
     </table>
@@ -250,31 +250,31 @@
     
       <tr>
       <td>Kedudukan yang strategik dan berfungsi dengan baik.<p id="q1s5category4"required></p></td>
-      <td><input type="radio" id="answer1q1s5c4" name="answer59" value="yes"></td>
-      <td><input type="radio" id="answer2q1s5c4"  name="answer59" value="yes"></td>
-      <td><input type="radio" id="answer3q1s5c4"  name="answer59" value="yes"></td>
-      <td><input type="radio" id="answer4q1s5c4"  name="answer59" value="yes"></td>
-      <td><input type="radio" id="answer5q1s5c4"  name="answer59" value="yes"></td>
+      <td><input type="radio" id="answer1q1s5c4" name="answer58" value="yes"></td>
+      <td><input type="radio" id="answer2q1s5c4"  name="answer58" value="yes"></td>
+      <td><input type="radio" id="answer3q1s5c4"  name="answer58" value="yes"></td>
+      <td><input type="radio" id="answer4q1s5c4"  name="answer58" value="yes"></td>
+      <td><input type="radio" id="answer5q1s5c4"  name="answer58" value="yes"></td>
       <td><input type="file" name="images1s5category4">
       </tr>
 
     <tr>
       <td>Saiz yang sesuai, mudah difahami dan mudah dilihat.<p id="q2s5category3"required></p></td>
-      <td><input type="radio" id="answer1q2s5c4" name="answer60" value="yes"></td>
-      <td><input type="radio" id="answer2q2s5c4"  name="answer60" value="yes"></td>
-      <td><input type="radio" id="answer3q2s5c4"  name="answer60" value="yes"></td>
-      <td><input type="radio" id="answer4q2s5c4"  name="answer60" value="yes"></td>
-      <td><input type="radio" id="answer5q2s5c4"  name="answer60" value="yes"></td>
+      <td><input type="radio" id="answer1q2s5c4" name="answer59" value="yes"></td>
+      <td><input type="radio" id="answer2q2s5c4"  name="answer59" value="yes"></td>
+      <td><input type="radio" id="answer3q2s5c4"  name="answer59" value="yes"></td>
+      <td><input type="radio" id="answer4q2s5c4"  name="answer59" value="yes"></td>
+      <td><input type="radio" id="answer5q2s5c4"  name="answer59" value="yes"></td>
       <td><input type="file" name="images2s5category4">
       </tr>
 
       <tr>
       <td>Wujud pandu arah dan garisan lot parkir yang jelas.<p id="q3s5category3"required></p></td>
-      <td><input type="radio" id="answer1q3s5c4" name="answer61" value="yes"></td>
-      <td><input type="radio" id="answer2q3s5c4"  name="answer61" value="yes"></td>
-      <td><input type="radio" id="answer3q3s5c4"  name="answer61" value="yes"></td>
-      <td><input type="radio" id="answer4q3s5c4"  name="answer61" value="yes"></td>
-      <td><input type="radio" id="answer5q3s5c4"  name="answer61" value="yes"></td>
+      <td><input type="radio" id="answer1q3s5c4" name="answer60" value="yes"></td>
+      <td><input type="radio" id="answer2q3s5c4"  name="answer60" value="yes"></td>
+      <td><input type="radio" id="answer3q3s5c4"  name="answer60" value="yes"></td>
+      <td><input type="radio" id="answer4q3s5c4"  name="answer60" value="yes"></td>
+      <td><input type="radio" id="answer5q3s5c4"  name="answer60" value="yes"></td>
       <td><input type="file" name="images3s5category4">
       </tr>
     </table>
@@ -302,31 +302,31 @@
     
       <tr>
       <td>Kawasan yang bersih dan teratur.<p id="q1s5category5"required></p></td>
-      <td><input type="radio" id="answer1q1s5c5" name="answer62" value="yes"></td>
-      <td><input type="radio" id="answer2q1s5c5"  name="answer62" value="yes"></td>
-      <td><input type="radio" id="answer3q1s5c5"  name="answer62" value="yes"></td>
-      <td><input type="radio" id="answer4q1s5c5"  name="answer62" value="yes"></td>
-      <td><input type="radio" id="answer5q1s5c5"  name="answer62" value="yes"></td>
+      <td><input type="radio" id="answer1q1s5c5" name="answer61" value="yes"></td>
+      <td><input type="radio" id="answer2q1s5c5"  name="answer61" value="yes"></td>
+      <td><input type="radio" id="answer3q1s5c5"  name="answer61" value="yes"></td>
+      <td><input type="radio" id="answer4q1s5c5"  name="answer61" value="yes"></td>
+      <td><input type="radio" id="answer5q1s5c5"  name="answer61" value="yes"></td>
       <td><input type="file" name="images1s5category5">
       </tr>
 
       <tr>
       <td>Landskap jika ada, tidak mengganggu dan sentiasa dalam keadaan kemas dan selesa untuk pengguna.<p id="q2s5category5"required></p></td>
-      <td><input type="radio" id="answer1q2s5c5" name="answer63" value="yes"></td>
-      <td><input type="radio" id="answer2q2s5c5"  name="answer63" value="yes"></td>
-      <td><input type="radio" id="answer3q2s5c5"  name="answer63" value="yes"></td>
-      <td><input type="radio" id="answer4q2s5c5"  name="answer63" value="yes"></td>
-      <td><input type="radio" id="answer5q2s5c5"  name="answer63" value="yes"></td>
+      <td><input type="radio" id="answer1q2s5c5" name="answer62" value="yes"></td>
+      <td><input type="radio" id="answer2q2s5c5"  name="answer62" value="yes"></td>
+      <td><input type="radio" id="answer3q2s5c5"  name="answer62" value="yes"></td>
+      <td><input type="radio" id="answer4q2s5c5"  name="answer62" value="yes"></td>
+      <td><input type="radio" id="answer5q2s5c5"  name="answer62" value="yes"></td>
       <td><input type="file" name="images2s5category5">
       </tr>
 
       <tr>
       <td>Tiada bahan/barang yang tidak perlu di lokasi.<p id="q3s5category5"required></p></td>
-      <td><input type="radio" id="answer1q3s5c5" name="answer64" value="yes"></td>
-      <td><input type="radio" id="answer2q3s5c5"  name="answer64" value="yes"></td>
-      <td><input type="radio" id="answer3q3s5c5"  name="answer64" value="yes"></td>
-      <td><input type="radio" id="answer4q3s5c5"  name="answer64" value="yes"></td>
-      <td><input type="radio" id="answer5q3s5c5"  name="answer64" value="yes"></td>
+      <td><input type="radio" id="answer1q3s5c5" name="answer63" value="yes"></td>
+      <td><input type="radio" id="answer2q3s5c5"  name="answer63" value="yes"></td>
+      <td><input type="radio" id="answer3q3s5c5"  name="answer63" value="yes"></td>
+      <td><input type="radio" id="answer4q3s5c5"  name="answer63" value="yes"></td>
+      <td><input type="radio" id="answer5q3s5c5"  name="answer63" value="yes"></td>
       <td><input type="file" name="images3s5category5">
       </tr>
     </table>
@@ -355,11 +355,11 @@
     
       <tr>
       <td>Aspek keselamatan diutamakan.<p id="q1s5category6"required></p></td>
-      <td><input type="radio" id="answer1q1s5c6" name="answer65" value="yes"></td>
-      <td><input type="radio" id="answer2q1s5c6"  name="answer65" value="yes"></td>
-      <td><input type="radio" id="answer3q1s5c6"  name="answer65" value="yes"></td>
-      <td><input type="radio" id="answer4q1s5c6"  name="answer65" value="yes"></td>
-      <td><input type="radio" id="answer5q1s5c6"  name="answer65" value="yes"></td>
+      <td><input type="radio" id="answer1q1s5c6" name="answer64" value="yes"></td>
+      <td><input type="radio" id="answer2q1s5c6"  name="answer64" value="yes"></td>
+      <td><input type="radio" id="answer3q1s5c6"  name="answer64" value="yes"></td>
+      <td><input type="radio" id="answer4q1s5c6"  name="answer64" value="yes"></td>
+      <td><input type="radio" id="answer5q1s5c6"  name="answer64" value="yes"></td>
       <td><input type="file" name="images1s5category6">
       </tr>
     </table>
@@ -387,11 +387,11 @@
     
       <tr>
       <td>Sokongan pelaksanaan dengan mewujudkan kawalan visual dan “konsep ownership”.<p id="q1s5category7"required></p></td>
-      <td><input type="radio" id="answer1q1s5c7" name="answer66" value="yes"></td>
-      <td><input type="radio" id="answer2q1s5c7"  name="answer66" value="yes"></td>
-      <td><input type="radio" id="answer3q1s5c7"  name="answer66" value="yes"></td>
-      <td><input type="radio" id="answer4q1s5c7"  name="answer66" value="yes"></td>
-      <td><input type="radio" id="answer5q1s5c7"  name="answer66" value="yes"></td>
+      <td><input type="radio" id="answer1q1s5c7" name="answer65" value="yes"></td>
+      <td><input type="radio" id="answer2q1s5c7"  name="answer65" value="yes"></td>
+      <td><input type="radio" id="answer3q1s5c7"  name="answer65" value="yes"></td>
+      <td><input type="radio" id="answer4q1s5c7"  name="answer65" value="yes"></td>
+      <td><input type="radio" id="answer5q1s5c7"  name="answer65" value="yes"></td>
       <td><input type="file" name="images1s5category7">
       </tr>
     </table>
@@ -419,11 +419,11 @@
     
       <tr>
       <td>Kerjasama dan sikap positif untuk amalan berterusan.<p id="q1s5category8"required></p></td>
-      <td><input type="radio" id="answer1q1s5c8" name="answer67" value="yes"></td>
-      <td><input type="radio" id="answer2q1s5c8"  name="answer67" value="yes"></td>
-      <td><input type="radio" id="answer3q1s5c8"  name="answer67" value="yes"></td>
-      <td><input type="radio" id="answer4q1s5c8"  name="answer67" value="yes"></td>
-      <td><input type="radio" id="answer5q1s5c8"  name="answer67" value="yes"></td>
+      <td><input type="radio" id="answer1q1s5c8" name="answer66" value="yes"></td>
+      <td><input type="radio" id="answer2q1s5c8"  name="answer66" value="yes"></td>
+      <td><input type="radio" id="answer3q1s5c8"  name="answer66" value="yes"></td>
+      <td><input type="radio" id="answer4q1s5c8"  name="answer66" value="yes"></td>
+      <td><input type="radio" id="answer5q1s5c8"  name="answer66" value="yes"></td>
       <td><input type="file" name="images1s5category8">
       </tr>
     </table>
@@ -451,11 +451,11 @@
     
       <tr>
       <td>Penambahbaikkan yang dibuat memberikan kesan melalui (Produktiviti/Kualiti/Penghantaran/Kos/Keselamatan/Moral/Inovasi)<p id="q1s5category9"required></p></td>
-      <td><input type="radio" id="answer1q1s5c9" name="answer68" value="yes"></td>
-      <td><input type="radio" id="answer2q1s5c9"  name="answer68" value="yes"></td>
-      <td><input type="radio" id="answer3q1s5c9"  name="answer68" value="yes"></td>
-      <td><input type="radio" id="answer4q1s5c9"  name="answer68" value="yes"></td>
-      <td><input type="radio" id="answer5q1s5c9"  name="answer68" value="yes"></td>
+      <td><input type="radio" id="answer1q1s5c9" name="answer67" value="yes"></td>
+      <td><input type="radio" id="answer2q1s5c9"  name="answer67" value="yes"></td>
+      <td><input type="radio" id="answer3q1s5c9"  name="answer67" value="yes"></td>
+      <td><input type="radio" id="answer4q1s5c9"  name="answer67" value="yes"></td>
+      <td><input type="radio" id="answer5q1s5c9"  name="answer67" value="yes"></td>
       <td><input type="file" name="images1s5category9">
       </tr>
     </table>
