@@ -7,7 +7,7 @@
   <meta name="generator" content="Mobirise v4.12.0, mobirise.com">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <link rel="shortcut icon" href="assets/images/logo5s-122x125.png" type="image/x-icon">
-  <meta name="description" content="">
+  <meta name="description" content="Web Site Creator Description">
   
   <title>Homepage</title>
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
@@ -20,8 +20,8 @@
   <link rel="stylesheet" href="assets/tether/tether.min.css">
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="stylesheet" href="assets/gallery/style.css">
-  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
-  
+   <link rel="stylesheet" href="assets/socicon/css/styles.css">
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css"> 
   
   
 </head>
@@ -43,24 +43,15 @@
             <div class="navbar-brand">
                 <span class="navbar-logo">
                     
-                         <img src="assets/images/logo5s-122x125.png" alt="Mobirise" title="" style="height: 3.8rem;">
+                         <img src="assets/images/logo5s-122x125.png" title="" style="height: 3.8rem;">
                     
                 </span>
-                <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4" href="https://mobirise.co">
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4">
                         5S AUDIT INSPECTION</a></span>
             </div>
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item">
-                    <a class="nav-link link text-white display-4" href="https://mobirise.co" aria-expanded="true"><span class="mbrib-left mbr-iconfont mbr-iconfont-btn"></span>
-                        
-                        BACK</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link link dropdown-toggle text-white display-4" data-toggle="dropdown-submenu" aria-expanded="true"><span class="mobi-mbri mobi-mbri-logout mbr-iconfont mbr-iconfont-btn"></span>
-                        
-                        LOGOUT</a><div class="dropdown-menu"><a class="dropdown-item text-white display-4">PROFILE</a></div>
-                </li></ul>
+            <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"></ul>
             <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-primary display-4" href="Login.html"><span class="mbrib-users mbr-iconfont mbr-iconfont-btn"></span>
                     
                     LOGIN</a></div>
@@ -174,7 +165,42 @@
     </div>
 
 </section>
+<section once="footers" class="cid-rPwjkLZhDD" id="footer7-i">
 
+  <div class="container">
+    <div class="media-container-row align-center mbr-white">
+      <div class="row row-links">
+        <ul class="foot-menu">
+
+          <li class="foot-menu-item mbr-fonts-style display-7"></li><li class="foot-menu-item mbr-fonts-style display-7"></li><li class="foot-menu-item mbr-fonts-style display-7"></li><li class="foot-menu-item mbr-fonts-style display-7"></li><li class="foot-menu-item mbr-fonts-style display-7"></li></ul>
+        </div>
+        <div class="row social-row">
+          <div class="social-list align-right pb-2">
+
+            <div class="soc-item">
+              <a href="https://twitter.com/" target="_blank">
+                <span class="socicon-twitter socicon mbr-iconfont mbr-iconfont-social"></span>
+              </a>
+            </div><div class="soc-item">
+              <a href="https://www.facebook.com/" target="_blank">
+                <span class="socicon-facebook socicon mbr-iconfont mbr-iconfont-social"></span>
+              </a>
+            </div>
+            <div class="soc-item">
+              <a href="https://instagram.com/" target="_blank">
+                <span class="socicon-instagram socicon mbr-iconfont mbr-iconfont-social"></span>
+              </a>
+            </div>
+          </div>
+          </div>
+          <div class="row row-copirayt">
+            <p class="mbr-text mb-0 mbr-fonts-style mbr-white align-center display-7">
+              © Copyright 2020 | 5S Audit Inspection | Ampang Line - All Rights Reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
   <script src="assets/web/assets/jquery/jquery.min.js"></script>
   <script src="assets/popper/popper.min.js"></script>
