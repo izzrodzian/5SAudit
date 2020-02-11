@@ -31,7 +31,7 @@ if (isset($_POST['login']))
         $_SESSION['user']= $_POST['userID'];
         header("Location:Inspection.php");
 
-    } else if ($row['userID'] == $userID && $row['userPassword'] == $userPassword && $row['userID']== 'Staff')
+    } else if ($row['userID'] == $userID && $row['userPassword'] == $userPassword && $row['userRole']== 'Staff')
     {
        $_SESSION['user']= $_POST['userID'];
       header("Location:Report.php");
@@ -101,12 +101,11 @@ if (isset($_POST['login']))
           <div class="container">
             <div>
               <input class="form-control px-3 display-7 align-center" type="text" name="userID" placeholder="Enter your ID no" required="">
-            </div></br>
+            </br>
 
             <input class="form-control px-3 display-7 align-center" type="password" name="userPassword" placeholder="Enter your password" required="">
-          </div></br>
+            <br>
 
-          <div>
             <input class="form-control px-3 display-7 align-center" list="userRole" name ="userRole" placeholder="Select role type">
             <datalist id="userRole">
               <option value="Admin"></option>
@@ -114,7 +113,6 @@ if (isset($_POST['login']))
               <option value="Staff"></option>
             </datalist> 
           </div></br>
-
           <div>
             <a href="Homepage.php"><input class="btn btn-primary btn-form display-4" type="button" name="cancel" value="Cancel" /></a>
             <input class="btn btn-primary btn-form display-4"  type="submit" name="login" value="Login">

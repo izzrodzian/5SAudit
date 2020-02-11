@@ -1,4 +1,37 @@
 <!DOCTYPE html>
+
+<?php  
+
+session_start();
+
+$con = mysqli_connect('127.0.0.1','root','') or die ('Not connected.');
+mysqli_select_db($con,'5s') or die ('No database found.');
+
+if (isset($_POST['Submit']))
+{
+  $answer1 = $_POST['answer1'];
+  $answer2 = $_POST['answer2'];
+  $answer3 = $_POST['answer3'];
+  $sql1 = "INSERT INTO qacategory_section1 (Category1, Category2, Category3) VALUES ('$answer1', '$answer2', '$answer3')";
+  $result1 = mysqli_query($con,$sql1);
+}
+
+// if (isset($_POST['Submit2']))
+// {
+//   $answer2 = $_POST['answer2'];
+//   $sql2 = "INSERT INTO qacategory_section1 (Category2) VALUES ($answer2)";
+//   $result2 = mysqli_query($con,$sql2);
+// }
+
+// if (isset($_POST['Submit3']))
+// {
+//   $answer3 = $_POST['answer3'];
+//   $sql3 = "INSERT INTO qacategory_section1 (Category3) VALUES ($answer3)";
+//   $result3 = mysqli_query($con,$sql3);
+// }
+
+?>
+
 <html  >
 <head>
   <!-- Site made with Mobirise Website Builder v4.12.0, https://mobirise.com -->
@@ -102,6 +135,7 @@
 <br>
 <div align="right"> Jumlah markah: /5</div>
 <br>
+<form method="POST">
 <table class="table" style="width: 100%;" align="center">    
       <tr>
       <th>Perkara</th>
@@ -115,22 +149,20 @@
     
       <tr>
       <td>Maklumat Lengkap dan Terkini (Merujuk pada Senarai Semak Dokumen)<p id="s1category1"required></p></td>
-      <td><input type="radio" id="answer1s1c1" name="answer1" value="yes"></td>
-      <td><input type="radio" id="answer2s1c1"  name="answer1" value="yes"></td>
-      <td><input type="radio" id="answer3s1c1"  name="answer1" value="yes"></td>
-      <td><input type="radio" id="answer4s1c1"  name="answer1" value="yes"></td>
-      <td><input type="radio" id="answer5s1c1"  name="answer1" value="yes"></td>
+      <td><input type="radio" id="answer1s1c1" name="answer1" value="1"></td>
+      <td><input type="radio" id="answer2s1c1"  name="answer1" value="2"></td>
+      <td><input type="radio" id="answer3s1c1"  name="answer1" value="3"></td>
+      <td><input type="radio" id="answer4s1c1"  name="answer1" value="4"></td>
+      <td><input type="radio" id="answer5s1c1"  name="answer1" value="5"></td>
       <td><input type="file" name="imagescategory1">
       </tr>
-    </table>
-    Catatan:<br>
+</table>
+Catatan:<br>
     <textarea name="catatans1category1" cols="100" rows="3"></textarea>
     <br>
     <br>
-    <input type="Submit" name="Submit">
-    <br><br>
 </div>
-
+<br> 
 
 <button type="button" style="width: 90%" class="collapsible">Kategori 2: Sudut 5S</button>
 <div class="content" style="width: 90%">
@@ -150,11 +182,11 @@
     
       <tr>
       <td>Maklumat Lengkap dan Terkini (Merujuk pada Senarai Semak Dokumen)<p id="s1category2" required></p></td>
-      <td><input type="radio" id="answer1s1c2" name="answer2" value="yes"></td>
-      <td><input type="radio" id="answer2s1c2"  name="answer2" value="yes"></td>
-      <td><input type="radio" id="answer3s1c2"  name="answer2" value="yes"></td>
-      <td><input type="radio" id="answer4s1c2"  name="answer2" value="yes"></td>
-      <td><input type="radio" id="answer5s1c2"  name="answer2" value="yes"></td>
+      <td><input type="radio" id="answer1s1c2" name="answer2" value="1"></td>
+      <td><input type="radio" id="answer2s1c2"  name="answer2" value="2"></td>
+      <td><input type="radio" id="answer3s1c2"  name="answer2" value="3"></td>
+      <td><input type="radio" id="answer4s1c2"  name="answer2" value="4"></td>
+      <td><input type="radio" id="answer5s1c2"  name="answer2" value="5"></td>
       <td><input type="file" name="imagescategory2">
       </tr>
     </table>
@@ -162,9 +194,8 @@
     <textarea name="catatans1category1" cols="100" rows="3"></textarea>
     <br>
     <br>
-    <input type="Submit" name="Submit">
-    <br><br>
 </div>
+<br>
 
 
 
@@ -186,11 +217,11 @@
     
       <tr>
       <td>Penambahbaikan, Kreativiti dan Inovasi<p id="s1category3" required></p></td>
-      <td><input type="radio" id="answer1s1c3" name="answer3" value="yes"></td>
-      <td><input type="radio" id="answer2s1c3"  name="answer3" value="yes"></td>
-      <td><input type="radio" id="answer3s1c3"  name="answer3" value="yes"></td>
-      <td><input type="radio" id="answer4s1c3"  name="answer3 value="yes"></td>
-      <td><input type="radio" id="answer5s1c3"  name="answer3" value="yes"></td>
+      <td><input type="radio" id="answer1s1c3" name="answer3" value="1"></td>
+      <td><input type="radio" id="answer2s1c3"  name="answer3" value="2"></td>
+      <td><input type="radio" id="answer3s1c3"  name="answer3" value="3"></td>
+      <td><input type="radio" id="answer4s1c3"  name="answer3" value="4"></td>
+      <td><input type="radio" id="answer5s1c3"  name="answer3" value="5"></td>
       <td><input type="file" name="imagess1category3">
       </tr>
     </table>
@@ -198,12 +229,15 @@
     <textarea name="catatans1category1" cols="100" rows="3"></textarea>
     <br>
     <br>
-    <input type="Submit" name="Submit">
-    <br><br>
+    
 </div>
+<br><br><br>
+  <input type="Submit" name="Submit" value="Submit">
+
 <br>
 <br>
-<br>
+
+</form>
 <div align="center"> Jumlah markah Seksyen 1: /15</div>
 <br>
 <br>
