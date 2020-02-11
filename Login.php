@@ -40,7 +40,7 @@ if (isset($_POST['login']))
   }
 ?>
 
-<html  >
+<html>
 <head>
   <!-- Site made with Mobirise Website Builder v4.12.0, https://mobirise.com -->
   <meta charset="UTF-8">
@@ -80,7 +80,7 @@ if (isset($_POST['login']))
            <img src="assets/images/logo5s-122x125.png" alt="Mobirise" title="" style="height: 3.8rem;">
 
          </span>
-         <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4" href="https://mobirise.co">
+         <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4">
          5S AUDIT INSPECTION</a></span>
        </div>
      </div>
@@ -94,35 +94,34 @@ if (isset($_POST['login']))
  <center><div class="mbr-white content-container">
         <h1 class="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-1">USER LOGIN</h1>
       </div></center>
-    <div class="form-container">
-      <div class="media-container-column" data-form-type="formoid">
+    
       
-      <form method="POST" action="Inspection.php">
-        <div class="container">
-          <div>
-            <input class="form-control px-3 display-7 align-center" type="text" name="userID" placeholder="Enter your ID no" required="">
+       <form method="POST">
+
+          <div class="container">
+            <div>
+              <input class="form-control px-3 display-7 align-center" type="text" name="userID" placeholder="Enter your ID no" required="">
+            </div></br>
+
+            <input class="form-control px-3 display-7 align-center" type="password" name="userPassword" placeholder="Enter your password" required="">
           </div></br>
 
-          <input class="form-control px-3 display-7 align-center" type="password" name="userPassword" placeholder="Enter your password" required="">
-        </div></br>
+          <div>
+            <input class="form-control px-3 display-7 align-center" list="userRole" name ="userRole" placeholder="Select role type">
+            <datalist id="userRole">
+              <option value="Admin"></option>
+              <option value="Auditor"></option>
+              <option value="Staff"></option>
+            </datalist> 
+          </div></br>
 
-        <div>
-          <input class="form-control px-3 display-7 align-center" list="userRole" name ="userRole" placeholder="Select role type">
-          <datalist id="userRole">
-            <option value="Admin"></option>
-            <option value="Auditor"></option>
-            <option value="Staff"></option>
-          </datalist> 
-        </div></br>
-
-        <div>
-         <a href="Homepage.php"><input class="btn btn-primary btn-form display-4" type="button" name="cancel" value="Cancel"></a>
-
-          <input class="btn btn-primary btn-form display-4"  type="submit" name="login" value="Login">
+          <div>
+            <a href="Homepage.php"><input class="btn btn-primary btn-form display-4" type="button" name="cancel" value="Cancel" /></a>
+            <input class="btn btn-primary btn-form display-4"  type="submit" name="login" value="Login">
+          </div>
         </div>
-      </div>
 
-    </form>
+      </form>
   </div>
 </section>
 <section once="footers" class="cid-rPwjkLZhDD" id="footer7-i">
