@@ -1,4 +1,14 @@
 <!DOCTYPE html>
+
+<?php
+
+session_start();
+
+$con = mysqli_connect('127.0.0.1','root','') or die ('Not connected.');
+mysqli_select_db($con,'5s') or die ('No database found.');
+?>
+
+
 <html  >
 <head>
   <!-- Site made with Mobirise Website Builder v4.12.0, https://mobirise.com -->

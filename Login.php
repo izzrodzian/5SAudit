@@ -1,4 +1,45 @@
 <!DOCTYPE html>
+
+<?php
+
+session_start();
+
+$con = mysqli_connect('127.0.0.1','root','') or die ('Not connected.');
+mysqli_select_db($con,'5s') or die ('No database found.');
+
+if (isset($_POST['login']))
+{
+  $userID = $_POST['userID'];
+  $userPassword = $_POST['userPassword'];
+  $userRole = $_POST['userRole'];
+
+  $sql = "SELECT * FROM users WHERE userID ='$userID' and userRole ='$userRole'";
+  $result = mysqli_query($con,$sql);
+
+  while($row=mysqli_fetch_array($result))
+
+
+      if($row['userID'] == $userID && $row['userPassword'] == $userPassword &&  $row['userRole']== 'Admin')
+      {
+        
+        $_SESSION['user']= $_POST['userID'];
+        header("Location:AdminDashboard.php");
+    }
+
+    else if ($row['userID'] == $userID && $row['userPassword'] == $userPassword  && $row['userRole']== 'Auditor')
+      {
+        $_SESSION['user']= $_POST['userID'];
+        header("Location:Inspection.php");
+
+    } else if ($row['userID'] == $userID && $row['userPassword'] == $userPassword && $row['userID']== 'Staff')
+    {
+       $_SESSION['user']= $_POST['userID'];
+      header("Location:Report.php");
+
+    }
+  }
+?>
+
 <html  >
 <head>
   <!-- Site made with Mobirise Website Builder v4.12.0, https://mobirise.com -->
@@ -56,37 +97,33 @@
     <div class="form-container">
       <div class="media-container-column" data-form-type="formoid">
       
-      <form method="POST">
+      <form method="POST" action="Inspection.php">
         <div class="container">
           <div>
-            <input class="form-control px-3 display-7 align-center" type="text" name="idno" placeholder="Enter your ID no" required="">
+            <input class="form-control px-3 display-7 align-center" type="text" name="userID" placeholder="Enter your ID no" required="">
           </div></br>
 
-          <input class="form-control px-3 display-7 align-center" type="password" name="password" placeholder="Enter your password" required="">
+          <input class="form-control px-3 display-7 align-center" type="password" name="userPassword" placeholder="Enter your password" required="">
         </div></br>
 
         <div>
-          <input class="form-control px-3 display-7 align-center" list="roletype" name ="roletype" placeholder="Select role type">
-          <datalist id="roletype">
+          <input class="form-control px-3 display-7 align-center" list="userRole" name ="userRole" placeholder="Select role type">
+          <datalist id="userRole">
             <option value="Admin"></option>
             <option value="Auditor"></option>
-            <option value="Guest"></option>
+            <option value="Staff"></option>
           </datalist> 
         </div></br>
 
         <div>
-         <a href="homepage.php"><input class="btn btn-sm btn-primary btn-form display-4" type="submit" name="cancel" value="Cancel">
+         <a href="Homepage.php"><input class="btn btn-primary btn-form display-4" type="button" name="cancel" value="Cancel"></a>
 
-          <input class="btn btn-sm btn-primary btn-form display-4"  type="submit" name="login" value="Login">
+          <input class="btn btn-primary btn-form display-4"  type="submit" name="login" value="Login">
         </div>
       </div>
 
     </form>
   </div>
-</div>
-</div>
-</div>
-</div>
 </section>
 <section once="footers" class="cid-rPwjkLZhDD" id="footer7-i">
 
