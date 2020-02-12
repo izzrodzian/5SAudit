@@ -1,4 +1,63 @@
 <!DOCTYPE html>
+
+<?php  
+
+session_start();
+
+$con = mysqli_connect('127.0.0.1','root','') or die ('Not connected.');
+mysqli_select_db($con,'5s') or die ('No database found.');
+
+$totalC1 = 0;
+$totalC2 = 0;
+$totalC3 = 0;
+$totalC4 = 0;
+$totalC5 = 0;
+$totalC6 = 0;
+$totalC7 = 0;
+$totalC8 = 0;
+$totalC9 = 0;
+$total = 0;
+
+if (isset($_POST['Submit']))
+{
+  
+  $answer33 = $_POST['answer33'];
+  $answer34 = $_POST['answer34'];
+  $answer35 = $_POST['answer35'];
+  $answer36 = $_POST['answer36'];
+  $answer37 = $_POST['answer37'];
+  $answer38 = $_POST['answer38'];
+  $answer39 = $_POST['answer39'];
+  $answer40 = $_POST['answer40'];
+  $answer41 = $_POST['answer41'];
+  $answer42 = $_POST['answer42'];
+  $answer43 = $_POST['answer43'];
+  $answer44 = $_POST['answer44'];
+  $answer45 = $_POST['answer45'];
+  $answer46 = $_POST['answer46'];
+  $answer47 = $_POST['answer47'];
+  $answer48 = $_POST['answer48'];
+  $answer49 = $_POST['answer49'];
+  $answer50 = $_POST['answer50'];
+
+  //Calculation
+  $totalC1 = $answer33 + $answer34 + $answer35;
+  $totalC2 = $answer36 + $answer37 + $answer38 + $answer39 + $answer40 + $answer41;
+  $totalC3 = $answer42 + $answer43;
+  $totalC4 = $answer44 + $answer45;
+  $totalC5 = $answer46;
+  $totalC6 = $answer47;
+  $totalC7 = $answer48;
+  $totalC8 = $answer49;
+  $totalC9 = $answer50;
+  $total = $totalC1 + $totalC2 + $totalC3 + $totalC4 + $totalC5 + $totalC6 + $totalC7 + $totalC8 + $totalC9;
+
+  $sql1 = "INSERT INTO qacategory_section4 (Category1, Category2, Category3, Category4, Category5, Category6, Category7, Category8, Category9, CategorySection4_TotalMarks) VALUES ('$totalC1', '$totalC2', '$totalC3', '$totalC4', '$totalC5', '$totalC6', '$totalC7', '$totalC8', '$totalC9', '$total')";
+  $result1 = mysqli_query($con,$sql1);
+}
+
+?>
+
 <html  >
 <head>
   <!-- Site made with Mobirise Website Builder v4.12.0, https://mobirise.com -->
@@ -93,15 +152,16 @@
 <section class="cid-rPxomWSNoR">
 <br><br>
 <center>
-  <h5>SEKSYEN 4: OPERASI (BENGKEL PENYELENGGARAAN AM,  PAM MINYAK, “WASHING BAY”, BILIK KAWALAN, BILIK KIRAAN & SEBAGAINYA)</h5>
+  <h5>SEKSYEN 4: OPERASI <br> (BENGKEL PENYELENGGARAAN AM,  PAM MINYAK, “WASHING BAY”, BILIK KAWALAN, BILIK KIRAAN & SEBAGAINYA)</h5>
   <br>
   <br>
 
 <button type="button" style="width: 90%" class="collapsible">Kategori 1: Lantai/Dinding</button>
 <div class="content" style="width: 90%">
 <br>
-<div align="right"> Jumlah markah: /15</div>
+<div align="right"> Jumlah markah: <?php echo $totalC1 ?>/15</div>
 <br>
+<form method="POST">
 <table class="table" style="width: 100%;" align="center">    
       <tr>
       <th>Perkara</th>
@@ -115,31 +175,31 @@
     
       <tr>
       <td>Lantai bersih, kemas dan tidak licin.<p id="q1s4category1"required></p></td>
-      <td><input type="radio" id="answer1q1s4c1" name="answer33" value="yes"></td>
-      <td><input type="radio" id="answer2q1s4c1"  name="answer33" value="yes"></td>
-      <td><input type="radio" id="answer3q1s4c1"  name="answer33" value="yes"></td>
-      <td><input type="radio" id="answer4q1s4c1"  name="answer33" value="yes"></td>
-      <td><input type="radio" id="answer5q1s4c1"  name="answer33" value="yes"></td>
+      <td><input type="radio" id="answer1q1s4c1" name="answer33" value="1"></td>
+      <td><input type="radio" id="answer2q1s4c1"  name="answer33" value="2"></td>
+      <td><input type="radio" id="answer3q1s4c1"  name="answer33" value="3"></td>
+      <td><input type="radio" id="answer4q1s4c1"  name="answer33" value="4"></td>
+      <td><input type="radio" id="answer5q1s4c1"  name="answer33" value="5"></td>
       <td><input type="file" name="images1s4category1">
       </tr>
 
       <tr>
       <td>Keadaan kemas dan rapi<p id="q2s2category1"required></p></td>
-      <td><input type="radio" id="answer1q2s4c1" name="answer34" value="yes"></td>
-      <td><input type="radio" id="answer2q2s4c1"  name="answer34" value="yes"></td>
-      <td><input type="radio" id="answer3q2s4c1"  name="answer34" value="yes"></td>
-      <td><input type="radio" id="answer4q2s4c1"  name="answer34" value="yes"></td>
-      <td><input type="radio" id="answer5q2s4c1"  name="answer34" value="yes"></td>
+      <td><input type="radio" id="answer1q2s4c1" name="answer34" value="1"></td>
+      <td><input type="radio" id="answer2q2s4c1"  name="answer34" value="2"></td>
+      <td><input type="radio" id="answer3q2s4c1"  name="answer34" value="3"></td>
+      <td><input type="radio" id="answer4q2s4c1"  name="answer34" value="4"></td>
+      <td><input type="radio" id="answer5q2s4c1"  name="answer34" value="5"></td>
       <td><input type="file" name="images2s4category1">
       </tr>
 
       <tr>
       <td>Tiada barang yang tidak diperlukan.<p id="q3s2category1"required></p></td>
-      <td><input type="radio" id="answer1q3s4c1" name="answer35" value="yes"></td>
-      <td><input type="radio" id="answer2q3s4c1"  name="answer35" value="yes"></td>
-      <td><input type="radio" id="answer3q3s4c1"  name="answer35" value="yes"></td>
-      <td><input type="radio" id="answer4q3s4c1"  name="answer35" value="yes"></td>
-      <td><input type="radio" id="answer5q3s4c1"  name="answer35" value="yes"></td>
+      <td><input type="radio" id="answer1q3s4c1" name="answer35" value="1"></td>
+      <td><input type="radio" id="answer2q3s4c1"  name="answer35" value="2"></td>
+      <td><input type="radio" id="answer3q3s4c1"  name="answer35" value="3"></td>
+      <td><input type="radio" id="answer4q3s4c1"  name="answer35" value="4"></td>
+      <td><input type="radio" id="answer5q3s4c1"  name="answer35" value="5"></td>
       <td><input type="file" name="images3s4category1">
       </tr>
     </table>
@@ -155,7 +215,7 @@
 </button>
 <div class="content" style="width: 90%">
 <br>
-<div align="right"> Jumlah markah: /30</div>
+<div align="right"> Jumlah markah: <?php echo $totalC2 ?>/30</div>
 <br>
 <table class="table" style="width: 100%;" align="center">    
       <tr>
@@ -170,61 +230,61 @@
     
       <tr>
       <td>Susun atur kemas dan rapi.<p id="q1s4category2"required></p></td>
-      <td><input type="radio" id="answer1q1s4c2" name="answer36" value="yes"></td>
-      <td><input type="radio" id="answer2q1s4c2"  name="answer36" value="yes"></td>
-      <td><input type="radio" id="answer3q1s4c2"  name="answer36" value="yes"></td>
-      <td><input type="radio" id="answer4q1s4c2"  name="answer36" value="yes"></td>
-      <td><input type="radio" id="answer5q1s4c2"  name="answer36" value="yes"></td>
+      <td><input type="radio" id="answer1q1s4c2" name="answer36" value="1"></td>
+      <td><input type="radio" id="answer2q1s4c2"  name="answer36" value="2"></td>
+      <td><input type="radio" id="answer3q1s4c2"  name="answer36" value="3"></td>
+      <td><input type="radio" id="answer4q1s4c2"  name="answer36" value="4"></td>
+      <td><input type="radio" id="answer5q1s4c2"  name="answer36" value="5"></td>
       <td><input type="file" name="images1s4category2">
       </tr>
 
       <tr>
       <td>Mesin dan peralatan adalah bersih.<p id="q2s4category1"required></p></td>
-      <td><input type="radio" id="answer1q2s4c2" name="answer37" value="yes"></td>
-      <td><input type="radio" id="answer2q2s4c2"  name="answer37" value="yes"></td>
-      <td><input type="radio" id="answer3q2s4c2"  name="answer37" value="yes"></td>
-      <td><input type="radio" id="answer4q2s4c2"  name="answer37" value="yes"></td>
-      <td><input type="radio" id="answer5q2s4c2"  name="answer37" value="yes"></td>
+      <td><input type="radio" id="answer1q2s4c2" name="answer37" value="1"></td>
+      <td><input type="radio" id="answer2q2s4c2"  name="answer37" value="2"></td>
+      <td><input type="radio" id="answer3q2s4c2"  name="answer37" value="3"></td>
+      <td><input type="radio" id="answer4q2s4c2"  name="answer37" value="4"></td>
+      <td><input type="radio" id="answer5q2s4c2"  name="answer37" value="5"></td>
       <td><input type="file" name="images2s4category2">
       </tr>
 
       <tr>
       <td>Tiada barang yang tidak diperlukan berada di lokasi mesin.<p id="q3s4category2"required></p></td>
-      <td><input type="radio" id="answer1q3s4c2" name="answer38" value="yes"></td>
-      <td><input type="radio" id="answer2q3s4c2"  name="answer38" value="yes"></td>
-      <td><input type="radio" id="answer3q3s4c2"  name="answer38" value="yes"></td>
-      <td><input type="radio" id="answer4q3s4c2"  name="answer38" value="yes"></td>
-      <td><input type="radio" id="answer5q3s4c2"  name="answer38" value="yes"></td>
+      <td><input type="radio" id="answer1q3s4c2" name="answer38" value="1"></td>
+      <td><input type="radio" id="answer2q3s4c2"  name="answer38" value="2"></td>
+      <td><input type="radio" id="answer3q3s4c2"  name="answer38" value="3"></td>
+      <td><input type="radio" id="answer4q3s4c2"  name="answer38" value="4"></td>
+      <td><input type="radio" id="answer5q3s4c2"  name="answer38" value="5"></td>
       <td><input type="file" name="images3s4category2">
       </tr>
 
       <tr>
       <td>Berkeadaan baik serta aktiviti penyelenggaraan mesin.<p id="q4s4category2"required></p></td>
-      <td><input type="radio" id="answer1q4s4c2" name="answer39" value="yes"></td>
-      <td><input type="radio" id="answer2q4s4c2"  name="answer39" value="yes"></td>
-      <td><input type="radio" id="answer3q4s4c2"  name="answer39" value="yes"></td>
-      <td><input type="radio" id="answer4q4s4c2"  name="answer39" value="yes"></td>
-      <td><input type="radio" id="answer5q4s4c2"  name="answer39" value="yes"></td>
+      <td><input type="radio" id="answer1q4s4c2" name="answer39" value="1"></td>
+      <td><input type="radio" id="answer2q4s4c2"  name="answer39" value="2"></td>
+      <td><input type="radio" id="answer3q4s4c2"  name="answer39" value="3"></td>
+      <td><input type="radio" id="answer4q4s4c2"  name="answer39" value="4"></td>
+      <td><input type="radio" id="answer5q4s4c2"  name="answer39" value="5"></td>
       <td><input type="file" name="images4s4category2">
       </tr>
 
       <tr>
       <td>Penggunaan “Manual”, “Visual Control” sebagai panduan.<p id="q5s4category2"required></p></td>
-      <td><input type="radio" id="answer1q5s4c2" name="answer40" value="yes"></td>
-      <td><input type="radio" id="answer2q5s4c2"  name="answer40" value="yes"></td>
-      <td><input type="radio" id="answer3q5s4c2"  name="answer40" value="yes"></td>
-      <td><input type="radio" id="answer4q5s4c2"  name="answer40" value="yes"></td>
-      <td><input type="radio" id="answer5q5s4c2"  name="answer40" value="yes"></td>
+      <td><input type="radio" id="answer1q5s4c2" name="answer40" value="1"></td>
+      <td><input type="radio" id="answer2q5s4c2"  name="answer40" value="2"></td>
+      <td><input type="radio" id="answer3q5s4c2"  name="answer40" value="3"></td>
+      <td><input type="radio" id="answer4q5s4c2"  name="answer40" value="4"></td>
+      <td><input type="radio" id="answer5q5s4c2"  name="answer40" value="5"></td>
       <td><input type="file" name="images5s4category2">
       </tr>
 
       <tr>
       <td>Rekod penggunaan peralatan dan lain-lain.<p id="q6s4category2"required></p></td>
-      <td><input type="radio" id="answer1q6s4c2" name="answer41" value="yes"></td>
-      <td><input type="radio" id="answer2q6s4c2"  name="answer41" value="yes"></td>
-      <td><input type="radio" id="answer3q6s4c2"  name="answer41" value="yes"></td>
-      <td><input type="radio" id="answer4q6s4c2"  name="answer41" value="yes"></td>
-      <td><input type="radio" id="answer5q6s4c2"  name="answer41" value="yes"></td>
+      <td><input type="radio" id="answer1q6s4c2" name="answer41" value="1"></td>
+      <td><input type="radio" id="answer2q6s4c2"  name="answer41" value="2"></td>
+      <td><input type="radio" id="answer3q6s4c2"  name="answer41" value="3"></td>
+      <td><input type="radio" id="answer4q6s4c2"  name="answer41" value="4"></td>
+      <td><input type="radio" id="answer5q6s4c2"  name="answer41" value="5"></td>
       <td><input type="file" name="images6s4category2">
       </tr>
 
@@ -241,7 +301,7 @@
 </button>
 <div class="content" style="width: 90%">
 <br>
-<div align="right"> Jumlah markah: /10</div>
+<div align="right"> Jumlah markah: <?php echo $totalC3 ?>/10</div>
 <br>
 <table class="table" style="width: 100%;" align="center">    
       <tr>
@@ -256,21 +316,21 @@
     
       <tr>
       <td>Dalam keadaan kemas dan teratur.<p id="q1s4category3"required></p></td>
-      <td><input type="radio" id="answer1q1s4c3" name="answer42" value="yes"></td>
-      <td><input type="radio" id="answer2q1s4c3"  name="answer42" value="yes"></td>
-      <td><input type="radio" id="answer3q1s4c3"  name="answer42" value="yes"></td>
-      <td><input type="radio" id="answer4q1s4c3"  name="answer42" value="yes"></td>
-      <td><input type="radio" id="answer5q1s4c3"  name="answer42" value="yes"></td>
+      <td><input type="radio" id="answer1q1s4c3" name="answer42" value="1"></td>
+      <td><input type="radio" id="answer2q1s4c3"  name="answer42" value="2"></td>
+      <td><input type="radio" id="answer3q1s4c3"  name="answer42" value="3"></td>
+      <td><input type="radio" id="answer4q1s4c3"  name="answer42" value="4"></td>
+      <td><input type="radio" id="answer5q1s4c3"  name="answer42" value="5"></td>
       <td><input type="file" name="images1s4category3">
       </tr>
 
     <tr>
       <td>Tanda label untuk mudah kesan.<p id="q2s4category3"required></p></td>
-      <td><input type="radio" id="answer1q2s4c3" name="answer43" value="yes"></td>
-      <td><input type="radio" id="answer2q2s4c3"  name="answer43" value="yes"></td>
-      <td><input type="radio" id="answer3q2s4c3"  name="answer43" value="yes"></td>
-      <td><input type="radio" id="answer4q2s4c3"  name="answer43" value="yes"></td>
-      <td><input type="radio" id="answer5q2s4c3"  name="answer43" value="yes"></td>
+      <td><input type="radio" id="answer1q2s4c3" name="answer43" value="1"></td>
+      <td><input type="radio" id="answer2q2s4c3"  name="answer43" value="2"></td>
+      <td><input type="radio" id="answer3q2s4c3"  name="answer43" value="3"></td>
+      <td><input type="radio" id="answer4q2s4c3"  name="answer43" value="4"></td>
+      <td><input type="radio" id="answer5q2s4c3"  name="answer43" value="5"></td>
       <td><input type="file" name="images2s4category3">
       </tr>
     </table>
@@ -286,7 +346,7 @@
 </button>
 <div class="content" style="width: 90%">
 <br>
-<div align="right"> Jumlah markah: /10</div>
+<div align="right"> Jumlah markah: <?php echo $totalC4 ?>/10</div>
 <br>
 <table class="table" style="width: 100%;" align="center">    
       <tr>
@@ -301,21 +361,21 @@
     
       <tr>
       <td>Kemas dan sistematik.<p id="q1s4category4"required></p></td>
-      <td><input type="radio" id="answer1q1s4c4" name="answer44" value="yes"></td>
-      <td><input type="radio" id="answer2q1s4c4"  name="answer44" value="yes"></td>
-      <td><input type="radio" id="answer3q1s4c4"  name="answer44" value="yes"></td>
-      <td><input type="radio" id="answer4q1s4c4"  name="answer44" value="yes"></td>
-      <td><input type="radio" id="answer5q1s4c4"  name="answer44" value="yes"></td>
+      <td><input type="radio" id="answer1q1s4c4" name="answer44" value="1"></td>
+      <td><input type="radio" id="answer2q1s4c4"  name="answer44" value="2"></td>
+      <td><input type="radio" id="answer3q1s4c4"  name="answer44" value="3"></td>
+      <td><input type="radio" id="answer4q1s4c4"  name="answer44" value="4"></td>
+      <td><input type="radio" id="answer5q1s4c4"  name="answer44" value="5"></td>
       <td><input type="file" name="images1s4category4">
       </tr>
 
     <tr>
       <td>Bersih dan item masih diperlukan.<p id="q2s4category3"required></p></td>
-      <td><input type="radio" id="answer1q2s4c4" name="answer45" value="yes"></td>
-      <td><input type="radio" id="answer2q2s4c4"  name="answer45" value="yes"></td>
-      <td><input type="radio" id="answer3q2s4c4"  name="answer45" value="yes"></td>
-      <td><input type="radio" id="answer4q2s4c4"  name="answer45" value="yes"></td>
-      <td><input type="radio" id="answer5q2s4c4"  name="answer45" value="yes"></td>
+      <td><input type="radio" id="answer1q2s4c4" name="answer45" value="1"></td>
+      <td><input type="radio" id="answer2q2s4c4"  name="answer45" value="2"></td>
+      <td><input type="radio" id="answer3q2s4c4"  name="answer45" value="3"></td>
+      <td><input type="radio" id="answer4q2s4c4"  name="answer45" value="4"></td>
+      <td><input type="radio" id="answer5q2s4c4"  name="answer45" value="5"></td>
       <td><input type="file" name="images2s4category4">
       </tr>
     </table>
@@ -331,7 +391,7 @@
 </button>
 <div class="content" style="width: 90%">
 <br>
-<div align="right"> Jumlah markah: /5</div>
+<div align="right"> Jumlah markah: <?php echo $totalC5 ?>/5</div>
 <br>
 <table class="table" style="width: 100%;" align="center">    
       <tr>
@@ -346,11 +406,11 @@
     
       <tr>
       <td>Bersih, kemas dan maklumat sentiasa kemaskini.<p id="q1s4category5"required></p></td>
-      <td><input type="radio" id="answer1q1s4c5" name="answer46" value="yes"></td>
-      <td><input type="radio" id="answer2q1s4c5"  name="answer46" value="yes"></td>
-      <td><input type="radio" id="answer3q1s4c5"  name="answer46" value="yes"></td>
-      <td><input type="radio" id="answer4q1s4c5"  name="answer46" value="yes"></td>
-      <td><input type="radio" id="answer5q1s4c5"  name="answer46" value="yes"></td>
+      <td><input type="radio" id="answer1q1s4c5" name="answer46" value="1"></td>
+      <td><input type="radio" id="answer2q1s4c5"  name="answer46" value="2"></td>
+      <td><input type="radio" id="answer3q1s4c5"  name="answer46" value="3"></td>
+      <td><input type="radio" id="answer4q1s4c5"  name="answer46" value="4"></td>
+      <td><input type="radio" id="answer5q1s4c5"  name="answer46" value="5"></td>
       <td><input type="file" name="images1s4category5">
       </tr>
     </table>
@@ -366,7 +426,7 @@
 </button>
 <div class="content" style="width: 90%">
 <br>
-<div align="right"> Jumlah markah: /5</div>
+<div align="right"> Jumlah markah: <?php echo $totalC6 ?>/5</div>
 <br>
 <table class="table" style="width: 100%;" align="center">    
       <tr>
@@ -381,11 +441,11 @@
     
       <tr>
       <td>Aspek keselamatan diutamakan.<p id="q1s4category6"required></p></td>
-      <td><input type="radio" id="answer1q1s4c6" name="answer47" value="yes"></td>
-      <td><input type="radio" id="answer2q1s4c6"  name="answer47" value="yes"></td>
-      <td><input type="radio" id="answer3q1s4c6"  name="answer47" value="yes"></td>
-      <td><input type="radio" id="answer4q1s4c6"  name="answer47" value="yes"></td>
-      <td><input type="radio" id="answer5q1s4c6"  name="answer47" value="yes"></td>
+      <td><input type="radio" id="answer1q1s4c6" name="answer47" value="1"></td>
+      <td><input type="radio" id="answer2q1s4c6"  name="answer47" value="2"></td>
+      <td><input type="radio" id="answer3q1s4c6"  name="answer47" value="3"></td>
+      <td><input type="radio" id="answer4q1s4c6"  name="answer47" value="4"></td>
+      <td><input type="radio" id="answer5q1s4c6"  name="answer47" value="5"></td>
       <td><input type="file" name="images1s4category6">
       </tr>
     </table>
@@ -401,7 +461,7 @@
 </button>
 <div class="content" style="width: 90%">
 <br>
-<div align="right"> Jumlah markah: /5</div>
+<div align="right"> Jumlah markah: <?php echo $totalC7 ?>/5</div>
 <br>
 <table class="table" style="width: 100%;" align="center">    
       <tr>
@@ -416,11 +476,11 @@
     
       <tr>
       <td>Sokongan pelaksanaan dengan mewujudkan kawalan visual dan “konsep ownership”.<p id="q1s4category7"required></p></td>
-      <td><input type="radio" id="answer1q1s4c7" name="answer48" value="yes"></td>
-      <td><input type="radio" id="answer2q1s4c7"  name="answer48" value="yes"></td>
-      <td><input type="radio" id="answer3q1s4c7"  name="answer48" value="yes"></td>
-      <td><input type="radio" id="answer4q1s4c7"  name="answer48" value="yes"></td>
-      <td><input type="radio" id="answer5q1s4c7"  name="answer48" value="yes"></td>
+      <td><input type="radio" id="answer1q1s4c7" name="answer48" value="1"></td>
+      <td><input type="radio" id="answer2q1s4c7"  name="answer48" value="2"></td>
+      <td><input type="radio" id="answer3q1s4c7"  name="answer48" value="3"></td>
+      <td><input type="radio" id="answer4q1s4c7"  name="answer48" value="4"></td>
+      <td><input type="radio" id="answer5q1s4c7"  name="answer48" value="5"></td>
       <td><input type="file" name="images1s4category7">
       </tr>
     </table>
@@ -436,7 +496,7 @@
 </button>
 <div class="content" style="width: 90%">
 <br>
-<div align="right"> Jumlah markah: /5</div>
+<div align="right"> Jumlah markah: <?php echo $totalC8 ?>/5</div>
 <br>
 <table class="table" style="width: 100%;" align="center">    
       <tr>
@@ -451,11 +511,11 @@
     
       <tr>
       <td>Kerjasama dan sikap positif untuk amalan berterusan.<p id="q1s4category8"required></p></td>
-      <td><input type="radio" id="answer1q1s4c8" name="answer49" value="yes"></td>
-      <td><input type="radio" id="answer2q1s4c8"  name="answer49" value="yes"></td>
-      <td><input type="radio" id="answer3q1s4c8"  name="answer49" value="yes"></td>
-      <td><input type="radio" id="answer4q1s4c8"  name="answer49" value="yes"></td>
-      <td><input type="radio" id="answer5q1s4c8"  name="answer49" value="yes"></td>
+      <td><input type="radio" id="answer1q1s4c8" name="answer49" value="1"></td>
+      <td><input type="radio" id="answer2q1s4c8"  name="answer49" value="2"></td>
+      <td><input type="radio" id="answer3q1s4c8"  name="answer49" value="3"></td>
+      <td><input type="radio" id="answer4q1s4c8"  name="answer49" value="4"></td>
+      <td><input type="radio" id="answer5q1s4c8"  name="answer49" value="5"></td>
       <td><input type="file" name="images1s4category8">
       </tr>
     </table>
@@ -471,7 +531,7 @@
 </button>
 <div class="content" style="width: 90%">
 <br>
-<div align="right"> Jumlah markah: /5</div>
+<div align="right"> Jumlah markah: <?php echo $totalC9 ?>/5</div>
 <br>
 <table class="table" style="width: 100%;" align="center">    
       <tr>
@@ -486,11 +546,11 @@
     
       <tr>
       <td>Penambahbaikkan yang dibuat memberikan kesan melalui (Produktiviti/Kualiti/Penghantaran/Kos/Keselamatan/Moral/Inovasi)<p id="q1s4category9"required></p></td>
-      <td><input type="radio" id="answer1q1s4c9" name="answer50" value="yes"></td>
-      <td><input type="radio" id="answer2q1s4c9"  name="answer50" value="yes"></td>
-      <td><input type="radio" id="answer3q1s4c9"  name="answer50" value="yes"></td>
-      <td><input type="radio" id="answer4q1s4c9"  name="answer50" value="yes"></td>
-      <td><input type="radio" id="answer5q1s4c9"  name="answer50" value="yes"></td>
+      <td><input type="radio" id="answer1q1s4c9" name="answer50" value="1"></td>
+      <td><input type="radio" id="answer2q1s4c9"  name="answer50" value="2"></td>
+      <td><input type="radio" id="answer3q1s4c9"  name="answer50" value="3"></td>
+      <td><input type="radio" id="answer4q1s4c9"  name="answer50" value="4"></td>
+      <td><input type="radio" id="answer5q1s4c9"  name="answer50" value="5"></td>
       <td><input type="file" name="images1s4category9">
       </tr>
     </table>
@@ -504,8 +564,8 @@
 <br><br><br>
   <input type="Submit" name="Submit" value="Submit">
 <br><br>
-
-<div align="center"> Jumlah markah Seksyen 4: /90</div>
+</form>
+<div align="center"> Jumlah markah Seksyen 4: <?php echo $total ?>/90</div>
 <br>
 <br>
 <div class="mbr-section-btn text-center"><a class="btn btn-primary display-4" href="QAInspectionSection5.php">SEKSYEN 5</a></div>
