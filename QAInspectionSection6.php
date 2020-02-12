@@ -138,10 +138,9 @@
     <textarea name="catatans6category1" cols="100" rows="3"></textarea>
     <br>
     <br>
-    <input type="Submit" name="Submit">
-    <br><br>
+    
 </div>
-
+<br>
 
 <button type="button" style="width: 90%" class="collapsible">Kategori 2: Bilik Mesyuarat/Bilik VIP
 </button>
@@ -194,10 +193,9 @@
     <textarea name="catatans6category2" cols="100" rows="3"></textarea>
     <br>
     <br>
-    <input type="Submit" name="Submit">
-    <br><br>
+    
 </div>
-
+<br>
 
 <button type="button" style="width: 90%" class="collapsible">Kategori 3: Bilik Latihan/Simulasi
 </button>
@@ -250,9 +248,9 @@
     <textarea name="catatans6category3" cols="100" rows="3"></textarea>
     <br>
     <br>
-    <input type="Submit" name="Submit">
-    <br><br>
+    
 </div>
+<br>
 
 <button type="button" style="width: 90%" class="collapsible">Kategori 4:Kantin/Pantri
 </button>
@@ -305,9 +303,9 @@
     <textarea name="catatans6category4" cols="100" rows="3"></textarea>
     <br>
     <br>
-    <input type="Submit" name="Submit">
-    <br><br>
+   
 </div>
+<br>
 
 <button type="button" style="width: 90%" class="collapsible">Kategori 5: Surau/Ruang Solat
 </button>
@@ -360,10 +358,9 @@
     <textarea name="catatans6category5" cols="100" rows="3"></textarea>
     <br>
     <br>
-    <input type="Submit" name="Submit">
-    <br><br>
+    
 </div>
-
+<br>
 
 <button type="button" style="width: 90%" class="collapsible">Kategori 6: Tandas/Bilik Mandi
 </button>
@@ -416,9 +413,9 @@
     <textarea name="catatans6category6" cols="100" rows="3"></textarea>
     <br>
     <br>
-    <input type="Submit" name="Submit">
-    <br><br>
+    
 </div>
+<br>
 
 <button type="button" style="width: 90%" class="collapsible">Kategori 7: Bilik Kecemasan/Bilik Rehat/Penginapan
 </button>
@@ -471,10 +468,9 @@
     <textarea name="catatans6category7" cols="100" rows="3"></textarea>
     <br>
     <br>
-    <input type="Submit" name="Submit">
-    <br><br>
+    
 </div>
-
+<br>
 
 <button type="button" style="width: 90%" class="collapsible">Kategori 8: Pusat Sumber
 </button>
@@ -527,10 +523,9 @@
     <textarea name="catatans6category8" cols="100" rows="3"></textarea>
     <br>
     <br>
-    <input type="Submit" name="Submit">
-    <br><br>
+    
 </div>
-
+<br>
 
 <button type="button" style="width: 90%" class="collapsible">Kategori 9: Dewan
 </button>
@@ -583,10 +578,9 @@
     <textarea name="catatans6category9" cols="100" rows="3"></textarea>
     <br>
     <br>
-    <input type="Submit" name="Submit">
-    <br><br>
+   
 </div>
-
+<br>
 
 <button type="button" style="width: 90%" class="collapsible">Kategori 10: Bilik Gimnasium
 </button>
@@ -639,10 +633,9 @@
     <textarea name="catatans6category10" cols="100" rows="3"></textarea>
     <br>
     <br>
-    <input type="Submit" name="Submit">
-    <br><br>
+    
 </div>
-
+<br>
 
 <button type="button" style="width: 90%" class="collapsible">Kategori 11: Keselamatan
 </button>
@@ -675,9 +668,9 @@
     <textarea name="catatans6category11" cols="100" rows="3"></textarea>
     <br>
     <br>
-    <input type="Submit" name="Submit">
-    <br><br>
+    
 </div>
+<br>
 
 <button type="button" style="width: 90%" class="collapsible">Kategori 12: Seragam
 </button>
@@ -710,9 +703,9 @@
     <textarea name="catatans6category12" cols="100" rows="3"></textarea>
     <br>
     <br>
-    <input type="Submit" name="Submit">
-    <br><br>
+    
 </div>
+<br>
 
 <button type="button" style="width: 90%" class="collapsible">Kategori 13: Sentiasa Amal
 </button>
@@ -745,9 +738,9 @@
     <textarea name="catatans6category13" cols="100" rows="3"></textarea>
     <br>
     <br>
-    <input type="Submit" name="Submit">
-    <br><br>
+    
 </div>
+<br>
 
 <button type="button" style="width: 90%" class="collapsible">Kategori 14: Impak
 </button>
@@ -780,12 +773,13 @@
     <textarea name="catatans6category14" cols="100" rows="3"></textarea>
     <br>
     <br>
-    <input type="Submit" name="Submit">
-    <br><br>
+   
 </div>
-<br>
-<br>
-<br>
+
+<br><br><br>
+  <input type="Submit" name="Submit" value="Submit">
+<br><br>
+
 <div align="center"> Jumlah markah Seksyen 6: /165</div>
 <br>
 <br>

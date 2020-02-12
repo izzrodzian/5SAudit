@@ -100,8 +100,9 @@
 <button type="button" style="width: 90%" class="collapsible">Kategori 1: Tempat Simpanan</button>
 <div class="content" style="width: 90%">
 <br>
-<div align="right"> Jumlah markah: /35</div>
+<div align="right"> Jumlah markah: <?php echo $totalC1 ?>/35</div>
 <br>
+<form method="POST">
 <table class="table" style="width: 100%;" align="center">    
       <tr>
       <th>Perkara</th>
@@ -187,9 +188,9 @@
     <textarea name="catatans3category1" cols="100" rows="3"></textarea>
     <br>
     <br>
-    <input type="Submit" name="Submit">
-    <br><br>
+    
 </div>
+<br>
 
 <button type="button" style="width: 90%" class="collapsible">Kategori 2: Keselamatan
 </button>
@@ -232,10 +233,9 @@
     <textarea name="catatans2category6" cols="100" rows="3"></textarea>
     <br>
     <br>
-    <input type="Submit" name="Submit">
-    <br><br>
+    
 </div>
-
+<br>
 
 <button type="button" style="width: 90%" class="collapsible">Kategori 3: Seragam
 </button>
@@ -278,9 +278,9 @@
     <textarea name="catatans3category3" cols="100" rows="3"></textarea>
     <br>
     <br>
-    <input type="Submit" name="Submit">
-    <br><br>
+   
 </div>
+<br>
 
 <button type="button" style="width: 90%" class="collapsible">Kategori 4: Sentiasa Amal
 </button>
@@ -313,9 +313,9 @@
     <textarea name="catatans3category4" cols="100" rows="3"></textarea>
     <br>
     <br>
-    <input type="Submit" name="Submit">
-    <br><br>
+    
 </div>
+<br>
 
 <button type="button" style="width: 90%" class="collapsible">Kategori 5: Impak
 </button>
@@ -348,12 +348,13 @@
     <textarea name="catatans3category5" cols="100" rows="3"></textarea>
     <br>
     <br>
-    <input type="Submit" name="Submit">
-    <br><br>
+    
 </div>
-<br>
-<br>
-<br>
+
+<br><br><br>
+  <input type="Submit" name="Submit" value="Submit">
+<br><br>
+</form>
 <div align="center"> Jumlah markah Seksyen 3: /65</div>
 <br>
 <br>

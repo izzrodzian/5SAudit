@@ -147,10 +147,9 @@
     <textarea name="catatans5category1" cols="100" rows="3"></textarea>
     <br>
     <br>
-    <input type="Submit" name="Submit">
-    <br><br>
+   
 </div>
-
+<br>
 
 <button type="button" style="width: 90%" class="collapsible">Kategori 2: Landskap
 </button>
@@ -193,10 +192,9 @@
     <textarea name="catatans5category2" cols="100" rows="3"></textarea>
     <br>
     <br>
-    <input type="Submit" name="Submit">
-    <br><br>
+   
 </div>
-
+<br>
 
 <button type="button" style="width: 90%" class="collapsible">Kategori 3: Tempat Pelupusan, Longkang, Kawasan Sisa berjadual
 </button>
@@ -239,9 +237,9 @@
     <textarea name="catatans5category3" cols="100" rows="3"></textarea>
     <br>
     <br>
-    <input type="Submit" name="Submit">
-    <br><br>
+    
 </div>
+<br>
 
 <button type="button" style="width: 90%" class="collapsible">Kategori 4: Papan Tanda, Pandu Arah
 </button>
@@ -294,9 +292,9 @@
     <textarea name="catatans5category4" cols="100" rows="3"></textarea>
     <br>
     <br>
-    <input type="Submit" name="Submit">
-    <br><br>
+    
 </div>
+<br>
 
 <button type="button" style="width: 90%" class="collapsible">Kategori 5: Kawasan Parkir
 </button>
@@ -349,9 +347,9 @@
     <textarea name="catatans5category5" cols="100" rows="3"></textarea>
     <br>
     <br>
-    <input type="Submit" name="Submit">
-    <br><br>
+    
 </div>
+<br>
 
 
 <button type="button" style="width: 90%" class="collapsible">Kategori 6: Keselamatan
@@ -385,9 +383,9 @@
     <textarea name="catatans5category6" cols="100" rows="3"></textarea>
     <br>
     <br>
-    <input type="Submit" name="Submit">
-    <br><br>
+    
 </div>
+<br>
 
 <button type="button" style="width: 90%" class="collapsible">Kategori 7: Seragam
 </button>
@@ -420,9 +418,9 @@
     <textarea name="catatans5category7" cols="100" rows="3"></textarea>
     <br>
     <br>
-    <input type="Submit" name="Submit">
-    <br><br>
+    
 </div>
+<br>
 
 <button type="button" style="width: 90%" class="collapsible">Kategori 8: Sentiasa Amal
 </button>
@@ -455,9 +453,9 @@
     <textarea name="catatans5category8" cols="100" rows="3"></textarea>
     <br>
     <br>
-    <input type="Submit" name="Submit">
-    <br><br>
+    
 </div>
+<br>
 
 <button type="button" style="width: 90%" class="collapsible">Kategori 9: Impak
 </button>
@@ -490,12 +488,13 @@
     <textarea name="catatans5category9" cols="100" rows="3"></textarea>
     <br>
     <br>
-    <input type="Submit" name="Submit">
-    <br><br>
+    
 </div>
-<br>
-<br>
-<br>
+
+<br><br><br>
+  <input type="Submit" name="Submit" value="Submit">
+<br><br>
+
 <div align="center"> Jumlah markah Seksyen 5: /85</div>
 <br>
 <br>

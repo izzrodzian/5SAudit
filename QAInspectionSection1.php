@@ -7,28 +7,22 @@ session_start();
 $con = mysqli_connect('127.0.0.1','root','') or die ('Not connected.');
 mysqli_select_db($con,'5s') or die ('No database found.');
 
+$total = 0;
+$answer1 = 0;
+$answer2 = 0;
+$answer3 = 0;
+
 if (isset($_POST['Submit']))
 {
+  
   $answer1 = $_POST['answer1'];
   $answer2 = $_POST['answer2'];
   $answer3 = $_POST['answer3'];
-  $sql1 = "INSERT INTO qacategory_section1 (Category1, Category2, Category3) VALUES ('$answer1', '$answer2', '$answer3')";
+  $total = $answer1 + $answer2 + $answer3;
+
+  $sql1 = "INSERT INTO qacategory_section1 (Category1, Category2, Category3, CategorySection1_TotalMarks) VALUES ('$answer1', '$answer2', '$answer3', '$total')";
   $result1 = mysqli_query($con,$sql1);
 }
-
-// if (isset($_POST['Submit2']))
-// {
-//   $answer2 = $_POST['answer2'];
-//   $sql2 = "INSERT INTO qacategory_section1 (Category2) VALUES ($answer2)";
-//   $result2 = mysqli_query($con,$sql2);
-// }
-
-// if (isset($_POST['Submit3']))
-// {
-//   $answer3 = $_POST['answer3'];
-//   $sql3 = "INSERT INTO qacategory_section1 (Category3) VALUES ($answer3)";
-//   $result3 = mysqli_query($con,$sql3);
-// }
 
 ?>
 
@@ -133,7 +127,7 @@ if (isset($_POST['Submit']))
 <button type="button" style="width: 90%" class="collapsible">Kategori 1: Fail Program</button>
 <div class="content" style="width: 90%">
 <br>
-<div align="right"> Jumlah markah: /5</div>
+<div align="right"> Jumlah markah: <?php echo $answer1 ?>/5</div>
 <br>
 <form method="POST">
 <table class="table" style="width: 100%;" align="center">    
@@ -167,7 +161,7 @@ Catatan:<br>
 <button type="button" style="width: 90%" class="collapsible">Kategori 2: Sudut 5S</button>
 <div class="content" style="width: 90%">
 <br>
-<div align="right"> Jumlah markah: /5</div>
+<div align="right"> Jumlah markah: <?php echo $answer2 ?>/5</div>
 <br>
 <table class="table" style="width: 100%;" align="center">    
       <tr>
@@ -202,7 +196,7 @@ Catatan:<br>
 <button type="button" style="width: 90%" class="collapsible">Kategori 3: Kaizen</button>
 <div class="content" style="width: 90%">
 <br>
-<div align="right"> Jumlah markah: /5</div>
+<div align="right"> Jumlah markah: <?php echo $answer3 ?>/5</div>
 <br>
 <table class="table" style="width: 100%;" align="center">    
       <tr>
@@ -233,12 +227,10 @@ Catatan:<br>
 </div>
 <br><br><br>
   <input type="Submit" name="Submit" value="Submit">
-
-<br>
-<br>
+<br><br>
 
 </form>
-<div align="center"> Jumlah markah Seksyen 1: /15</div>
+<div align="center"> Jumlah markah Seksyen 1: <?php echo $total ?>/15</div>
 <br>
 <br>
 <div class="mbr-section-btn text-center"><a class="btn btn-primary display-4" href="QAInspectionSection2.php">SEKSYEN 2</a></div>
@@ -259,9 +251,7 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 </script>
-
 </center>
-
 
 <!--     <div class="container">
         <div class="media-container-row">
@@ -343,6 +333,7 @@ for (i = 0; i < coll.length; i++) {
         </div>
       </div>
     </section>
+
 
   <script src="assets/web/assets/jquery/jquery.min.js"></script>
   <script src="assets/popper/popper.min.js"></script>
