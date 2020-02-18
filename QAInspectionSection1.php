@@ -71,7 +71,7 @@ if (isset($_POST['Submit']))
   padding: 0 18px;
   display: none;
   overflow: none;
-  background-color: #6e7cff;
+  background-color: #e1eef5;
 }
 </style>
   
@@ -133,6 +133,7 @@ if (isset($_POST['Submit']))
 <table class="table" style="width: 100%;" align="center">    
       <tr>
       <th>Perkara</th>
+      <th>N/A</th>
       <th>1</th>
       <th>2</th>
       <th>3</th>
@@ -143,6 +144,7 @@ if (isset($_POST['Submit']))
     
       <tr>
       <td>Maklumat Lengkap dan Terkini (Merujuk pada Senarai Semak Dokumen)<p id="s1category1"required></p></td>
+      <td><input type="radio" id="answer1s1c1NA" name="answer1" value="0"></td>
       <td><input type="radio" id="answer1s1c1" name="answer1" value="1"></td>
       <td><input type="radio" id="answer2s1c1"  name="answer1" value="2"></td>
       <td><input type="radio" id="answer3s1c1"  name="answer1" value="3"></td>
@@ -166,6 +168,7 @@ Catatan:<br>
 <table class="table" style="width: 100%;" align="center">    
       <tr>
       <th>Perkara</th>
+      <th>N/A</th>
       <th>1</th>
       <th>2</th>
       <th>3</th>
@@ -176,6 +179,7 @@ Catatan:<br>
     
       <tr>
       <td>Maklumat Lengkap dan Terkini (Merujuk pada Senarai Semak Dokumen)<p id="s1category2" required></p></td>
+      <td><input type="radio" id="answer1s1c2NA" name="answer2" value="0"></td>
       <td><input type="radio" id="answer1s1c2" name="answer2" value="1"></td>
       <td><input type="radio" id="answer2s1c2"  name="answer2" value="2"></td>
       <td><input type="radio" id="answer3s1c2"  name="answer2" value="3"></td>
@@ -201,6 +205,7 @@ Catatan:<br>
 <table class="table" style="width: 100%;" align="center">    
       <tr>
       <th>Perkara</th>
+      <th>N/A</th>
       <th>1</th>
       <th>2</th>
       <th>3</th>
@@ -211,6 +216,7 @@ Catatan:<br>
     
       <tr>
       <td>Penambahbaikan, Kreativiti dan Inovasi<p id="s1category3" required></p></td>
+      <td><input type="radio" id="answer1s1c3NA" name="answer3" value="0"></td>
       <td><input type="radio" id="answer1s1c3" name="answer3" value="1"></td>
       <td><input type="radio" id="answer2s1c3"  name="answer3" value="2"></td>
       <td><input type="radio" id="answer3s1c3"  name="answer3" value="3"></td>

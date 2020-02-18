@@ -90,7 +90,7 @@ if (isset($_POST['Submit']))
   padding: 0 18px;
   display: none;
   overflow: none;
-  background-color: #6e7cff;
+  background-color: #e1eef5;
 }
 </style>
   
@@ -152,6 +152,7 @@ if (isset($_POST['Submit']))
 <table class="table" style="width: 100%;" align="center">    
       <tr>
       <th>Perkara</th>
+      <th>N/A</th>
       <th>1</th>
       <th>2</th>
       <th>3</th>
@@ -162,6 +163,7 @@ if (isset($_POST['Submit']))
     
       <tr>
       <td>Keadaan tersusun, kemas dan teratur.<p id="q1s3category1"required></p></td>
+      <td><input type="radio" id="answer1q1s3c1NA" name="answer20" value="0"></td>
       <td><input type="radio" id="answer1q1s3c1" name="answer20" value="1"></td>
       <td><input type="radio" id="answer2q1s3c1"  name="answer20" value="2"></td>
       <td><input type="radio" id="answer3q1s3c1"  name="answer20" value="3"></td>
@@ -172,6 +174,7 @@ if (isset($_POST['Submit']))
 
       <tr>
       <td>Kawasan lantai bersih.<p id="q2s3category1"required></p></td>
+      <td><input type="radio" id="answer1q2s3c1NA" name="answer21" value="0"></td>
       <td><input type="radio" id="answer1q2s3c1" name="answer21" value="1"></td>
       <td><input type="radio" id="answer2q2s3c1"  name="answer21" value="2"></td>
       <td><input type="radio" id="answer3q2s3c1"  name="answer21" value="3"></td>
@@ -182,6 +185,7 @@ if (isset($_POST['Submit']))
 
       <tr>
       <td>Terdapat tanda 'label' bagi tiap-tiap bahan/rekod.<p id="q3s3category1"required></p></td>
+      <td><input type="radio" id="answer1q3s3c1NA" name="answer22" value="0"></td>
       <td><input type="radio" id="answer1q3s3c1" name="answer22" value="1"></td>
       <td><input type="radio" id="answer2q3s3c1"  name="answer22" value="2"></td>
       <td><input type="radio" id="answer3q3s3c1"  name="answer22" value="3"></td>
@@ -192,6 +196,7 @@ if (isset($_POST['Submit']))
 
       <tr>
       <td>Mempunyai sistem susunan yang teratur dan mudah untuk diambil (seperti rak-rak) bila diperlukan.<p id="q4s3category1"required></p></td>
+      <td><input type="radio" id="answer1q4s3c1NA" name="answer23" value="0"></td>
       <td><input type="radio" id="answer1q4s3c1" name="answer23" value="1"></td>
       <td><input type="radio" id="answer2q4s3c1"  name="answer23" value="2"></td>
       <td><input type="radio" id="answer3q4s3c1"  name="answer23" value="3"></td>
@@ -202,6 +207,7 @@ if (isset($_POST['Submit']))
 
       <tr>
       <td>Tidak terdapat bahan/item yang tidak diperlukan.<p id="q5s3category1"required></p></td>
+      <td><input type="radio" id="answer1q5s3c1NA" name="answer24" value="0"></td>
       <td><input type="radio" id="answer1q5s3c1" name="answer24" value="1"></td>
       <td><input type="radio" id="answer2q5s3c1"  name="answer24" value="2"></td>
       <td><input type="radio" id="answer3q5s3c1"  name="answer24" value="3"></td>
@@ -212,6 +218,7 @@ if (isset($_POST['Submit']))
 
       <tr>
       <td>Terdapat “layout plan” sebagai panduan.<p id="q6s3category1"required></p></td>
+      <td><input type="radio" id="answer1q6s3c1NA" name="answer25" value="0"></td>
       <td><input type="radio" id="answer1q6s3c1" name="answer25" value="1"></td>
       <td><input type="radio" id="answer2q6s3c1"  name="answer25" value="2"></td>
       <td><input type="radio" id="answer3q6s3c1"  name="answer25" value="3"></td>
@@ -222,6 +229,7 @@ if (isset($_POST['Submit']))
 
       <tr>
       <td>Wujud rekod keluar masuk pergerakan bahan.<p id="q7s3category1"required></p></td>
+      <td><input type="radio" id="answer1q7s3c1NA" name="answer26" value="0"></td>
       <td><input type="radio" id="answer1q7s3c1" name="answer26" value="1"></td>
       <td><input type="radio" id="answer2q7s3c1"  name="answer26" value="2"></td>
       <td><input type="radio" id="answer3q7s3c1"  name="answer26" value="3"></td>
@@ -247,6 +255,7 @@ if (isset($_POST['Submit']))
 <table class="table" style="width: 100%;" align="center">    
       <tr>
       <th>Perkara</th>
+      <th>N/A</th>
       <th>1</th>
       <th>2</th>
       <th>3</th>
@@ -257,6 +266,7 @@ if (isset($_POST['Submit']))
     
       <tr>
       <td>Aspek keselamatan diutamakan.<p id="q1s3category2"required></p></td>
+      <td><input type="radio" id="answer1q1s3c2NA" name="answer27" value="0"></td>
       <td><input type="radio" id="answer1q1s3c2" name="answer27" value="1"></td>
       <td><input type="radio" id="answer2q1s3c2"  name="answer27" value="2"></td>
       <td><input type="radio" id="answer3q1s2c2"  name="answer27" value="3"></td>
@@ -267,6 +277,7 @@ if (isset($_POST['Submit']))
 
     <tr>
       <td>Kawalan visual dan ciri keselamatan mencukupi.<p id="q2s3category2"required></p></td>
+      <td><input type="radio" id="answer1q2s3c2NA" name="answer28" value="0"></td>
       <td><input type="radio" id="answer1q2s3c2" name="answer28" value="1"></td>
       <td><input type="radio" id="answer2q2s3c2"  name="answer28" value="2"></td>
       <td><input type="radio" id="answer3q2s3c2"  name="answer28" value="3"></td>
@@ -292,6 +303,7 @@ if (isset($_POST['Submit']))
 <table class="table" style="width: 100%;" align="center">    
       <tr>
       <th>Perkara</th>
+      <th>N/A</th>
       <th>1</th>
       <th>2</th>
       <th>3</th>
@@ -302,6 +314,7 @@ if (isset($_POST['Submit']))
     
       <tr>
       <td>Sokongan pelaksanaan dengan mewujudkan kawalan visual dan “konsep ownership”.<p id="q1s3category3"required></p></td>
+      <td><input type="radio" id="answer1q1s3c3NA" name="answer29" value="0"></td>
       <td><input type="radio" id="answer1q1s3c3" name="answer29" value="1"></td>
       <td><input type="radio" id="answer2q1s3c3"  name="answer29" value="2"></td>
       <td><input type="radio" id="answer3q1s3c3"  name="answer29" value="3"></td>
@@ -312,6 +325,7 @@ if (isset($_POST['Submit']))
 
       <tr>
       <td>Penggunaan Red Tag yang betul dan sesuai.<p id="q2s3category3"required></p></td>
+      <td><input type="radio" id="answer1q2s3c3NA" name="answer30" value="0"></td>
       <td><input type="radio" id="answer1q2s3c3" name="answer30" value="1"></td>
       <td><input type="radio" id="answer2q2s3c3"  name="answer30" value="2"></td>
       <td><input type="radio" id="answer3q2s3c3"  name="answer30" value="3"></td>
@@ -337,6 +351,7 @@ if (isset($_POST['Submit']))
 <table class="table" style="width: 100%;" align="center">    
       <tr>
       <th>Perkara</th>
+      <th>N/A</th>
       <th>1</th>
       <th>2</th>
       <th>3</th>
@@ -347,6 +362,7 @@ if (isset($_POST['Submit']))
     
       <tr>
       <td>Kerjasama dan sikap positif untuk amalan berterusan.<p id="q1s3category4"required></p></td>
+      <td><input type="radio" id="answer1q1s3c4NA" name="answer31" value="0"></td>
       <td><input type="radio" id="answer1q1s3c4" name="answer31" value="1"></td>
       <td><input type="radio" id="answer2q1s3c4"  name="answer31" value="2"></td>
       <td><input type="radio" id="answer3q1s3c4"  name="answer31" value="3"></td>
@@ -372,6 +388,7 @@ if (isset($_POST['Submit']))
 <table class="table" style="width: 100%;" align="center">    
       <tr>
       <th>Perkara</th>
+      <th>N/A</th>
       <th>1</th>
       <th>2</th>
       <th>3</th>
@@ -382,6 +399,7 @@ if (isset($_POST['Submit']))
 
       <tr>
       <td>Penambahbaikkan yang dibuat memberikan kesan melalui (Produktiviti/Kualiti/Penghantaran/Kos /Keselamatan/Moral/Inovasi)<p id="q2s3category5"required></p></td>
+      <td><input type="radio" id="answer1q2s3c5NA" name="answer32" value="0"></td>
       <td><input type="radio" id="answer1q2s3c5" name="answer32" value="1"></td>
       <td><input type="radio" id="answer2q2s3c5"  name="answer32" value="2"></td>
       <td><input type="radio" id="answer3q2s3c5"  name="answer32" value="3"></td>
