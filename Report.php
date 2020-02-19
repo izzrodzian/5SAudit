@@ -3,7 +3,7 @@
 <?php
  
 $dataPoints = array(
-  array("label"=> "Education", "y"=> 284935),
+  array("label"=> "Education", "y"=> 280000),
   array("label"=> "Lifestyle", "y"=> 245214),
   array("label"=> "Music & Audio", "y"=> 200285),
   array("label"=> "Tools", "y"=> 180337),
