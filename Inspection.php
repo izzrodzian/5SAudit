@@ -73,11 +73,11 @@ mysqli_select_db($con,'5s') or die ('No database found.');
                 </li></ul>
         </div>
     </nav>
-</section>
+</section><br><br><br>
 
-<section class="cid-rPxomWSNoR">
+<section class="cid-rPxomWSNoR"> 
 
-    <div class="container">
+   <div class="container">
         <div class="media-container-row">
 
             <div class="card  col-12 col-md-6 col-lg-4">

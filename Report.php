@@ -1,4 +1,19 @@
 <!DOCTYPE html>
+
+<?php
+ 
+$dataPoints = array(
+  array("label"=> "Education", "y"=> 284935),
+  array("label"=> "Lifestyle", "y"=> 245214),
+  array("label"=> "Music & Audio", "y"=> 200285),
+  array("label"=> "Tools", "y"=> 180337),
+  array("label"=> "Travel & Local", "y"=> 118187),
+  array("label"=> "Puzzle", "y"=> 107530)
+);
+  
+?>
+
+
 <html  >
 <head>
   <!-- Site made with Mobirise Website Builder v4.12.0, https://mobirise.com -->
@@ -21,92 +36,7 @@
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
   
-  
-  
 </head>
-<body>
-  <section class="progress-bars1 cid-rPxtT1IUQf" id="progress-bars1-m">
-    
-    
-
-    
-
-    <div class="container">
-        <h2 class="mbr-section-title pb-2 align-center mbr-fonts-style display-2">
-            <br>Horizontal progress bars
-        </h2>
-
-        <h3 class="mbr-section-subtitle pb-5 mbr-fonts-style display-5">
-            Click blue "Gear" icon in the top right corner to hide/show progress bars and change them color and value. Click text to edit or style it.
-        </h3>
-
-        <div class="progress_elements">
-            <div class="progress1 pb-5">
-                <div class="title-wrap">
-                    <div class="progressbar-title mbr-fonts-style display-7">
-                        <p>
-                            Amenity
-                        </p>
-                    </div>
-                    <div class="progress_value mbr-fonts-style display-7">
-                        <div class="progressbar-number"></div>
-                        <span>%</span>
-                    </div>
-                </div>
-                <progress class="progress progress-primary" max="100" value="70">
-                </progress>
-            </div>
-            
-            <div class="progress2 pb-5">
-                <div class="title-wrap">
-                    <div class="progressbar-title mbr-fonts-style display-7">
-                        <p>
-                           Publick transport
-                        </p>
-                    </div>
-                <div class="progress_value mbr-fonts-style display-7">
-                    <div class="progressbar-number"></div>
-                    <span>%</span>
-                </div>
-                </div>
-                <progress class="progress progress-primary" max="100" value="80">
-                </progress>
-            </div>
-            
-            <div class="progress3 pb-5">
-                <div class="title-wrap">
-                    <div class="progressbar-title mbr-fonts-style display-7">
-                        <p>
-                            Nightlife
-                        </p>
-                    </div>
-                    <div class="progress_value mbr-fonts-style display-7">
-                        <div class="progressbar-number"></div>
-                        <span>%</span>
-                    </div>
-                </div>
-                <progress class="progress progress-primary" max="100" value="90">
-                </progress>
-            </div>
-            
-            <div class="progress4">
-                <div class="title-wrap">
-                    <div class="progressbar-title mbr-fonts-style display-7">
-                        <p>
-                            Safety
-                        </p>
-                    </div>
-                <div class="progress_value mbr-fonts-style display-7">
-                    <div class="progressbar-number"></div>
-                    <span>%</span>
-                </div>
-                </div>
-                <progress class="progress progress-primary" max="100" value="100">
-                </progress>
-            </div>
-        </div>
-    </div>
-</section>
 
 <section class="menu cid-rPwfwJELGC" once="menu" id="menu1-k">
 
@@ -133,11 +63,7 @@
             </div>
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item">
-                    <a class="nav-link link text-white display-4" aria-expanded="true"><span class="mbrib-left mbr-iconfont mbr-iconfont-btn"></span>
-                        
-                        BACK</a>
-                </li>
+            <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
                 <li class="nav-item dropdown open">
                     <a class="nav-link link dropdown-toggle text-white display-4" data-toggle="dropdown-submenu" aria-expanded="true"><span class="mobi-mbri mobi-mbri-logout mbr-iconfont mbr-iconfont-btn"></span>
                         
@@ -147,6 +73,38 @@
         </div>
     </nav>
 </section>
+<br><br><br><br><br>
+
+<form>
+  <body>
+  <script>
+window.onload = function () {
+ 
+var chart = new CanvasJS.Chart("chartContainer", {
+  animationEnabled: true,
+  theme: "light2", // "light1", "light2", "dark1", "dark2"
+  title: {
+    text: "Inspection result for Every Section"
+  },
+  axisY: {
+    title: "Score",
+    includeZero: false
+  },
+  data: [{
+    type: "column",
+    dataPoints: <?php echo json_encode($dataPoints, JSON_NUMERIC_CHECK); ?>
+  }]
+});
+chart.render();
+ 
+}
+</script>
+<body>
+<center><div id="chartContainer" style="height: 370px; width: 70%;"></div></center>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+</form><br><br><br><br>
+
 
 <section once="footers" class="cid-rPwjkLZhDD" id="footer7-i">
 

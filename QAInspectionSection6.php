@@ -160,11 +160,7 @@ if (isset($_POST['Submit']))
             </div>
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item">
-                    <a class="nav-link link text-white display-4" aria-expanded="true"><span class="mbrib-left mbr-iconfont mbr-iconfont-btn"></span>
-                        
-                        BACK</a>
-                </li>
+            <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
                 <li class="nav-item dropdown">
                     <a class="nav-link link dropdown-toggle text-white display-4" href="https://mobirise.co" data-toggle="dropdown-submenu" aria-expanded="true"><span class="mobi-mbri mobi-mbri-logout mbr-iconfont mbr-iconfont-btn"></span>
                         
