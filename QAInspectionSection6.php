@@ -91,12 +91,21 @@ if (isset($_POST['Submit']))
 
 if (isset($_POST['Done']))
 {
-$sql2 = "SELECT * FROM qamarks";
-$query = mysqli_query($con,$sql2);
+
+$sql3 = "SELECT CategorySection1_TotalMarks, CategorySection2_TotalMarks, CategorySection3_TotalMarks, CategorySection4_TotalMarks, CategorySection5_TotalMarks, CategorySection6_TotalMarks FROM qamarks";
+$query3 = mysqli_query($con,$sql3);
+
+$C1 = $_POST['CategorySection1_TotalMarks'];
+$C2 = $_POST['CategorySection2_TotalMarks'];
+$C3 = $_POST['CategorySection3_TotalMarks'];
+$C4 = $_POST['CategorySection4_TotalMarks'];
+$C5 = $_POST['CategorySection5_TotalMarks'];
+$C6 = $_POST['CategorySection6_TotalMarks'];
+$overall = $C1 + $C2 + $C3 + $C4 + $C5 + $C6; 
 
 //sum ct
-$result2 = mysqli_query($con,"SELECT CategorySection1_TotalMarks, CategorySection2_TotalMarks, CategorySection3_TotalMarks, CategorySection4_TotalMarks, CategorySection5_TotalMarks, CategorySection6_TotalMarks, (CategorySection1_TotalMarks + CategorySection2_TotalMarks + CategorySection3_TotalMarks +CategorySection4_TotalMarks + CategorySection5_TotalMarks +CategorySection6_TotalMarks) AS TotalMarks FROM qamarks");
-$row = mysqli_fetch_array($result2);
+$query4 = mysqli_query($con,"INSERT into qamarks (TotalMarks) VALUES ('$overall')");
+$row = mysqli_fetch_array($query4);
 
   Header("Location:Report.php");
 }
