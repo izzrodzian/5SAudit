@@ -92,7 +92,7 @@ if (isset($_POST['Submit']))
 if (isset($_POST['Done']))
 {
 
-$sql3 = "SELECT CategorySection1_TotalMarks, CategorySection2_TotalMarks, CategorySection3_TotalMarks, CategorySection4_TotalMarks, CategorySection5_TotalMarks, CategorySection6_TotalMarks FROM qamarks";
+$sql3 = "SELECT CategorySection1_TotalMarks, CategorySection2_TotalMarks, CategorySection3_TotalMarks, CategorySection4_TotalMarks, CategorySection5_TotalMarks, CategorySection6_TotalMarks FROM qamarks WHERE userid = '0'";
 $query3 = mysqli_query($con,$sql3);
 
 if($query3)
@@ -107,7 +107,7 @@ $C6 = $GET['CategorySection6_TotalMarks'];
 $overall = $C1 + $C2 + $C3 + $C4 + $C5 + $C6; 
 
 //sum ct
-$query4 = mysqli_query($con,"INSERT into qamarks (TotalMarks) VALUES ('$overall')");
+$query4 = mysqli_query($con,"INSERT into qamarks (TotalMarks) VALUES ('$overall') WHERE userid ='0'");
 $row = mysqli_fetch_array($query4);
 
   Header("Location:Report.php");
