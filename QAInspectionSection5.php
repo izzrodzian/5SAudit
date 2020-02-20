@@ -53,6 +53,14 @@ if (isset($_POST['Submit']))
 
   $sql1 = "INSERT INTO qacategory_section5 (Category1, Category2, Category3, Category4, Category5, Category6, Category7, Category8, Category9, CategorySection5_TotalMarks) VALUES ('$totalC1', '$totalC2', '$totalC3', '$totalC4', '$totalC5', '$totalC6', '$totalC7', '$totalC8', '$totalC9', '$total')";
   $result1 = mysqli_query($con,$sql1);
+
+  if($result1)
+    {    
+     $sql2 = "INSERT INTO qamarks (CategorySection5_TotalMarks) VALUES ('$total')"; 
+
+     $query2 = mysqli_query($con,$sql2);
+
+   }
 }
 
 ?>
