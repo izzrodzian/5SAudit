@@ -2,14 +2,31 @@
 
 <?php
  
-$dataPoints = array(
-  array("label"=> "Education", "y"=> 280000),
-  array("label"=> "Lifestyle", "y"=> 245214),
-  array("label"=> "Music & Audio", "y"=> 200285),
-  array("label"=> "Tools", "y"=> 180337),
-  array("label"=> "Travel & Local", "y"=> 118187),
-  array("label"=> "Puzzle", "y"=> 107530)
-);
+
+$dataPoints = array();
+try{
+    
+    $link = new \PDO(   'mysql:host=localhost;dbname=5s;charset=utf8mb4', 
+                        'root', 
+                        '', 
+                        array(
+                            \PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+                            \PDO::ATTR_PERSISTENT => false
+                        )
+                    );
+  
+    $handle = $link->prepare('select x ,y from datapoints'); 
+    $handle->execute(); 
+    $result = $handle->fetchAll(\PDO::FETCH_OBJ);
+    
+    foreach($result as $row){
+        array_push($dataPoints, array("x"=> $row->x, "y"=> $row->y));
+    }
+  $link = null;
+}
+catch(\PDOException $ex){
+    print($ex->getMessage());
+}
   
 ?>
 
@@ -38,7 +55,7 @@ $dataPoints = array(
   
 </head>
 
-<section class="menu cid-rPwfwJELGC" once="menu" id="menu1-k">
+<!-- <section class="menu cid-rPwfwJELGC" once="menu" id="menu1-k">
 
     
 
@@ -73,7 +90,7 @@ $dataPoints = array(
         </div>
     </nav>
 </section>
-<br><br><br><br><br>
+<br><br><br><br><br> -->
 
 <form>
   <body>
@@ -82,16 +99,13 @@ window.onload = function () {
  
 var chart = new CanvasJS.Chart("chartContainer", {
   animationEnabled: true,
-  theme: "light2", // "light1", "light2", "dark1", "dark2"
-  title: {
-    text: "Inspection result for Every Section"
-  },
-  axisY: {
-    title: "Score",
-    includeZero: false
+  exportEnabled: true,
+  theme: "light1", // "light1", "light2", "dark1", "dark2"
+  title:{
+    text: "Inspection Result for Every Section"
   },
   data: [{
-    type: "column",
+    type: "column", //change type to bar, line, area, pie, etc  
     dataPoints: <?php echo json_encode($dataPoints, JSON_NUMERIC_CHECK); ?>
   }]
 });
@@ -100,8 +114,8 @@ chart.render();
 }
 </script>
 <body>
-<center><div id="chartContainer" style="height: 370px; width: 70%;"></div></center>
-<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<center><div id="chartContainer" style="height: 370px;width: 70%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script></center>
 </body>
 </form><br><br><br><br>
 

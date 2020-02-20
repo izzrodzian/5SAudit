@@ -81,6 +81,19 @@ if (isset($_POST['Submit']))
   $result1 = mysqli_query($con,$sql1);
 }
 
+if (isset($_POST['Done']))
+{
+$sql2 = "SELECT * FROM qamarks";
+$query = mysqli_query($con,$sql2);
+
+//sum ct
+$result2 = mysqli_query($con,"SELECT CategorySection1_TotalMarks, CategorySection2_TotalMarks, CategorySection3_TotalMarks, CategorySection4_TotalMarks, CategorySection5_TotalMarks, CategorySection6_TotalMarks, (CategorySection1_TotalMarks + CategorySection2_TotalMarks + CategorySection3_TotalMarks +CategorySection4_TotalMarks + CategorySection5_TotalMarks +CategorySection6_TotalMarks) AS TotalMarks FROM qamarks");
+$row = mysqli_fetch_array($result2);
+
+  Header("Location:Report.php");
+}
+
+
 ?>
 
 <html  >
@@ -907,11 +920,11 @@ if (isset($_POST['Submit']))
 <br><br><br>
   <input type="Submit" name="Submit" value="Submit">
 <br><br>
-</form>
 <div align="center"> Jumlah markah Seksyen 6: <?php echo $total ?>/165</div>
 <br>
 <br>
-<div class="mbr-section-btn text-center"><a class="btn btn-primary display-4" href="Report.php">SELESAI</a></div>
+<input class="btn btn-primary display-4"  type="submit" name="Done" value="Selesai">
+</form>
 
 <script>
 var coll = document.getElementsByClassName("collapsible");
@@ -931,50 +944,6 @@ for (i = 0; i < coll.length; i++) {
 </script>
 
 </center>
-
-
-<!--     <div class="container">
-        <div class="media-container-row">
-
-            <div class="card  col-12 col-md-6 col-lg-4">
-                <div class="card-img">
-                    <span class="mbr-iconfont mbri-paper-plane"></span>
-                </div>
-                <div class="card-box align-center">
-                    <h4 class="card-title mbr-fonts-style display-7">
-                        TRAIN OPERATION</h4>
-                    <p class="mbr-text mbr-fonts-style display-7">5S audit form to inspect the facilities required in train operation.</p>
-                    <div class="mbr-section-btn text-center"><a class="btn btn-primary display-4">
-                            START INSPECTION</a></div>
-                </div>
-            </div>
-
-            <div class="card  col-12 col-md-6 col-lg-4">
-                <div class="card-img">
-                    <span class="mbr-iconfont mbri-bookmark"></span>
-                </div>
-                <div class="card-box align-center">
-                    <h4 class="card-title mbr-fonts-style display-7">QUALITY ASSURANCE</h4>
-                    <p class="mbr-text mbr-fonts-style display-7">5S audit form to inspect the facilities required in quality assurance.</p>
-                    <div class="mbr-section-btn text-center"><a class="btn btn-primary display-4">
-                            START INSPECTION</a></div>
-                </div>
-            </div>
-
-            <div class="card  col-12 col-md-6 col-lg-4">
-                <div class="card-img">
-                    <span class="mbr-iconfont mbri-flag"></span>
-                </div>
-                <div class="card-box align-center">
-                    <h4 class="card-title mbr-fonts-style display-7">
-                        STATION OPERATION</h4>
-                    <p class="mbr-text mbr-fonts-style display-7">5S audit form to inspect the facilities required in station operation.</p>
-                    <div class="mbr-section-btn text-center"><a class="btn btn-primary display-4">
-                            START INSPECTION</a></div>
-                </div>
-            </div>       
-        </div>
-    </div> -->
 </section>
 
 <section once="footers" class="cid-rPwjkLZhDD" id="footer7-i">
