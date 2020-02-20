@@ -84,7 +84,7 @@ if (isset($_POST['Submit']))
     {    
      $sql2 = "INSERT INTO qamarks (CategorySection6_TotalMarks) VALUES ('$total')"; 
 
-     $query2 = mysqli_query($con,$sql2);
+     $result2 = mysqli_query($con,$sql2);
 
    }
 }
@@ -93,22 +93,22 @@ if (isset($_POST['Done']))
 {
 
 $sql3 = "SELECT CategorySection1_TotalMarks, CategorySection2_TotalMarks, CategorySection3_TotalMarks, CategorySection4_TotalMarks, CategorySection5_TotalMarks, CategorySection6_TotalMarks FROM qamarks WHERE userID = '0'";
-$query3 = mysqli_query($con,$sql3);
+$result3 = mysqli_query($con,$sql3);
 
-if($query3)
+if($result3)
 {
 
-$C1 = $GET['CategorySection1_TotalMarks'];
-$C2 = $GET['CategorySection2_TotalMarks'];
-$C3 = $GET['CategorySection3_TotalMarks'];
-$C4 = $GET['CategorySection4_TotalMarks'];
-$C5 = $GET['CategorySection5_TotalMarks'];
-$C6 = $GET['CategorySection6_TotalMarks'];
-$overall = $C1 + $C2 + $C3 + $C4 + $C5 + $C6; 
+  $C1 = $GET['CategorySection1_TotalMarks'];
+  $C2 = $GET['CategorySection2_TotalMarks'];
+  $C3 = $GET['CategorySection3_TotalMarks'];
+  $C4 = $GET['CategorySection4_TotalMarks'];
+  $C5 = $GET['CategorySection5_TotalMarks'];
+  $C6 = $GET['CategorySection6_TotalMarks'];
+  $overall = $C1 + $C2 + $C3 + $C4 + $C5 + $C6; 
 
 //sum ct
-$query4 = mysqli_query($con,"INSERT into qamarks (TotalMarks) VALUES ('$overall') WHERE userID ='0'");
-$row = mysqli_fetch_array($query4);
+  $sql4 = "INSERT into qamarks (TotalMarks) VALUES ('$overall') WHERE userID ='0'";
+  $result4 = mysqli_query($con,$sql4);
 
   Header("Location:Report.php");
 }
