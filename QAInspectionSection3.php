@@ -438,50 +438,6 @@ for (i = 0; i < coll.length; i++) {
 </script>
 
 </center>
-
-
-<!--     <div class="container">
-        <div class="media-container-row">
-
-            <div class="card  col-12 col-md-6 col-lg-4">
-                <div class="card-img">
-                    <span class="mbr-iconfont mbri-paper-plane"></span>
-                </div>
-                <div class="card-box align-center">
-                    <h4 class="card-title mbr-fonts-style display-7">
-                        TRAIN OPERATION</h4>
-                    <p class="mbr-text mbr-fonts-style display-7">5S audit form to inspect the facilities required in train operation.</p>
-                    <div class="mbr-section-btn text-center"><a class="btn btn-primary display-4">
-                            START INSPECTION</a></div>
-                </div>
-            </div>
-
-            <div class="card  col-12 col-md-6 col-lg-4">
-                <div class="card-img">
-                    <span class="mbr-iconfont mbri-bookmark"></span>
-                </div>
-                <div class="card-box align-center">
-                    <h4 class="card-title mbr-fonts-style display-7">QUALITY ASSURANCE</h4>
-                    <p class="mbr-text mbr-fonts-style display-7">5S audit form to inspect the facilities required in quality assurance.</p>
-                    <div class="mbr-section-btn text-center"><a class="btn btn-primary display-4">
-                            START INSPECTION</a></div>
-                </div>
-            </div>
-
-            <div class="card  col-12 col-md-6 col-lg-4">
-                <div class="card-img">
-                    <span class="mbr-iconfont mbri-flag"></span>
-                </div>
-                <div class="card-box align-center">
-                    <h4 class="card-title mbr-fonts-style display-7">
-                        STATION OPERATION</h4>
-                    <p class="mbr-text mbr-fonts-style display-7">5S audit form to inspect the facilities required in station operation.</p>
-                    <div class="mbr-section-btn text-center"><a class="btn btn-primary display-4">
-                            START INSPECTION</a></div>
-                </div>
-            </div>       
-        </div>
-    </div> -->
 </section>
 
 <section once="footers" class="cid-rPwjkLZhDD" id="footer7-i">
