@@ -947,6 +947,52 @@ if($result3)
 <input class="btn btn-primary display-4"  type="submit" name="Done" value="Selesai">
 </form>
 
+<div class="container">
+      <div class="col-ld-12">
+       <table class="table table-striped table-hover table-bordered">
+
+        <tr>
+          <th> S1</th>
+          <th> S2 </th>
+          <th> S3 </th>
+          <th> S4 </th> 
+          <th> S5 </th>
+          <th> S6 </th>          
+        </tr>
+
+         <?php
+
+        if (isset($_POST['Done']))
+        {
+
+          $sql7 = "SELECT * qamarks";
+
+        }
+
+        $query7 = mysqli_query($con,$sql7);
+
+        while ($res = mysqli_fetch_array($query7)){
+
+         ?>
+
+
+         <tr>
+          <td> <?php echo $res['CategorySection1_TotalMarks']; ?></td>
+          <td> <?php echo $res['CategorySection2_TotalMarks']; ?> </td>
+          <td> <?php echo $res['CategorySection3_TotalMarks']; ?></td>
+          <td> <?php echo $res['CategorySection4_TotalMarks']; ?></td>
+          <td> <?php echo $res['CategorySection5_TotalMarks']; ?></td>
+          <td> <?php echo $res['CategorySection6_TotalMarks']; ?></td>                     
+        <?php
+      }
+      ?>
+
+
+    </table><br><br>
+   </div>
+</div>
+
+
 <script>
 var coll = document.getElementsByClassName("collapsible");
 var i;
