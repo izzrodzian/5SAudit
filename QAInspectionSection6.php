@@ -110,7 +110,7 @@ if($result3)
   $sql4 = "UPDATE into qamarks (TotalMarks) VALUES ('$overall') WHERE userID ='0'";
   $result4 = mysqli_query($con,$sql4);
 
-  Header("Location:Report.php");
+  // Header("Location:Report.php");
 }
 }
 
@@ -947,7 +947,7 @@ if($result3)
 <input class="btn btn-primary display-4"  type="submit" name="Done" value="Selesai">
 </form>
 
-<form>
+<form method="POST">
 <div class="container">
       <div class="col-ld-12">
        <table class="table table-striped table-hover table-bordered">
