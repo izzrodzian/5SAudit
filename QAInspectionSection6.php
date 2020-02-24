@@ -110,9 +110,15 @@ if (isset($_POST['Submit']))
 //   $sql4 = "UPDATE into qamarks (TotalMarks) VALUES ('$overall') WHERE userID ='0'";
 //   $result4 = mysqli_query($con,$sql4);
 
+<<<<<<< HEAD
+  // Header("Location:Report.php");
+}
+}
+=======
 //   // Header("Location:Report.php");
 // }
 // }
+>>>>>>> 65b3521701a51ecfa7044567aa235430c5f0d8bf
 
 
 ?>
@@ -947,6 +953,10 @@ if (isset($_POST['Submit']))
 <input class="btn btn-primary display-4"  type="submit" name="Done" value="Selesai">
 </form>
 
+<<<<<<< HEAD
+<form method="POST">
+=======
+>>>>>>> 65b3521701a51ecfa7044567aa235430c5f0d8bf
 <div class="container">
       <div class="col-ld-12">
 
