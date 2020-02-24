@@ -967,6 +967,8 @@ if (isset($_POST['Submit']))
 
         <?php
 
+        $overall = $C1 + $C2 + $C3 + $C4 + $C5 + $C6; 
+
         if (isset($_POST['Done']))
         {
 
@@ -988,12 +990,22 @@ if (isset($_POST['Submit']))
           <td> <?php echo $res['CategorySection4_TotalMarks']; ?></td>
           <td> <?php echo $res['CategorySection5_TotalMarks']; ?></td>
           <td> <?php echo $res['CategorySection6_TotalMarks']; ?></td>
-          <td> <?php echo $res['TotalMarks']; ?></td>                   
+          <td> <?php echo $res['TotalMarks']; ?></td> 
+
+
+
         <?php
+
+
+
       }
       ?>
 
     </table><br><br>
+
+
+
+  
 
 
 <script>
