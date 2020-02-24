@@ -967,7 +967,7 @@ if (isset($_POST['Submit']))
 
         <?php
 
-        if (isset($_POST['Done']))
+        if (isset($_POST['Submit']))
         {
 
           $sql = "SELECT * FROM qamarks ";
