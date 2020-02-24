@@ -947,6 +947,7 @@ if($result3)
 <input class="btn btn-primary display-4"  type="submit" name="Done" value="Selesai">
 </form>
 
+<form>
 <div class="container">
       <div class="col-ld-12">
        <table class="table table-striped table-hover table-bordered">
@@ -967,11 +968,11 @@ if($result3)
 
           $sql7 = "SELECT * qamarks";
 
-        }
 
         $query7 = mysqli_query($con,$sql7);
 
-        while ($res = mysqli_fetch_array($query7)){
+        while ($res = mysqli_fetch_array($query7))
+        {
 
          ?>
 
@@ -982,15 +983,18 @@ if($result3)
           <td> <?php echo $res['CategorySection3_TotalMarks']; ?></td>
           <td> <?php echo $res['CategorySection4_TotalMarks']; ?></td>
           <td> <?php echo $res['CategorySection5_TotalMarks']; ?></td>
-          <td> <?php echo $res['CategorySection6_TotalMarks']; ?></td>                     
+          <td> <?php echo $res['CategorySection6_TotalMarks']; ?></td> 
+          </tr>                    
         <?php
       }
+    }
       ?>
 
 
     </table><br><br>
    </div>
 </div>
+</form>
 
 
 <script>
