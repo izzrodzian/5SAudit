@@ -961,7 +961,8 @@ if (isset($_POST['Submit']))
           <th> S3 </th>
           <th> S4 </th>
           <th> S5 </th>
-          <th> S6 </th>          
+          <th> S6 </th>  
+          <th> Total Mark</th>        
         </tr>
 
         <?php
@@ -986,7 +987,8 @@ if (isset($_POST['Submit']))
           <td> <?php echo $res['CategorySection3_TotalMarks']; ?></td>
           <td> <?php echo $res['CategorySection4_TotalMarks']; ?></td>
           <td> <?php echo $res['CategorySection5_TotalMarks']; ?></td>
-          <td> <?php echo $res['CategorySection6_TotalMarks']; ?></td>                   
+          <td> <?php echo $res['CategorySection6_TotalMarks']; ?></td>
+          <td> <?php echo $res['TotalMarks']; ?></td>                   
         <?php
       }
       ?>
