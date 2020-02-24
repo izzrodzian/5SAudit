@@ -107,7 +107,7 @@ if($result3)
   $overall = $C1 + $C2 + $C3 + $C4 + $C5 + $C6; 
 
 //sum ct
-  $sql4 = "INSERT into qamarks (TotalMarks) VALUES ('$overall') WHERE userID ='0'";
+  $sql4 = "UPDATE into qamarks (TotalMarks) VALUES ('$overall') WHERE userID ='0'";
   $result4 = mysqli_query($con,$sql4);
 
   Header("Location:Report.php");
