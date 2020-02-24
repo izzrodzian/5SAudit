@@ -89,30 +89,30 @@ if (isset($_POST['Submit']))
    }
 }
 
-if (isset($_POST['Done']))
-{
+// if (isset($_POST['Done']))
+// {
 
-$sql3 = "SELECT CategorySection1_TotalMarks, CategorySection2_TotalMarks, CategorySection3_TotalMarks, CategorySection4_TotalMarks, CategorySection5_TotalMarks, CategorySection6_TotalMarks FROM qamarks WHERE userID = '0'";
-$result3 = mysqli_query($con,$sql3);
+// $sql3 = "SELECT CategorySection1_TotalMarks, CategorySection2_TotalMarks, CategorySection3_TotalMarks, CategorySection4_TotalMarks, CategorySection5_TotalMarks, CategorySection6_TotalMarks FROM qamarks WHERE userID = '0'";
+// $result3 = mysqli_query($con,$sql3);
 
-if($result3)
-{
+// if($result3)
+// {
 
-  $C1 = $_POST['CategorySection1_TotalMarks'];
-  $C2 = $_POST['CategorySection2_TotalMarks'];
-  $C3 = $_POST['CategorySection3_TotalMarks'];
-  $C4 = $_POST['CategorySection4_TotalMarks'];
-  $C5 = $_POST['CategorySection5_TotalMarks'];
-  $C6 = $_POST['CategorySection6_TotalMarks'];
-  $overall = $C1 + $C2 + $C3 + $C4 + $C5 + $C6; 
+//   $C1 = $_POST['CategorySection1_TotalMarks'];
+//   $C2 = $_POST['CategorySection2_TotalMarks'];
+//   $C3 = $_POST['CategorySection3_TotalMarks'];
+//   $C4 = $_POST['CategorySection4_TotalMarks'];
+//   $C5 = $_POST['CategorySection5_TotalMarks'];
+//   $C6 = $_POST['CategorySection6_TotalMarks'];
+//   $overall = $C1 + $C2 + $C3 + $C4 + $C5 + $C6; 
 
-//sum ct
-  $sql4 = "UPDATE into qamarks (TotalMarks) VALUES ('$overall') WHERE userID ='0'";
-  $result4 = mysqli_query($con,$sql4);
+// //sum ct
+//   $sql4 = "UPDATE into qamarks (TotalMarks) VALUES ('$overall') WHERE userID ='0'";
+//   $result4 = mysqli_query($con,$sql4);
 
-  Header("Location:Report.php");
-}
-}
+//   // Header("Location:Report.php");
+// }
+// }
 
 
 ?>
@@ -947,32 +947,35 @@ if($result3)
 <input class="btn btn-primary display-4"  type="submit" name="Done" value="Selesai">
 </form>
 
-<form>
 <div class="container">
       <div class="col-ld-12">
+
+        <form method="POST">
+         
+       </form>
        <table class="table table-striped table-hover table-bordered">
 
         <tr>
-          <th> S1</th>
+          <th> S1 </th>
           <th> S2 </th>
           <th> S3 </th>
-          <th> S4 </th> 
+          <th> S4 </th>
           <th> S5 </th>
           <th> S6 </th>          
         </tr>
 
-         <?php
+        <?php
 
         if (isset($_POST['Done']))
         {
 
-          $sql7 = "SELECT * qamarks";
+          $sql = "SELECT * FROM qamarks ";
 
+        } 
 
-        $query7 = mysqli_query($con,$sql7);
+        $query = mysqli_query($con,$sql);
 
-        while ($res = mysqli_fetch_array($query7))
-        {
+        while ($res = mysqli_fetch_array($query)){
 
          ?>
 
@@ -983,18 +986,12 @@ if($result3)
           <td> <?php echo $res['CategorySection3_TotalMarks']; ?></td>
           <td> <?php echo $res['CategorySection4_TotalMarks']; ?></td>
           <td> <?php echo $res['CategorySection5_TotalMarks']; ?></td>
-          <td> <?php echo $res['CategorySection6_TotalMarks']; ?></td> 
-          </tr>                    
+          <td> <?php echo $res['CategorySection6_TotalMarks']; ?></td>                   
         <?php
       }
-    }
       ?>
 
-
     </table><br><br>
-   </div>
-</div>
-</form>
 
 
 <script>
