@@ -98,12 +98,12 @@ $result3 = mysqli_query($con,$sql3);
 if($result3)
 {
 
-  $C1 = $_GET['CategorySection1_TotalMarks'];
-  $C2 = $_GET['CategorySection2_TotalMarks'];
-  $C3 = $_GET['CategorySection3_TotalMarks'];
-  $C4 = $_GET['CategorySection4_TotalMarks'];
-  $C5 = $_GET['CategorySection5_TotalMarks'];
-  $C6 = $_GET['CategorySection6_TotalMarks'];
+  $C1 = $_POST['CategorySection1_TotalMarks'];
+  $C2 = $_POST['CategorySection2_TotalMarks'];
+  $C3 = $_POST['CategorySection3_TotalMarks'];
+  $C4 = $_POST['CategorySection4_TotalMarks'];
+  $C5 = $_POST['CategorySection5_TotalMarks'];
+  $C6 = $_POST['CategorySection6_TotalMarks'];
   $overall = $C1 + $C2 + $C3 + $C4 + $C5 + $C6; 
 
 //sum ct
