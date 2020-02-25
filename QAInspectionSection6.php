@@ -86,6 +86,22 @@ if (isset($_POST['Submit']))
 
      $result2 = mysqli_query($con,$sql2);
 
+     if($result2)
+
+     {
+       $S1 = $_GET['CategorySection1_TotalMarks'];
+       $S2 = $_GET['CategorySection2_TotalMarks'];
+       $S3 = $_GET['CategorySection3_TotalMarks'];
+       $S4 = $_GET['CategorySection4_TotalMarks'];
+       $S5 = $_GET['CategorySection5_TotalMarks'];
+       $S6 = $_GET['CategorySection6_TotalMarks'];
+       $overall = $S1 + $S2 + $S3 + $S4 + $S5 + $S6; 
+
+//sum ct
+       $sql4 = "UPDATE into qamarks (TotalMarks) VALUES ('$overall') WHERE userID ='0'";
+       $result4 = mysqli_query($con,$sql4);
+     }
+
    }
 }
 
@@ -111,7 +127,6 @@ if (isset($_POST['Submit']))
 //   $result4 = mysqli_query($con,$sql4);
 
 //   // Header("Location:Report.php");
-// }
 // }
 
 
