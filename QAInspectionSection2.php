@@ -137,7 +137,7 @@ if (isset($_POST['Submit']))
                     
                 </span>
                 <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4" href="https://mobirise.co">
-                        5S AUDIT INSPECTION</a></span>
+                        5S AUDIT INSPECTION / SECTION 2</a></span>
             </div>
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">

@@ -105,8 +105,8 @@ if (isset($_POST['Submit']))
    }
 }
 
-// if (isset($_POST['Done']))
-// {
+if (isset($_POST['Done']))
+{
 
 // $sql3 = "SELECT CategorySection1_TotalMarks, CategorySection2_TotalMarks, CategorySection3_TotalMarks, CategorySection4_TotalMarks, CategorySection5_TotalMarks, CategorySection6_TotalMarks FROM qamarks WHERE userID = '0'";
 // $result3 = mysqli_query($con,$sql3);
@@ -126,8 +126,8 @@ if (isset($_POST['Submit']))
 //   $sql4 = "UPDATE into qamarks (TotalMarks) VALUES ('$overall') WHERE userID ='0'";
 //   $result4 = mysqli_query($con,$sql4);
 
-//   // Header("Location:Report.php");
-// }
+Header("Location:AuditorReport.php");
+}
 
 
 ?>
@@ -205,7 +205,7 @@ if (isset($_POST['Submit']))
                     
                 </span>
                 <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4" href="https://mobirise.co">
-                        5S AUDIT INSPECTION</a></span>
+                        5S AUDIT INSPECTION / SECTION 6</a></span>
             </div>
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -213,7 +213,7 @@ if (isset($_POST['Submit']))
                 <li class="nav-item dropdown">
                     <a class="nav-link link dropdown-toggle text-white display-4" href="https://mobirise.co" data-toggle="dropdown-submenu" aria-expanded="true"><span class="mobi-mbri mobi-mbri-logout mbr-iconfont mbr-iconfont-btn"></span>
                         
-                        LOGOUT</a><div class="dropdown-menu"><a class="dropdown-item text-white display-4" href="https://mobirise.co">PROFILE</a></div>
+                        LOGOUT</a><div class="dropdown-menu"><a class="dropdown-item text-white display-4" >PROFILE</a></div>
                 </li></ul>
         </div>
     </nav>
