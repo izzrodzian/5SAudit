@@ -65,39 +65,186 @@
   <div class="col-ld-12">
         
  <form method="POST">
-         <div>
-           <input class="form-control px-3 display-7 align-left" type="text" name="search" value="" placeholder="Search Auditor">
-         </div></br><br>
-       </form>
+        
+  <table class="table table-hover  table-bordered align-center">
 
-        <table class="table table-striped table-hover table-bordered align-center">
 
+<th class="align-left" colspan="4" style="color: green">SEKSYEN 1: KEPERLUAN UTAMA PELAKSANAAN</th>
         <tr>
-          <th> Auditor </th>
-          <th> Date </th>
-          <th> Action</th>          
+          <th> Kategori </th>
+          <th> Soalan </th>
+          <th> Markah</th>
+          <th> Gambar</th>          
         </tr>
 
-       
+         <tr>
+          <td>Fail Program</td>
+          <td> Maklumat Lengkap dan Terkini (Merujuk pada Senarai Semak Dokumen)</td>
+          <td> </td>
+          <td> </td>
+        </tr>
+
+        <tr>
+          <td>Sudut 5S</td>
+          <td>Maklumat Lengkap dan Terkini (Merujuk pada Senarai Semak Dokumen)</td>
+          <td></td>
+          <td></td>
+        </tr>
 
          <tr>
-          <td> </td>
-          <td> </td>
-          <td>
-            <div class="icon-block">
-              <a href="viewreport.php">
-                <input type="image" src="assets/images/viewreport.png" title="view" width="30" height="30">
-              </a>
+          <td> Kaizen</td>
+          <td>Penambahbaikan, Kreativiti dan Inovasi</td>
+          <td></td>
+          <td></td>
+        </tr>
 
-              &nbsp; &nbsp;<a href="editreport.php?reportid=<?php echo $res['reportid']; ?>">
-                <input type="image" src="assets/images/edit.png" title="edit" width="30" height="30">
-              </a>
-            </div>
-          </td>
+        <th class="align-left" colspan="4" style="color: blue">SEKSYEN 2: RUANG PEJABAT</th>
+        <tr>
+          <th> Kategori </th>
+          <th> Soalan </th>
+          <th> Markah</th>
+          <th> Gambar</th>          
+        </tr>
+
+         <tr>
+          <td rowspan="3">Tempat Individu</td>
+          <td> Susun atur kemas dan sistematik</td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr>
+          
+          <td> Bersih dan tiada kotoran</td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr>
+          
+          <td> Item dalam keadaan minima/tiada item tidak perlu</td>
+          <td> </td>
+          <td> </td>
+        </tr>
+
+        <tr>
+          <td rowspan="2">Siling/Lantai
+/Dinding</td>
+          <td>Susun atur kemas dan sistematik</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+        <td>Bersih dan tiada kotoran</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+         <tr>
+          <td rowspan="2"> Peralatan
+/Perkakas</td>
+          <td>Kemas dan tersimpan di tempat asal</td>
+          <td></td>
+          <td></td>
+        </tr>
+<tr>
+        <td>Bersih, tidak berdebu dan berfungsi baik</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+          <tr>
+          <td rowspan="3">Tempat Fail/Rekod/Dokumen</td>
+          <td> Kedudukan fail teratur dan kemas</td>
+          <td> </td>
+          <td> </td>
+        </tr>
+<tr>
+        <td> Mudah dicari dan dikesan dengan mewujudkan pelabelan dan indeks kedudukan fail</td>
+          <td> </td>
+          <td> </td>
+        </tr>
+
+        <tr>
+        <td>Kabinet rak fail adalah bersih dan tidak berhabuk</td>
+          <td> </td>
+          <td> </td>
+        </tr>
+
+        <tr>
+          <td>Maklumat Visual</td>
+          <td>Kemas, bersih dan terkini</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+         <tr>
+          <td rowspan="2"> Keselamatan</td>
+          <td>Aspek keselamatan diutamakan</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>Kawalan visual dan ciri keselamatan mencukupi</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td> Seragam</td>
+          <td>Sokongan pelaksanaan dengan mewujudkan kawalan visual dan “konsep ownership</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td> Sentiasa Amal</td>
+          <td>Kerjasama dan sikap positif untuk amalan berterusan</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td> Impak</td>
+          <td>Kerjasama dan sikap positif untuk amalan berterusan</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <th class="align-left" colspan="4" style="color: purple">SEKSYEN 3: STOR (FAIL, BAHAN, ALAT GANTI, UNIFORM & SEBAGAINYA)</th>
+        <tr>
+          <th> Kategori </th>
+          <th> Soalan </th>
+          <th> Markah</th>
+          <th> Gambar</th>          
+        </tr>
          
     </table><br><br>
+
+          
+  <table class="table table-hover  table-bordered align-center">
+
+
+<th class="align-left">AUDITOR</th>
+<th class="align-left">WAKIL AUDITOR</th>   
+
+        <tr>
+          <td class="align-left">Nama:</td>
+          <td class="align-left">Nama:</td>
+         </tr>
+
+         <tr>
+          <td class="align-left">Tarikh:</td>
+          <td class="align-left">Tarikh:</td>
+          </tr>
+        <tr>
+          <td class="align-left">Cop Pengesahan:</td>
+          <td class="align-left">Cop Pengesahan:</td>
+        </tr>
+      </td>
+        
+    </table><br><br>
    
-<!-- <section once="footers" class="cid-rPwjkLZhDD" id="footer7-i">
+<section once="footers" class="cid-rPwjkLZhDD" id="footer7-i">
 
   <div class="container">
     <div class="media-container-row align-center mbr-white">
@@ -133,7 +280,7 @@
         </div>
       </div>
     </section>
- -->
+
   <script src="assets/web/assets/jquery/jquery.min.js"></script>
   <script src="assets/popper/popper.min.js"></script>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>

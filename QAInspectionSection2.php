@@ -74,7 +74,7 @@ if (isset($_POST['Submit']))
   <link rel="shortcut icon" href="assets/images/logo5s-122x125.png" type="image/x-icon">
   <meta name="description" content="Web Site Creator Description">
   
-  <title>5S Audit | Seksyen 2</title>
+  <title>5S Audit / Seksyen 2</title>
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons-bold/mobirise-icons-bold.css">
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">

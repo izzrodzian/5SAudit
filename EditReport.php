@@ -85,7 +85,7 @@
           <td> </td>
           <td>
             <div class="icon-block">
-              <a href="viewreport.php">
+              <a href="viewreport.php?reportid=<?php echo $res['reportid']; ?>">
                 <input type="image" src="assets/images/viewreport.png" title="view" width="30" height="30">
               </a>
 
