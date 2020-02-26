@@ -50,6 +50,11 @@
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+              <li class="nav-item">
+                    <a class="nav-link link text-white display-4" href="AdminReport.php" aria-expanded="true"><span class="mbrib-left mbr-iconfont mbr-iconfont-btn"></span>
+                        
+                        BACK</a>
+                </li>
                 <li class="nav-item dropdown open">
                     <a class="nav-link link dropdown-toggle text-white display-4" data-toggle="dropdown-submenu" aria-expanded="true"><span class="mobi-mbri mobi-mbri-logout mbr-iconfont mbr-iconfont-btn"></span>
                         
@@ -61,12 +66,17 @@
 </section>
 <br><br><br><br><br>
 
- <div class="container">
+<div class="container align-center">
   <div class="col-ld-12">
-        
- <form method="POST">
-        
-  <table class="table table-hover  table-bordered align-center">
+   <img src="assets/images/prasarana.png" height="200" width="600">
+   <br><br></b><h1>LAPORAN AUDIT 5S AMPANG LINE</h1><br>
+
+   <a onclick="window.print();">
+    <input type="image" src="assets/images/print.png" title="print" width="50" height="50" align="right">
+  </a><br><br>
+
+   <form method="POST">
+    <table class="table table-hover  table-bordered align-center">
 
 <!-- Seksyen 1  -->
 <th class="align-left" colspan="4" style="color: green">SEKSYEN 1: KEPERLUAN UTAMA PELAKSANAAN</th>

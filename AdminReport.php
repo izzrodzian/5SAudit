@@ -50,6 +50,11 @@
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+              <li class="nav-item">
+                    <a class="nav-link link text-white display-4" href="AdminDash.php" aria-expanded="true"><span class="mbrib-left mbr-iconfont mbr-iconfont-btn"></span>
+                        
+                        BACK</a>
+                </li>
                 <li class="nav-item dropdown open">
                     <a class="nav-link link dropdown-toggle text-white display-4" data-toggle="dropdown-submenu" aria-expanded="true"><span class="mobi-mbri mobi-mbri-logout mbr-iconfont mbr-iconfont-btn"></span>
                         
@@ -63,7 +68,7 @@
 
  <div class="container">
   <div class="col-ld-12">
-        
+    
  <form method="POST">
          <div>
            <input class="form-control px-3 display-7 align-left" type="text" name="search" value="" placeholder="Search Auditor">
@@ -96,6 +101,8 @@
           </td>
          
     </table><br><br>
+  </div>
+</div>
    
 <section once="footers" class="cid-rPwjkLZhDD" id="footer7-i">
 
