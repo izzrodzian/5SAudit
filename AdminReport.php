@@ -97,7 +97,7 @@
          
     </table><br><br>
    
-<!-- <section once="footers" class="cid-rPwjkLZhDD" id="footer7-i">
+<section once="footers" class="cid-rPwjkLZhDD" id="footer7-i">
 
   <div class="container">
     <div class="media-container-row align-center mbr-white">
@@ -133,7 +133,7 @@
         </div>
       </div>
     </section>
- -->
+
   <script src="assets/web/assets/jquery/jquery.min.js"></script>
   <script src="assets/popper/popper.min.js"></script>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>

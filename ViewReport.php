@@ -68,7 +68,7 @@
         
   <table class="table table-hover  table-bordered align-center">
 
-
+<!-- Seksyen 1  -->
 <th class="align-left" colspan="4" style="color: green">SEKSYEN 1: KEPERLUAN UTAMA PELAKSANAAN</th>
         <tr>
           <th> Kategori </th>
@@ -97,6 +97,8 @@
           <td></td>
           <td></td>
         </tr>
+
+<!--  Seksyen 2 -->
 
         <th class="align-left" colspan="4" style="color: blue">SEKSYEN 2: RUANG PEJABAT</th>
         <tr>
@@ -210,12 +212,567 @@
           <td></td>
         </tr>
 
+
+<!-- Seksyen 3 -->
+
         <th class="align-left" colspan="4" style="color: purple">SEKSYEN 3: STOR (FAIL, BAHAN, ALAT GANTI, UNIFORM & SEBAGAINYA)</th>
         <tr>
           <th> Kategori </th>
           <th> Soalan </th>
           <th> Markah</th>
           <th> Gambar</th>          
+        </tr>
+
+         <tr>
+          <td rowspan="7">Tempat Simpanan</td>
+          <td> Keadaan tersusun, kemas dan teratur</td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr>
+          
+          <td> Kawasan lantai bersih</td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr>
+          
+          <td> Terdapat tanda 'label' bagi tiap-tiap bahan/rekod</td>
+          <td> </td>
+          <td> </td>
+        </tr>
+
+         <td> Mempunyai sistem susunan yang teratur dan mudah untuk diambil (seperti rak-rak) bila diperlukan</td>
+          <td> </td>
+          <td> </td>
+        </tr>
+
+         <td> Tidak terdapat bahan/item yang tidak diperlukan</td>
+          <td> </td>
+          <td> </td>
+        </tr>
+
+         <td> Terdapat “layout plan” sebagai panduan</td>
+          <td> </td>
+          <td> </td>
+        </tr>
+
+         <td> Wujud rekod keluar masuk pergerakan bahan</td>
+          <td> </td>
+          <td> </td>
+        </tr>
+
+        <tr>
+          <td rowspan="2">Keselamatan</td>
+          <td>Aspek keselamatan diutamakan</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+        <td>Kawalan visual dan ciri keselamatan mencukupi</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+         <tr>
+          <td rowspan="2"> Seragam</td>
+          <td>Sokongan pelaksanaan dengan mewujudkan kawalan visual dan “konsep ownership”</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>Penggunaan Red Tag yang betul dan sesuai</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+          <tr>
+          <td rowspan="1">Sentiasa Amal</td>
+          <td> Kerjasama dan sikap positif untuk amalan berterusan</td>
+          <td> </td>
+          <td> </td>
+        </tr>
+
+
+         <tr>
+          <td rowspan="1"> Impak</td>
+          <td>Penambahbaikkan yang dibuat memberikan kesan melalui (Produktiviti/Kualiti/Penghantaran/Kos /Keselamatan/Moral/Inovasi)</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+<!-- Seksyen 4 -->
+
+<th class="align-left" colspan="4" style="color: orange">SEKSYEN 4: OPERASI
+(BENGKEL PENYELENGGARAAN AM, PAM MINYAK, “WASHING BAY”, BILIK KAWALAN, BILIK KIRAAN & SEBAGAINYA)</th>
+<tr>
+  <th> Kategori </th>
+  <th> Soalan </th>
+  <th> Markah</th>
+  <th> Gambar</th>          
+</tr>
+
+         <tr>
+          <td rowspan="3">Lantai/Dinding</td>
+          <td> Lantai bersih, kemas dan tidak licin</td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr>
+          
+          <td> Keadaan kemas dan rapi</td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr>
+          
+          <td> Tiada barang yang tidak diperlukan</td>
+          <td> </td>
+          <td> </td>
+        </tr>
+
+
+        <tr>
+          <td rowspan="6">Peralatan dan Mesin</td>
+          <td>Susun atur kemas dan rapi</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+        <td>Mesin dan peralatan adalah bersih</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <td>Tiada barang yang tidak diperlukan berada di lokasi mesin</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <td>Berkeadaan baik serta aktiviti penyelenggaraan mesin</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <td>Penggunaan “Manual”, “Visual Control” sebagai panduan</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <td>Rekod penggunaan peralatan dan lain-lain</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+         <tr>
+          <td rowspan="2"> Bahan</td>
+          <td>Dalam keadaan kemas dan teratur</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>Tanda label untuk mudah kesan</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+          <tr>
+          <td rowspan="2">Tempat Rekod/Dokumen</td>
+          <td>Kemas dan sistematik</td>
+          <td> </td>
+          <td> </td>
+        </tr>
+
+        <tr>
+          <td>Bersih dan item masih diperlukan</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+
+         <tr>
+          <td rowspan="1">Maklumat Visual</td>
+          <td>Bersih, kemas dan maklumat sentiasa kemaskini</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td rowspan="1">Keselamatan</td>
+          <td>Aspek keselamatan diutamakan</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+          <tr>
+          <td rowspan="1">Seragam</td>
+          <td>Sokongan pelaksanaan dengan mewujudkan kawalan visual dan “konsep ownership”</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td rowspan="1">Sentiasa Amal</td>
+          <td>Kerjasama dan sikap positif untuk amalan berterusan</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td rowspan="1">Impak</td>
+          <td>Penambahbaikkan yang dibuat memberikan kesan melalui (Produktiviti/Kualiti/Penghantaran/Kos/Keselamatan/Moral/Inovasi)</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+<!-- Seksyen 5 -->
+
+<th class="align-left" colspan="4" style="color: brown">SEKSYEN 5: KAWASAN PERSEKITARAN LUARAN</th>
+<tr>
+  <th> Kategori </th>
+  <th> Soalan </th>
+  <th> Markah</th>
+  <th> Gambar</th>          
+</tr>
+
+         <tr>
+          <td rowspan="3">Pos Keselamatan</td>
+          <td> Kawasan bersih dan tiada item tidak perlu</td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr>
+          
+          <td>Kekemasan selesa dan memuaskan</td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr>
+          
+          <td>Aspek keselamatan (kawalan) diutamakan</td>
+          <td> </td>
+          <td> </td>
+        </tr>
+
+
+        <tr>
+          <td rowspan="2">Landskap</td>
+          <td>Kawasan bersih dan tiada item tidak perlu</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+        <td>Sentiasa terjaga dan kekemasan memuaskan</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+         <tr>
+          <td rowspan="2">Tempat Pelupusan, Longkang, Kawasan Sisa Berjadual</td>
+          <td>Mempunyai tempat pembuangan sisa yang memuaskan mengikut keperluan undang-undang</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>Sentiasa bersih, kemas dan terjaga</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+          <tr>
+          <td rowspan="3">Papan Tanda, Pandu Arah</td>
+          <td>Kedudukan yang strategik dan berfungsi dengan baik</td>
+          <td> </td>
+          <td> </td>
+        </tr>
+
+        <tr>
+          <td>Saiz yang sesuai, mudah difahami dan mudah dilihat</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>Wujud pandu arah dan garisan lot parkir yang jelas</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td rowspan="3">Kawasan Parkir</td>
+          <td>Kawasan yang bersih dan teratur</td>
+          <td> </td>
+          <td> </td>
+        </tr>
+
+        <tr>
+          <td>Landskap jika ada, tidak mengganggu dan sentiasa dalam keadaan kemas dan selesa untuk pengguna</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>Tiada bahan/barang yang tidak perlu di lokasi</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td rowspan="1">Keselamatan</td>
+          <td>Aspek keselamatan diutamakan</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+          <tr>
+          <td rowspan="1">Seragam</td>
+          <td>Sokongan pelaksanaan dengan mewujudkan kawalan visual dan “konsep ownership”</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td rowspan="1">Sentiasa Amal</td>
+          <td>Kerjasama dan sikap positif untuk amalan berterusan</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td rowspan="1">Impak</td>
+          <td>Penambahbaikkan yang dibuat memberikan kesan melalui (Produktiviti/Kualiti/Penghantaran/Kos/Keselamatan/Moral/Inovasi)</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+<!-- Seksyen 6 -->
+
+<th class="align-left" colspan="4" style="color: red">SEKSYEN 6: TEMPAT UMUM</th>
+<tr>
+  <th> Kategori </th>
+  <th> Soalan </th>
+  <th> Markah</th>
+  <th> Gambar</th>          
+</tr>
+
+         <tr>
+          <td rowspan="2">Kaunter/Lobi/Koridor/Tangga</td>
+          <td> Kawasan lantai/dinding bersih dan tiada item tidak perlu</td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr>
+          
+          <td>Susunatur peralatan dan item kemas dan memuaskan</td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr>
+          
+       
+        <tr>
+          <td rowspan="3">Bilik Mesyuarat/Bilik VIP</td>
+          <td>Kawasan lantai dan dinding bersih dan tiada item tidak perlu</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+        <td>Susun atur peralatan/item kemas dan memudahkan</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+           <td>Maklumat Visual dalam keadaan bersih dan kemas (etika,inventori,kawalan penggunaan dsb)</td>
+          <td> </td>
+          <td> </td>
+        </tr>
+
+
+          <tr>
+          <td rowspan="3">Bilik Latihan/Simulasi</td>
+          <td>Kawasan bersih dan tiada item tidak perlu</td>
+          <td> </td>
+          <td> </td>
+        </tr>
+
+        <tr>
+          <td>Susunatur peralatan/item kemas dan memudahkan</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>Maklumat Visual dalam keadaan bersih dan kemas.(etika,inventori,kawalan penggunaan dsb)</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td rowspan="3">Kantin/Pantri</td>
+          <td>Kawasan lantai bersih dan tiada item tidak perlu</td>
+          <td> </td>
+          <td> </td>
+        </tr>
+
+        <tr>
+          <td>Susun atur peralatan dan item kemas dan rapi</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>Peralatan dan bahan dalam keadaan baik dan bersih</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+         <tr>
+          <td rowspan="3">Surau/Ruang Solat</td>
+          <td>Kawasan yang bersih dan memuaskan</td>
+          <td> </td>
+          <td> </td>
+        </tr>
+
+        <tr>
+          <td>Peralatan sentiasa dalam keadaan baik dan boleh digunakan</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>Tiada bahan yang tidak perlu di lokasi</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td rowspan="3">Tandas/Bilik Mandi</td>
+          <td>Kawasan yang bersih dan memuaskan</td>
+          <td> </td>
+          <td> </td>
+        </tr>
+
+        <tr>
+          <td>Peralatan sentiasa dalam keadaan baik dan boleh digunakan</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>Tiada bahan yang tidak perlu di lokasi</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+         <tr>
+          <td rowspan="3">Bilik Kecemasan/Bilik Rehat/Penginapan</td>
+          <td>Kawasan yang bersih dan memuaskan</td>
+          <td> </td>
+          <td> </td>
+        </tr>
+
+        <tr>
+          <td>Dalam keadaan kemas dan teratur</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>Tiada bahan yang tidak perlu di lokasi</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td rowspan="3">Pusat Sumber</td>
+          <td>Kawasan yang bersih dan memuaskan</td>
+          <td> </td>
+          <td> </td>
+        </tr>
+
+        <tr>
+          <td>Dalam keadaan kemas dan teratur</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>Tiada bahan yang tidak perlu di lokasi</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td rowspan="3">Dewan</td>
+          <td>Kawasan lantai bersih dan tiada item tidak perlu</td>
+          <td> </td>
+          <td> </td>
+        </tr>
+
+        <tr>
+          <td>Susun atur peralatan dan item kemas dan rapi</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>Peralatan dan bahan dalam keadaan baik dan bersih</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td rowspan="3">Bilik Gimnasium</td>
+          <td>Kawasan yang bersih dan memuaskan</td>
+          <td> </td>
+          <td> </td>
+        </tr>
+
+        <tr>
+          <td>Dalam keadaan kemas dan teratur</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>Tiada bahan yang tidak perlu di lokasi</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+
+        <tr>
+          <td rowspan="1">Keselamatan</td>
+          <td>Aspek keselamatan diutamakan</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+          <tr>
+          <td rowspan="1">Seragam</td>
+          <td>Sokongan pelaksanaan dengan mewujudkan kawalan visual dan “konsep ownership”</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td rowspan="1">Sentiasa Amal</td>
+          <td>Kerjasama dan sikap positif untuk amalan berterusan</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td rowspan="1">Impak</td>
+          <td>Penambahbaikkan yang dibuat memberikan kesan melalui (Produktiviti/Kualiti/Penghantaran/Kos/Keselamatan/Moral/Inovasi)</td>
+          <td></td>
+          <td></td>
         </tr>
          
     </table><br><br>
