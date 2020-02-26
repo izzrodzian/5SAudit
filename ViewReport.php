@@ -10,7 +10,7 @@
   <link rel="shortcut icon" href="assets/images/logo5s-122x125.png" type="image/x-icon">
   <meta name="description" content="Web Site Builder Description">
   
-  <title>Report</title>
+  <title>Laporan Audit 5S Ampang Line</title>
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons-bold/mobirise-icons-bold.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
@@ -72,7 +72,7 @@
    <br><br></b><h1>LAPORAN AUDIT 5S AMPANG LINE</h1><br>
 
    <a onclick="window.print();">
-    <input type="image" src="assets/images/print.png" title="print" width="50" height="50" align="right">
+    <input type="image" src="assets/images/print.png" title="print" width="40" height="40" align="right">
   </a><br><br>
 
    <form method="POST">
