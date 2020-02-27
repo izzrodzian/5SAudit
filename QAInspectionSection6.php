@@ -253,7 +253,7 @@ Header("Location:AuditorReport.php");
       <td><input type="radio" id="answer3q1s6c1"  name="answer68" value="3"></td>
       <td><input type="radio" id="answer4q1s6c1"  name="answer68" value="4"></td>
       <td><input type="radio" id="answer5q1s6c1"  name="answer68" value="5"></td>
-      <td><input type="file" name="images1s6category1">
+      <td><input type="file" name="image68">
       </tr>
 
       <tr>
@@ -264,11 +264,11 @@ Header("Location:AuditorReport.php");
       <td><input type="radio" id="answer3q2s6c1"  name="answer69" value="3"></td>
       <td><input type="radio" id="answer4q2s6c1"  name="answer69" value="4"></td>
       <td><input type="radio" id="answer5q2s6c1"  name="answer69" value="5"></td>
-      <td><input type="file" name="images2s6category1">
+      <td><input type="file" name="image69">
       </tr>
     </table>
     Catatan:<br>
-    <textarea name="catatans6category1" cols="100" rows="3"></textarea>
+    <textarea name="catatan36" cols="100" rows="3"></textarea>
     <br>
     <br>
     
@@ -301,7 +301,7 @@ Header("Location:AuditorReport.php");
       <td><input type="radio" id="answer3q1s6c2"  name="answer70" value="3"></td>
       <td><input type="radio" id="answer4q1s6c2"  name="answer70" value="4"></td>
       <td><input type="radio" id="answer5q1s6c2"  name="answer70" value="5"></td>
-      <td><input type="file" name="images1s6category2">
+      <td><input type="file" name="image70">
       </tr>
 
       <tr>
@@ -312,7 +312,7 @@ Header("Location:AuditorReport.php");
       <td><input type="radio" id="answer3q2s6c2"  name="answer71" value="3"></td>
       <td><input type="radio" id="answer4q2s6c2"  name="answer71" value="4"></td>
       <td><input type="radio" id="answer5q2s6c2"  name="answer71" value="5"></td>
-      <td><input type="file" name="images2s6category2">
+      <td><input type="file" name="image71">
       </tr>
 
       <tr>
@@ -323,11 +323,11 @@ Header("Location:AuditorReport.php");
       <td><input type="radio" id="answer3q3s6c2"  name="answer72" value="3"></td>
       <td><input type="radio" id="answer4q3s6c2"  name="answer72" value="4"></td>
       <td><input type="radio" id="answer5q3s6c2"  name="answer72" value="5"></td>
-      <td><input type="file" name="images3s6category2">
+      <td><input type="file" name="image72">
       </tr>
     </table>
     Catatan:<br>
-    <textarea name="catatans6category2" cols="100" rows="3"></textarea>
+    <textarea name="catatan37" cols="100" rows="3"></textarea>
     <br>
     <br>
     
@@ -360,7 +360,7 @@ Header("Location:AuditorReport.php");
       <td><input type="radio" id="answer3q1s6c3"  name="answer73" value="3"></td>
       <td><input type="radio" id="answer4q1s6c3"  name="answer73" value="4"></td>
       <td><input type="radio" id="answer5q1s6c3"  name="answer73" value="5"></td>
-      <td><input type="file" name="images1s6category3">
+      <td><input type="file" name="image73">
       </tr>
 
     <tr>
@@ -371,7 +371,7 @@ Header("Location:AuditorReport.php");
       <td><input type="radio" id="answer3q2s6c3"  name="answer74" value="3"></td>
       <td><input type="radio" id="answer4q2s6c3"  name="answer74" value="4"></td>
       <td><input type="radio" id="answer5q2s6c3"  name="answer74" value="5"></td>
-      <td><input type="file" name="images2s6category3">
+      <td><input type="file" name="image74">
       </tr>
 
        <tr>
@@ -382,11 +382,11 @@ Header("Location:AuditorReport.php");
       <td><input type="radio" id="answer3q3s6c3"  name="answer75" value="3"></td>
       <td><input type="radio" id="answer4q3s6c3"  name="answer75" value="4"></td>
       <td><input type="radio" id="answer5q3s6c3"  name="answer75" value="5"></td>
-      <td><input type="file" name="images3s6category3">
+      <td><input type="file" name="image75">
       </tr>
     </table>
     Catatan:<br>
-    <textarea name="catatans6category3" cols="100" rows="3"></textarea>
+    <textarea name="catatan38" cols="100" rows="3"></textarea>
     <br>
     <br>
     
@@ -419,7 +419,7 @@ Header("Location:AuditorReport.php");
       <td><input type="radio" id="answer3q1s6c4"  name="answer76" value="3"></td>
       <td><input type="radio" id="answer4q1s6c4"  name="answer76" value="4"></td>
       <td><input type="radio" id="answer5q1s6c4"  name="answer76" value="5"></td>
-      <td><input type="file" name="images1s6category4">
+      <td><input type="file" name="image76">
       </tr>
 
     <tr>
@@ -430,7 +430,7 @@ Header("Location:AuditorReport.php");
       <td><input type="radio" id="answer3q2s6c4"  name="answer77" value="3"></td>
       <td><input type="radio" id="answer4q2s6c4"  name="answer77" value="4"></td>
       <td><input type="radio" id="answer5q2s6c4"  name="answer77" value="5"></td>
-      <td><input type="file" name="images2s6category4">
+      <td><input type="file" name="image77">
       </tr>
 
       <tr>
@@ -441,11 +441,11 @@ Header("Location:AuditorReport.php");
       <td><input type="radio" id="answer3q3s6c4"  name="answer78" value="3"></td>
       <td><input type="radio" id="answer4q3s6c4"  name="answer78" value="4"></td>
       <td><input type="radio" id="answer5q3s6c4"  name="answer78" value="5"></td>
-      <td><input type="file" name="images3s6category4">
+      <td><input type="file" name="image78">
       </tr>
     </table>
     Catatan:<br>
-    <textarea name="catatans6category4" cols="100" rows="3"></textarea>
+    <textarea name="catatan39" cols="100" rows="3"></textarea>
     <br>
     <br>
    
@@ -478,7 +478,7 @@ Header("Location:AuditorReport.php");
       <td><input type="radio" id="answer3q1s6c5"  name="answer79" value="3"></td>
       <td><input type="radio" id="answer4q1s6c5"  name="answer79" value="4"></td>
       <td><input type="radio" id="answer5q1s6c5"  name="answer79" value="5"></td>
-      <td><input type="file" name="images1s6category5">
+      <td><input type="file" name="image79">
       </tr>
 
       <tr>
@@ -489,7 +489,7 @@ Header("Location:AuditorReport.php");
       <td><input type="radio" id="answer3q2s6c5"  name="answer80" value="3"></td>
       <td><input type="radio" id="answer4q2s6c5"  name="answer80" value="4"></td>
       <td><input type="radio" id="answer5q2s6c5"  name="answer80" value="5"></td>
-      <td><input type="file" name="images2s6category5">
+      <td><input type="file" name="image80">
       </tr>
 
       <tr>
@@ -500,11 +500,11 @@ Header("Location:AuditorReport.php");
       <td><input type="radio" id="answer3q3s6c5"  name="answer81" value="3"></td>
       <td><input type="radio" id="answer4q3s6c5"  name="answer81" value="4"></td>
       <td><input type="radio" id="answer5q3s6c5"  name="answer81" value="5"></td>
-      <td><input type="file" name="images3s6category5">
+      <td><input type="file" name="image81">
       </tr>
     </table>
     Catatan:<br>
-    <textarea name="catatans6category5" cols="100" rows="3"></textarea>
+    <textarea name="catatan40" cols="100" rows="3"></textarea>
     <br>
     <br>
     
@@ -537,7 +537,7 @@ Header("Location:AuditorReport.php");
       <td><input type="radio" id="answer3q1s6c6"  name="answer82" value="3"></td>
       <td><input type="radio" id="answer4q1s6c6"  name="answer82" value="4"></td>
       <td><input type="radio" id="answer5q1s6c6"  name="answer82" value="5"></td>
-      <td><input type="file" name="images1s6category6">
+      <td><input type="file" name="image82">
       </tr>
 
       <tr>
@@ -548,7 +548,7 @@ Header("Location:AuditorReport.php");
       <td><input type="radio" id="answer3q2s6c6"  name="answer83" value="3"></td>
       <td><input type="radio" id="answer4q2s6c6"  name="answer83" value="4"></td>
       <td><input type="radio" id="answer5q2s6c6"  name="answer83" value="5"></td>
-      <td><input type="file" name="images2s6category6">
+      <td><input type="file" name="image83">
       </tr>
 
       <tr>
@@ -559,11 +559,11 @@ Header("Location:AuditorReport.php");
       <td><input type="radio" id="answer3q3s6c6"  name="answer84" value="3"></td>
       <td><input type="radio" id="answer4q3s6c6"  name="answer84" value="4"></td>
       <td><input type="radio" id="answer5q3s6c6"  name="answer84" value="5"></td>
-      <td><input type="file" name="images3s6category6">
+      <td><input type="file" name="image84">
       </tr>
     </table>
     Catatan:<br>
-    <textarea name="catatans6category6" cols="100" rows="3"></textarea>
+    <textarea name="catatan41" cols="100" rows="3"></textarea>
     <br>
     <br>
     
@@ -596,7 +596,7 @@ Header("Location:AuditorReport.php");
       <td><input type="radio" id="answer3q1s6c7"  name="answer85" value="3"></td>
       <td><input type="radio" id="answer4q1s6c7"  name="answer85" value="4"></td>
       <td><input type="radio" id="answer5q1s6c7"  name="answer85" value="5"></td>
-      <td><input type="file" name="images1s6category7">
+      <td><input type="file" name="image85">
       </tr>
 
       <tr>
@@ -607,7 +607,7 @@ Header("Location:AuditorReport.php");
       <td><input type="radio" id="answer3q2s6c7"  name="answer86" value="3"></td>
       <td><input type="radio" id="answer4q2s6c7"  name="answer86" value="4"></td>
       <td><input type="radio" id="answer5q2s6c7"  name="answer86" value="5"></td>
-      <td><input type="file" name="images2s6category7">
+      <td><input type="file" name="image86">
       </tr>
 
       <tr>
@@ -618,11 +618,11 @@ Header("Location:AuditorReport.php");
       <td><input type="radio" id="answer3q3s6c7"  name="answer87" value="3"></td>
       <td><input type="radio" id="answer4q3s6c7"  name="answer87" value="4"></td>
       <td><input type="radio" id="answer5q3s6c7"  name="answer87" value="5"></td>
-      <td><input type="file" name="images3s6category7">
+      <td><input type="file" name="image87">
       </tr>
     </table>
     Catatan:<br>
-    <textarea name="catatans6category7" cols="100" rows="3"></textarea>
+    <textarea name="catatan42" cols="100" rows="3"></textarea>
     <br>
     <br>
     
@@ -655,7 +655,7 @@ Header("Location:AuditorReport.php");
       <td><input type="radio" id="answer3q1s6c8"  name="answer88" value="3"></td>
       <td><input type="radio" id="answer4q1s6c8"  name="answer88" value="4"></td>
       <td><input type="radio" id="answer5q1s6c8"  name="answer88" value="5"></td>
-      <td><input type="file" name="images1s6category8">
+      <td><input type="file" name="image88">
       </tr>
 
       <tr>
@@ -666,7 +666,7 @@ Header("Location:AuditorReport.php");
       <td><input type="radio" id="answer3q2s6c8"  name="answer89" value="3"></td>
       <td><input type="radio" id="answer4q2s6c8"  name="answer89" value="4"></td>
       <td><input type="radio" id="answer5q2s6c8"  name="answer89" value="5"></td>
-      <td><input type="file" name="images2s6category8">
+      <td><input type="file" name="image89">
       </tr>
 
       <tr>
@@ -677,11 +677,11 @@ Header("Location:AuditorReport.php");
       <td><input type="radio" id="answer3q3s6c8"  name="answer90" value="3"></td>
       <td><input type="radio" id="answer4q3s6c8"  name="answer90" value="4"></td>
       <td><input type="radio" id="answer5q3s6c8"  name="answer90" value="5"></td>
-      <td><input type="file" name="images3s6category8">
+      <td><input type="file" name="image90">
       </tr>
     </table>
     Catatan:<br>
-    <textarea name="catatans6category8" cols="100" rows="3"></textarea>
+    <textarea name="catatan43" cols="100" rows="3"></textarea>
     <br>
     <br>
     
@@ -714,7 +714,7 @@ Header("Location:AuditorReport.php");
       <td><input type="radio" id="answer3q1s6c9"  name="answer91" value="3"></td>
       <td><input type="radio" id="answer4q1s6c9"  name="answer91" value="4"></td>
       <td><input type="radio" id="answer5q1s6c9"  name="answer91" value="5"></td>
-      <td><input type="file" name="images1s6category9">
+      <td><input type="file" name="image91">
       </tr>
 
       <tr>
@@ -725,7 +725,7 @@ Header("Location:AuditorReport.php");
       <td><input type="radio" id="answer3q2s6c9"  name="answer92" value="3"></td>
       <td><input type="radio" id="answer4q2s6c9"  name="answer92" value="4"></td>
       <td><input type="radio" id="answer5q2s6c9"  name="answer92" value="5"></td>
-      <td><input type="file" name="images2s6category9">
+      <td><input type="file" name="image92">
       </tr>
 
       <tr>
@@ -736,11 +736,11 @@ Header("Location:AuditorReport.php");
       <td><input type="radio" id="answer3q3s6c9"  name="answer93" value="3"></td>
       <td><input type="radio" id="answer4q3s6c9"  name="answer93" value="4"></td>
       <td><input type="radio" id="answer5q3s6c9"  name="answer93" value="5"></td>
-      <td><input type="file" name="images3s6category9">
+      <td><input type="file" name="image93">
       </tr>
     </table>
     Catatan:<br>
-    <textarea name="catatans6category9" cols="100" rows="3"></textarea>
+    <textarea name="catatan44" cols="100" rows="3"></textarea>
     <br>
     <br>
    
@@ -773,7 +773,7 @@ Header("Location:AuditorReport.php");
       <td><input type="radio" id="answer3q1s6c10"  name="answer94" value="3"></td>
       <td><input type="radio" id="answer4q1s6c10"  name="answer94" value="4"></td>
       <td><input type="radio" id="answer5q1s6c10"  name="answer94" value="5"></td>
-      <td><input type="file" name="images1s6category10">
+      <td><input type="file" name="image94">
       </tr>
 
       <tr>
@@ -784,7 +784,7 @@ Header("Location:AuditorReport.php");
       <td><input type="radio" id="answer3q2s6c10"  name="answer95" value="3"></td>
       <td><input type="radio" id="answer4q2s6c10"  name="answer95" value="4"></td>
       <td><input type="radio" id="answer5q2s6c10"  name="answer95" value="5"></td>
-      <td><input type="file" name="images2s6category10">
+      <td><input type="file" name="image95">
       </tr>
 
       <tr>
@@ -794,12 +794,12 @@ Header("Location:AuditorReport.php");
       <td><input type="radio" id="answer2q3s6c10"  name="answer96" value="2"></td>
       <td><input type="radio" id="answer3q3s6c10"  name="answer96" value="3"></td>
       <td><input type="radio" id="answer4q3s6c10"  name="answer96" value="4"></td>
-            <td><input type="radio" id="answer5q3s6c10"  name="answer96" value="5"></td>
-      <td><input type="file" name="images3s6category10">
+      <td><input type="radio" id="answer5q3s6c10"  name="answer96" value="5"></td>
+      <td><input type="file" name="image96">
       </tr>
     </table>
     Catatan:<br>
-    <textarea name="catatans6category10" cols="100" rows="3"></textarea>
+    <textarea name="catatan45" cols="100" rows="3"></textarea>
     <br>
     <br>
     
@@ -832,11 +832,11 @@ Header("Location:AuditorReport.php");
       <td><input type="radio" id="answer3q1s6c11"  name="answer97" value="3"></td>
       <td><input type="radio" id="answer4q1s6c11"  name="answer97" value="4"></td>
       <td><input type="radio" id="answer5q1s6c11"  name="answer97" value="5"></td>
-      <td><input type="file" name="images1s6category11">
+      <td><input type="file" name="image97">
       </tr>
     </table>
     Catatan:<br>
-    <textarea name="catatans6category11" cols="100" rows="3"></textarea>
+    <textarea name="catatan46" cols="100" rows="3"></textarea>
     <br>
     <br>
     
