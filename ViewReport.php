@@ -1,5 +1,13 @@
 <!DOCTYPE html>
 
+<?php
+ session_start();
+
+$con = mysqli_connect('127.0.0.1','root','') or die ('Not connected.');
+mysqli_select_db($con,'5s') or die ('No database found.');
+
+?>
+
 <html>
 <head>
   <!-- Site made with Mobirise Website Builder v4.12.0, https://mobirise.com -->
@@ -80,6 +88,16 @@
 
 <!-- Seksyen 1  -->
 <th class="align-left" colspan="4">SEKSYEN 1: KEPERLUAN UTAMA PELAKSANAAN</th>
+<?php  
+$query = "SELECT * FROM qacategory_section1";  
+$result = mysqli_query($conn, $query);  
+if ($row = mysqli_fetch_array($result))  
+{ 
+
+$Image1 = $row['Image1'];
+ 
+}  
+?> 
         <tr>
           <th> Kategori </th>
           <th> Soalan </th>
@@ -91,7 +109,7 @@
           <td>Fail Program</td>
           <td> Maklumat Lengkap dan Terkini (Merujuk pada Senarai Semak Dokumen)</td>
           <td> </td>
-          <td> </td>
+          <td> <?php echo '<img src="data:image/png;base64,'.base64_encode($Image1).'" height="200" width="200" class="img-thumnail" />';   ?></td>
         </tr>
 
         <tr>
