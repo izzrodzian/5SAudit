@@ -4,7 +4,7 @@
  session_start();
 
 $con = mysqli_connect('127.0.0.1','root','') or die ('Not connected.');
-mysqli_select_db($con,'5s') or die ('No database found.');
+mysqli_select_db($con,'uploadfile') or die ('No database found.');
 
 ?>
 
@@ -89,12 +89,12 @@ mysqli_select_db($con,'5s') or die ('No database found.');
 <!-- Seksyen 1  -->
 <th class="align-left" colspan="4">SEKSYEN 1: KEPERLUAN UTAMA PELAKSANAAN</th>
 <?php  
-$query = "SELECT * FROM qacategory_section1";  
-$result = mysqli_query($conn, $query);  
+$query = "SELECT * FROM tbl_image";  
+$result = mysqli_query($con, $query);  
 if ($row = mysqli_fetch_array($result))  
 { 
 
-$Image1 = $row['Image1'];
+$Image1 = $row['name'];
  
 }  
 ?> 
@@ -109,7 +109,7 @@ $Image1 = $row['Image1'];
           <td>Fail Program</td>
           <td> Maklumat Lengkap dan Terkini (Merujuk pada Senarai Semak Dokumen)</td>
           <td> </td>
-          <td> <?php echo '<img src="data:image/png;base64,'.base64_encode($Image1).'" height="200" width="200" class="img-thumnail" />';   ?></td>
+          <td> </td>
         </tr>
 
         <tr>
@@ -128,7 +128,7 @@ $Image1 = $row['Image1'];
 
 <!--  Seksyen 2 -->
 
-        <th class="align-left" colspan="4" SEKSYEN 2: RUANG PEJABAT</th>
+        <th class="align-left" colspan="4"> SEKSYEN 2: RUANG PEJABAT</th>
         <tr>
           <th> Kategori </th>
           <th> Soalan </th>
