@@ -79,7 +79,7 @@
     <table class="table table-hover  table-bordered align-center">
 
 <!-- Seksyen 1  -->
-<th class="align-left" colspan="4" style="color: green">SEKSYEN 1: KEPERLUAN UTAMA PELAKSANAAN</th>
+<th class="align-left" colspan="4">SEKSYEN 1: KEPERLUAN UTAMA PELAKSANAAN</th>
         <tr>
           <th> Kategori </th>
           <th> Soalan </th>
@@ -110,7 +110,7 @@
 
 <!--  Seksyen 2 -->
 
-        <th class="align-left" colspan="4" style="color: blue">SEKSYEN 2: RUANG PEJABAT</th>
+        <th class="align-left" colspan="4" SEKSYEN 2: RUANG PEJABAT</th>
         <tr>
           <th> Kategori </th>
           <th> Soalan </th>
@@ -225,7 +225,7 @@
 
 <!-- Seksyen 3 -->
 
-        <th class="align-left" colspan="4" style="color: purple">SEKSYEN 3: STOR (FAIL, BAHAN, ALAT GANTI, UNIFORM & SEBAGAINYA)</th>
+        <th class="align-left" colspan="4" >SEKSYEN 3: STOR (FAIL, BAHAN, ALAT GANTI, UNIFORM & SEBAGAINYA)</th>
         <tr>
           <th> Kategori </th>
           <th> Soalan </th>
@@ -314,7 +314,7 @@
 
 <!-- Seksyen 4 -->
 
-<th class="align-left" colspan="4" style="color: orange">SEKSYEN 4: OPERASI
+<th class="align-left" colspan="4" >SEKSYEN 4: OPERASI
 (BENGKEL PENYELENGGARAAN AM, PAM MINYAK, “WASHING BAY”, BILIK KAWALAN, BILIK KIRAAN & SEBAGAINYA)</th>
 <tr>
   <th> Kategori </th>
@@ -440,7 +440,7 @@
 
 <!-- Seksyen 5 -->
 
-<th class="align-left" colspan="4" style="color: brown">SEKSYEN 5: KAWASAN PERSEKITARAN LUARAN</th>
+<th class="align-left" colspan="4">SEKSYEN 5: KAWASAN PERSEKITARAN LUARAN</th>
 <tr>
   <th> Kategori </th>
   <th> Soalan </th>
@@ -562,7 +562,7 @@
 
 <!-- Seksyen 6 -->
 
-<th class="align-left" colspan="4" style="color: red">SEKSYEN 6: TEMPAT UMUM</th>
+<th class="align-left" colspan="4">SEKSYEN 6: TEMPAT UMUM</th>
 <tr>
   <th> Kategori </th>
   <th> Soalan </th>
