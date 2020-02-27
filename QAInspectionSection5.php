@@ -185,7 +185,7 @@ if (isset($_POST['Submit']))
       <td><input type="radio" id="answer3q1s5c1"  name="answer51" value="3"></td>
       <td><input type="radio" id="answer4q1s5c1"  name="answer51" value="4"></td>
       <td><input type="radio" id="answer5q1s5c1"  name="answer51" value="5"></td>
-      <td><input type="file" name="images1s5category1">
+      <td><input type="file" name="image51">
       </tr>
 
       <tr>
@@ -196,7 +196,7 @@ if (isset($_POST['Submit']))
       <td><input type="radio" id="answer3q2s5c1"  name="answer52" value="3"></td>
       <td><input type="radio" id="answer4q2s5c1"  name="answer52" value="4"></td>
       <td><input type="radio" id="answer5q2s5c1"  name="answer52" value="5"></td>
-      <td><input type="file" name="images2s5category1">
+      <td><input type="file" name="image52">
       </tr>
 
       <tr>
@@ -207,11 +207,11 @@ if (isset($_POST['Submit']))
       <td><input type="radio" id="answer3q3s5c1"  name="answer53" value="3"></td>
       <td><input type="radio" id="answer4q3s5c1"  name="answer53" value="4"></td>
       <td><input type="radio" id="answer5q3s5c1"  name="answer53" value="5"></td>
-      <td><input type="file" name="images3s5category1">
+      <td><input type="file" name="image53">
       </tr>
     </table>
     Catatan:<br>
-    <textarea name="catatans5category1" cols="100" rows="3"></textarea>
+    <textarea name="catatan27" cols="100" rows="3"></textarea>
     <br>
     <br>
    
@@ -244,7 +244,7 @@ if (isset($_POST['Submit']))
       <td><input type="radio" id="answer3q1s5c2"  name="answer54" value="3"></td>
       <td><input type="radio" id="answer4q1s5c2"  name="answer54" value="4"></td>
       <td><input type="radio" id="answer5q1s5c2"  name="answer54" value="5"></td>
-      <td><input type="file" name="images1s5category2">
+      <td><input type="file" name="image54">
       </tr>
 
       <tr>
@@ -255,11 +255,11 @@ if (isset($_POST['Submit']))
       <td><input type="radio" id="answer3q2s5c2"  name="answer55" value="3"></td>
       <td><input type="radio" id="answer4q2s5c2"  name="answer55" value="4"></td>
       <td><input type="radio" id="answer5q2s5c2"  name="answer55" value="5"></td>
-      <td><input type="file" name="images2s5category2">
+      <td><input type="file" name="image55">
       </tr>
     </table>
     Catatan:<br>
-    <textarea name="catatans5category2" cols="100" rows="3"></textarea>
+    <textarea name="catatan28" cols="100" rows="3"></textarea>
     <br>
     <br>
    
@@ -292,7 +292,7 @@ if (isset($_POST['Submit']))
       <td><input type="radio" id="answer3q1s5c3"  name="answer56" value="3"></td>
       <td><input type="radio" id="answer4q1s5c3"  name="answer56" value="4"></td>
       <td><input type="radio" id="answer5q1s5c3"  name="answer56" value="5"></td>
-      <td><input type="file" name="images1s5category3">
+      <td><input type="file" name="image56">
       </tr>
 
     <tr>
@@ -303,11 +303,11 @@ if (isset($_POST['Submit']))
       <td><input type="radio" id="answer3q2s5c3"  name="answer57" value="3"></td>
       <td><input type="radio" id="answer4q2s5c3"  name="answer57" value="4"></td>
       <td><input type="radio" id="answer5q2s5c3"  name="answer57" value="5"></td>
-      <td><input type="file" name="images2s5category3">
+      <td><input type="file" name="image57">
       </tr>
     </table>
     Catatan:<br>
-    <textarea name="catatans5category3" cols="100" rows="3"></textarea>
+    <textarea name="catatan29" cols="100" rows="3"></textarea>
     <br>
     <br>
     
@@ -340,7 +340,7 @@ if (isset($_POST['Submit']))
       <td><input type="radio" id="answer3q1s5c4"  name="answer58" value="3"></td>
       <td><input type="radio" id="answer4q1s5c4"  name="answer58" value="4"></td>
       <td><input type="radio" id="answer5q1s5c4"  name="answer58" value="5"></td>
-      <td><input type="file" name="images1s5category4">
+      <td><input type="file" name="image58">
       </tr>
 
     <tr>
@@ -351,7 +351,7 @@ if (isset($_POST['Submit']))
       <td><input type="radio" id="answer3q2s5c4"  name="answer59" value="3"></td>
       <td><input type="radio" id="answer4q2s5c4"  name="answer59" value="4"></td>
       <td><input type="radio" id="answer5q2s5c4"  name="answer59" value="5"></td>
-      <td><input type="file" name="images2s5category4">
+      <td><input type="file" name="image59">
       </tr>
 
       <tr>
@@ -362,11 +362,11 @@ if (isset($_POST['Submit']))
       <td><input type="radio" id="answer3q3s5c4"  name="answer60" value="3"></td>
       <td><input type="radio" id="answer4q3s5c4"  name="answer60" value="4"></td>
       <td><input type="radio" id="answer5q3s5c4"  name="answer60" value="5"></td>
-      <td><input type="file" name="images3s5category4">
+      <td><input type="file" name="image60">
       </tr>
     </table>
     Catatan:<br>
-    <textarea name="catatans5category4" cols="100" rows="3"></textarea>
+    <textarea name="catatan30" cols="100" rows="3"></textarea>
     <br>
     <br>
     
@@ -399,7 +399,7 @@ if (isset($_POST['Submit']))
       <td><input type="radio" id="answer3q1s5c5"  name="answer61" value="3"></td>
       <td><input type="radio" id="answer4q1s5c5"  name="answer61" value="4"></td>
       <td><input type="radio" id="answer5q1s5c5"  name="answer61" value="5"></td>
-      <td><input type="file" name="images1s5category5">
+      <td><input type="file" name="image61">
       </tr>
 
       <tr>
@@ -410,7 +410,7 @@ if (isset($_POST['Submit']))
       <td><input type="radio" id="answer3q2s5c5"  name="answer62" value="3"></td>
       <td><input type="radio" id="answer4q2s5c5"  name="answer62" value="4"></td>
       <td><input type="radio" id="answer5q2s5c5"  name="answer62" value="5"></td>
-      <td><input type="file" name="images2s5category5">
+      <td><input type="file" name="image62">
       </tr>
 
       <tr>
@@ -421,11 +421,11 @@ if (isset($_POST['Submit']))
       <td><input type="radio" id="answer3q3s5c5"  name="answer63" value="3"></td>
       <td><input type="radio" id="answer4q3s5c5"  name="answer63" value="4"></td>
       <td><input type="radio" id="answer5q3s5c5"  name="answer63" value="5"></td>
-      <td><input type="file" name="images3s5category5">
+      <td><input type="file" name="image63">
       </tr>
     </table>
     Catatan:<br>
-    <textarea name="catatans5category5" cols="100" rows="3"></textarea>
+    <textarea name="catatan31" cols="100" rows="3"></textarea>
     <br>
     <br>
     
@@ -459,11 +459,11 @@ if (isset($_POST['Submit']))
       <td><input type="radio" id="answer3q1s5c6"  name="answer64" value="3"></td>
       <td><input type="radio" id="answer4q1s5c6"  name="answer64" value="4"></td>
       <td><input type="radio" id="answer5q1s5c6"  name="answer64" value="5"></td>
-      <td><input type="file" name="images1s5category6">
+      <td><input type="file" name="image64">
       </tr>
     </table>
     Catatan:<br>
-    <textarea name="catatans5category6" cols="100" rows="3"></textarea>
+    <textarea name="catatan32" cols="100" rows="3"></textarea>
     <br>
     <br>
     
@@ -496,11 +496,11 @@ if (isset($_POST['Submit']))
       <td><input type="radio" id="answer3q1s5c7"  name="answer65" value="3"></td>
       <td><input type="radio" id="answer4q1s5c7"  name="answer65" value="4"></td>
       <td><input type="radio" id="answer5q1s5c7"  name="answer65" value="5"></td>
-      <td><input type="file" name="images1s5category7">
+      <td><input type="file" name="image65">
       </tr>
     </table>
     Catatan:<br>
-    <textarea name="catatans5category7" cols="100" rows="3"></textarea>
+    <textarea name="catatan33" cols="100" rows="3"></textarea>
     <br>
     <br>
     
@@ -533,11 +533,11 @@ if (isset($_POST['Submit']))
       <td><input type="radio" id="answer3q1s5c8"  name="answer66" value="3"></td>
       <td><input type="radio" id="answer4q1s5c8"  name="answer66" value="4"></td>
       <td><input type="radio" id="answer5q1s5c8"  name="answer66" value="5"></td>
-      <td><input type="file" name="images1s5category8">
+      <td><input type="file" name="image66">
       </tr>
     </table>
     Catatan:<br>
-    <textarea name="catatans5category8" cols="100" rows="3"></textarea>
+    <textarea name="catatan34" cols="100" rows="3"></textarea>
     <br>
     <br>
     
@@ -570,11 +570,11 @@ if (isset($_POST['Submit']))
       <td><input type="radio" id="answer3q1s5c9"  name="answer67" value="3"></td>
       <td><input type="radio" id="answer4q1s5c9"  name="answer67" value="4"></td>
       <td><input type="radio" id="answer5q1s5c9"  name="answer67" value="5"></td>
-      <td><input type="file" name="images1s5category9">
+      <td><input type="file" name="image67">
       </tr>
     </table>
     Catatan:<br>
-    <textarea name="catatans5category9" cols="100" rows="3"></textarea>
+    <textarea name="catatan35" cols="100" rows="3"></textarea>
     <br>
     <br>
     

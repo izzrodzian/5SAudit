@@ -21,7 +21,26 @@ if (isset($_POST['Submit']))
   $answer3 = $_POST['answer3'];
   $total = $answer1 + $answer2 + $answer3;
 
-  $sql1 = "INSERT INTO qacategory_section1 (Category1, Category2, Category3, CategorySection1_TotalMarks) VALUES ('$answer1', '$answer2', '$answer3', '$total')";
+  //declare images variable
+  $filename1 = $_FILES['image1']['name'];
+  $filetmpname1 = $_FILES['image1']['tmp_name'];
+
+  $filename2 = $_FILES['image2']['name'];
+  $filetmpname2 = $_FILES['image2']['tmp_name'];
+
+  $filename3 = $_FILES['image3']['name'];
+  $filetmpname3 = $_FILES['image3']['tmp_name'];
+
+  //folder where images will be uploaded
+  $folder = 'imagesuploaded/';
+
+  //function for saving the uploaded images in a specific folder
+  move_uploaded_file($filetmpname1, $folder.$filename1);
+  move_uploaded_file($filetmpname2, $folder.$filename2);
+  move_uploaded_file($filetmpname3, $folder.$filename3);
+
+
+  $sql1 = "INSERT INTO qacategory_section1 (Category1, Category2, Category3, CategorySection1_TotalMarks, Image1, Image2, Image3) VALUES ('$answer1', '$answer2', '$answer3', '$total', '$filename1', '$filename2', 'filename3')";
   $result1 = mysqli_query($con,$sql1);
 
     if($result1)
@@ -88,7 +107,7 @@ if (isset($_POST['Submit']))
   
 </head>
 <body>
-  <section class="menu cid-rPwfwJELGC" once="menu" id="menu1-h">
+  <!-- <section class="menu cid-rPwfwJELGC" once="menu" id="menu1-h">
 
     
 
@@ -121,7 +140,7 @@ if (isset($_POST['Submit']))
                 </li></ul>
         </div>
     </nav>
-</section>
+</section> -->
 
 <section class="cid-rPxomWSNoR">
 <br><br>
@@ -135,7 +154,7 @@ if (isset($_POST['Submit']))
 <br>
 <div align="right"> Jumlah markah: <?php echo $answer1 ?>/5</div>
 <br>
-<form method="POST">
+<form method="POST" enctype="multipart/form-data">
 <table class="table" style="width: 100%;" align="center">    
       <tr>
       <th>Perkara</th>
@@ -156,11 +175,11 @@ if (isset($_POST['Submit']))
       <td><input type="radio" id="answer3s1c1"  name="answer1" value="3"></td>
       <td><input type="radio" id="answer4s1c1"  name="answer1" value="4"></td>
       <td><input type="radio" id="answer5s1c1"  name="answer1" value="5"></td>
-      <td><input type="file" name="imagescategory1">
+      <td><input type="file" name="image1">
       </tr>
 </table>
 Catatan:<br>
-    <textarea name="catatans1category1" cols="100" rows="3"></textarea>
+    <textarea name="catatan1" cols="100" rows="3"></textarea>
     <br>
     <br>
 </div>
@@ -191,11 +210,11 @@ Catatan:<br>
       <td><input type="radio" id="answer3s1c2"  name="answer2" value="3"></td>
       <td><input type="radio" id="answer4s1c2"  name="answer2" value="4"></td>
       <td><input type="radio" id="answer5s1c2"  name="answer2" value="5"></td>
-      <td><input type="file" name="imagescategory2">
+      <td><input type="file" name="image2">
       </tr>
     </table>
     Catatan:<br>
-    <textarea name="catatans1category1" cols="100" rows="3"></textarea>
+    <textarea name="catatan2" cols="100" rows="3"></textarea>
     <br>
     <br>
 </div>
@@ -228,11 +247,11 @@ Catatan:<br>
       <td><input type="radio" id="answer3s1c3"  name="answer3" value="3"></td>
       <td><input type="radio" id="answer4s1c3"  name="answer3" value="4"></td>
       <td><input type="radio" id="answer5s1c3"  name="answer3" value="5"></td>
-      <td><input type="file" name="imagess1category3">
+      <td><input type="file" name="image3">
       </tr>
     </table>
     Catatan:<br>
-    <textarea name="catatans1category1" cols="100" rows="3"></textarea>
+    <textarea name="catatan3" cols="100" rows="3"></textarea>
     <br>
     <br>
     
