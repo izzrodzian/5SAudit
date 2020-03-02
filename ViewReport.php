@@ -4,7 +4,7 @@
  session_start();
 
 $con = mysqli_connect('127.0.0.1','root','') or die ('Not connected.');
-mysqli_select_db($con,'uploadfile') or die ('No database found.');
+mysqli_select_db($con,'5s') or die ('No database found.');
 
 ?>
 
@@ -32,7 +32,7 @@ mysqli_select_db($con,'uploadfile') or die ('No database found.');
   
 </head>
 
-<section class="menu cid-rPwfwJELGC" once="menu" id="menu1-k">
+<!-- <section class="menu cid-rPwfwJELGC" once="menu" id="menu1-k">
 
     
 
@@ -71,7 +71,7 @@ mysqli_select_db($con,'uploadfile') or die ('No database found.');
             
         </div>
     </nav>
-</section>
+</section> -->
 <br><br><br><br><br>
 
 <div class="container align-center">
@@ -93,7 +93,7 @@ mysqli_select_db($con,'uploadfile') or die ('No database found.');
 <?php  
 $query = "SELECT * FROM qacategory_section1";  
 $result = mysqli_query($con, $query);  
-  if ($row = mysqli_fetch_array($result))  
+if ($row = mysqli_fetch_array($result))  
   { 
     
     $C1 = $row['Category1'];
@@ -104,17 +104,6 @@ $result = mysqli_query($con, $query);
    
   }  
   ?> 
-
-$query = "SELECT * FROM tbl_image";  
-$result = mysqli_query($con, $query);  
-if ($row = mysqli_fetch_array($result))  
-{ 
-
-$Image1 = $row['name'];
- 
-}  
-?> 
->
         <tr>
           <th> Kategori </th>
           <th> Soalan </th>
@@ -128,9 +117,6 @@ $Image1 = $row['name'];
 
           <td> <?php echo $C1 ?></td>
           <td><?php echo '<img src="data:image/png;base64,'.base64_encode($row["Image1"] ).'">' ?></td>
-
-          <td> </td>
-          <td> </td>
 
         </tr>
 
@@ -873,7 +859,7 @@ $Image1 = $row['name'];
    </form>
  </div>
 </div>
-<section once="footers" class="cid-rPwjkLZhDD" id="footer7-i">
+<!-- <section once="footers" class="cid-rPwjkLZhDD" id="footer7-i">
 
   <div class="container">
     <div class="media-container-row align-center mbr-white">
@@ -908,7 +894,7 @@ $Image1 = $row['name'];
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
   <script src="assets/web/assets/jquery/jquery.min.js"></script>
   <script src="assets/popper/popper.min.js"></script>
