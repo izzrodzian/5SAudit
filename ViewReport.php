@@ -4,7 +4,7 @@
  session_start();
 
 $con = mysqli_connect('127.0.0.1','root','') or die ('Not connected.');
-mysqli_select_db($con,'5s') or die ('No database found.');
+mysqli_select_db($con,'uploadfile') or die ('No database found.');
 
 ?>
 
@@ -104,6 +104,17 @@ $result = mysqli_query($con, $query);
    
   }  
   ?> 
+
+$query = "SELECT * FROM tbl_image";  
+$result = mysqli_query($con, $query);  
+if ($row = mysqli_fetch_array($result))  
+{ 
+
+$Image1 = $row['name'];
+ 
+}  
+?> 
+>
         <tr>
           <th> Kategori </th>
           <th> Soalan </th>
@@ -114,8 +125,13 @@ $result = mysqli_query($con, $query);
          <tr>
           <td>Fail Program</td>
           <td> Maklumat Lengkap dan Terkini (Merujuk pada Senarai Semak Dokumen)</td>
+
           <td> <?php echo $C1 ?></td>
           <td><?php echo '<img src="data:image/png;base64,'.base64_encode($row["Image1"] ).'">' ?></td>
+
+          <td> </td>
+          <td> </td>
+
         </tr>
 
         <tr>
@@ -140,8 +156,8 @@ $result = mysqli_query($con, $query);
 
 
 <!--  Seksyen 2 -->
-
  <table class="table table-hover  table-bordered align-center">
+
 
         <th class="align-left" colspan="4"> SEKSYEN 2: RUANG PEJABAT</th>
         <tr>
