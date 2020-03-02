@@ -40,7 +40,7 @@ if (isset($_POST['Submit']))
   move_uploaded_file($filetmpname3, $folder.$filename3);
 
 
-  $sql1 = "INSERT INTO qacategory_section1 (Category1, Category2, Category3, CategorySection1_TotalMarks, Image1, Image2, Image3) VALUES ('$answer1', '$answer2', '$answer3', '$total', '$filename1', '$filename2', 'filename3')";
+  $sql1 = "INSERT INTO qacategory_section1 (Category1, Category2, Category3, CategorySection1_TotalMarks, Image1, Image2, Image3) VALUES ('$answer1', '$answer2', '$answer3', '$total', '$filename1', '$filename2', '$filename3')";
   $result1 = mysqli_query($con,$sql1);
 
     if($result1)

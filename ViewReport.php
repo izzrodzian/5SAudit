@@ -76,7 +76,7 @@ mysqli_select_db($con,'5s') or die ('No database found.');
 
 <div class="container align-center">
   <div class="col-ld-12">
-   <img src="assets/images/prasarana.png" height="200" width="600">
+   <img src="assets/images/prasarana.png" height="200" width="700">
    <br><br></b><h1>LAPORAN AUDIT 5S AMPANG LINE</h1><br>
 
    <a onclick="window.print();">
@@ -86,18 +86,24 @@ mysqli_select_db($con,'5s') or die ('No database found.');
    <form method="POST">
     <table class="table table-hover  table-bordered align-center">
 
+
+
 <!-- Seksyen 1  -->
 <th class="align-left" colspan="4">SEKSYEN 1: KEPERLUAN UTAMA PELAKSANAAN</th>
 <?php  
 $query = "SELECT * FROM qacategory_section1";  
-$result = mysqli_query($conn, $query);  
-if ($row = mysqli_fetch_array($result))  
-{ 
-
-$Image1 = $row['Image1'];
- 
-}  
-?> 
+$result = mysqli_query($con, $query);  
+  if ($row = mysqli_fetch_array($result))  
+  { 
+    
+    $C1 = $row['Category1'];
+    $C2 = $row['Category2'];
+    $C3 = $row['Category3'];
+    $S1 = $row['CategorySection1_TotalMarks'];
+    $Image1 = $row['Image1'];
+   
+  }  
+  ?> 
         <tr>
           <th> Kategori </th>
           <th> Soalan </th>
@@ -108,27 +114,36 @@ $Image1 = $row['Image1'];
          <tr>
           <td>Fail Program</td>
           <td> Maklumat Lengkap dan Terkini (Merujuk pada Senarai Semak Dokumen)</td>
-          <td> </td>
-          <td> <?php echo '<img src="data:image/png;base64,'.base64_encode($Image1).'" height="200" width="200" class="img-thumnail" />';   ?></td>
+          <td> <?php echo $C1 ?></td>
+          <td><?php echo '<img src="data:image/png;base64,'.base64_encode($row["Image1"] ).'">' ?></td>
         </tr>
 
         <tr>
           <td>Sudut 5S</td>
           <td>Maklumat Lengkap dan Terkini (Merujuk pada Senarai Semak Dokumen)</td>
-          <td></td>
-          <td></td>
+          <td><?php echo $C2 ?></td>
+          <td><?php echo $Image1 ?></td>
         </tr>
 
          <tr>
           <td> Kaizen</td>
           <td>Penambahbaikan, Kreativiti dan Inovasi</td>
-          <td></td>
+          <td> <?php echo $C3 ?></td>
           <td></td>
         </tr>
 
+        <tr>
+          <th colspan="2">JUMLAH MARKAH SEKSYEN 1</th>
+          <th colspan="2"><?php echo $S1 ?></th>
+        </tr>
+      </table><br><br>
+
+
 <!--  Seksyen 2 -->
 
-        <th class="align-left" colspan="4" SEKSYEN 2: RUANG PEJABAT</th>
+ <table class="table table-hover  table-bordered align-center">
+
+        <th class="align-left" colspan="4"> SEKSYEN 2: RUANG PEJABAT</th>
         <tr>
           <th> Kategori </th>
           <th> Soalan </th>
@@ -239,9 +254,11 @@ $Image1 = $row['Image1'];
           <td></td>
           <td></td>
         </tr>
-
+</table><br><br>
 
 <!-- Seksyen 3 -->
+
+ <table class="table table-hover  table-bordered align-center">
 
         <th class="align-left" colspan="4" >SEKSYEN 3: STOR (FAIL, BAHAN, ALAT GANTI, UNIFORM & SEBAGAINYA)</th>
         <tr>
@@ -329,8 +346,11 @@ $Image1 = $row['Image1'];
           <td></td>
           <td></td>
         </tr>
+      </table><br><br>
 
 <!-- Seksyen 4 -->
+
+ <table class="table table-hover  table-bordered align-center">
 
 <th class="align-left" colspan="4" >SEKSYEN 4: OPERASI
 (BENGKEL PENYELENGGARAAN AM, PAM MINYAK, “WASHING BAY”, BILIK KAWALAN, BILIK KIRAAN & SEBAGAINYA)</th>
@@ -455,8 +475,11 @@ $Image1 = $row['Image1'];
           <td></td>
           <td></td>
         </tr>
+      </table><br><br>
 
 <!-- Seksyen 5 -->
+
+ <table class="table table-hover  table-bordered align-center">
 
 <th class="align-left" colspan="4">SEKSYEN 5: KAWASAN PERSEKITARAN LUARAN</th>
 <tr>
@@ -577,8 +600,11 @@ $Image1 = $row['Image1'];
           <td></td>
           <td></td>
         </tr>
+      </table><br><br>
 
 <!-- Seksyen 6 -->
+
+ <table class="table table-hover  table-bordered align-center">
 
 <th class="align-left" colspan="4">SEKSYEN 6: TEMPAT UMUM</th>
 <tr>

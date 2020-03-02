@@ -50,6 +50,76 @@ if (isset($_POST['Submit']))
   $totalC9 = $answer19;
   $total = $totalC1 + $totalC2 + $totalC3 + $totalC4 + $totalC5 + $totalC6 + $totalC7 + $totalC8 + $totalC9;
 
+    //declare images variable
+  $filename4 = $_FILES['image4']['name'];
+  $filetmpname4 = $_FILES['image4']['tmp_name'];
+
+  $filename5 = $_FILES['image5']['name'];
+  $filetmpname5 = $_FILES['image5']['tmp_name'];
+
+  $filename6 = $_FILES['image6']['name'];
+  $filetmpname6 = $_FILES['image6']['tmp_name'];
+
+  $filename7 = $_FILES['image7']['name'];
+  $filetmpname7 = $_FILES['image7']['tmp_name'];
+
+  $filename8 = $_FILES['image8']['name'];
+  $filetmpname8 = $_FILES['image8']['tmp_name'];
+
+  $filename9 = $_FILES['image9']['name'];
+  $filetmpname9 = $_FILES['image9']['tmp_name'];
+
+  $filename10 = $_FILES['image10']['name'];
+  $filetmpname10 = $_FILES['image10']['tmp_name'];
+
+  $filename11 = $_FILES['image11']['name'];
+  $filetmpname11 = $_FILES['image11']['tmp_name'];
+
+  $filename12 = $_FILES['image12']['name'];
+  $filetmpname12 = $_FILES['image12']['tmp_name'];
+
+  $filename13 = $_FILES['image13']['name'];
+  $filetmpname13 = $_FILES['image13']['tmp_name'];
+
+  $filename14 = $_FILES['image14']['name'];
+  $filetmpname14 = $_FILES['image14']['tmp_name'];
+
+  $filename15 = $_FILES['image15']['name'];
+  $filetmpname15 = $_FILES['image15']['tmp_name'];
+
+  $filename16 = $_FILES['image16']['name'];
+  $filetmpname16 = $_FILES['image16']['tmp_name'];
+
+  $filename17 = $_FILES['image17']['name'];
+  $filetmpname17 = $_FILES['image17']['tmp_name'];
+
+  $filename18 = $_FILES['image18']['name'];
+  $filetmpname18 = $_FILES['image18']['tmp_name'];
+
+  $filename19 = $_FILES['image19']['name'];
+  $filetmpname19 = $_FILES['image19']['tmp_name'];
+
+  //folder where images will be uploaded
+  $folder = 'imagesuploaded/';
+
+  //function for saving the uploaded images in a specific folder
+  move_uploaded_file($filetmpname4, $folder.$filename4);
+  move_uploaded_file($filetmpname5, $folder.$filename5);
+  move_uploaded_file($filetmpname6, $folder.$filename6);
+  move_uploaded_file($filetmpname7, $folder.$filename7);
+  move_uploaded_file($filetmpname8, $folder.$filename8);
+  move_uploaded_file($filetmpname9, $folder.$filename9);
+  move_uploaded_file($filetmpname10, $folder.$filename10);
+  move_uploaded_file($filetmpname11, $folder.$filename11);
+  move_uploaded_file($filetmpname12, $folder.$filename12);
+  move_uploaded_file($filetmpname13, $folder.$filename13);
+  move_uploaded_file($filetmpname14, $folder.$filename14);
+  move_uploaded_file($filetmpname15, $folder.$filename15);
+  move_uploaded_file($filetmpname16, $folder.$filename16);
+  move_uploaded_file($filetmpname17, $folder.$filename17);
+  move_uploaded_file($filetmpname18, $folder.$filename18);
+  move_uploaded_file($filetmpname19, $folder.$filename19);
+
   $sql1 = "INSERT INTO qacategory_section2 (Category1, Category2, Category3, Category4, Category5, Category6, Category7, Category8, Category9, CategorySection2_TotalMarks) VALUES ('$totalC1', '$totalC2', '$totalC3', '$totalC4', '$totalC5', '$totalC6', '$totalC7', '$totalC8', '$totalC9', '$total')";
   $result1 = mysqli_query($con,$sql1);
 
