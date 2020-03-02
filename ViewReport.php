@@ -32,46 +32,6 @@ mysqli_select_db($con,'5s') or die ('No database found.');
   
 </head>
 
-<!-- <section class="menu cid-rPwfwJELGC" once="menu" id="menu1-k">
-
-    
-
-    <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </button>
-        <div class="menu-logo">
-            <div class="navbar-brand">
-                <span class="navbar-logo">
-                    
-                         <img src="assets/images/logo5s-122x125.png" title="" style="height: 3.8rem;">
-                    
-                </span>
-                <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4">
-                        5S AUDIT INSPECTION / REPORTING</a></span>
-            </div>
-        </div>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
-              <li class="nav-item">
-                    <a class="nav-link link text-white display-4" href="AdminReport.php" aria-expanded="true"><span class="mbrib-left mbr-iconfont mbr-iconfont-btn"></span>
-                        
-                        BACK</a>
-                </li>
-                <li class="nav-item dropdown open">
-                    <a class="nav-link link dropdown-toggle text-white display-4" data-toggle="dropdown-submenu" aria-expanded="true"><span class="mobi-mbri mobi-mbri-logout mbr-iconfont mbr-iconfont-btn"></span>
-                        
-                        LOGOUT</a><div class="dropdown-menu"><a class="dropdown-item text-white display-4">PROFILE</a></div>
-                </li></ul>
-            
-        </div>
-    </nav>
-</section> -->
 <br><br><br><br><br>
 
 <div class="container align-center">
@@ -79,9 +39,12 @@ mysqli_select_db($con,'5s') or die ('No database found.');
    <img src="assets/images/prasarana.png" height="200" width="700">
    <br><br></b><h1>LAPORAN AUDIT 5S AMPANG LINE</h1><br>
 
+<div>
+  <a href="AdminReport.php"><input type="image" src="assets/images/back.png" title="back" width="40" height="40" align="left" ></a>
    <a onclick="window.print();">
     <input type="image" src="assets/images/print.png" title="print" width="40" height="40" align="right">
   </a><br><br>
+</div>
 
    <form method="POST">
     <table class="table table-hover  table-bordered align-center">
@@ -859,42 +822,6 @@ if ($row = mysqli_fetch_array($result))
    </form>
  </div>
 </div>
-<!-- <section once="footers" class="cid-rPwjkLZhDD" id="footer7-i">
-
-  <div class="container">
-    <div class="media-container-row align-center mbr-white">
-      <div class="row row-links">
-        <ul class="foot-menu">
-
-          <li class="foot-menu-item mbr-fonts-style display-7"></li><li class="foot-menu-item mbr-fonts-style display-7"></li><li class="foot-menu-item mbr-fonts-style display-7"></li><li class="foot-menu-item mbr-fonts-style display-7"></li><li class="foot-menu-item mbr-fonts-style display-7"></li></ul>
-        </div>
-        <div class="row social-row">
-          <div class="social-list align-right pb-2">
-
-            <div class="soc-item">
-              <a href="https://twitter.com/" target="_blank">
-                <span class="socicon-twitter socicon mbr-iconfont mbr-iconfont-social"></span>
-              </a>
-            </div><div class="soc-item">
-              <a href="https://www.facebook.com/" target="_blank">
-                <span class="socicon-facebook socicon mbr-iconfont mbr-iconfont-social"></span>
-              </a>
-            </div>
-            <div class="soc-item">
-              <a href="https://instagram.com/" target="_blank">
-                <span class="socicon-instagram socicon mbr-iconfont mbr-iconfont-social"></span>
-              </a>
-            </div>
-          </div>
-          </div>
-          <div class="row row-copirayt">
-            <p class="mbr-text mb-0 mbr-fonts-style mbr-white align-center display-7">
-              © Copyright 2020 | 5S Audit Inspection | Ampang Line - All Rights Reserved
-            </p>
-          </div>
-        </div>
-      </div>
-    </section> -->
 
   <script src="assets/web/assets/jquery/jquery.min.js"></script>
   <script src="assets/popper/popper.min.js"></script>
