@@ -1105,7 +1105,7 @@ mysqli_select_db($con,'5s') or die ('No database found.');
   </tr>
 
   <tr>
-    <th colspan="2">JUMLAH MARKAH SEKSYEN 5</th>
+    <th colspan="2">JUMLAH MARKAH SEKSYEN 6</th>
     <th colspan="2"><?php echo $S6 ?></th>
   </tr>
 
