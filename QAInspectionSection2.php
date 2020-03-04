@@ -7,6 +7,22 @@ session_start();
 $con = mysqli_connect('127.0.0.1','root','') or die ('Not connected.');
 mysqli_select_db($con,'5s') or die ('No database found.');
 
+$answer4 = 0;
+$answer5 = 0;
+$answer6 = 0;
+$answer7 = 0;
+$answer8 = 0;
+$answer9 = 0;
+$answer10 = 0;
+$answer11 = 0;
+$answer12 = 0;
+$answer13 = 0;
+$answer14 = 0;
+$answer15 = 0;
+$answer16 = 0;
+$answer17 = 0;
+$answer18 = 0;
+$answer19 = 0;
 $totalC1 = 0;
 $totalC2 = 0;
 $totalC3 = 0;
@@ -120,7 +136,8 @@ if (isset($_POST['Submit']))
   move_uploaded_file($filetmpname18, $folder.$filename18);
   move_uploaded_file($filetmpname19, $folder.$filename19);
 
-  $sql1 = "INSERT INTO qacategory_section2 (Category1, Category2, Category3, Category4, Category5, Category6, Category7, Category8, Category9, CategorySection2_TotalMarks) VALUES ('$totalC1', '$totalC2', '$totalC3', '$totalC4', '$totalC5', '$totalC6', '$totalC7', '$totalC8', '$totalC9', '$total')";
+
+  $sql1 = "INSERT INTO qacategory_section2 (Answer4, Answer5, Answer6, Answer7, Answer8, Answer9, Answer10, Answer11, Answer12, Answer13, Answer14, Answer15, Answer16, Answer17, Answer18, Answer19, Category1, Category2, Category3, Category4, Category5, Category6, Category7, Category8, Category9, CategorySection2_TotalMarks) VALUES ('$answer4','$answer5', '$answer6', '$answer7', '$answer8', '$answer9', '$answer10', '$answer11', '$answer12', '$answer13', '$answer14', '$answer15', '$answer16', '$answer17', '$answer18', '$answer19','$totalC1', '$totalC2', '$totalC3', '$totalC4', '$totalC5', '$totalC6', '$totalC7', '$totalC8', '$totalC9', '$total')";
   $result1 = mysqli_query($con,$sql1);
 
   if($result1)
@@ -186,7 +203,7 @@ if (isset($_POST['Submit']))
   
 </head>
 <body>
-  <section class="menu cid-rPwfwJELGC" once="menu" id="menu1-h">
+ <!--  <section class="menu cid-rPwfwJELGC" once="menu" id="menu1-h">
 
     
 
@@ -219,7 +236,7 @@ if (isset($_POST['Submit']))
                 </li></ul>
         </div>
     </nav>
-</section>
+</section> -->
 
 <section class="cid-rPxomWSNoR">
 <br><br>

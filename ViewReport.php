@@ -58,14 +58,107 @@ $query = "SELECT * FROM qacategory_section1";
 $result = mysqli_query($con, $query);  
 if ($row = mysqli_fetch_array($result))  
   { 
-    
     $C1 = $row['Category1'];
     $C2 = $row['Category2'];
     $C3 = $row['Category3'];
     $S1 = $row['CategorySection1_TotalMarks'];
     $Image1 = $row['Image1'];
-   
-  }  
+    $Image2 = $row['Image2'];
+    $Image3 = $row['Image3'];
+
+    if($result)
+    {
+      $query2 = "SELECT * FROM qacategory_section2";  
+      $result2 = mysqli_query($con, $query2);  
+      if ($row2 = mysqli_fetch_array($result2))  
+      { 
+        $A4 = $row2['Answer4'];
+        $A5 = $row2['Answer5'];
+        $A6 = $row2['Answer6'];
+        $A7 = $row2['Answer7'];
+        $A8 = $row2['Answer8'];
+        $A9 = $row2['Answer9'];
+        $A10 = $row2['Answer10'];
+        $A11 = $row2['Answer11'];
+        $A12 = $row2['Answer12'];
+        $A13 = $row2['Answer13'];
+        $A14 = $row2['Answer14'];
+        $A15 = $row2['Answer15'];
+        $A16 = $row2['Answer16'];
+        $A17 = $row2['Answer17'];
+        $A18 = $row2['Answer18'];
+        $A19 = $row2['Answer19'];
+        $C1S2 = $row2['Category1'];
+        $C2S2 = $row2['Category2'];
+        $C3S2 = $row2['Category3'];
+        $C4S2 = $row2['Category4'];
+        $C5S2 = $row2['Category5'];
+        $C6S2 = $row2['Category6'];
+        $C7S2 = $row2['Category7'];
+        $C8S2 = $row2['Category8'];
+        $C9S2 = $row2['Category9'];
+        $S2 = $row2['CategorySection2_TotalMarks'];
+        $Image4 = $row2['Image4'];
+        $Image5 = $row2['Image5'];
+        $Image6 = $row2['Image6'];
+        $Image7 = $row2['Image7'];
+        $Image8 = $row2['Image8'];
+        $Image9 = $row2['Image9'];
+        $Image10 = $row2['Image10'];
+        $Image11 = $row2['Image11'];
+        $Image12 = $row2['Image12'];
+        $Image13 = $row2['Image13'];
+        $Image14 = $row2['Image14'];
+        $Image15 = $row2['Image15'];
+        $Image16 = $row2['Image16'];
+        $Image17 = $row2['Image17'];
+        $Image18 = $row2['Image18'];
+        $Image19 = $row2['Image19'];
+
+        if($result2)
+        {
+          $query3 = "SELECT * FROM qacategory_section3";  
+          $result3 = mysqli_query($con, $query3);  
+          if ($row3 = mysqli_fetch_array($result3))  
+          { 
+            $A20 = $row3['Answer20'];
+            $A21 = $row3['Answer21'];
+            $A22 = $row3['Answer22'];
+            $A23 = $row3['Answer23'];
+            $A24 = $row3['Answer24'];
+            $A25 = $row3['Answer25'];
+            $A26 = $row3['Answer26'];
+            $A27 = $row3['Answer27'];
+            $A28 = $row3['Answer28'];
+            $A29 = $row3['Answer29'];
+            $A30 = $row3['Answer30'];
+            $A31 = $row3['Answer31'];
+            $A32 = $row3['Answer32'];
+            $C1S3 = $row3['Category1'];
+            $C2S3 = $row3['Category2'];
+            $C3S3 = $row3['Category3'];
+            $C4S3 = $row3['Category4'];
+            $C5S3 = $row3['Category5'];
+            $S3 = $row3['CategorySection3_TotalMarks'];
+            $Image20 = $row3['Image20'];
+            $Image21 = $row3['Image21'];
+            $Image22 = $row3['Image22'];
+            $Image23 = $row3['Image23'];
+            $Image24 = $row3['Image24'];
+            $Image25 = $row3['Image25'];
+            $Image26 = $row3['Image26'];
+            $Image27 = $row3['Image27'];
+            $Image28 = $row3['Image28'];
+            $Image29 = $row3['Image29'];
+            $Image30 = $row3['Image30'];
+            $Image31 = $row3['Image31'];
+            
+          }
+        }
+      }
+    }
+    
+  }
   ?> 
         <tr>
           <th> Kategori </th>
@@ -107,7 +200,6 @@ if ($row = mysqli_fetch_array($result))
 <!--  Seksyen 2 -->
  <table class="table table-hover  table-bordered align-center">
 
-
         <th class="align-left" colspan="4"> SEKSYEN 2: RUANG PEJABAT</th>
         <tr>
           <th> Kategori </th>
@@ -119,105 +211,110 @@ if ($row = mysqli_fetch_array($result))
          <tr>
           <td rowspan="3">Tempat Individu</td>
           <td> Susun atur kemas dan sistematik</td>
-          <td> </td>
-          <td> </td>
+          <td><?php echo $A4 ?></td>
+          <td><?php echo $Image4 ?></td>
         </tr>
         <tr>
           
           <td> Bersih dan tiada kotoran</td>
-          <td> </td>
-          <td> </td>
+          <td><?php echo $A5 ?></td>
+          <td><?php echo $Image5 ?></td>
         </tr>
         <tr>
           
           <td> Item dalam keadaan minima/tiada item tidak perlu</td>
-          <td> </td>
-          <td> </td>
+          <td><?php echo $A6 ?></td>
+          <td><?php echo $Image6 ?></td>
         </tr>
 
         <tr>
           <td rowspan="2">Siling/Lantai
 /Dinding</td>
           <td>Susun atur kemas dan sistematik</td>
-          <td></td>
-          <td></td>
+          <td><?php echo $A7 ?></td>
+          <td><?php echo $Image7 ?></td>
         </tr>
         <tr>
         <td>Bersih dan tiada kotoran</td>
-          <td></td>
-          <td></td>
+          <td><?php echo $A8 ?></td>
+          <td><?php echo $Image8 ?></td>
         </tr>
 
          <tr>
           <td rowspan="2"> Peralatan
 /Perkakas</td>
           <td>Kemas dan tersimpan di tempat asal</td>
-          <td></td>
-          <td></td>
+          <td><?php echo $A9 ?></td>
+          <td><?php echo $Image9 ?></td>
         </tr>
 <tr>
         <td>Bersih, tidak berdebu dan berfungsi baik</td>
-          <td></td>
-          <td></td>
+         <td><?php echo $A10 ?></td>
+          <td><?php echo $Image10 ?></td>
         </tr>
 
           <tr>
           <td rowspan="3">Tempat Fail/Rekod/Dokumen</td>
           <td> Kedudukan fail teratur dan kemas</td>
-          <td> </td>
-          <td> </td>
+         <td><?php echo $A11 ?></td>
+          <td><?php echo $Image11 ?></td>
         </tr>
 <tr>
         <td> Mudah dicari dan dikesan dengan mewujudkan pelabelan dan indeks kedudukan fail</td>
-          <td> </td>
-          <td> </td>
+         <td><?php echo $A12 ?></td>
+          <td><?php echo $Image12 ?></td>
         </tr>
 
         <tr>
         <td>Kabinet rak fail adalah bersih dan tidak berhabuk</td>
-          <td> </td>
-          <td> </td>
+          <td><?php echo $A13 ?></td>
+          <td><?php echo $Image13 ?></td>
         </tr>
 
         <tr>
           <td>Maklumat Visual</td>
           <td>Kemas, bersih dan terkini</td>
-          <td></td>
-          <td></td>
+          <td><?php echo $A14 ?></td>
+          <td><?php echo $Image14 ?></td>
         </tr>
 
          <tr>
           <td rowspan="2"> Keselamatan</td>
           <td>Aspek keselamatan diutamakan</td>
-          <td></td>
-          <td></td>
+          <td><?php echo $A15 ?></td>
+          <td><?php echo $Image15 ?></td>
         </tr>
 
         <tr>
           <td>Kawalan visual dan ciri keselamatan mencukupi</td>
-          <td></td>
-          <td></td>
+          <td><?php echo $A16 ?></td>
+          <td><?php echo $Image16 ?></td>
         </tr>
 
         <tr>
           <td> Seragam</td>
           <td>Sokongan pelaksanaan dengan mewujudkan kawalan visual dan “konsep ownership</td>
-          <td></td>
-          <td></td>
+          <td><?php echo $A17 ?></td>
+          <td><?php echo $Image17 ?></td>
         </tr>
 
         <tr>
           <td> Sentiasa Amal</td>
           <td>Kerjasama dan sikap positif untuk amalan berterusan</td>
-          <td></td>
-          <td></td>
+          <td><?php echo $A18 ?></td>
+          <td><?php echo $Image18 ?></td>
         </tr>
 
         <tr>
           <td> Impak</td>
           <td>Kerjasama dan sikap positif untuk amalan berterusan</td>
-          <td></td>
-          <td></td>
+          <td><?php echo $A19 ?></td>
+          <td><?php echo $Image19 ?></td>
+        </tr>
+
+         <tr>
+          <th colspan="2">JUMLAH MARKAH SEKSYEN 2</th>
+          <th colspan="2"><?php echo $S2 ?></th>
         </tr>
 </table><br><br>
 
