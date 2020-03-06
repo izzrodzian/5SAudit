@@ -7,6 +7,39 @@ session_start();
 $con = mysqli_connect('127.0.0.1','root','') or die ('Not connected.');
 mysqli_select_db($con,'5s') or die ('No database found.');
 
+$answer68 = 0;
+$answer69 = 0;
+$answer70 = 0;
+$answer71 = 0;
+$answer72 = 0;
+$answer73 = 0;
+$answer74 = 0;
+$answer75 = 0;
+$answer76 = 0;
+$answer77 = 0;
+$answer78 = 0;
+$answer79 = 0;
+$answer80 = 0;
+$answer81 = 0;
+$answer82 = 0;
+$answer83 = 0;
+$answer84 = 0;
+$answer85 = 0;
+$answer86 = 0;
+$answer87 = 0;
+$answer88 = 0;
+$answer89 = 0;
+$answer90 = 0;
+$answer91 = 0;
+$answer92 = 0;
+$answer93 = 0;
+$answer94 = 0;
+$answer95 = 0;
+$answer96 = 0;
+$answer97 = 0;
+$answer98 = 0;
+$answer99 = 0;
+$answer100 = 0;
 $totalC1 = 0;
 $totalC2 = 0;
 $totalC3 = 0;
@@ -60,6 +93,22 @@ if (isset($_POST['Submit']))
   $answer99 = $_POST['answer99'];
   $answer100 = $_POST['answer100'];
 
+
+  $catatan36 = $_POST['catatan36'];
+  $catatan37 = $_POST['catatan37'];
+  $catatan38 = $_POST['catatan38'];
+  $catatan39 = $_POST['catatan39'];
+  $catatan40 = $_POST['catatan40'];
+  $catatan41 = $_POST['catatan41'];
+  $catatan42 = $_POST['catatan42'];
+  $catatan43 = $_POST['catatan43'];
+  $catatan44 = $_POST['catatan44'];
+  $catatan45 = $_POST['catatan45'];
+  $catatan46 = $_POST['catatan46'];
+  $catatan47 = $_POST['catatan47'];
+  $catatan48 = $_POST['catatan48'];
+  $catatan49 = $_POST['catatan49'];
+
   //Calculation
   $totalC1 = $answer68 + $answer69;
   $totalC2 = $answer70 + $answer71 + $answer72;
@@ -77,36 +126,175 @@ if (isset($_POST['Submit']))
   $totalC14 = $answer100;
   $total = $totalC1 + $totalC2 + $totalC3 + $totalC4 + $totalC5 + $totalC6 + $totalC7 + $totalC8 + $totalC9 + $totalC10 + $totalC11 + $totalC12 + $totalC13 + $totalC14;
 
-  $sql1 = "INSERT INTO qacategory_section6 (Category1, Category2, Category3, Category4, Category5, Category6, Category7, Category8, Category9, Category10, Category11, Category12, Category13, Category14, CategorySection6_TotalMarks) VALUES ('$totalC1', '$totalC2', '$totalC3', '$totalC4', '$totalC5', '$totalC6', '$totalC7', '$totalC8', '$totalC9', '$totalC10', '$totalC11', '$totalC12', '$totalC13', '$totalC14', '$total')";
+
+   //declare images variable
+  $filename68 = $_FILES['image68']['name'];
+  $filetmpname68 = $_FILES['image68']['tmp_name'];
+
+  $filename69 = $_FILES['image69']['name'];
+  $filetmpname69 = $_FILES['image69']['tmp_name'];
+
+  $filename70 = $_FILES['image70']['name'];
+  $filetmpname70 = $_FILES['image70']['tmp_name'];
+
+  $filename71 = $_FILES['image71']['name'];
+  $filetmpname71 = $_FILES['image71']['tmp_name'];
+
+  $filename72 = $_FILES['image72']['name'];
+  $filetmpname72 = $_FILES['image72']['tmp_name'];
+
+  $filename73 = $_FILES['image73']['name'];
+  $filetmpname73 = $_FILES['image73']['tmp_name'];
+
+  $filename74 = $_FILES['image74']['name'];
+  $filetmpname74 = $_FILES['image74']['tmp_name'];
+
+  $filename75 = $_FILES['image75']['name'];
+  $filetmpname75 = $_FILES['image75']['tmp_name'];
+
+  $filename76 = $_FILES['image76']['name'];
+  $filetmpname76 = $_FILES['image76']['tmp_name'];
+
+  $filename77 = $_FILES['image77']['name'];
+  $filetmpname77 = $_FILES['image77']['tmp_name'];
+
+  $filename78 = $_FILES['image78']['name'];
+  $filetmpname78 = $_FILES['image78']['tmp_name'];
+
+  $filename79 = $_FILES['image79']['name'];
+  $filetmpname79 = $_FILES['image79']['tmp_name'];
+
+  $filename80 = $_FILES['image80']['name'];
+  $filetmpname80 = $_FILES['image80']['tmp_name'];
+
+  $filename81 = $_FILES['image81']['name'];
+  $filetmpname81 = $_FILES['image81']['tmp_name'];
+
+  $filename82 = $_FILES['image82']['name'];
+  $filetmpname82 = $_FILES['image82']['tmp_name'];
+
+  $filename83 = $_FILES['image83']['name'];
+  $filetmpname83 = $_FILES['image83']['tmp_name'];
+
+  $filename84 = $_FILES['image84']['name'];
+  $filetmpname84 = $_FILES['image84']['tmp_name'];
+
+  $filename85 = $_FILES['image85']['name'];
+  $filetmpname85 = $_FILES['image85']['tmp_name'];
+
+  $filename86 = $_FILES['image86']['name'];
+  $filetmpname86 = $_FILES['image86']['tmp_name'];
+
+  $filename87 = $_FILES['image87']['name'];
+  $filetmpname87 = $_FILES['image87']['tmp_name'];
+
+  $filename88 = $_FILES['image88']['name'];
+  $filetmpname88 = $_FILES['image88']['tmp_name'];
+
+  $filename89 = $_FILES['image89']['name'];
+  $filetmpname89 = $_FILES['image89']['tmp_name'];
+
+  $filename90 = $_FILES['image90']['name'];
+  $filetmpname90 = $_FILES['image90']['tmp_name'];
+
+  $filename91 = $_FILES['image91']['name'];
+  $filetmpname91 = $_FILES['image91']['tmp_name'];
+
+  $filename92 = $_FILES['image92']['name'];
+  $filetmpname92 = $_FILES['image92']['tmp_name'];
+
+  $filename93 = $_FILES['image93']['name'];
+  $filetmpname93 = $_FILES['image93']['tmp_name'];
+
+  $filename94 = $_FILES['image94']['name'];
+  $filetmpname94 = $_FILES['image94']['tmp_name'];
+
+  $filename95 = $_FILES['image95']['name'];
+  $filetmpname95 = $_FILES['image95']['tmp_name'];
+
+  $filename96 = $_FILES['image96']['name'];
+  $filetmpname96 = $_FILES['image96']['tmp_name'];
+
+  $filename97 = $_FILES['image97']['name'];
+  $filetmpname97 = $_FILES['image97']['tmp_name'];
+
+  $filename98 = $_FILES['image98']['name'];
+  $filetmpname98 = $_FILES['image98']['tmp_name'];
+
+  $filename99 = $_FILES['image99']['name'];
+  $filetmpname99 = $_FILES['image99']['tmp_name'];
+
+  $filename100 = $_FILES['image100']['name'];
+  $filetmpname100 = $_FILES['image100']['tmp_name'];
+
+  //folder where images will be uploaded
+  $folder = 'imagesuploaded/';
+
+  //function for saving the uploaded images in a specific folder
+  move_uploaded_file($filetmpname68, $folder.$filename68);
+  move_uploaded_file($filetmpname69, $folder.$filename69);
+  move_uploaded_file($filetmpname70, $folder.$filename70);
+  move_uploaded_file($filetmpname71, $folder.$filename71);
+  move_uploaded_file($filetmpname72, $folder.$filename72);
+  move_uploaded_file($filetmpname73, $folder.$filename73);
+  move_uploaded_file($filetmpname74, $folder.$filename74);
+  move_uploaded_file($filetmpname75, $folder.$filename75);
+  move_uploaded_file($filetmpname76, $folder.$filename76);
+  move_uploaded_file($filetmpname77, $folder.$filename77);
+  move_uploaded_file($filetmpname78, $folder.$filename78);
+  move_uploaded_file($filetmpname79, $folder.$filename79);
+  move_uploaded_file($filetmpname80, $folder.$filename80);
+  move_uploaded_file($filetmpname81, $folder.$filename81);
+  move_uploaded_file($filetmpname82, $folder.$filename82);
+  move_uploaded_file($filetmpname83, $folder.$filename83);
+  move_uploaded_file($filetmpname84, $folder.$filename84);
+  move_uploaded_file($filetmpname85, $folder.$filename85);
+  move_uploaded_file($filetmpname86, $folder.$filename86);
+  move_uploaded_file($filetmpname87, $folder.$filename87);
+  move_uploaded_file($filetmpname88, $folder.$filename88);
+  move_uploaded_file($filetmpname89, $folder.$filename89);
+  move_uploaded_file($filetmpname90, $folder.$filename90);
+  move_uploaded_file($filetmpname91, $folder.$filename91);
+  move_uploaded_file($filetmpname92, $folder.$filename92);
+  move_uploaded_file($filetmpname93, $folder.$filename93);
+  move_uploaded_file($filetmpname94, $folder.$filename94);
+  move_uploaded_file($filetmpname95, $folder.$filename95);
+  move_uploaded_file($filetmpname96, $folder.$filename96);
+  move_uploaded_file($filetmpname97, $folder.$filename97);
+  move_uploaded_file($filetmpname98, $folder.$filename98);
+  move_uploaded_file($filetmpname99, $folder.$filename99);
+  move_uploaded_file($filetmpname100, $folder.$filename100);
+
+  $sql1 = "INSERT INTO qacategory_section6 (Answer68, Answer69, Answer70, Answer71, Answer72, Answer73, Answer74, Answer75, Answer76, Answer77, Answer78, Answer79, Answer80, Answer81, Answer82, Answer83, Answer84, Answer85, Answer86, Answer87, Answer88, Answer89, Answer90, Answer91, Answer92, Answer93, Answer94, Answer95, Answer96, Answer97, Answer98, Answer99, Answer100, Category1, Category2, Category3, Category4, Category5, Category6, Category7, Category8, Category9, Category10, Category11, Category12, Category13, Category14, CategorySection6_TotalMarks, Image68, Image69, Image70, Image71, Image72, Image73, Image74, Image75, Image76, Image77, Image78, Image79, Image80, Image81, Image82, Image83, Image84, Image85, Image86, Image87, Image88, Image89, Image90, Image91, Image2, Image93, Image94, Image95, Image96, Image97, Image98, Image99, Image100, Catatan36, Catatan37, Catatan38, Catatan39, Catatan40, Catatan41, Catatan42, Catatan43, Catatan44, Catatan45, Catatan46, Catatan47, Catatan48, Catatan49) VALUES ('$answer68','$answer69', '$answer70', '$answer71', '$answer72', '$answer73', '$answer74', '$answer75', '$answer76', '$answer77', '$answer78', '$answer79', '$answer80', '$answer81', '$answer82', '$answer83', '$answer84', '$answer85', '$answer86', '$answer87', '$answer88', '$answer89', '$answer90', '$answer91', '$answer92', '$answer93', '$answer94','$answer95', '$answer96', '$answer97', '$answer98', '$answer99', '$answer100','$totalC1', '$totalC2', '$totalC3', '$totalC4', '$totalC5', '$totalC6', '$totalC7', '$totalC8', '$totalC9', '$totalC10', '$totalC11', '$totalC12', '$totalC13', '$totalC14', '$total', '$filename68', '$filename69', '$filename70', '$filename71', '$filename72', '$filename73', '$filename74', '$filename75', '$filename76', '$filename77', '$filename78', '$filename79', '$filename80', '$filename81', '$filename82', '$filename83', '$filename84', '$filename85', '$filename86', '$filename87', '$filename88', '$filename89', '$filename90', '$filename91', '$filename92', '$filename93', '$filename94', '$filename95', '$filename96', '$filename97', '$filename98', '$filename99', '$filename100', '$catatan36', '$catatan37', '$catatan38', '$catatan39', '$catatan40', '$catatan41', '$catatan42', '$catatan43', '$catatan44', '$catatan45', '$catatan46', '$catatan47', '$catatan48', '$catatan49')";
   $result1 = mysqli_query($con,$sql1);
 
-  if($result1)
-    {    
-     $sql2 = "INSERT INTO qamarks (CategorySection6_TotalMarks) VALUES ('$total')"; 
+//   if($result1)
+//     {    
+//      $sql2 = "INSERT INTO qamarks (CategorySection6_TotalMarks) VALUES ('$total')"; 
 
-     $result2 = mysqli_query($con,$sql2);
+//      $result2 = mysqli_query($con,$sql2);
 
-     if($result2)
+//      if($result2)
 
-     {
-       $S1 = $_GET['CategorySection1_TotalMarks'];
-       $S2 = $_GET['CategorySection2_TotalMarks'];
-       $S3 = $_GET['CategorySection3_TotalMarks'];
-       $S4 = $_GET['CategorySection4_TotalMarks'];
-       $S5 = $_GET['CategorySection5_TotalMarks'];
-       $S6 = $_GET['CategorySection6_TotalMarks'];
-       $overall = $S1 + $S2 + $S3 + $S4 + $S5 + $S6; 
+//      {
+//        $S1 = $_GET['CategorySection1_TotalMarks'];
+//        $S2 = $_GET['CategorySection2_TotalMarks'];
+//        $S3 = $_GET['CategorySection3_TotalMarks'];
+//        $S4 = $_GET['CategorySection4_TotalMarks'];
+//        $S5 = $_GET['CategorySection5_TotalMarks'];
+//        $S6 = $_GET['CategorySection6_TotalMarks'];
+//        $overall = $S1 + $S2 + $S3 + $S4 + $S5 + $S6; 
 
-//sum ct
-       $sql4 = "UPDATE into qamarks (TotalMarks) VALUES ('$overall') WHERE userID ='0'";
-       $result4 = mysqli_query($con,$sql4);
-     }
+// //sum ct
+//        $sql4 = "UPDATE into qamarks (TotalMarks) VALUES ('$overall') WHERE userID ='0'";
+//        $result4 = mysqli_query($con,$sql4);
+//      }
 
-   }
-}
+//    }
+// }
 
-if (isset($_POST['Done']))
-{
+// if (isset($_POST['Done']))
+// {
 
 // $sql3 = "SELECT CategorySection1_TotalMarks, CategorySection2_TotalMarks, CategorySection3_TotalMarks, CategorySection4_TotalMarks, CategorySection5_TotalMarks, CategorySection6_TotalMarks FROM qamarks WHERE userID = '0'";
 // $result3 = mysqli_query($con,$sql3);
@@ -869,11 +1057,11 @@ Header("Location:AuditorReport.php");
       <td><input type="radio" id="answer3q1s6c12"  name="answer98" value="3"></td>
       <td><input type="radio" id="answer4q1s6c12"  name="answer98" value="4"></td>
       <td><input type="radio" id="answer5q1s6c12"  name="answer98" value="5"></td>
-      <td><input type="file" name="images1s6category12">
+      <td><input type="file" name="image98">
       </tr>
     </table>
     Catatan:<br>
-    <textarea name="catatans6category12" cols="100" rows="3"></textarea>
+    <textarea name="catatan47" cols="100" rows="3"></textarea>
     <br>
     <br>
     
@@ -906,11 +1094,11 @@ Header("Location:AuditorReport.php");
       <td><input type="radio" id="answer3q1s6c13"  name="answer99" value="3"></td>
       <td><input type="radio" id="answer4q1s6c13"  name="answer99" value="4"></td>
       <td><input type="radio" id="answer5q1s6c13"  name="answer99" value="5"></td>
-      <td><input type="file" name="images1s6category13">
+      <td><input type="file" name="image99">
       </tr>
     </table>
     Catatan:<br>
-    <textarea name="catatans6category13" cols="100" rows="3"></textarea>
+    <textarea name="catatan48" cols="100" rows="3"></textarea>
     <br>
     <br>
     
@@ -943,11 +1131,11 @@ Header("Location:AuditorReport.php");
       <td><input type="radio" id="answer3q1s6c14"  name="answer100" value="3"></td>
       <td><input type="radio" id="answer4q1s6c14"  name="answer100" value="4"></td>
       <td><input type="radio" id="answer5q1s6c14"  name="answer100" value="5"></td>
-      <td><input type="file" name="images1s6category14">
+      <td><input type="file" name="image100">
       </tr>
     </table>
     Catatan:<br>
-    <textarea name="catatans6category14" cols="100" rows="3"></textarea>
+    <textarea name="catatan49" cols="100" rows="3"></textarea>
     <br>
     <br>
    

@@ -7,6 +7,19 @@ session_start();
 $con = mysqli_connect('127.0.0.1','root','') or die ('Not connected.');
 mysqli_select_db($con,'5s') or die ('No database found.');
 
+$answer20 = 0;
+$answer21 = 0;
+$answer22 = 0;
+$answer23 = 0;
+$answer24 = 0;
+$answer25 = 0;
+$answer26 = 0;
+$answer27 = 0;
+$answer28 = 0;
+$answer29 = 0;
+$answer30 = 0;
+$answer31 = 0;
+$answer32 = 0;
 $totalC1 = 0;
 $totalC2 = 0;
 $totalC3 = 0;
@@ -31,6 +44,12 @@ if (isset($_POST['Submit']))
   $answer31 = $_POST['answer31'];
   $answer32 = $_POST['answer32'];
 
+  $catatan13 = $_POST['catatan13'];
+  $catatan14 = $_POST['catatan14'];
+  $catatan15 = $_POST['catatan15'];
+  $catatan16 = $_POST['catatan16'];
+  $catatan17 = $_POST['catatan17'];
+
   //Calculation
   $totalC1 = $answer20 + $answer21 + $answer22 +  $answer23 + $answer24 + $answer25 + $answer26;
   $totalC2 = $answer27 + $answer28;
@@ -39,7 +58,65 @@ if (isset($_POST['Submit']))
   $totalC5 = $answer32;
   $total = $totalC1 + $totalC2 + $totalC3 + $totalC4 + $totalC5;
 
-  $sql1 = "INSERT INTO qacategory_section3 (Category1, Category2, Category3, Category4, Category5, CategorySection3_TotalMarks) VALUES ('$totalC1', '$totalC2', '$totalC3', '$totalC4', '$totalC5', '$total')";
+   //declare images variable
+  $filename20 = $_FILES['image20']['name'];
+  $filetmpname20 = $_FILES['image20']['tmp_name'];
+
+  $filename21 = $_FILES['image21']['name'];
+  $filetmpname21 = $_FILES['image21']['tmp_name'];
+
+  $filename22 = $_FILES['image22']['name'];
+  $filetmpname22 = $_FILES['image22']['tmp_name'];
+
+  $filename23 = $_FILES['image23']['name'];
+  $filetmpname23 = $_FILES['image23']['tmp_name'];
+
+  $filename24 = $_FILES['image24']['name'];
+  $filetmpname24 = $_FILES['image24']['tmp_name'];
+
+  $filename25 = $_FILES['image25']['name'];
+  $filetmpname25 = $_FILES['image25']['tmp_name'];
+
+  $filename26 = $_FILES['image26']['name'];
+  $filetmpname26 = $_FILES['image26']['tmp_name'];
+
+  $filename27 = $_FILES['image27']['name'];
+  $filetmpname27 = $_FILES['image27']['tmp_name'];
+
+  $filename28 = $_FILES['image28']['name'];
+  $filetmpname28 = $_FILES['image28']['tmp_name'];
+
+  $filename29 = $_FILES['image29']['name'];
+  $filetmpname29 = $_FILES['image29']['tmp_name'];
+
+  $filename30 = $_FILES['image30']['name'];
+  $filetmpname30 = $_FILES['image30']['tmp_name'];
+
+  $filename31 = $_FILES['image31']['name'];
+  $filetmpname31 = $_FILES['image31']['tmp_name'];
+
+  $filename32 = $_FILES['image32']['name'];
+  $filetmpname32 = $_FILES['image32']['tmp_name'];
+
+  //folder where images will be uploaded
+  $folder = 'imagesuploaded/';
+
+  //function for saving the uploaded images in a specific folder
+  move_uploaded_file($filetmpname20, $folder.$filename20);
+  move_uploaded_file($filetmpname21, $folder.$filename21);
+  move_uploaded_file($filetmpname22, $folder.$filename22);
+  move_uploaded_file($filetmpname23, $folder.$filename23);
+  move_uploaded_file($filetmpname24, $folder.$filename24);
+  move_uploaded_file($filetmpname25, $folder.$filename25);
+  move_uploaded_file($filetmpname26, $folder.$filename26);
+  move_uploaded_file($filetmpname27, $folder.$filename27);
+  move_uploaded_file($filetmpname28, $folder.$filename28);
+  move_uploaded_file($filetmpname29, $folder.$filename29);
+  move_uploaded_file($filetmpname30, $folder.$filename30);
+  move_uploaded_file($filetmpname31, $folder.$filename31);
+  move_uploaded_file($filetmpname32, $folder.$filename32);
+
+  $sql1 = "INSERT INTO qacategory_section3 (Answer20, Answer21, Answer22, Answer23, Answer24, Answer25, Answer26, Answer27, Answer28, Answer29, Answer30, Answer31, Answer32, Category1, Category2, Category3, Category4, Category5, CategorySection3_TotalMarks, Image20, Image21, Image22, Image23, Image24, Image25, Image26, Image27, Image28, Image29, Image30, Image31, Image32, Catatan20, Catatan13, Catatan14, Catatan15, Catatan16, Catatan17) VALUES ('$answer20','$answer21', '$answer22', '$answer23', '$answer24', '$answer25', '$answer26', '$answer27', '$answer28', '$answer29', '$answer30', '$answer31', '$answer32', '$totalC1', '$totalC2', '$totalC3', '$totalC4', '$totalC5', '$total', '$image20','$image21', '$image22', '$image23', '$image24', '$image25', '$image26', '$image27', '$image28', '$image29', '$image30', '$image31', '$image32', '$catatan13', '$catatan14', '$catatan15', '$catatan16', '$catatan17')";
   $result1 = mysqli_query($con,$sql1);
 
   if($result1)

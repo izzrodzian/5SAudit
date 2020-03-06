@@ -7,6 +7,24 @@ session_start();
 $con = mysqli_connect('127.0.0.1','root','') or die ('Not connected.');
 mysqli_select_db($con,'5s') or die ('No database found.');
 
+$answer33 = 0;
+$answer34 = 0;
+$answer35 = 0;
+$answer36 = 0;
+$answer37 = 0;
+$answer38 = 0;
+$answer39 = 0;
+$answer40 = 0;
+$answer41 = 0;
+$answer42 = 0;
+$answer43 = 0;
+$answer44 = 0;
+$answer45 = 0;
+$answer46 = 0;
+$answer47 = 0;
+$answer48 = 0;
+$answer49 = 0;
+$answer50 = 0;
 $totalC1 = 0;
 $totalC2 = 0;
 $totalC3 = 0;
@@ -40,6 +58,16 @@ if (isset($_POST['Submit']))
   $answer49 = $_POST['answer49'];
   $answer50 = $_POST['answer50'];
 
+  $catatan18 = $_POST['catatan18'];
+  $catatan19 = $_POST['catatan19'];
+  $catatan20 = $_POST['catatan20'];
+  $catatan21 = $_POST['catatan21'];
+  $catatan22 = $_POST['catatan22'];
+  $catatan23 = $_POST['catatan23'];
+  $catatan24 = $_POST['catatan24'];
+  $catatan25 = $_POST['catatan25'];
+  $catatan26 = $_POST['catatan26'];
+
   //Calculation
   $totalC1 = $answer33 + $answer34 + $answer35;
   $totalC2 = $answer36 + $answer37 + $answer38 + $answer39 + $answer40 + $answer41;
@@ -52,7 +80,86 @@ if (isset($_POST['Submit']))
   $totalC9 = $answer50;
   $total = $totalC1 + $totalC2 + $totalC3 + $totalC4 + $totalC5 + $totalC6 + $totalC7 + $totalC8 + $totalC9;
 
-  $sql1 = "INSERT INTO qacategory_section4 (Category1, Category2, Category3, Category4, Category5, Category6, Category7, Category8, Category9, CategorySection4_TotalMarks) VALUES ('$totalC1', '$totalC2', '$totalC3', '$totalC4', '$totalC5', '$totalC6', '$totalC7', '$totalC8', '$totalC9', '$total')";
+
+     //declare images variable
+  $filename33 = $_FILES['image33']['name'];
+  $filetmpname33 = $_FILES['image33']['tmp_name'];
+
+  $filename34 = $_FILES['image34']['name'];
+  $filetmpname34 = $_FILES['image34']['tmp_name'];
+
+  $filename35 = $_FILES['image35']['name'];
+  $filetmpname35 = $_FILES['image35']['tmp_name'];
+
+  $filename36 = $_FILES['image36']['name'];
+  $filetmpname36 = $_FILES['image36']['tmp_name'];
+
+  $filename37 = $_FILES['image37']['name'];
+  $filetmpname37 = $_FILES['image37']['tmp_name'];
+
+  $filename38 = $_FILES['image38']['name'];
+  $filetmpname38 = $_FILES['image38']['tmp_name'];
+
+  $filename39 = $_FILES['image39']['name'];
+  $filetmpname39 = $_FILES['image39']['tmp_name'];
+
+  $filename40 = $_FILES['image40']['name'];
+  $filetmpname40 = $_FILES['image40']['tmp_name'];
+
+  $filename41 = $_FILES['image41']['name'];
+  $filetmpname41 = $_FILES['image41']['tmp_name'];
+
+  $filename42 = $_FILES['image42']['name'];
+  $filetmpname42 = $_FILES['image42']['tmp_name'];
+
+  $filename43 = $_FILES['image43']['name'];
+  $filetmpname43 = $_FILES['image43']['tmp_name'];
+
+  $filename44 = $_FILES['image44']['name'];
+  $filetmpname44 = $_FILES['image44']['tmp_name'];
+
+  $filename45 = $_FILES['image45']['name'];
+  $filetmpname45 = $_FILES['image45']['tmp_name'];
+
+  $filename46 = $_FILES['image46']['name'];
+  $filetmpname46 = $_FILES['image46']['tmp_name'];
+
+  $filename47 = $_FILES['image47']['name'];
+  $filetmpname47 = $_FILES['image47']['tmp_name'];
+
+  $filename48 = $_FILES['image48']['name'];
+  $filetmpname48 = $_FILES['image48']['tmp_name'];
+
+  $filename49 = $_FILES['image49']['name'];
+  $filetmpname49 = $_FILES['image49']['tmp_name'];
+
+  $filename50 = $_FILES['image50']['name'];
+  $filetmpname50 = $_FILES['image50']['tmp_name'];
+
+  //folder where images will be uploaded
+  $folder = 'imagesuploaded/';
+
+  //function for saving the uploaded images in a specific folder
+  move_uploaded_file($filetmpname33, $folder.$filename33);
+  move_uploaded_file($filetmpname34, $folder.$filename34);
+  move_uploaded_file($filetmpname35, $folder.$filename35);
+  move_uploaded_file($filetmpname36, $folder.$filename36);
+  move_uploaded_file($filetmpname37, $folder.$filename37);
+  move_uploaded_file($filetmpname38, $folder.$filename38);
+  move_uploaded_file($filetmpname39, $folder.$filename39);
+  move_uploaded_file($filetmpname40, $folder.$filename40);
+  move_uploaded_file($filetmpname41, $folder.$filename41);
+  move_uploaded_file($filetmpname42, $folder.$filename42);
+  move_uploaded_file($filetmpname43, $folder.$filename43);
+  move_uploaded_file($filetmpname44, $folder.$filename44);
+  move_uploaded_file($filetmpname45, $folder.$filename45);
+  move_uploaded_file($filetmpname46, $folder.$filename46);
+  move_uploaded_file($filetmpname47, $folder.$filename47);
+  move_uploaded_file($filetmpname48, $folder.$filename48);
+  move_uploaded_file($filetmpname49, $folder.$filename49);
+  move_uploaded_file($filetmpname50, $folder.$filename50);
+
+  $sql1 = "INSERT INTO qacategory_section4 (Answer33, Answer34, Answer35, Answer36, Answer37, Answer38, Answer39, Answer40, Answer41, Answer42, Answer43, Answer44, Answer45, Answer46, Answer47, Answer48, Answer49, Answer50, Category1, Category2, Category3, Category4, Category5, Category6, Category7, Category8, Category9, CategorySection4_TotalMarks, Image33, Image34, Image35, Image36, Image37, Image38, Image39, Image40, Image41, Image42, Image43, Image44, Image45, Image46, Image47, Image48, Image49, Image50, Catatan18, Catatan19, Catatan20, Catatan21, Catatan22, Catatan23, Catatan24, Catatan25, Catatan26) VALUES ('$answer33','$answer34', '$answer35', '$answer36', '$answer37', '$answer38', '$answer39', '$answer40', '$answer41', '$answer42', '$answer43', '$answer44', '$answer45', '$answer46', '$answer47', '$answer48', '$answer49', '$answer50','$totalC1', '$totalC2', '$totalC3', '$totalC4', '$totalC5', '$totalC6', '$totalC7', '$totalC8', '$totalC9', '$total', '$filename33','$filename34', '$filename35', '$filename36', '$filename37', '$filename38', '$filename39', '$filename40', '$filename41', '$filename42', '$filename43', '$filename44', '$filename45', '$filename46', '$filename47', '$filename48', '$filename49', '$filename50', '$catatan18', '$catatan19', '$catatan20', '$catatan21', '$catatan22', '$catatan23', '$catatan24', '$catatan25', '$catatan26')";
   $result1 = mysqli_query($con,$sql1);
 
   if($result1)

@@ -19,6 +19,9 @@ if (isset($_POST['Submit']))
   $answer1 = $_POST['answer1'];
   $answer2 = $_POST['answer2'];
   $answer3 = $_POST['answer3'];
+  $catatan1 = $_POST['catatan1'];
+  $catatan2 = $_POST['catatan2'];
+  $catatan3 = $_POST['catatan3'];
   $total = $answer1 + $answer2 + $answer3;
 
   //declare images variable
@@ -40,7 +43,7 @@ if (isset($_POST['Submit']))
   move_uploaded_file($filetmpname3, $folder.$filename3);
 
 
-  $sql1 = "INSERT INTO qacategory_section1 (Category1, Category2, Category3, CategorySection1_TotalMarks, Image1, Image2, Image3) VALUES ('$answer1', '$answer2', '$answer3', '$total', '$filename1', '$filename2', '$filename3')";
+  $sql1 = "INSERT INTO qacategory_section1 (Category1, Category2, Category3, CategorySection1_TotalMarks, Image1, Image2, Image3, Catatan1, Catatan2, Catatan3) VALUES ('$answer1', '$answer2', '$answer3', '$total', '$filename1', '$filename2', '$filename3', 'catatan1', 'catatan2', 'catatan3')";
   $result1 = mysqli_query($con,$sql1);
 
     if($result1)
