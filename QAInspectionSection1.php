@@ -110,7 +110,7 @@ if (isset($_POST['Submit']))
   
 </head>
 <body>
-  <!-- <section class="menu cid-rPwfwJELGC" once="menu" id="menu1-h">
+  <section class="menu cid-rPwfwJELGC" once="menu" id="menu1-h">
 
     
 
@@ -143,7 +143,7 @@ if (isset($_POST['Submit']))
                 </li></ul>
         </div>
     </nav>
-</section> -->
+</section>
 
 <section class="cid-rPxomWSNoR">
 <br><br>
