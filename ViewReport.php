@@ -38,17 +38,17 @@ mysqli_select_db($con,'5s') or die ('No database found.');
 
 <div class="container align-center">
   <div class="col-ld-12">
-     <img src="assets/images/prasarana.png" height="200" width="700">
-     <br><br></b><h1>LAPORAN AUDIT 5S AMPANG LINE</h1><br>
+   <img src="assets/images/prasarana.png" height="200" width="700">
+   <br><br></b><h1>LAPORAN AUDIT 5S AMPANG LINE</h1><br>
 
-     <div>
-        <a href="AdminReport.php"><input type="image" src="assets/images/back.png" title="back" width="40" height="40" align="left" ></a>
-        <a onclick="window.print();">
-          <input type="image" src="assets/images/print.png" title="print" width="40" height="40" align="right">
-      </a><br><br>
-  </div>
+   <div>
+    <a href="AdminReport.php"><input type="image" src="assets/images/back.png" title="back" width="40" height="40" align="left" ></a>
+    <a onclick="window.print();">
+      <input type="image" src="assets/images/print.png" title="print" width="40" height="40" align="right">
+  </a><br><br>
+</div>
 
-  <form method="POST">
+<form method="POST">
     <table class="table table-hover  table-bordered align-center">
 
 
@@ -57,7 +57,9 @@ mysqli_select_db($con,'5s') or die ('No database found.');
       <th class="align-left" colspan="4">SEKSYEN 1: KEPERLUAN UTAMA PELAKSANAAN</th>
       <?php  
       $query = "SELECT * FROM qacategory_section1";  
-      $result = mysqli_query($con, $query);  
+      $result = mysqli_query($con, $query); 
+
+
       if ($row = mysqli_fetch_array($result))  
       { 
         $C1 = $row['Category1'];
@@ -203,7 +205,7 @@ mysqli_select_db($con,'5s') or die ('No database found.');
                     $Image43 = $row4['Image43'];
                     $Image44 = $row4['Image44'];
                     $Image45 = $row4['Image45'];
-                    $Image46 = $row4['Ima6e46'];
+                    $Image46 = $row4['Image46'];
                     $Image47 = $row4['Image47'];
                     $Image48 = $row4['Image48'];
                     $Image49 = $row4['Image49'];
@@ -350,22 +352,22 @@ mysqli_select_db($con,'5s') or die ('No database found.');
 
                             if ($result6) 
                             {
-                                $overall = $S1 + $S2 + $S3 + $S4 + $S5 + $S6;
 
+                              $overall = $S1 + $S2 + $S3 + $S4 + $S5 + $S6;
 
-                                if (isset($_POST['convert'])) 
-                                {
-                                    $sql ="INSERT INTO qamarks (TotalMarks) VALUES ('$overall') "; 
-                                    $q = mysqli_query($con, $sql);
-                             }
+                              if (isset($_POST['convert']))
+                              {
+                                $sql ="INSERT INTO qamarks (TotalMarks) VALUES ('$overall') "; 
+                                $r = mysqli_query($con, $sql);
+                            }
 
-                         }
-                     }      
-                 }
-             }          
-         }          
-     }
- }
+                        }
+                    }      
+                }
+            }          
+        }          
+    }
+}
 }
 }  
 }
@@ -1130,7 +1132,8 @@ mysqli_select_db($con,'5s') or die ('No database found.');
 
     <tr>
         <th><b><h2>JUMLAH KESELURUHAN:</h2></b></th>
-        <th><?php echo $overall ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="image" name="convert" src="assets/images/percent.png" title="Convert to %" data-toggle="tooltip" width="25" height="25">
+        <th><?php echo $overall ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            <input type="image" name="convert" src="assets/images/percent.png" title="Convert to %" data-toggle="tooltip" width="25" height="25">
         </th>
 
     </tr>
