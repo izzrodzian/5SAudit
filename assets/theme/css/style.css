@@ -457,15 +457,15 @@ blockquote {
   position: absolute;
   height: 40%;
   top: 25%;
-  background: #fff;
+  background: #ffffff;
   width: 2px;
   left: calc(50% - 1px); }
 #scrollToTop a i:after {
   content: '';
   position: absolute;
   display: block;
-  border-top: 2px solid #fff;
-  border-right: 2px solid #fff;
+  border-top: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
   width: 40%;
   height: 40%;
   left: 30%;
@@ -479,15 +479,15 @@ blockquote {
   position: fixed;
   text-align: right;
   z-index: 5000;
-  color: #ffffff;
+  color: red;
   font-size: 32px;
   transform: rotate(180deg);
   -webkit-transform: rotate(180deg); }
 
 .mbr-arrow-up a {
-  background: rgba(0, 0, 0, 0.2);
+  background: red;
   border-radius: 3px;
-  color: #fff;
+  color: red;
   display: inline-block;
   height: 60px;
   width: 60px;
@@ -498,13 +498,13 @@ blockquote {
   cursor: pointer;
   text-align: center; }
   .mbr-arrow-up a:hover {
-    background-color: rgba(0, 0, 0, 0.4); }
+    background-color:red; }
   .mbr-arrow-up a i {
     line-height: 60px; }
 
 .mbr-arrow-up-icon {
   display: block;
-  color: #fff; }
+  color: red; }
 
 .mbr-arrow-up-icon::before {
   content: '\203a';

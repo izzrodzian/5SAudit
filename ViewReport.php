@@ -42,7 +42,6 @@ mysqli_select_db($con,'5s') or die ('No database found.');
    <br><br></b><h1>LAPORAN AUDIT 5S AMPANG LINE</h1><br>
 
    <div>
-    <a href="AdminReport.php"><input type="image" src="assets/images/back.png" title="back" width="40" height="40" align="left" ></a>
     <a onclick="window.print();">
       <input type="image" src="assets/images/print.png" title="print" width="40" height="40" align="right">
   </a><br><br>
@@ -54,7 +53,7 @@ mysqli_select_db($con,'5s') or die ('No database found.');
 
 
       <!-- Seksyen 1  -->
-      <th class="align-left" colspan="4">SEKSYEN 1: KEPERLUAN UTAMA PELAKSANAAN</th>
+      <th class="align-left" colspan="5">SEKSYEN 1: KEPERLUAN UTAMA PELAKSANAAN</th>
       <?php  
       $query = "SELECT * FROM qacategory_section1";  
       $result = mysqli_query($con, $query); 
@@ -69,6 +68,9 @@ mysqli_select_db($con,'5s') or die ('No database found.');
         $Image1 = $row['Image1'];
         $Image2 = $row['Image2'];
         $Image3 = $row['Image3'];
+        $Catatan1 = $row['Catatan1'];
+        $Catatan2 = $row['Catatan2'];
+        $Catatan3 = $row['Catatan3'];
 
         if($result)
         {
@@ -118,6 +120,16 @@ mysqli_select_db($con,'5s') or die ('No database found.');
             $Image17 = $row2['Image17'];
             $Image18 = $row2['Image18'];
             $Image19 = $row2['Image19'];
+            $Catatan4 = $row['Catatan4'];
+            $Catatan5 = $row['Catatan5'];
+            $Catatan6 = $row['Catatan6'];
+            $Catatan7 = $row['Catatan7'];
+            $Catatan8 = $row['Catatan8'];
+            $Catatan9 = $row['Catatan9'];
+            $Catatan10 = $row['Catatan10'];
+            $Catatan11 = $row['Catatan11'];
+            $Catatan12 = $row['Catatan12'];
+        
 
             if($result2)
             {
@@ -157,6 +169,11 @@ mysqli_select_db($con,'5s') or die ('No database found.');
                 $Image30 = $row3['Image30'];
                 $Image31 = $row3['Image31'];
                 $Image32 = $row3['Image32'];
+                $Catatan13 = $row['Catatan13'];
+                $Catatan14 = $row['Catatan14'];
+                $Catatan15 = $row['Catatan15'];
+                $Catatan16 = $row['Catatan16'];
+                $Catatan17 = $row['Catatan17'];
 
                 if($result3)
                 {
@@ -210,6 +227,15 @@ mysqli_select_db($con,'5s') or die ('No database found.');
                     $Image48 = $row4['Image48'];
                     $Image49 = $row4['Image49'];
                     $Image50 = $row4['Image50'];
+                    $Catatan18 = $row['Catatan18'];
+                    $Catatan19 = $row['Catatan19'];
+                    $Catatan20 = $row['Catatan20'];
+                    $Catatan21 = $row['Catatan21'];
+                    $Catatan22 = $row['Catatan22'];
+                    $Catatan23 = $row['Catatan23'];
+                    $Catatan24 = $row['Catatan24'];
+                    $Catatan25 = $row['Catatan25'];
+                    $Catatan26 = $row['Catatan26'];
 
                     if($result4)
                     {
@@ -261,6 +287,15 @@ mysqli_select_db($con,'5s') or die ('No database found.');
                         $Image65 = $row5['Image65'];
                         $Image66 = $row5['Image66'];
                         $Image67 = $row5['Image67'];
+                        $Catatan27 = $row['Catatan27'];
+                        $Catatan28 = $row['Catatan28'];
+                        $Catatan29 = $row['Catatan29'];
+                        $Catatan30 = $row['Catatan30'];
+                        $Catatan31 = $row['Catatan31'];
+                        $Catatan32 = $row['Catatan32'];
+                        $Catatan33 = $row['Catatan33'];
+                        $Catatan34 = $row['Catatan34'];
+                        $Catatan35 = $row['Catatan35'];
 
                         if($result5)
                         {
@@ -349,17 +384,37 @@ mysqli_select_db($con,'5s') or die ('No database found.');
                             $Image98 = $row6['Image98'];
                             $Image99 = $row6['Image99'];
                             $Image100 = $row6['Image100'];
+                            $Catatan36 = $row['Catatan36'];
+                            $Catatan37 = $row['Catatan37'];
+                            $Catatan38 = $row['Catatan38'];
+                            $Catatan39 = $row['Catatan39'];
+                            $Catatan40 = $row['Catatan40'];
+                            $Catatan41 = $row['Catatan41'];
+                            $Catatan42 = $row['Catatan42'];
+                            $Catatan43 = $row['Catatan43'];
+                            $Catatan44 = $row['Catatan44'];
+                            $Catatan45 = $row['Catatan45'];
+                            $Catatan46 = $row['Catatan46'];
+                            $Catatan47 = $row['Catatan47'];
+                            $Catatan48 = $row['Catatan48'];
+                            $Catatan49 = $row['Catatan49'];
 
                             if ($result6) 
                             {
 
                               $overall = $S1 + $S2 + $S3 + $S4 + $S5 + $S6;
+                              $percentage = 0;
 
-                              if (isset($_POST['convert']))
-                              {
-                                $sql ="INSERT INTO qamarks (TotalMarks) VALUES ('$overall') "; 
-                                $r = mysqli_query($con, $sql);
-                            }
+                                if (isset($_POST['convert']))
+                                {
+                                    $sql ="INSERT INTO qamarks (TotalMarks) VALUES ('$overall')"; 
+                                    $r = mysqli_query($con, $sql);
+
+                                    if($r)
+                                    {
+                                        $percentage = ($overall / 500) * 100;
+                                    }
+                                }
 
                         }
                     }      
@@ -378,7 +433,8 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <th> Kategori </th>
     <th> Soalan </th>
     <th> Markah</th>
-    <th> Gambar</th>          
+    <th> Gambar</th> 
+    <th> Catatan </th>         
 </tr>
 
 <tr>
@@ -387,7 +443,7 @@ mysqli_select_db($con,'5s') or die ('No database found.');
 
     <td> <?php echo $C1 ?></td>
     <td><?php echo '<img src="data:image/png;base64,'.base64_encode($row["Image1"] ).'">' ?></td>
-
+    <td><?php echo $Catatan1 ?></td>
 </tr>
 
 <tr>
@@ -395,17 +451,22 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td>Maklumat Lengkap dan Terkini (Merujuk pada Senarai Semak Dokumen)</td>
     <td><?php echo $C2 ?></td>
     <td><?php echo $Image1 ?></td>
+    <td><?php echo $Catatan2 ?></td>
 </tr>
+
 
 <tr>
     <td> Kaizen</td>
     <td>Penambahbaikan, Kreativiti dan Inovasi</td>
     <td> <?php echo $C3 ?></td>
     <td></td>
+    <td><?php echo $Catatan3 ?></td>
 </tr>
 
+
+
 <tr>
-    <th colspan="2">JUMLAH MARKAH SEKSYEN 1</th>
+    <th colspan="3">JUMLAH MARKAH SEKSYEN 1</th>
     <th colspan="2"><?php echo $S1 ?></th>
 </tr>
 </table><br><br>
@@ -414,12 +475,13 @@ mysqli_select_db($con,'5s') or die ('No database found.');
 <!--  Seksyen 2 -->
 <table class="table table-hover  table-bordered align-center">
 
-  <th class="align-left" colspan="4"> SEKSYEN 2: RUANG PEJABAT</th>
+  <th class="align-left" colspan="5"> SEKSYEN 2: RUANG PEJABAT</th>
   <tr>
     <th> Kategori </th>
     <th> Soalan </th>
     <th> Markah</th>
-    <th> Gambar</th>          
+    <th> Gambar</th>  
+    <th> Catatan </th>        
 </tr>
 
 <tr>
@@ -427,7 +489,9 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td> Susun atur kemas dan sistematik</td>
     <td><?php echo $A4 ?></td>
     <td><?php echo $Image4 ?></td>
+    <td rowspan="3"><?php echo $Catatan4 ?></td>
 </tr>
+
 <tr>
 
     <td> Bersih dan tiada kotoran</td>
@@ -447,6 +511,7 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td>Susun atur kemas dan sistematik</td>
     <td><?php echo $A7 ?></td>
     <td><?php echo $Image7 ?></td>
+    <td rowspan="2"><?php echo $Catatan5 ?></td>
 </tr>
 <tr>
     <td>Bersih dan tiada kotoran</td>
@@ -460,6 +525,7 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td>Kemas dan tersimpan di tempat asal</td>
     <td><?php echo $A9 ?></td>
     <td><?php echo $Image9 ?></td>
+    <td rowspan="2"><?php echo $Catatan6 ?></td>
 </tr>
 <tr>
     <td>Bersih, tidak berdebu dan berfungsi baik</td>
@@ -472,6 +538,7 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td> Kedudukan fail teratur dan kemas</td>
     <td><?php echo $A11 ?></td>
     <td><?php echo $Image11 ?></td>
+    <td rowspan="3"><?php echo $Catatan7 ?></td>
 </tr>
 <tr>
     <td> Mudah dicari dan dikesan dengan mewujudkan pelabelan dan indeks kedudukan fail</td>
@@ -490,6 +557,7 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td>Kemas, bersih dan terkini</td>
     <td><?php echo $A14 ?></td>
     <td><?php echo $Image14 ?></td>
+    <td><?php echo $Catatan8 ?></td>
 </tr>
 
 <tr>
@@ -497,6 +565,7 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td>Aspek keselamatan diutamakan</td>
     <td><?php echo $A15 ?></td>
     <td><?php echo $Image15 ?></td>
+    <td rowspan="2"><?php echo $Catatan9 ?></td>
 </tr>
 
 <tr>
@@ -510,6 +579,7 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td>Sokongan pelaksanaan dengan mewujudkan kawalan visual dan “konsep ownership</td>
     <td><?php echo $A17 ?></td>
     <td><?php echo $Image17 ?></td>
+    <td><?php echo $Catatan10 ?></td>
 </tr>
 
 <tr>
@@ -517,6 +587,7 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td>Kerjasama dan sikap positif untuk amalan berterusan</td>
     <td><?php echo $A18 ?></td>
     <td><?php echo $Image18 ?></td>
+    <td><?php echo $Catatan11 ?></td>
 </tr>
 
 <tr>
@@ -524,10 +595,11 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td>Kerjasama dan sikap positif untuk amalan berterusan</td>
     <td><?php echo $A19 ?></td>
     <td><?php echo $Image19 ?></td>
+    <td><?php echo $Catatan12 ?></td>
 </tr>
 
 <tr>
-    <th colspan="2">JUMLAH MARKAH SEKSYEN 2</th>
+    <th colspan="3">JUMLAH MARKAH SEKSYEN 2</th>
     <th colspan="2"><?php echo $S2 ?></th>
 </tr>
 </table><br><br>
@@ -536,12 +608,13 @@ mysqli_select_db($con,'5s') or die ('No database found.');
 
 <table class="table table-hover  table-bordered align-center">
 
-  <th class="align-left" colspan="4" >SEKSYEN 3: STOR (FAIL, BAHAN, ALAT GANTI, UNIFORM & SEBAGAINYA)</th>
+  <th class="align-left" colspan="5" >SEKSYEN 3: STOR (FAIL, BAHAN, ALAT GANTI, UNIFORM & SEBAGAINYA)</th>
   <tr>
     <th> Kategori </th>
     <th> Soalan </th>
     <th> Markah</th>
-    <th> Gambar</th>          
+    <th> Gambar</th>  
+    <th> Catatan </th>        
 </tr>
 
 <tr>
@@ -549,6 +622,7 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td> Keadaan tersusun, kemas dan teratur</td>
     <td><?php echo $A20 ?></td>
     <td><?php echo $Image20 ?></td>
+    <td rowspan="7"><?php echo $Catatan13 ?></td>
 </tr>
 <tr>
 
@@ -588,6 +662,7 @@ mysqli_select_db($con,'5s') or die ('No database found.');
   <td>Aspek keselamatan diutamakan</td>
   <td><?php echo $A27 ?></td>
   <td><?php echo $Image27 ?></td>
+  <td rowspan="2"><?php echo $Catatan14 ?></td>
 </tr>
 <tr>
   <td>Kawalan visual dan ciri keselamatan mencukupi</td>
@@ -600,6 +675,7 @@ mysqli_select_db($con,'5s') or die ('No database found.');
   <td>Sokongan pelaksanaan dengan mewujudkan kawalan visual dan “konsep ownership”</td>
   <td><?php echo $A29 ?></td>
   <td><?php echo $Image29 ?></td>
+  <td rowspan="2"><?php echo $Catatan15 ?></td>
 </tr>
 
 <tr>
@@ -613,6 +689,7 @@ mysqli_select_db($con,'5s') or die ('No database found.');
   <td> Kerjasama dan sikap positif untuk amalan berterusan</td>
   <td><?php echo $A31 ?></td>
   <td><?php echo $Image31 ?></td>
+  <td><?php echo $Catatan16 ?></td>
 </tr>
 
 
@@ -621,10 +698,11 @@ mysqli_select_db($con,'5s') or die ('No database found.');
   <td>Penambahbaikkan yang dibuat memberikan kesan melalui (Produktiviti/Kualiti/Penghantaran/Kos /Keselamatan/Moral/Inovasi)</td>
   <td><?php echo $A32 ?></td>
   <td><?php echo $Image32 ?></td>
+  <td><?php echo $Catatan17 ?></td>
 </tr>
 
 <tr>
-  <th colspan="2">JUMLAH MARKAH SEKSYEN 3</th>
+  <th colspan="3">JUMLAH MARKAH SEKSYEN 3</th>
   <th colspan="2"><?php echo $S3 ?></th>
 </tr>
 </table><br><br>
@@ -1131,11 +1209,15 @@ mysqli_select_db($con,'5s') or die ('No database found.');
 <table class="table table-hover  table-bordered align-center">
 
     <tr>
-        <th><b><h2>JUMLAH KESELURUHAN:</h2></b></th>
-        <th><?php echo $overall ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-            <input type="image" name="convert" src="assets/images/percent.png" title="Convert to %" data-toggle="tooltip" width="25" height="25">
-        </th>
+        <th><b><h5>JUMLAH KESELURUHAN:</h5></b></th>
+        <th><?php echo $overall ?></th>
+        <th rowspan="2"><br><input type="submit" name="convert" value="Tukar markah ke peratus" align="center"></th>
 
+    </tr>
+
+    <tr>
+        <th><b><h5>PERATUSAN:</h5></b></th>
+        <th><?php echo $percentage?>%</th> 
     </tr>
     
 </table><br>
@@ -1166,6 +1248,15 @@ mysqli_select_db($con,'5s') or die ('No database found.');
 </form>
 </div>
 </div>
+
+<div align="center">
+    <a href="AdminReport.php"><input type="button" class="btn btn-secondary" value="Back"></a>
+    <br><br><br><br>
+</div>
+
+<div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
+<input name="animation" type="hidden">
+
 
 <script src="assets/web/assets/jquery/jquery.min.js"></script>
 <script src="assets/popper/popper.min.js"></script>

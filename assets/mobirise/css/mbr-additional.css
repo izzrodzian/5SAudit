@@ -128,17 +128,17 @@ body {
 }
 .btn-secondary,
 .btn-secondary:active {
-  background-color: #ff3366 !important;
-  border-color: #ff3366 !important;
-  color: #ffffff !important;
+  background-color: #84a6f0 !important;
+  border-color: #84a6f0 !important;
+  color: black !important;
 }
 .btn-secondary:hover,
 .btn-secondary:focus,
 .btn-secondary.focus,
 .btn-secondary.active {
-  color: #ffffff !important;
-  background-color: #e50039 !important;
-  border-color: #e50039 !important;
+  color: black!important;
+  background-color: #6892ed !important;
+  border-color: #6892ed !important;
 }
 .btn-secondary.disabled,
 .btn-secondary:disabled {
