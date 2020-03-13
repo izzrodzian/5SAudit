@@ -1166,7 +1166,7 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td>Kawasan lantai bersih dan tiada item tidak perlu</td>
     <td><?php echo $A91 ?></td>
     <td><?php echo $Image91 ?></td>
-    <td rowspan="4"><?php echo $Catatan14 ?></td>
+    <td rowspan="3"><?php echo $Catatan14 ?></td>
 </tr>
 
 <tr>
