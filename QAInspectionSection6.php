@@ -58,7 +58,7 @@ $total = 0;
 
 if (isset($_POST['Submit']))
 {
-  
+
   $answer68 = $_POST['answer68'];
   $answer69 = $_POST['answer69'];
   $answer70 = $_POST['answer70'];
@@ -268,53 +268,7 @@ if (isset($_POST['Submit']))
   $sql1 = "INSERT INTO qacategory_section6 (Answer68, Answer69, Answer70, Answer71, Answer72, Answer73, Answer74, Answer75, Answer76, Answer77, Answer78, Answer79, Answer80, Answer81, Answer82, Answer83, Answer84, Answer85, Answer86, Answer87, Answer88, Answer89, Answer90, Answer91, Answer92, Answer93, Answer94, Answer95, Answer96, Answer97, Answer98, Answer99, Answer100, Category1, Category2, Category3, Category4, Category5, Category6, Category7, Category8, Category9, Category10, Category11, Category12, Category13, Category14, CategorySection6_TotalMarks, Image68, Image69, Image70, Image71, Image72, Image73, Image74, Image75, Image76, Image77, Image78, Image79, Image80, Image81, Image82, Image83, Image84, Image85, Image86, Image87, Image88, Image89, Image90, Image91, Image92, Image93, Image94, Image95, Image96, Image97, Image98, Image99, Image100, Catatan36, Catatan37, Catatan38, Catatan39, Catatan40, Catatan41, Catatan42, Catatan43, Catatan44, Catatan45, Catatan46, Catatan47, Catatan48, Catatan49) VALUES ('$answer68','$answer69', '$answer70', '$answer71', '$answer72', '$answer73', '$answer74', '$answer75', '$answer76', '$answer77', '$answer78', '$answer79', '$answer80', '$answer81', '$answer82', '$answer83', '$answer84', '$answer85', '$answer86', '$answer87', '$answer88', '$answer89', '$answer90', '$answer91', '$answer92', '$answer93', '$answer94','$answer95', '$answer96', '$answer97', '$answer98', '$answer99', '$answer100','$totalC1', '$totalC2', '$totalC3', '$totalC4', '$totalC5', '$totalC6', '$totalC7', '$totalC8', '$totalC9', '$totalC10', '$totalC11', '$totalC12', '$totalC13', '$totalC14', '$total', '$filename68', '$filename69', '$filename70', '$filename71', '$filename72', '$filename73', '$filename74', '$filename75', '$filename76', '$filename77', '$filename78', '$filename79', '$filename80', '$filename81', '$filename82', '$filename83', '$filename84', '$filename85', '$filename86', '$filename87', '$filename88', '$filename89', '$filename90', '$filename91', '$filename92', '$filename93', '$filename94', '$filename95', '$filename96', '$filename97', '$filename98', '$filename99', '$filename100', '$catatan36', '$catatan37', '$catatan38', '$catatan39', '$catatan40', '$catatan41', '$catatan42', '$catatan43', '$catatan44', '$catatan45', '$catatan46', '$catatan47', '$catatan48', '$catatan49')";
   $result1 = mysqli_query($con,$sql1);
 
-//   if($result1)
-//     {    
-//      $sql2 = "INSERT INTO qamarks (CategorySection6_TotalMarks) VALUES ('$total')"; 
 
-//      $result2 = mysqli_query($con,$sql2);
-
-//      if($result2)
-
-//      {
-//        $S1 = $_GET['CategorySection1_TotalMarks'];
-//        $S2 = $_GET['CategorySection2_TotalMarks'];
-//        $S3 = $_GET['CategorySection3_TotalMarks'];
-//        $S4 = $_GET['CategorySection4_TotalMarks'];
-//        $S5 = $_GET['CategorySection5_TotalMarks'];
-//        $S6 = $_GET['CategorySection6_TotalMarks'];
-//        $overall = $S1 + $S2 + $S3 + $S4 + $S5 + $S6; 
-
-// //sum ct
-//        $sql4 = "UPDATE into qamarks (TotalMarks) VALUES ('$overall') WHERE userID ='0'";
-//        $result4 = mysqli_query($con,$sql4);
-//      }
-
-//    }
-// }
-
-// if (isset($_POST['Done']))
-// {
-
-// $sql3 = "SELECT CategorySection1_TotalMarks, CategorySection2_TotalMarks, CategorySection3_TotalMarks, CategorySection4_TotalMarks, CategorySection5_TotalMarks, CategorySection6_TotalMarks FROM qamarks WHERE userID = '0'";
-// $result3 = mysqli_query($con,$sql3);
-
-// if($result3)
-// {
-
-//   $C1 = $_POST['CategorySection1_TotalMarks'];
-//   $C2 = $_POST['CategorySection2_TotalMarks'];
-//   $C3 = $_POST['CategorySection3_TotalMarks'];
-//   $C4 = $_POST['CategorySection4_TotalMarks'];
-//   $C5 = $_POST['CategorySection5_TotalMarks'];
-//   $C6 = $_POST['CategorySection6_TotalMarks'];
-//   $overall = $C1 + $C2 + $C3 + $C4 + $C5 + $C6; 
-
-// //sum ct
-//   $sql4 = "UPDATE into qamarks (TotalMarks) VALUES ('$overall') WHERE userID ='0'";
-//   $result4 = mysqli_query($con,$sql4);
-
-Header("Location:AuditorReport.php");
 }
 
 
@@ -1147,66 +1101,9 @@ Header("Location:AuditorReport.php");
 <div align="center"> Jumlah markah Seksyen 6: <?php echo $total ?>/165</div>
 <br>
 <br>
-<input class="btn btn-primary display-4"  type="submit" name="Done" value="Selesai">
+ <div class="mbr-section-btn text-center">
+  <a class="btn btn-primary display-4" href="AuditorReport.php">SELESAI</a></div>
 </form>
-
-<div class="container">
-      <div class="col-ld-12">
-
-        <form method="POST">
-         
-       </form>
-       <table class="table table-striped table-hover table-bordered">
-
-        <tr>
-          <th> S1 </th>
-          <th> S2 </th>
-          <th> S3 </th>
-          <th> S4 </th>
-          <th> S5 </th>
-          <th> S6 </th>  
-          <th> Total Mark</th>        
-        </tr>
-
-        <?php
-
-        if (isset($_POST['Submit']))
-        {
-
-          $sql = "SELECT * FROM qamarks ";
-
-        } 
-
-        $query = mysqli_query($con,$sql);
-
-        while ($res = mysqli_fetch_array($query)){
-
-         ?>
-
-
-         <tr>
-          <td> <?php echo $res['CategorySection1_TotalMarks']; ?></td>
-          <td> <?php echo $res['CategorySection2_TotalMarks']; ?> </td>
-          <td> <?php echo $res['CategorySection3_TotalMarks']; ?></td>
-          <td> <?php echo $res['CategorySection4_TotalMarks']; ?></td>
-          <td> <?php echo $res['CategorySection5_TotalMarks']; ?></td>
-          <td> <?php echo $res['CategorySection6_TotalMarks']; ?></td>
-          <td> <?php echo $res['TotalMarks']; ?></td> 
-
-
-
-        <?php
-
-
-
-      }
-      ?>
-
-    </table><br><br>
-
-
-
-  
 
 
 <script>

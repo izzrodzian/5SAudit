@@ -6,6 +6,8 @@ session_start();
 $con = mysqli_connect('127.0.0.1','root','') or die ('Not connected.');
 mysqli_select_db($con,'5s') or die ('No database found.');
 
+
+
 ?>
 
 <html>
@@ -36,14 +38,14 @@ mysqli_select_db($con,'5s') or die ('No database found.');
 
 <div class="container align-center">
   <div class="col-ld-12">
-   <img src="assets/images/prasarana.png" height="200" width="700">
-   <br><br></b><h1>LAPORAN AUDIT 5S AMPANG LINE</h1><br>
+     <img src="assets/images/prasarana.png" height="200" width="700">
+     <br><br></b><h1>LAPORAN AUDIT 5S AMPANG LINE</h1><br>
 
-   <div>
-    <a href="AdminReport.php"><input type="image" src="assets/images/back.png" title="back" width="40" height="40" align="left" ></a>
-    <a onclick="window.print();">
-      <input type="image" src="assets/images/print.png" title="print" width="40" height="40" align="right">
-    </a><br><br>
+     <div>
+        <a href="AdminReport.php"><input type="image" src="assets/images/back.png" title="back" width="40" height="40" align="left" ></a>
+        <a onclick="window.print();">
+          <input type="image" src="assets/images/print.png" title="print" width="40" height="40" align="right">
+      </a><br><br>
   </div>
 
   <form method="POST">
@@ -345,220 +347,233 @@ mysqli_select_db($con,'5s') or die ('No database found.');
                             $Image98 = $row6['Image98'];
                             $Image99 = $row6['Image99'];
                             $Image100 = $row6['Image100'];
-                          }      
-                        }
-                      }          
-                    }          
-                  }
-                }
-              }
-            }  
-          }
-        }
-      }
-      ?> 
-      <tr>
-        <th> Kategori </th>
-        <th> Soalan </th>
-        <th> Markah</th>
-        <th> Gambar</th>          
-      </tr>
 
-      <tr>
-        <td>Fail Program</td>
-        <td> Maklumat Lengkap dan Terkini (Merujuk pada Senarai Semak Dokumen)</td>
-
-        <td> <?php echo $C1 ?></td>
-        <td><?php echo '<img src="data:image/png;base64,'.base64_encode($row["Image1"] ).'">' ?></td>
-
-      </tr>
-
-      <tr>
-        <td>Sudut 5S</td>
-        <td>Maklumat Lengkap dan Terkini (Merujuk pada Senarai Semak Dokumen)</td>
-        <td><?php echo $C2 ?></td>
-        <td><?php echo $Image1 ?></td>
-      </tr>
-
-      <tr>
-        <td> Kaizen</td>
-        <td>Penambahbaikan, Kreativiti dan Inovasi</td>
-        <td> <?php echo $C3 ?></td>
-        <td></td>
-      </tr>
-
-      <tr>
-        <th colspan="2">JUMLAH MARKAH SEKSYEN 1</th>
-        <th colspan="2"><?php echo $S1 ?></th>
-      </tr>
-    </table><br><br>
+                            if ($result6) 
+                            {
+                                $overall = $S1 + $S2 + $S3 + $S4 + $S5 + $S6;
 
 
-    <!--  Seksyen 2 -->
-    <table class="table table-hover  table-bordered align-center">
+                                if (isset($_POST['convert'])) 
+                                {
+                                    $sql ="INSERT INTO qamarks (TotalMarks) VALUES ('$overall') "; 
+                                    $q = mysqli_query($con, $sql);
+                             }
 
-      <th class="align-left" colspan="4"> SEKSYEN 2: RUANG PEJABAT</th>
-      <tr>
-        <th> Kategori </th>
-        <th> Soalan </th>
-        <th> Markah</th>
-        <th> Gambar</th>          
-      </tr>
+                         }
+                     }      
+                 }
+             }          
+         }          
+     }
+ }
+}
+}  
+}
+}
+}
+?> 
+<tr>
+    <th> Kategori </th>
+    <th> Soalan </th>
+    <th> Markah</th>
+    <th> Gambar</th>          
+</tr>
 
-      <tr>
-        <td rowspan="3">Tempat Individu</td>
-        <td> Susun atur kemas dan sistematik</td>
-        <td><?php echo $A4 ?></td>
-        <td><?php echo $Image4 ?></td>
-      </tr>
-      <tr>
+<tr>
+    <td>Fail Program</td>
+    <td> Maklumat Lengkap dan Terkini (Merujuk pada Senarai Semak Dokumen)</td>
 
-        <td> Bersih dan tiada kotoran</td>
-        <td><?php echo $A5 ?></td>
-        <td><?php echo $Image5 ?></td>
-      </tr>
-      <tr>
+    <td> <?php echo $C1 ?></td>
+    <td><?php echo '<img src="data:image/png;base64,'.base64_encode($row["Image1"] ).'">' ?></td>
 
-        <td> Item dalam keadaan minima/tiada item tidak perlu</td>
-        <td><?php echo $A6 ?></td>
-        <td><?php echo $Image6 ?></td>
-      </tr>
+</tr>
 
-      <tr>
-        <td rowspan="2">Siling/Lantai
-        /Dinding</td>
-        <td>Susun atur kemas dan sistematik</td>
-        <td><?php echo $A7 ?></td>
-        <td><?php echo $Image7 ?></td>
-      </tr>
-      <tr>
-        <td>Bersih dan tiada kotoran</td>
-        <td><?php echo $A8 ?></td>
-        <td><?php echo $Image8 ?></td>
-      </tr>
+<tr>
+    <td>Sudut 5S</td>
+    <td>Maklumat Lengkap dan Terkini (Merujuk pada Senarai Semak Dokumen)</td>
+    <td><?php echo $C2 ?></td>
+    <td><?php echo $Image1 ?></td>
+</tr>
 
-      <tr>
-        <td rowspan="2"> Peralatan
-        /Perkakas</td>
-        <td>Kemas dan tersimpan di tempat asal</td>
-        <td><?php echo $A9 ?></td>
-        <td><?php echo $Image9 ?></td>
-      </tr>
-      <tr>
-        <td>Bersih, tidak berdebu dan berfungsi baik</td>
-        <td><?php echo $A10 ?></td>
-        <td><?php echo $Image10 ?></td>
-      </tr>
+<tr>
+    <td> Kaizen</td>
+    <td>Penambahbaikan, Kreativiti dan Inovasi</td>
+    <td> <?php echo $C3 ?></td>
+    <td></td>
+</tr>
 
-      <tr>
-        <td rowspan="3">Tempat Fail/Rekod/Dokumen</td>
-        <td> Kedudukan fail teratur dan kemas</td>
-        <td><?php echo $A11 ?></td>
-        <td><?php echo $Image11 ?></td>
-      </tr>
-      <tr>
-        <td> Mudah dicari dan dikesan dengan mewujudkan pelabelan dan indeks kedudukan fail</td>
-        <td><?php echo $A12 ?></td>
-        <td><?php echo $Image12 ?></td>
-      </tr>
+<tr>
+    <th colspan="2">JUMLAH MARKAH SEKSYEN 1</th>
+    <th colspan="2"><?php echo $S1 ?></th>
+</tr>
+</table><br><br>
 
-      <tr>
-        <td>Kabinet rak fail adalah bersih dan tidak berhabuk</td>
-        <td><?php echo $A13 ?></td>
-        <td><?php echo $Image13 ?></td>
-      </tr>
 
-      <tr>
-        <td>Maklumat Visual</td>
-        <td>Kemas, bersih dan terkini</td>
-        <td><?php echo $A14 ?></td>
-        <td><?php echo $Image14 ?></td>
-      </tr>
+<!--  Seksyen 2 -->
+<table class="table table-hover  table-bordered align-center">
 
-      <tr>
-        <td rowspan="2"> Keselamatan</td>
-        <td>Aspek keselamatan diutamakan</td>
-        <td><?php echo $A15 ?></td>
-        <td><?php echo $Image15 ?></td>
-      </tr>
+  <th class="align-left" colspan="4"> SEKSYEN 2: RUANG PEJABAT</th>
+  <tr>
+    <th> Kategori </th>
+    <th> Soalan </th>
+    <th> Markah</th>
+    <th> Gambar</th>          
+</tr>
 
-      <tr>
-        <td>Kawalan visual dan ciri keselamatan mencukupi</td>
-        <td><?php echo $A16 ?></td>
-        <td><?php echo $Image16 ?></td>
-      </tr>
+<tr>
+    <td rowspan="3">Tempat Individu</td>
+    <td> Susun atur kemas dan sistematik</td>
+    <td><?php echo $A4 ?></td>
+    <td><?php echo $Image4 ?></td>
+</tr>
+<tr>
 
-      <tr>
-        <td> Seragam</td>
-        <td>Sokongan pelaksanaan dengan mewujudkan kawalan visual dan “konsep ownership</td>
-        <td><?php echo $A17 ?></td>
-        <td><?php echo $Image17 ?></td>
-      </tr>
+    <td> Bersih dan tiada kotoran</td>
+    <td><?php echo $A5 ?></td>
+    <td><?php echo $Image5 ?></td>
+</tr>
+<tr>
 
-      <tr>
-        <td> Sentiasa Amal</td>
-        <td>Kerjasama dan sikap positif untuk amalan berterusan</td>
-        <td><?php echo $A18 ?></td>
-        <td><?php echo $Image18 ?></td>
-      </tr>
+    <td> Item dalam keadaan minima/tiada item tidak perlu</td>
+    <td><?php echo $A6 ?></td>
+    <td><?php echo $Image6 ?></td>
+</tr>
 
-      <tr>
-        <td> Impak</td>
-        <td>Kerjasama dan sikap positif untuk amalan berterusan</td>
-        <td><?php echo $A19 ?></td>
-        <td><?php echo $Image19 ?></td>
-      </tr>
+<tr>
+    <td rowspan="2">Siling/Lantai
+    /Dinding</td>
+    <td>Susun atur kemas dan sistematik</td>
+    <td><?php echo $A7 ?></td>
+    <td><?php echo $Image7 ?></td>
+</tr>
+<tr>
+    <td>Bersih dan tiada kotoran</td>
+    <td><?php echo $A8 ?></td>
+    <td><?php echo $Image8 ?></td>
+</tr>
 
-      <tr>
-        <th colspan="2">JUMLAH MARKAH SEKSYEN 2</th>
-        <th colspan="2"><?php echo $S2 ?></th>
-      </tr>
-    </table><br><br>
+<tr>
+    <td rowspan="2"> Peralatan
+    /Perkakas</td>
+    <td>Kemas dan tersimpan di tempat asal</td>
+    <td><?php echo $A9 ?></td>
+    <td><?php echo $Image9 ?></td>
+</tr>
+<tr>
+    <td>Bersih, tidak berdebu dan berfungsi baik</td>
+    <td><?php echo $A10 ?></td>
+    <td><?php echo $Image10 ?></td>
+</tr>
 
-    <!-- Seksyen 3 -->
+<tr>
+    <td rowspan="3">Tempat Fail/Rekod/Dokumen</td>
+    <td> Kedudukan fail teratur dan kemas</td>
+    <td><?php echo $A11 ?></td>
+    <td><?php echo $Image11 ?></td>
+</tr>
+<tr>
+    <td> Mudah dicari dan dikesan dengan mewujudkan pelabelan dan indeks kedudukan fail</td>
+    <td><?php echo $A12 ?></td>
+    <td><?php echo $Image12 ?></td>
+</tr>
 
-    <table class="table table-hover  table-bordered align-center">
+<tr>
+    <td>Kabinet rak fail adalah bersih dan tidak berhabuk</td>
+    <td><?php echo $A13 ?></td>
+    <td><?php echo $Image13 ?></td>
+</tr>
 
-      <th class="align-left" colspan="4" >SEKSYEN 3: STOR (FAIL, BAHAN, ALAT GANTI, UNIFORM & SEBAGAINYA)</th>
-      <tr>
-        <th> Kategori </th>
-        <th> Soalan </th>
-        <th> Markah</th>
-        <th> Gambar</th>          
-      </tr>
+<tr>
+    <td>Maklumat Visual</td>
+    <td>Kemas, bersih dan terkini</td>
+    <td><?php echo $A14 ?></td>
+    <td><?php echo $Image14 ?></td>
+</tr>
 
-      <tr>
-        <td rowspan="7">Tempat Simpanan</td>
-        <td> Keadaan tersusun, kemas dan teratur</td>
-        <td><?php echo $A20 ?></td>
-        <td><?php echo $Image20 ?></td>
-      </tr>
-      <tr>
+<tr>
+    <td rowspan="2"> Keselamatan</td>
+    <td>Aspek keselamatan diutamakan</td>
+    <td><?php echo $A15 ?></td>
+    <td><?php echo $Image15 ?></td>
+</tr>
 
-        <td> Kawasan lantai bersih</td>
-        <td><?php echo $A21 ?></td>
-        <td><?php echo $Image21 ?></td>
-      </tr>
-      <tr>
+<tr>
+    <td>Kawalan visual dan ciri keselamatan mencukupi</td>
+    <td><?php echo $A16 ?></td>
+    <td><?php echo $Image16 ?></td>
+</tr>
 
-        <td> Terdapat tanda 'label' bagi tiap-tiap bahan/rekod</td>
-        <td><?php echo $A22 ?></td>
-        <td><?php echo $Image22 ?></td>
-      </tr>
+<tr>
+    <td> Seragam</td>
+    <td>Sokongan pelaksanaan dengan mewujudkan kawalan visual dan “konsep ownership</td>
+    <td><?php echo $A17 ?></td>
+    <td><?php echo $Image17 ?></td>
+</tr>
 
-      <td> Mempunyai sistem susunan yang teratur dan mudah untuk diambil (seperti rak-rak) bila diperlukan</td>
-      <td><?php echo $A23 ?></td>
-      <td><?php echo $Image23 ?></td>
-    </tr>
+<tr>
+    <td> Sentiasa Amal</td>
+    <td>Kerjasama dan sikap positif untuk amalan berterusan</td>
+    <td><?php echo $A18 ?></td>
+    <td><?php echo $Image18 ?></td>
+</tr>
 
-    <td> Tidak terdapat bahan/item yang tidak diperlukan</td>
-    <td><?php echo $A24 ?></td>
-    <td><?php echo $Image24 ?></td>
-  </tr>
+<tr>
+    <td> Impak</td>
+    <td>Kerjasama dan sikap positif untuk amalan berterusan</td>
+    <td><?php echo $A19 ?></td>
+    <td><?php echo $Image19 ?></td>
+</tr>
 
-  <td> Terdapat “layout plan” sebagai panduan</td>
-  <td><?php echo $A25 ?></td>
-  <td><?php echo $Image25 ?></td>
+<tr>
+    <th colspan="2">JUMLAH MARKAH SEKSYEN 2</th>
+    <th colspan="2"><?php echo $S2 ?></th>
+</tr>
+</table><br><br>
+
+<!-- Seksyen 3 -->
+
+<table class="table table-hover  table-bordered align-center">
+
+  <th class="align-left" colspan="4" >SEKSYEN 3: STOR (FAIL, BAHAN, ALAT GANTI, UNIFORM & SEBAGAINYA)</th>
+  <tr>
+    <th> Kategori </th>
+    <th> Soalan </th>
+    <th> Markah</th>
+    <th> Gambar</th>          
+</tr>
+
+<tr>
+    <td rowspan="7">Tempat Simpanan</td>
+    <td> Keadaan tersusun, kemas dan teratur</td>
+    <td><?php echo $A20 ?></td>
+    <td><?php echo $Image20 ?></td>
+</tr>
+<tr>
+
+    <td> Kawasan lantai bersih</td>
+    <td><?php echo $A21 ?></td>
+    <td><?php echo $Image21 ?></td>
+</tr>
+<tr>
+
+    <td> Terdapat tanda 'label' bagi tiap-tiap bahan/rekod</td>
+    <td><?php echo $A22 ?></td>
+    <td><?php echo $Image22 ?></td>
+</tr>
+
+<td> Mempunyai sistem susunan yang teratur dan mudah untuk diambil (seperti rak-rak) bila diperlukan</td>
+<td><?php echo $A23 ?></td>
+<td><?php echo $Image23 ?></td>
+</tr>
+
+<td> Tidak terdapat bahan/item yang tidak diperlukan</td>
+<td><?php echo $A24 ?></td>
+<td><?php echo $Image24 ?></td>
+</tr>
+
+<td> Terdapat “layout plan” sebagai panduan</td>
+<td><?php echo $A25 ?></td>
+<td><?php echo $Image25 ?></td>
 </tr>
 
 <td> Wujud rekod keluar masuk pergerakan bahan</td>
@@ -623,44 +638,44 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <th> Soalan </th>
     <th> Markah</th>
     <th> Gambar</th>          
-  </tr>
+</tr>
 
-  <tr>
+<tr>
     <td rowspan="3">Lantai/Dinding</td>
     <td> Lantai bersih, kemas dan tidak licin</td>
     <td><?php echo $A33 ?></td>
     <td><?php echo $Image33 ?></td>
-  </tr>
-  <tr>
+</tr>
+<tr>
 
     <td> Keadaan kemas dan rapi</td>
     <td><?php echo $A34 ?></td>
     <td><?php echo $Image34 ?></td>
-  </tr>
-  <tr>
+</tr>
+<tr>
 
     <td> Tiada barang yang tidak diperlukan</td>
     <td><?php echo $A35 ?></td>
     <td><?php echo $Image35 ?></td>
-  </tr>
+</tr>
 
 
-  <tr>
+<tr>
     <td rowspan="6">Peralatan dan Mesin</td>
     <td>Susun atur kemas dan rapi</td>
     <td><?php echo $A36 ?></td>
     <td><?php echo $Image36 ?></td>
-  </tr>
+</tr>
 
-  <tr>
+<tr>
     <td>Mesin dan peralatan adalah bersih</td>
     <td><?php echo $A37 ?></td>
     <td><?php echo $Image37 ?></td>
-  </tr>
+</tr>
 
-  <td>Tiada barang yang tidak diperlukan berada di lokasi mesin</td>
-  <td><?php echo $A38 ?></td>
-  <td><?php echo $Image38 ?></td>
+<td>Tiada barang yang tidak diperlukan berada di lokasi mesin</td>
+<td><?php echo $A38 ?></td>
+<td><?php echo $Image38 ?></td>
 </tr>
 
 <td>Berkeadaan baik serta aktiviti penyelenggaraan mesin</td>
@@ -757,124 +772,124 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <th> Soalan </th>
     <th> Markah</th>
     <th> Gambar</th>          
-  </tr>
+</tr>
 
-  <tr>
+<tr>
     <td rowspan="3">Pos Keselamatan</td>
     <td> Kawasan bersih dan tiada item tidak perlu</td>
     <td><?php echo $A51 ?></td>
     <td><?php echo $Image51 ?></td>
-  </tr>
-  <tr>
+</tr>
+<tr>
 
     <td>Kekemasan selesa dan memuaskan</td>
     <td><?php echo $A52 ?></td>
     <td><?php echo $Image52 ?></td>
-  </tr>
-  <tr>
+</tr>
+<tr>
 
     <td>Aspek keselamatan (kawalan) diutamakan</td>
     <td><?php echo $A53 ?></td>
     <td><?php echo $Image53 ?></td>
-  </tr>
+</tr>
 
 
-  <tr>
+<tr>
     <td rowspan="2">Landskap</td>
     <td>Kawasan bersih dan tiada item tidak perlu</td>
     <td><?php echo $A54 ?></td>
     <td><?php echo $Image54 ?></td>
-  </tr>
+</tr>
 
-  <tr>
+<tr>
     <td>Sentiasa terjaga dan kekemasan memuaskan</td>
     <td><?php echo $A55 ?></td>
     <td><?php echo $Image55 ?></td>
-  </tr>
+</tr>
 
-  <tr>
+<tr>
     <td rowspan="2">Tempat Pelupusan, Longkang, Kawasan Sisa Berjadual</td>
     <td>Mempunyai tempat pembuangan sisa yang memuaskan mengikut keperluan undang-undang</td>
     <td><?php echo $A56 ?></td>
     <td><?php echo $Image56 ?></td>
-  </tr>
+</tr>
 
-  <tr>
+<tr>
     <td>Sentiasa bersih, kemas dan terjaga</td>
     <td><?php echo $A57 ?></td>
     <td><?php echo $Image57 ?></td>
-  </tr>
+</tr>
 
-  <tr>
+<tr>
     <td rowspan="3">Papan Tanda, Pandu Arah</td>
     <td>Kedudukan yang strategik dan berfungsi dengan baik</td>
     <td><?php echo $A58 ?></td>
     <td><?php echo $Image58 ?></td>
-  </tr>
+</tr>
 
-  <tr>
+<tr>
     <td>Saiz yang sesuai, mudah difahami dan mudah dilihat</td>
     <td><?php echo $A59 ?></td>
     <td><?php echo $Image59 ?></td>
-  </tr>
+</tr>
 
-  <tr>
+<tr>
     <td>Wujud pandu arah dan garisan lot parkir yang jelas</td>
     <td><?php echo $A60 ?></td>
     <td><?php echo $Image60 ?></td>
-  </tr>
+</tr>
 
-  <tr>
+<tr>
     <td rowspan="3">Kawasan Parkir</td>
     <td>Kawasan yang bersih dan teratur</td>
     <td><?php echo $A61 ?></td>
     <td><?php echo $Image61 ?></td>
-  </tr>
+</tr>
 
-  <tr>
+<tr>
     <td>Landskap jika ada, tidak mengganggu dan sentiasa dalam keadaan kemas dan selesa untuk pengguna</td>
     <td><?php echo $A62 ?></td>
     <td><?php echo $Image62 ?></td>
-  </tr>
+</tr>
 
-  <tr>
+<tr>
     <td>Tiada bahan/barang yang tidak perlu di lokasi</td>
     <td><?php echo $A63 ?></td>
     <td><?php echo $Image63 ?></td>
-  </tr>
+</tr>
 
-  <tr>
+<tr>
     <td rowspan="1">Keselamatan</td>
     <td>Aspek keselamatan diutamakan</td>
     <td><?php echo $A64 ?></td>
     <td><?php echo $Image64 ?></td>
-  </tr>
+</tr>
 
-  <tr>
+<tr>
     <td rowspan="1">Seragam</td>
     <td>Sokongan pelaksanaan dengan mewujudkan kawalan visual dan “konsep ownership”</td>
     <td><?php echo $A65 ?></td>
     <td><?php echo $Image65 ?></td>
-  </tr>
+</tr>
 
-  <tr>
+<tr>
     <td rowspan="1">Sentiasa Amal</td>
     <td>Kerjasama dan sikap positif untuk amalan berterusan</td>
     <td><?php echo $A66 ?></td>
     <td><?php echo $Image66 ?></td>
-  </tr>
+</tr>
 
-  <tr>
+<tr>
     <td rowspan="1">Impak</td>
     <td>Penambahbaikkan yang dibuat memberikan kesan melalui (Produktiviti/Kualiti/Penghantaran/Kos/Keselamatan/Moral/Inovasi)</td>
     <td><?php echo $A67 ?></td>
     <td><?php echo $Image67 ?></td>
-  </tr>
+</tr>
 
-  <tr>
+<tr>
     <th colspan="2">JUMLAH MARKAH SEKSYEN 5</th>
     <th colspan="2"><?php echo $S5 ?></th>
-  </tr>
+</tr>
 </table><br><br>
 
 <!-- Seksyen 6 -->
@@ -887,21 +902,21 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <th> Soalan </th>
     <th> Markah</th>
     <th> Gambar</th>          
-  </tr>
+</tr>
 
-  <tr>
+<tr>
     <td rowspan="2">Kaunter/Lobi/Koridor/Tangga</td>
     <td> Kawasan lantai/dinding bersih dan tiada item tidak perlu</td>
     <td><?php echo $A68 ?></td>
     <td><?php echo $Image68 ?></td>
-  </tr>
-  <tr>
+</tr>
+<tr>
 
     <td>Susunatur peralatan dan item kemas dan memuaskan</td>
     <td><?php echo $A69 ?></td>
     <td><?php echo $Image69 ?></td>
-  </tr>
-  <tr>
+</tr>
+<tr>
 
 
     <tr>
@@ -909,207 +924,218 @@ mysqli_select_db($con,'5s') or die ('No database found.');
       <td>Kawasan lantai dan dinding bersih dan tiada item tidak perlu</td>
       <td><?php echo $A70 ?></td>
       <td><?php echo $Image70 ?></td>
-    </tr>
+  </tr>
 
-    <tr>
+  <tr>
       <td>Susun atur peralatan/item kemas dan memudahkan</td>
       <td><?php echo $A71 ?></td>
       <td><?php echo $Image71 ?></td>
-    </tr>
-
-    <td>Maklumat Visual dalam keadaan bersih dan kemas (etika,inventori,kawalan penggunaan dsb)</td>
-    <td><?php echo $A72 ?></td>
-    <td><?php echo $Image72 ?></td>
   </tr>
 
+  <td>Maklumat Visual dalam keadaan bersih dan kemas (etika,inventori,kawalan penggunaan dsb)</td>
+  <td><?php echo $A72 ?></td>
+  <td><?php echo $Image72 ?></td>
+</tr>
 
-  <tr>
+
+<tr>
     <td rowspan="3">Bilik Latihan/Simulasi</td>
     <td>Kawasan bersih dan tiada item tidak perlu</td>
     <td><?php echo $A73 ?></td>
     <td><?php echo $Image73 ?></td>
-  </tr>
+</tr>
 
-  <tr>
+<tr>
     <td>Susunatur peralatan/item kemas dan memudahkan</td>
     <td><?php echo $A74 ?></td>
     <td><?php echo $Image74 ?></td>
-  </tr>
+</tr>
 
-  <tr>
+<tr>
     <td>Maklumat Visual dalam keadaan bersih dan kemas.(etika,inventori,kawalan penggunaan dsb)</td>
     <td><?php echo $A75 ?></td>
     <td><?php echo $Image75 ?></td>
-  </tr>
+</tr>
 
-  <tr>
+<tr>
     <td rowspan="3">Kantin/Pantri</td>
     <td>Kawasan lantai bersih dan tiada item tidak perlu</td>
     <td><?php echo $A76 ?></td>
     <td><?php echo $Image76 ?></td>
-  </tr>
+</tr>
 
-  <tr>
+<tr>
     <td>Susun atur peralatan dan item kemas dan rapi</td>
     <td><?php echo $A77 ?></td>
     <td><?php echo $Image77 ?></td>
-  </tr>
+</tr>
 
-  <tr>
+<tr>
     <td>Peralatan dan bahan dalam keadaan baik dan bersih</td>
     <td><?php echo $A78 ?></td>
     <td><?php echo $Image78 ?></td>
-  </tr>
+</tr>
 
-  <tr>
+<tr>
     <td rowspan="3">Surau/Ruang Solat</td>
     <td>Kawasan yang bersih dan memuaskan</td>
     <td><?php echo $A79 ?></td>
     <td><?php echo $Image79 ?></td>
-  </tr>
+</tr>
 
-  <tr>
+<tr>
     <td>Peralatan sentiasa dalam keadaan baik dan boleh digunakan</td>
     <td><?php echo $A80 ?></td>
     <td><?php echo $Image80 ?></td>
-  </tr>
+</tr>
 
-  <tr>
+<tr>
     <td>Tiada bahan yang tidak perlu di lokasi</td>
     <td><?php echo $A81 ?></td>
     <td><?php echo $Image81 ?></td>
-  </tr>
+</tr>
 
-  <tr>
+<tr>
     <td rowspan="3">Tandas/Bilik Mandi</td>
     <td>Kawasan yang bersih dan memuaskan</td>
     <td><?php echo $A82 ?></td>
     <td><?php echo $Image82 ?></td>
-  </tr>
+</tr>
 
-  <tr>
+<tr>
     <td>Peralatan sentiasa dalam keadaan baik dan boleh digunakan</td>
     <td><?php echo $A83 ?></td>
     <td><?php echo $Image83 ?></td>
-  </tr>
+</tr>
 
-  <tr>
+<tr>
     <td>Tiada bahan yang tidak perlu di lokasi</td>
     <td><?php echo $A84 ?></td>
     <td><?php echo $Image84 ?></td>
-  </tr>
+</tr>
 
-  <tr>
+<tr>
     <td rowspan="3">Bilik Kecemasan/Bilik Rehat/Penginapan</td>
     <td>Kawasan yang bersih dan memuaskan</td>
     <td><?php echo $A85 ?></td>
     <td><?php echo $Image85 ?></td>
-  </tr>
+</tr>
 
-  <tr>
+<tr>
     <td>Dalam keadaan kemas dan teratur</td>
     <td><?php echo $A86 ?></td>
     <td><?php echo $Image86 ?></td>
-  </tr>
+</tr>
 
-  <tr>
+<tr>
     <td>Tiada bahan yang tidak perlu di lokasi</td>
     <td><?php echo $A87 ?></td>
     <td><?php echo $Image87 ?></td>
-  </tr>
+</tr>
 
-  <tr>
+<tr>
     <td rowspan="3">Pusat Sumber</td>
     <td>Kawasan yang bersih dan memuaskan</td>
     <td><?php echo $A88 ?></td>
     <td><?php echo $Image88 ?></td>
-  </tr>
+</tr>
 
-  <tr>
+<tr>
     <td>Dalam keadaan kemas dan teratur</td>
     <td><?php echo $A89 ?></td>
     <td><?php echo $Image89 ?></td>
-  </tr>
+</tr>
 
-  <tr>
+<tr>
     <td>Tiada bahan yang tidak perlu di lokasi</td>
     <td><?php echo $A90 ?></td>
     <td><?php echo $Image90 ?></td>
-  </tr>
+</tr>
 
-  <tr>
+<tr>
     <td rowspan="3">Dewan</td>
     <td>Kawasan lantai bersih dan tiada item tidak perlu</td>
     <td><?php echo $A91 ?></td>
     <td><?php echo $Image91 ?></td>
-  </tr>
+</tr>
 
-  <tr>
+<tr>
     <td>Susun atur peralatan dan item kemas dan rapi</td>
     <td><?php echo $A92 ?></td>
     <td><?php echo $Image92 ?></td>
-  </tr>
+</tr>
 
-  <tr>
+<tr>
     <td>Peralatan dan bahan dalam keadaan baik dan bersih</td>
     <td><?php echo $A93 ?></td>
     <td><?php echo $Image93 ?></td>
-  </tr>
+</tr>
 
-  <tr>
+<tr>
     <td rowspan="3">Bilik Gimnasium</td>
     <td>Kawasan yang bersih dan memuaskan</td>
     <td><?php echo $A94 ?></td>
     <td><?php echo $Image94 ?></td>
-  </tr>
+</tr>
 
-  <tr>
+<tr>
     <td>Dalam keadaan kemas dan teratur</td>
     <td><?php echo $A95 ?></td>
     <td><?php echo $Image95 ?></td>
-  </tr>
+</tr>
 
-  <tr>
+<tr>
     <td>Tiada bahan yang tidak perlu di lokasi</td>
     <td><?php echo $A96 ?></td>
     <td><?php echo $Image96 ?></td>
-  </tr>
+</tr>
 
 
-  <tr>
+<tr>
     <td rowspan="1">Keselamatan</td>
     <td>Aspek keselamatan diutamakan</td>
     <td><?php echo $A97 ?></td>
     <td><?php echo $Image97 ?></td>
-  </tr>
+</tr>
 
-  <tr>
+<tr>
     <td rowspan="1">Seragam</td>
     <td>Sokongan pelaksanaan dengan mewujudkan kawalan visual dan “konsep ownership”</td>
     <td><?php echo $A98 ?></td>
     <td><?php echo $Image98 ?></td>
-  </tr>
+</tr>
 
-  <tr>
+<tr>
     <td rowspan="1">Sentiasa Amal</td>
     <td>Kerjasama dan sikap positif untuk amalan berterusan</td>
     <td><?php echo $A99 ?></td>
     <td><?php echo $Image99 ?></td>
-  </tr>
+</tr>
 
-  <tr>
+<tr>
     <td rowspan="1">Impak</td>
     <td>Penambahbaikkan yang dibuat memberikan kesan melalui (Produktiviti/Kualiti/Penghantaran/Kos/Keselamatan/Moral/Inovasi)</td>
     <td><?php echo $A100 ?></td>
     <td><?php echo $Image100 ?></td>
-  </tr>
+</tr>
 
-  <tr>
+<tr>
     <th colspan="2">JUMLAH MARKAH SEKSYEN 6</th>
     <th colspan="2"><?php echo $S6 ?></th>
-  </tr>
+</tr>
 
-</table><br><br>
+</table><br>
+
+<table class="table table-hover  table-bordered align-center">
+
+    <tr>
+        <th><b><h2>JUMLAH KESELURUHAN:</h2></b></th>
+        <th><?php echo $overall ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="image" name="convert" src="assets/images/percent.png" title="Convert to %" data-toggle="tooltip" width="25" height="25">
+        </th>
+
+    </tr>
+    
+</table><br>
 
 
 <table class="table table-hover  table-bordered align-center">
@@ -1121,16 +1147,16 @@ mysqli_select_db($con,'5s') or die ('No database found.');
   <tr>
     <td class="align-left">Nama:</td>
     <td class="align-left">Nama:</td>
-  </tr>
+</tr>
 
-  <tr>
+<tr>
     <td class="align-left">Tarikh:</td>
     <td class="align-left">Tarikh:</td>
-  </tr>
-  <tr>
+</tr>
+<tr>
     <td class="align-left">Cop Pengesahan:</td>
     <td class="align-left">Cop Pengesahan:</td>
-  </tr>
+</tr>
 </td>
 
 </table><br><br>
