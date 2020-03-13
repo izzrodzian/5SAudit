@@ -711,13 +711,14 @@ mysqli_select_db($con,'5s') or die ('No database found.');
 
 <table class="table table-hover  table-bordered align-center">
 
-  <th class="align-left" colspan="4" >SEKSYEN 4: OPERASI
+  <th class="align-left" colspan="5" >SEKSYEN 4: OPERASI
   (BENGKEL PENYELENGGARAAN AM, PAM MINYAK, “WASHING BAY”, BILIK KAWALAN, BILIK KIRAAN & SEBAGAINYA)</th>
   <tr>
     <th> Kategori </th>
     <th> Soalan </th>
     <th> Markah</th>
-    <th> Gambar</th>          
+    <th> Gambar</th>  
+    <th> Catatan</th>        
 </tr>
 
 <tr>
@@ -725,6 +726,7 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td> Lantai bersih, kemas dan tidak licin</td>
     <td><?php echo $A33 ?></td>
     <td><?php echo $Image33 ?></td>
+    <td rowspan="3"><?php echo $Catatan14 ?></td>
 </tr>
 <tr>
 
@@ -745,6 +747,7 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td>Susun atur kemas dan rapi</td>
     <td><?php echo $A36 ?></td>
     <td><?php echo $Image36 ?></td>
+    <td rowspan="6"><?php echo $Catatan14 ?></td>
 </tr>
 
 <tr>
@@ -778,6 +781,7 @@ mysqli_select_db($con,'5s') or die ('No database found.');
   <td>Dalam keadaan kemas dan teratur</td>
   <td><?php echo $A42 ?></td>
   <td><?php echo $Image42 ?></td>
+  <td rowspan="2"><?php echo $Catatan14 ?></td>
 </tr>
 
 <tr>
@@ -791,6 +795,7 @@ mysqli_select_db($con,'5s') or die ('No database found.');
   <td>Kemas dan sistematik</td>
   <td><?php echo $A44 ?></td>
   <td><?php echo $Image44 ?></td>
+  <td rowspan="2"><?php echo $Catatan14 ?></td>
 </tr>
 
 <tr>
@@ -805,6 +810,7 @@ mysqli_select_db($con,'5s') or die ('No database found.');
   <td>Bersih, kemas dan maklumat sentiasa kemaskini</td>
   <td><?php echo $A46 ?></td>
   <td><?php echo $Image46 ?></td>
+  <td><?php echo $Catatan14 ?></td>
 </tr>
 
 <tr>
@@ -812,6 +818,7 @@ mysqli_select_db($con,'5s') or die ('No database found.');
   <td>Aspek keselamatan diutamakan</td>
   <td><?php echo $A47 ?></td>
   <td><?php echo $Image47 ?></td>
+  <td><?php echo $Catatan14 ?></td>
 </tr>
 
 <tr>
@@ -819,6 +826,7 @@ mysqli_select_db($con,'5s') or die ('No database found.');
   <td>Sokongan pelaksanaan dengan mewujudkan kawalan visual dan “konsep ownership”</td>
   <td><?php echo $A48 ?></td>
   <td><?php echo $Image48 ?></td>
+  <td><?php echo $Catatan14 ?></td>
 </tr>
 
 <tr>
@@ -826,6 +834,7 @@ mysqli_select_db($con,'5s') or die ('No database found.');
   <td>Kerjasama dan sikap positif untuk amalan berterusan</td>
   <td><?php echo $A49 ?></td>
   <td><?php echo $Image49 ?></td>
+  <td><?php echo $Catatan14 ?></td>
 </tr>
 
 <tr>
@@ -833,11 +842,12 @@ mysqli_select_db($con,'5s') or die ('No database found.');
   <td>Penambahbaikkan yang dibuat memberikan kesan melalui (Produktiviti/Kualiti/Penghantaran/Kos/Keselamatan/Moral/Inovasi)</td>
   <td><?php echo $A50 ?></td>
   <td><?php echo $Image50 ?></td>
+  <td><?php echo $Catatan14 ?></td>
 </tr>
 
 <tr>
-  <th colspan="2">JUMLAH MARKAH SEKSYEN 4</th>
-  <th colspan="2"><?php echo $S4 ?></th>
+  <th colspan="3">JUMLAH MARKAH SEKSYEN 4</th>
+  <th colspan="3"><?php echo $S4 ?></th>
 </tr>
 
 </table><br><br>
@@ -846,12 +856,13 @@ mysqli_select_db($con,'5s') or die ('No database found.');
 
 <table class="table table-hover  table-bordered align-center">
 
-  <th class="align-left" colspan="4">SEKSYEN 5: KAWASAN PERSEKITARAN LUARAN</th>
+  <th class="align-left" colspan="5">SEKSYEN 5: KAWASAN PERSEKITARAN LUARAN</th>
   <tr>
     <th> Kategori </th>
     <th> Soalan </th>
     <th> Markah</th>
-    <th> Gambar</th>          
+    <th> Gambar</th>  
+    <th> Catatan</th>        
 </tr>
 
 <tr>
@@ -859,6 +870,7 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td> Kawasan bersih dan tiada item tidak perlu</td>
     <td><?php echo $A51 ?></td>
     <td><?php echo $Image51 ?></td>
+    <td rowspan="3"><?php echo $Catatan14 ?></td>
 </tr>
 <tr>
 
@@ -879,6 +891,7 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td>Kawasan bersih dan tiada item tidak perlu</td>
     <td><?php echo $A54 ?></td>
     <td><?php echo $Image54 ?></td>
+    <td rowspan="2"><?php echo $Catatan14 ?></td>
 </tr>
 
 <tr>
@@ -892,6 +905,7 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td>Mempunyai tempat pembuangan sisa yang memuaskan mengikut keperluan undang-undang</td>
     <td><?php echo $A56 ?></td>
     <td><?php echo $Image56 ?></td>
+    <td rowspan="2"><?php echo $Catatan14 ?></td>
 </tr>
 
 <tr>
@@ -905,6 +919,7 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td>Kedudukan yang strategik dan berfungsi dengan baik</td>
     <td><?php echo $A58 ?></td>
     <td><?php echo $Image58 ?></td>
+    <td rowspan="3"><?php echo $Catatan14 ?></td>
 </tr>
 
 <tr>
@@ -924,6 +939,7 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td>Kawasan yang bersih dan teratur</td>
     <td><?php echo $A61 ?></td>
     <td><?php echo $Image61 ?></td>
+    <td rowspan="3"><?php echo $Catatan14 ?></td>
 </tr>
 
 <tr>
@@ -943,6 +959,7 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td>Aspek keselamatan diutamakan</td>
     <td><?php echo $A64 ?></td>
     <td><?php echo $Image64 ?></td>
+    <td><?php echo $Catatan14 ?></td>
 </tr>
 
 <tr>
@@ -950,6 +967,7 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td>Sokongan pelaksanaan dengan mewujudkan kawalan visual dan “konsep ownership”</td>
     <td><?php echo $A65 ?></td>
     <td><?php echo $Image65 ?></td>
+    <td><?php echo $Catatan14 ?></td>
 </tr>
 
 <tr>
@@ -957,6 +975,7 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td>Kerjasama dan sikap positif untuk amalan berterusan</td>
     <td><?php echo $A66 ?></td>
     <td><?php echo $Image66 ?></td>
+    <td><?php echo $Catatan14 ?></td>
 </tr>
 
 <tr>
@@ -964,11 +983,12 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td>Penambahbaikkan yang dibuat memberikan kesan melalui (Produktiviti/Kualiti/Penghantaran/Kos/Keselamatan/Moral/Inovasi)</td>
     <td><?php echo $A67 ?></td>
     <td><?php echo $Image67 ?></td>
+    <td><?php echo $Catatan14 ?></td>
 </tr>
 
 <tr>
-    <th colspan="2">JUMLAH MARKAH SEKSYEN 5</th>
-    <th colspan="2"><?php echo $S5 ?></th>
+    <th colspan="3">JUMLAH MARKAH SEKSYEN 5</th>
+    <th colspan="3"><?php echo $S5 ?></th>
 </tr>
 </table><br><br>
 
@@ -976,12 +996,13 @@ mysqli_select_db($con,'5s') or die ('No database found.');
 
 <table class="table table-hover  table-bordered align-center">
 
-  <th class="align-left" colspan="4">SEKSYEN 6: TEMPAT UMUM</th>
+  <th class="align-left" colspan="5">SEKSYEN 6: TEMPAT UMUM</th>
   <tr>
     <th> Kategori </th>
     <th> Soalan </th>
     <th> Markah</th>
-    <th> Gambar</th>          
+    <th> Gambar</th>
+    <th> Catatan</th>          
 </tr>
 
 <tr>
@@ -989,6 +1010,7 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td> Kawasan lantai/dinding bersih dan tiada item tidak perlu</td>
     <td><?php echo $A68 ?></td>
     <td><?php echo $Image68 ?></td>
+    <td rowspan="2"><?php echo $Catatan14 ?></td>
 </tr>
 <tr>
 
@@ -1004,6 +1026,7 @@ mysqli_select_db($con,'5s') or die ('No database found.');
       <td>Kawasan lantai dan dinding bersih dan tiada item tidak perlu</td>
       <td><?php echo $A70 ?></td>
       <td><?php echo $Image70 ?></td>
+      <td rowspan="3"><?php echo $Catatan14 ?></td>
   </tr>
 
   <tr>
@@ -1023,6 +1046,7 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td>Kawasan bersih dan tiada item tidak perlu</td>
     <td><?php echo $A73 ?></td>
     <td><?php echo $Image73 ?></td>
+    <td rowspan="3"><?php echo $Catatan14 ?></td>
 </tr>
 
 <tr>
@@ -1042,6 +1066,7 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td>Kawasan lantai bersih dan tiada item tidak perlu</td>
     <td><?php echo $A76 ?></td>
     <td><?php echo $Image76 ?></td>
+    <td rowspan="3"><?php echo $Catatan14 ?></td>
 </tr>
 
 <tr>
@@ -1061,6 +1086,7 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td>Kawasan yang bersih dan memuaskan</td>
     <td><?php echo $A79 ?></td>
     <td><?php echo $Image79 ?></td>
+    <td rowspan="3"><?php echo $Catatan14 ?></td>
 </tr>
 
 <tr>
@@ -1080,6 +1106,7 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td>Kawasan yang bersih dan memuaskan</td>
     <td><?php echo $A82 ?></td>
     <td><?php echo $Image82 ?></td>
+    <td rowspan="3"><?php echo $Catatan14 ?></td>
 </tr>
 
 <tr>
@@ -1099,6 +1126,7 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td>Kawasan yang bersih dan memuaskan</td>
     <td><?php echo $A85 ?></td>
     <td><?php echo $Image85 ?></td>
+    <td rowspan="3"><?php echo $Catatan14 ?></td>
 </tr>
 
 <tr>
@@ -1118,6 +1146,7 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td>Kawasan yang bersih dan memuaskan</td>
     <td><?php echo $A88 ?></td>
     <td><?php echo $Image88 ?></td>
+    <td rowspan="3"><?php echo $Catatan14 ?></td>
 </tr>
 
 <tr>
@@ -1137,6 +1166,7 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td>Kawasan lantai bersih dan tiada item tidak perlu</td>
     <td><?php echo $A91 ?></td>
     <td><?php echo $Image91 ?></td>
+    <td rowspan="4"><?php echo $Catatan14 ?></td>
 </tr>
 
 <tr>
@@ -1156,6 +1186,7 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td>Kawasan yang bersih dan memuaskan</td>
     <td><?php echo $A94 ?></td>
     <td><?php echo $Image94 ?></td>
+    <td rowspan="3"><?php echo $Catatan14 ?></td>
 </tr>
 
 <tr>
@@ -1176,6 +1207,7 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td>Aspek keselamatan diutamakan</td>
     <td><?php echo $A97 ?></td>
     <td><?php echo $Image97 ?></td>
+    <td><?php echo $Catatan14 ?></td>
 </tr>
 
 <tr>
@@ -1183,6 +1215,7 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td>Sokongan pelaksanaan dengan mewujudkan kawalan visual dan “konsep ownership”</td>
     <td><?php echo $A98 ?></td>
     <td><?php echo $Image98 ?></td>
+    <td><?php echo $Catatan14 ?></td>
 </tr>
 
 <tr>
@@ -1190,6 +1223,7 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td>Kerjasama dan sikap positif untuk amalan berterusan</td>
     <td><?php echo $A99 ?></td>
     <td><?php echo $Image99 ?></td>
+    <td><?php echo $Catatan14 ?></td>
 </tr>
 
 <tr>
@@ -1197,11 +1231,12 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td>Penambahbaikkan yang dibuat memberikan kesan melalui (Produktiviti/Kualiti/Penghantaran/Kos/Keselamatan/Moral/Inovasi)</td>
     <td><?php echo $A100 ?></td>
     <td><?php echo $Image100 ?></td>
+    <td><?php echo $Catatan14 ?></td>
 </tr>
 
 <tr>
-    <th colspan="2">JUMLAH MARKAH SEKSYEN 6</th>
-    <th colspan="2"><?php echo $S6 ?></th>
+    <th colspan="3">JUMLAH MARKAH SEKSYEN 6</th>
+    <th colspan="3"><?php echo $S6 ?></th>
 </tr>
 
 </table><br>
