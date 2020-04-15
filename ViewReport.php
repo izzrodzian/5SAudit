@@ -6,8 +6,6 @@ session_start();
 $con = mysqli_connect('127.0.0.1','root','') or die ('Not connected.');
 mysqli_select_db($con,'5s') or die ('No database found.');
 
-
-
 ?>
 
 <html>
@@ -442,7 +440,7 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td> Maklumat Lengkap dan Terkini (Merujuk pada Senarai Semak Dokumen)</td>
 
     <td> <?php echo $C1 ?></td>
-    <td><?php echo '<img src="data:image/png;base64,'.base64_encode($row["Image1"] ).'">' ?></td>
+    <td><?php echo $Image1 ?></td>
     <td><?php echo $Catatan1 ?></td>
 </tr>
 
