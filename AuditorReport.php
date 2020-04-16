@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 
 <?php
+
+session_start();
+
+// Include the database configuration file  
+require_once 'Config.php'; 
  
 
 $dataPoints = array();
