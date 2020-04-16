@@ -6,7 +6,371 @@ session_start();
 // Include the database configuration file  
 require_once 'Config.php'; 
 
-?>
+$S1 = 0;
+$S2 = 0;
+$S3 = 0;
+$S4 = 0;
+$S5 = 0;
+$S6 = 0;
+
+$query1 = "SELECT * FROM qacategory_section1";  
+$result1 = mysqli_query($con, $query1); 
+
+
+if ($row1 = mysqli_fetch_array($result1))  
+{ 
+    $C1 = $row1['Category1'];
+    $C2 = $row1['Category2'];
+    $C3 = $row1['Category3'];
+    $S1 = $row1['CategorySection1_TotalMarks'];
+    $Image1 = $row1['Image1'];
+    $Image2 = $row1['Image2'];
+    $Image3 = $row1['Image3'];
+    $Catatan1 = $row1['Catatan1'];
+    $Catatan2 = $row1['Catatan2'];
+    $Catatan3 = $row1['Catatan3'];
+}
+
+$query2 = "SELECT * FROM qacategory_section2";  
+$result2 = mysqli_query($con, $query2);  
+if ($row2 = mysqli_fetch_array($result2))  
+{ 
+    $A4 = $row2['Answer4'];
+    $A5 = $row2['Answer5'];
+    $A6 = $row2['Answer6'];
+    $A7 = $row2['Answer7'];
+    $A8 = $row2['Answer8'];
+    $A9 = $row2['Answer9'];
+    $A10 = $row2['Answer10'];
+    $A11 = $row2['Answer11'];
+    $A12 = $row2['Answer12'];
+    $A13 = $row2['Answer13'];
+    $A14 = $row2['Answer14'];
+    $A15 = $row2['Answer15'];
+    $A16 = $row2['Answer16'];
+    $A17 = $row2['Answer17'];
+    $A18 = $row2['Answer18'];
+    $A19 = $row2['Answer19'];
+    $C1S2 = $row2['Category1'];
+    $C2S2 = $row2['Category2'];
+    $C3S2 = $row2['Category3'];
+    $C4S2 = $row2['Category4'];
+    $C5S2 = $row2['Category5'];
+    $C6S2 = $row2['Category6'];
+    $C7S2 = $row2['Category7'];
+    $C8S2 = $row2['Category8'];
+    $C9S2 = $row2['Category9'];
+    $S2 = $row2['CategorySection2_TotalMarks'];
+    $Image4 = $row2['Image4'];
+    $Image5 = $row2['Image5'];
+    $Image6 = $row2['Image6'];
+    $Image7 = $row2['Image7'];
+    $Image8 = $row2['Image8'];
+    $Image9 = $row2['Image9'];
+    $Image10 = $row2['Image10'];
+    $Image11 = $row2['Image11'];
+    $Image12 = $row2['Image12'];
+    $Image13 = $row2['Image13'];
+    $Image14 = $row2['Image14'];
+    $Image15 = $row2['Image15'];
+    $Image16 = $row2['Image16'];
+    $Image17 = $row2['Image17'];
+    $Image18 = $row2['Image18'];
+    $Image19 = $row2['Image19'];
+    $Catatan4 = $row2['Catatan4'];
+    $Catatan5 = $row2['Catatan5'];
+    $Catatan6 = $row2['Catatan6'];
+    $Catatan7 = $row2['Catatan7'];
+    $Catatan8 = $row2['Catatan8'];
+    $Catatan9 = $row2['Catatan9'];
+    $Catatan10 = $row2['Catatan10'];
+    $Catatan11 = $row2['Catatan11'];
+    $Catatan12 = $row2['Catatan12'];
+}
+
+$query3 = "SELECT * FROM qacategory_section3";  
+$result3 = mysqli_query($con, $query3);  
+if ($row3 = mysqli_fetch_array($result3))  
+{ 
+    $A20 = $row3['Answer20'];
+    $A21 = $row3['Answer21'];
+    $A22 = $row3['Answer22'];
+    $A23 = $row3['Answer23'];
+    $A24 = $row3['Answer24'];
+    $A25 = $row3['Answer25'];
+    $A26 = $row3['Answer26'];
+    $A27 = $row3['Answer27'];
+    $A28 = $row3['Answer28'];
+    $A29 = $row3['Answer29'];
+    $A30 = $row3['Answer30'];
+    $A31 = $row3['Answer31'];
+    $A32 = $row3['Answer32'];
+    $C1S3 = $row3['Category1'];
+    $C2S3 = $row3['Category2'];
+    $C3S3 = $row3['Category3'];
+    $C4S3 = $row3['Category4'];
+    $C5S3 = $row3['Category5'];
+    $S3 = $row3['CategorySection3_TotalMarks'];
+    $Image20 = $row3['Image20'];
+    $Image21 = $row3['Image21'];
+    $Image22 = $row3['Image22'];
+    $Image23 = $row3['Image23'];
+    $Image24 = $row3['Image24'];
+    $Image25 = $row3['Image25'];
+    $Image26 = $row3['Image26'];
+    $Image27 = $row3['Image27'];
+    $Image28 = $row3['Image28'];
+    $Image29 = $row3['Image29'];
+    $Image30 = $row3['Image30'];
+    $Image31 = $row3['Image31'];
+    $Image32 = $row3['Image32'];
+    $Catatan13 = $row3['Catatan13'];
+    $Catatan14 = $row3['Catatan14'];
+    $Catatan15 = $row3['Catatan15'];
+    $Catatan16 = $row3['Catatan16'];
+    $Catatan17 = $row3['Catatan17'];
+}
+
+
+$query4 = "SELECT * FROM qacategory_section4";  
+$result4 = mysqli_query($con, $query4);  
+if ($row4 = mysqli_fetch_array($result4))  
+{ 
+    $A33 = $row4['Answer33'];
+    $A34 = $row4['Answer34'];
+    $A35 = $row4['Answer35'];
+    $A36 = $row4['Answer36'];
+    $A37 = $row4['Answer37'];
+    $A38 = $row4['Answer38'];
+    $A39 = $row4['Answer39'];
+    $A40 = $row4['Answer40'];
+    $A41 = $row4['Answer41'];
+    $A42 = $row4['Answer42'];
+    $A43 = $row4['Answer43'];
+    $A44 = $row4['Answer44'];
+    $A45 = $row4['Answer45'];
+    $A46 = $row4['Answer46'];
+    $A47 = $row4['Answer47'];
+    $A48 = $row4['Answer48'];
+    $A49 = $row4['Answer49'];
+    $A50 = $row4['Answer50'];
+    $C1S4 = $row4['Category1'];
+    $C2S4 = $row4['Category2'];
+    $C3S4 = $row4['Category3'];
+    $C4S4 = $row4['Category4'];
+    $C5S4 = $row4['Category5'];
+    $C6S4 = $row4['Category6'];
+    $C7S4 = $row4['Category7'];
+    $C8S4 = $row4['Category8'];
+    $C9S4 = $row4['Category9'];
+    $S4 = $row4['CategorySection4_TotalMarks'];
+    $Image33 = $row4['Image33'];
+    $Image34 = $row4['Image34'];
+    $Image35 = $row4['Image35'];
+    $Image36 = $row4['Image36'];
+    $Image37 = $row4['Image37'];
+    $Image38 = $row4['Image38'];
+    $Image39 = $row4['Image39'];
+    $Image40 = $row4['Image40'];
+    $Image41 = $row4['Image41'];
+    $Image42 = $row4['Image42'];
+    $Image43 = $row4['Image43'];
+    $Image44 = $row4['Image44'];
+    $Image45 = $row4['Image45'];
+    $Image46 = $row4['Image46'];
+    $Image47 = $row4['Image47'];
+    $Image48 = $row4['Image48'];
+    $Image49 = $row4['Image49'];
+    $Image50 = $row4['Image50'];
+    $Catatan18 = $row4['Catatan18'];
+    $Catatan19 = $row4['Catatan19'];
+    $Catatan20 = $row4['Catatan20'];
+    $Catatan21 = $row4['Catatan21'];
+    $Catatan22 = $row4['Catatan22'];
+    $Catatan23 = $row4['Catatan23'];
+    $Catatan24 = $row4['Catatan24'];
+    $Catatan25 = $row4['Catatan25'];
+    $Catatan26 = $row4['Catatan26'];
+}
+
+
+$query5 = "SELECT * FROM qacategory_section5";  
+$result5 = mysqli_query($con, $query5);  
+if ($row5 = mysqli_fetch_array($result5))  
+{ 
+    $A51 = $row5['Answer51'];
+    $A52 = $row5['Answer52'];
+    $A53 = $row5['Answer53'];
+    $A54 = $row5['Answer54'];
+    $A55 = $row5['Answer55'];
+    $A56 = $row5['Answer56'];
+    $A57 = $row5['Answer57'];
+    $A58 = $row5['Answer58'];
+    $A59 = $row5['Answer59'];
+    $A60 = $row5['Answer60'];
+    $A61 = $row5['Answer61'];
+    $A62 = $row5['Answer62'];
+    $A63 = $row5['Answer63'];
+    $A64 = $row5['Answer64'];
+    $A65 = $row5['Answer65'];
+    $A66 = $row5['Answer66'];
+    $A67 = $row5['Answer67'];
+    $C1S5 = $row5['Category1'];
+    $C2S5 = $row5['Category2'];
+    $C3S5 = $row5['Category3'];
+    $C4S5 = $row5['Category4'];
+    $C5S5 = $row5['Category5'];
+    $C6S5 = $row5['Category6'];
+    $C7S5 = $row5['Category7'];
+    $C8S5 = $row5['Category8'];
+    $C9S5 = $row5['Category9'];
+    $S5 = $row5['CategorySection5_TotalMarks'];
+    $Image51 = $row5['Image51'];
+    $Image52 = $row5['Image52'];
+    $Image53 = $row5['Image53'];
+    $Image54 = $row5['Image54'];
+    $Image55 = $row5['Image55'];
+    $Image56 = $row5['Image56'];
+    $Image57 = $row5['Image57'];
+    $Image58 = $row5['Image58'];
+    $Image59 = $row5['Image59'];
+    $Image60 = $row5['Image60'];
+    $Image61 = $row5['Image61'];
+    $Image62 = $row5['Image62'];
+    $Image63 = $row5['Image63'];
+    $Image64 = $row5['Image64'];
+    $Image65 = $row5['Image65'];
+    $Image66 = $row5['Image66'];
+    $Image67 = $row5['Image67'];
+    $Catatan27 = $row5['Catatan27'];
+    $Catatan28 = $row5['Catatan28'];
+    $Catatan29 = $row5['Catatan29'];
+    $Catatan30 = $row5['Catatan30'];
+    $Catatan31 = $row5['Catatan31'];
+    $Catatan32 = $row5['Catatan32'];
+    $Catatan33 = $row5['Catatan33'];
+    $Catatan34 = $row5['Catatan34'];
+    $Catatan35 = $row5['Catatan35'];
+}
+
+
+$query6 = "SELECT * FROM qacategory_section6";  
+$result6 = mysqli_query($con, $query6);  
+if ($row6 = mysqli_fetch_array($result6))  
+{ 
+    $A68 = $row6['Answer68'];
+    $A69 = $row6['Answer69'];
+    $A70 = $row6['Answer70'];
+    $A71 = $row6['Answer71'];
+    $A72 = $row6['Answer72'];
+    $A73 = $row6['Answer73'];
+    $A74 = $row6['Answer74'];
+    $A75 = $row6['Answer75'];
+    $A76 = $row6['Answer76'];
+    $A77 = $row6['Answer77'];
+    $A78 = $row6['Answer78'];
+    $A79 = $row6['Answer79'];
+    $A80 = $row6['Answer80'];
+    $A81 = $row6['Answer81'];
+    $A82 = $row6['Answer82'];
+    $A83 = $row6['Answer83'];
+    $A84 = $row6['Answer84'];
+    $A85 = $row6['Answer85'];
+    $A86 = $row6['Answer86'];
+    $A87 = $row6['Answer87'];
+    $A88 = $row6['Answer88'];
+    $A89 = $row6['Answer89'];
+    $A90 = $row6['Answer90'];
+    $A91 = $row6['Answer91'];
+    $A92 = $row6['Answer92'];
+    $A93 = $row6['Answer93'];
+    $A94 = $row6['Answer94'];
+    $A95 = $row6['Answer95'];
+    $A96 = $row6['Answer96'];
+    $A97 = $row6['Answer97'];
+    $A98 = $row6['Answer98'];
+    $A99 = $row6['Answer99'];
+    $A100 = $row6['Answer100'];
+    $C1S6 = $row6['Category1'];
+    $C2S6 = $row6['Category2'];
+    $C3S6 = $row6['Category3'];
+    $C4S6 = $row6['Category4'];
+    $C5S6 = $row6['Category5'];
+    $C6S6 = $row6['Category6'];
+    $C7S6 = $row6['Category7'];
+    $C8S6 = $row6['Category8'];
+    $C9S6 = $row6['Category9'];
+    $C10S6 = $row6['Category10'];
+    $C11S6 = $row6['Category11'];
+    $C12S6 = $row6['Category12'];
+    $C13S6 = $row6['Category13'];
+    $C14S6 = $row6['Category14'];
+    $S6 = $row6['CategorySection6_TotalMarks'];
+    $Image68 = $row6['Image68'];
+    $Image69 = $row6['Image69'];
+    $Image70 = $row6['Image70'];
+    $Image71 = $row6['Image71'];
+    $Image72 = $row6['Image72'];
+    $Image73 = $row6['Image73'];
+    $Image74 = $row6['Image74'];
+    $Image75 = $row6['Image75'];
+    $Image76 = $row6['Image76'];
+    $Image77 = $row6['Image77'];
+    $Image78 = $row6['Image78'];
+    $Image79 = $row6['Image79'];
+    $Image80 = $row6['Image80'];
+    $Image81 = $row6['Image81'];
+    $Image82 = $row6['Image82'];
+    $Image83 = $row6['Image83'];
+    $Image84 = $row6['Image84'];
+    $Image85 = $row6['Image85'];
+    $Image86 = $row6['Image86'];
+    $Image87 = $row6['Image87'];
+    $Image88 = $row6['Image88'];
+    $Image89 = $row6['Image89'];
+    $Image90 = $row6['Image90'];
+    $Image91 = $row6['Image91'];
+    $Image92 = $row6['Image92'];
+    $Image93 = $row6['Image93'];
+    $Image94 = $row6['Image94'];
+    $Image95 = $row6['Image95'];
+    $Image96 = $row6['Image96'];
+    $Image97 = $row6['Image97'];
+    $Image98 = $row6['Image98'];
+    $Image99 = $row6['Image99'];
+    $Image100 = $row6['Image100'];
+    $Catatan36 = $row6['Catatan36'];
+    $Catatan37 = $row6['Catatan37'];
+    $Catatan38 = $row6['Catatan38'];
+    $Catatan39 = $row6['Catatan39'];
+    $Catatan40 = $row6['Catatan40'];
+    $Catatan41 = $row6['Catatan41'];
+    $Catatan42 = $row6['Catatan42'];
+    $Catatan43 = $row6['Catatan43'];
+    $Catatan44 = $row6['Catatan44'];
+    $Catatan45 = $row6['Catatan45'];
+    $Catatan46 = $row6['Catatan46'];
+    $Catatan47 = $row6['Catatan47'];
+    $Catatan48 = $row6['Catatan48'];
+    $Catatan49 = $row6['Catatan49'];
+}
+
+
+$overall = $S1 + $S2 + $S3 + $S4 + $S5 + $S6;
+$percentage = 0;
+
+if (isset($_POST['convert']))
+{
+    $sql ="INSERT INTO qamarks (TotalMarks) VALUES ('$overall')"; 
+    $r = mysqli_query($con, $sql);
+
+    if($r)
+    {
+        $percentage = ($overall / 500) * 100;
+    }
+}
+?> 
+
 
 <html>
 <head>
@@ -45,388 +409,12 @@ require_once 'Config.php';
   </a><br><br>
 </div>
 
-<form method="POST">
+<form method="POST" enctype="multipart/form-data">
     <table class="table table-hover  table-bordered align-center">
-
-
 
       <!-- Seksyen 1  -->
       <th class="align-left" colspan="5">SEKSYEN 1: KEPERLUAN UTAMA PELAKSANAAN</th>
-      <?php  
-      $query1 = "SELECT * FROM qacategory_section1";  
-      $result1 = mysqli_query($con, $query1); 
-
-
-      if ($row1 = mysqli_fetch_array($result1))  
-      { 
-        $C1 = $row1['Category1'];
-        $C2 = $row1['Category2'];
-        $C3 = $row1['Category3'];
-        $S1 = $row1['CategorySection1_TotalMarks'];
-        $Image1 = $row1['Image1'];
-        $Image2 = $row1['Image2'];
-        $Image3 = $row1['Image3'];
-        $Catatan1 = $row1['Catatan1'];
-        $Catatan2 = $row1['Catatan2'];
-        $Catatan3 = $row1['Catatan3'];
-
-        if($result1)
-        {
-          $query2 = "SELECT * FROM qacategory_section2";  
-          $result2 = mysqli_query($con, $query2);  
-          if ($row2 = mysqli_fetch_array($result2))  
-          { 
-            $A4 = $row2['Answer4'];
-            $A5 = $row2['Answer5'];
-            $A6 = $row2['Answer6'];
-            $A7 = $row2['Answer7'];
-            $A8 = $row2['Answer8'];
-            $A9 = $row2['Answer9'];
-            $A10 = $row2['Answer10'];
-            $A11 = $row2['Answer11'];
-            $A12 = $row2['Answer12'];
-            $A13 = $row2['Answer13'];
-            $A14 = $row2['Answer14'];
-            $A15 = $row2['Answer15'];
-            $A16 = $row2['Answer16'];
-            $A17 = $row2['Answer17'];
-            $A18 = $row2['Answer18'];
-            $A19 = $row2['Answer19'];
-            $C1S2 = $row2['Category1'];
-            $C2S2 = $row2['Category2'];
-            $C3S2 = $row2['Category3'];
-            $C4S2 = $row2['Category4'];
-            $C5S2 = $row2['Category5'];
-            $C6S2 = $row2['Category6'];
-            $C7S2 = $row2['Category7'];
-            $C8S2 = $row2['Category8'];
-            $C9S2 = $row2['Category9'];
-            $S2 = $row2['CategorySection2_TotalMarks'];
-            $Image4 = $row2['Image4'];
-            $Image5 = $row2['Image5'];
-            $Image6 = $row2['Image6'];
-            $Image7 = $row2['Image7'];
-            $Image8 = $row2['Image8'];
-            $Image9 = $row2['Image9'];
-            $Image10 = $row2['Image10'];
-            $Image11 = $row2['Image11'];
-            $Image12 = $row2['Image12'];
-            $Image13 = $row2['Image13'];
-            $Image14 = $row2['Image14'];
-            $Image15 = $row2['Image15'];
-            $Image16 = $row2['Image16'];
-            $Image17 = $row2['Image17'];
-            $Image18 = $row2['Image18'];
-            $Image19 = $row2['Image19'];
-            $Catatan4 = $row2['Catatan4'];
-            $Catatan5 = $row2['Catatan5'];
-            $Catatan6 = $row2['Catatan6'];
-            $Catatan7 = $row2['Catatan7'];
-            $Catatan8 = $row2['Catatan8'];
-            $Catatan9 = $row2['Catatan9'];
-            $Catatan10 = $row2['Catatan10'];
-            $Catatan11 = $row2['Catatan11'];
-            $Catatan12 = $row2['Catatan12'];
-        
-
-            if($result2)
-            {
-              $query3 = "SELECT * FROM qacategory_section3";  
-              $result3 = mysqli_query($con, $query3);  
-              if ($row3 = mysqli_fetch_array($result3))  
-              { 
-                $A20 = $row3['Answer20'];
-                $A21 = $row3['Answer21'];
-                $A22 = $row3['Answer22'];
-                $A23 = $row3['Answer23'];
-                $A24 = $row3['Answer24'];
-                $A25 = $row3['Answer25'];
-                $A26 = $row3['Answer26'];
-                $A27 = $row3['Answer27'];
-                $A28 = $row3['Answer28'];
-                $A29 = $row3['Answer29'];
-                $A30 = $row3['Answer30'];
-                $A31 = $row3['Answer31'];
-                $A32 = $row3['Answer32'];
-                $C1S3 = $row3['Category1'];
-                $C2S3 = $row3['Category2'];
-                $C3S3 = $row3['Category3'];
-                $C4S3 = $row3['Category4'];
-                $C5S3 = $row3['Category5'];
-                $S3 = $row3['CategorySection3_TotalMarks'];
-                $Image20 = $row3['Image20'];
-                $Image21 = $row3['Image21'];
-                $Image22 = $row3['Image22'];
-                $Image23 = $row3['Image23'];
-                $Image24 = $row3['Image24'];
-                $Image25 = $row3['Image25'];
-                $Image26 = $row3['Image26'];
-                $Image27 = $row3['Image27'];
-                $Image28 = $row3['Image28'];
-                $Image29 = $row3['Image29'];
-                $Image30 = $row3['Image30'];
-                $Image31 = $row3['Image31'];
-                $Image32 = $row3['Image32'];
-                $Catatan13 = $row3['Catatan13'];
-                $Catatan14 = $row3['Catatan14'];
-                $Catatan15 = $row3['Catatan15'];
-                $Catatan16 = $row3['Catatan16'];
-                $Catatan17 = $row3['Catatan17'];
-
-                if($result3)
-                {
-                  $query4 = "SELECT * FROM qacategory_section4";  
-                  $result4 = mysqli_query($con, $query4);  
-                  if ($row4 = mysqli_fetch_array($result4))  
-                  { 
-                    $A33 = $row4['Answer33'];
-                    $A34 = $row4['Answer34'];
-                    $A35 = $row4['Answer35'];
-                    $A36 = $row4['Answer36'];
-                    $A37 = $row4['Answer37'];
-                    $A38 = $row4['Answer38'];
-                    $A39 = $row4['Answer39'];
-                    $A40 = $row4['Answer40'];
-                    $A41 = $row4['Answer41'];
-                    $A42 = $row4['Answer42'];
-                    $A43 = $row4['Answer43'];
-                    $A44 = $row4['Answer44'];
-                    $A45 = $row4['Answer45'];
-                    $A46 = $row4['Answer46'];
-                    $A47 = $row4['Answer47'];
-                    $A48 = $row4['Answer48'];
-                    $A49 = $row4['Answer49'];
-                    $A50 = $row4['Answer50'];
-                    $C1S4 = $row4['Category1'];
-                    $C2S4 = $row4['Category2'];
-                    $C3S4 = $row4['Category3'];
-                    $C4S4 = $row4['Category4'];
-                    $C5S4 = $row4['Category5'];
-                    $C6S4 = $row4['Category6'];
-                    $C7S4 = $row4['Category7'];
-                    $C8S4 = $row4['Category8'];
-                    $C9S4 = $row4['Category9'];
-                    $S4 = $row4['CategorySection4_TotalMarks'];
-                    $Image33 = $row4['Image33'];
-                    $Image34 = $row4['Image34'];
-                    $Image35 = $row4['Image35'];
-                    $Image36 = $row4['Image36'];
-                    $Image37 = $row4['Image37'];
-                    $Image38 = $row4['Image38'];
-                    $Image39 = $row4['Image39'];
-                    $Image40 = $row4['Image40'];
-                    $Image41 = $row4['Image41'];
-                    $Image42 = $row4['Image42'];
-                    $Image43 = $row4['Image43'];
-                    $Image44 = $row4['Image44'];
-                    $Image45 = $row4['Image45'];
-                    $Image46 = $row4['Image46'];
-                    $Image47 = $row4['Image47'];
-                    $Image48 = $row4['Image48'];
-                    $Image49 = $row4['Image49'];
-                    $Image50 = $row4['Image50'];
-                    $Catatan18 = $row4['Catatan18'];
-                    $Catatan19 = $row4['Catatan19'];
-                    $Catatan20 = $row4['Catatan20'];
-                    $Catatan21 = $row4['Catatan21'];
-                    $Catatan22 = $row4['Catatan22'];
-                    $Catatan23 = $row4['Catatan23'];
-                    $Catatan24 = $row4['Catatan24'];
-                    $Catatan25 = $row4['Catatan25'];
-                    $Catatan26 = $row4['Catatan26'];
-
-                    if($result4)
-                    {
-                      $query5 = "SELECT * FROM qacategory_section5";  
-                      $result5 = mysqli_query($con, $query5);  
-                      if ($row5 = mysqli_fetch_array($result5))  
-                      { 
-                        $A51 = $row5['Answer51'];
-                        $A52 = $row5['Answer52'];
-                        $A53 = $row5['Answer53'];
-                        $A54 = $row5['Answer54'];
-                        $A55 = $row5['Answer55'];
-                        $A56 = $row5['Answer56'];
-                        $A57 = $row5['Answer57'];
-                        $A58 = $row5['Answer58'];
-                        $A59 = $row5['Answer59'];
-                        $A60 = $row5['Answer60'];
-                        $A61 = $row5['Answer61'];
-                        $A62 = $row5['Answer62'];
-                        $A63 = $row5['Answer63'];
-                        $A64 = $row5['Answer64'];
-                        $A65 = $row5['Answer65'];
-                        $A66 = $row5['Answer66'];
-                        $A67 = $row5['Answer67'];
-                        $C1S5 = $row5['Category1'];
-                        $C2S5 = $row5['Category2'];
-                        $C3S5 = $row5['Category3'];
-                        $C4S5 = $row5['Category4'];
-                        $C5S5 = $row5['Category5'];
-                        $C6S5 = $row5['Category6'];
-                        $C7S5 = $row5['Category7'];
-                        $C8S5 = $row5['Category8'];
-                        $C9S5 = $row5['Category9'];
-                        $S5 = $row5['CategorySection5_TotalMarks'];
-                        $Image51 = $row5['Image51'];
-                        $Image52 = $row5['Image52'];
-                        $Image53 = $row5['Image53'];
-                        $Image54 = $row5['Image54'];
-                        $Image55 = $row5['Image55'];
-                        $Image56 = $row5['Image56'];
-                        $Image57 = $row5['Image57'];
-                        $Image58 = $row5['Image58'];
-                        $Image59 = $row5['Image59'];
-                        $Image60 = $row5['Image60'];
-                        $Image61 = $row5['Image61'];
-                        $Image62 = $row5['Image62'];
-                        $Image63 = $row5['Image63'];
-                        $Image64 = $row5['Image64'];
-                        $Image65 = $row5['Image65'];
-                        $Image66 = $row5['Image66'];
-                        $Image67 = $row5['Image67'];
-                        $Catatan27 = $row5['Catatan27'];
-                        $Catatan28 = $row5['Catatan28'];
-                        $Catatan29 = $row5['Catatan29'];
-                        $Catatan30 = $row5['Catatan30'];
-                        $Catatan31 = $row5['Catatan31'];
-                        $Catatan32 = $row5['Catatan32'];
-                        $Catatan33 = $row5['Catatan33'];
-                        $Catatan34 = $row5['Catatan34'];
-                        $Catatan35 = $row5['Catatan35'];
-
-                        if($result5)
-                        {
-                          $query6 = "SELECT * FROM qacategory_section6";  
-                          $result6 = mysqli_query($con, $query6);  
-                          if ($row6 = mysqli_fetch_array($result6))  
-                          { 
-                            $A68 = $row6['Answer68'];
-                            $A69 = $row6['Answer69'];
-                            $A70 = $row6['Answer70'];
-                            $A71 = $row6['Answer71'];
-                            $A72 = $row6['Answer72'];
-                            $A73 = $row6['Answer73'];
-                            $A74 = $row6['Answer74'];
-                            $A75 = $row6['Answer75'];
-                            $A76 = $row6['Answer76'];
-                            $A77 = $row6['Answer77'];
-                            $A78 = $row6['Answer78'];
-                            $A79 = $row6['Answer79'];
-                            $A80 = $row6['Answer80'];
-                            $A81 = $row6['Answer81'];
-                            $A82 = $row6['Answer82'];
-                            $A83 = $row6['Answer83'];
-                            $A84 = $row6['Answer84'];
-                            $A85 = $row6['Answer85'];
-                            $A86 = $row6['Answer86'];
-                            $A87 = $row6['Answer87'];
-                            $A88 = $row6['Answer88'];
-                            $A89 = $row6['Answer89'];
-                            $A90 = $row6['Answer90'];
-                            $A91 = $row6['Answer91'];
-                            $A92 = $row6['Answer92'];
-                            $A93 = $row6['Answer93'];
-                            $A94 = $row6['Answer94'];
-                            $A95 = $row6['Answer95'];
-                            $A96 = $row6['Answer96'];
-                            $A97 = $row6['Answer97'];
-                            $A98 = $row6['Answer98'];
-                            $A99 = $row6['Answer99'];
-                            $A100 = $row6['Answer100'];
-                            $C1S6 = $row6['Category1'];
-                            $C2S6 = $row6['Category2'];
-                            $C3S6 = $row6['Category3'];
-                            $C4S6 = $row6['Category4'];
-                            $C5S6 = $row6['Category5'];
-                            $C6S6 = $row6['Category6'];
-                            $C7S6 = $row6['Category7'];
-                            $C8S6 = $row6['Category8'];
-                            $C9S6 = $row6['Category9'];
-                            $C10S6 = $row6['Category10'];
-                            $C11S6 = $row6['Category11'];
-                            $C12S6 = $row6['Category12'];
-                            $C13S6 = $row6['Category13'];
-                            $C14S6 = $row6['Category14'];
-                            $S6 = $row6['CategorySection6_TotalMarks'];
-                            $Image68 = $row6['Image68'];
-                            $Image69 = $row6['Image69'];
-                            $Image70 = $row6['Image70'];
-                            $Image71 = $row6['Image71'];
-                            $Image72 = $row6['Image72'];
-                            $Image73 = $row6['Image73'];
-                            $Image74 = $row6['Image74'];
-                            $Image75 = $row6['Image75'];
-                            $Image76 = $row6['Image76'];
-                            $Image77 = $row6['Image77'];
-                            $Image78 = $row6['Image78'];
-                            $Image79 = $row6['Image79'];
-                            $Image80 = $row6['Image80'];
-                            $Image81 = $row6['Image81'];
-                            $Image82 = $row6['Image82'];
-                            $Image83 = $row6['Image83'];
-                            $Image84 = $row6['Image84'];
-                            $Image85 = $row6['Image85'];
-                            $Image86 = $row6['Image86'];
-                            $Image87 = $row6['Image87'];
-                            $Image88 = $row6['Image88'];
-                            $Image89 = $row6['Image89'];
-                            $Image90 = $row6['Image90'];
-                            $Image91 = $row6['Image91'];
-                            $Image92 = $row6['Image92'];
-                            $Image93 = $row6['Image93'];
-                            $Image94 = $row6['Image94'];
-                            $Image95 = $row6['Image95'];
-                            $Image96 = $row6['Image96'];
-                            $Image97 = $row6['Image97'];
-                            $Image98 = $row6['Image98'];
-                            $Image99 = $row6['Image99'];
-                            $Image100 = $row6['Image100'];
-                            $Catatan36 = $row6['Catatan36'];
-                            $Catatan37 = $row6['Catatan37'];
-                            $Catatan38 = $row6['Catatan38'];
-                            $Catatan39 = $row6['Catatan39'];
-                            $Catatan40 = $row6['Catatan40'];
-                            $Catatan41 = $row6['Catatan41'];
-                            $Catatan42 = $row6['Catatan42'];
-                            $Catatan43 = $row6['Catatan43'];
-                            $Catatan44 = $row6['Catatan44'];
-                            $Catatan45 = $row6['Catatan45'];
-                            $Catatan46 = $row6['Catatan46'];
-                            $Catatan47 = $row6['Catatan47'];
-                            $Catatan48 = $row6['Catatan48'];
-                            $Catatan49 = $row6['Catatan49'];
-
-                            if ($result6) 
-                            {
-
-                              $overall = $S1 + $S2 + $S3 + $S4 + $S5 + $S6;
-                              $percentage = 0;
-
-                                if (isset($_POST['convert']))
-                                {
-                                    $sql ="INSERT INTO qamarks (TotalMarks) VALUES ('$overall')"; 
-                                    $r = mysqli_query($con, $sql);
-
-                                    if($r)
-                                    {
-                                        $percentage = ($overall / 500) * 100;
-                                    }
-                                }
-
-                        }
-                    }      
-                }
-            }          
-        }          
-    }
-}
-}
-}  
-}
-}
-}
-?> 
+     
 <tr>
     <th> Kategori </th>
     <th> Soalan </th>
@@ -440,7 +428,7 @@ require_once 'Config.php';
     <td> Maklumat Lengkap dan Terkini (Merujuk pada Senarai Semak Dokumen)</td>
 
     <td> <?php echo $C1 ?></td>
-    <td><?php echo $Image1 ?></td>
+    <td><?php echo $Image1?></td>
     <td><?php echo $Catatan1 ?></td>
 </tr>
 
@@ -448,7 +436,7 @@ require_once 'Config.php';
     <td>Sudut 5S</td>
     <td>Maklumat Lengkap dan Terkini (Merujuk pada Senarai Semak Dokumen)</td>
     <td><?php echo $C2 ?></td>
-    <td><?php echo $Image1 ?></td>
+    <td><?php echo $Image2 ?></td>
     <td><?php echo $Catatan2 ?></td>
 </tr>
 
@@ -457,7 +445,7 @@ require_once 'Config.php';
     <td> Kaizen</td>
     <td>Penambahbaikan, Kreativiti dan Inovasi</td>
     <td> <?php echo $C3 ?></td>
-    <td></td>
+    <td><?php echo $Image3 ?></td>
     <td><?php echo $Catatan3 ?></td>
 </tr>
 

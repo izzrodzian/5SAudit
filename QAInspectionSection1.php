@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 
 <?php  
-// PHP program to pop an alert 
-// message box on the screen 
+
+session_start();
+require_once 'Config.php'; 
+
   
 // Display the alert box  
 echo '<script>alert("Instruction to be Adhere: Please fill all the question properly. Once wrong, you need to resubmit the inspection score. Leave any unrelated question by writing (-) or (0). Click Submit button before proceed to next section. View the report at the end of inspection process.")</script>'; 
 
-session_start();
-require_once 'Config.php'; 
+
 
 $total = 0;
 $answer1 = 0;
@@ -18,6 +19,7 @@ $answer3 = 0;
 
 if (isset($_POST['Submit']))
 {
+
   
   $answer1 = $_POST['answer1'];
   $answer2 = $_POST['answer2'];
@@ -45,8 +47,35 @@ if (isset($_POST['Submit']))
   move_uploaded_file($filetmpname2, $folder.$filename2);
   move_uploaded_file($filetmpname3, $folder.$filename3);
 
+   if(!empty($_FILES["image1"]["name"])) { 
+        // Get file info 
+        $filename1 = basename($_FILES["image1"]["name"]); 
+        $fileType = pathinfo($filename1, PATHINFO_EXTENSION); 
+      } else if (!empty($_FILES["image2"]["name"])) 
+      {
+        // Get file info 
+        $filename2 = basename($_FILES["image2"]["name"]); 
+        $fileType = pathinfo($filename2, PATHINFO_EXTENSION);
+      } else if (!empty($_FILES["image3"]["name"])) 
+      {
+       // Get file info 
+        $filename3 = basename($_FILES["image3"]["name"]); 
+        $fileType = pathinfo($filename3, PATHINFO_EXTENSION);
+      }
 
-  $sql1 = "INSERT INTO qacategory_section1 (Category1, Category2, Category3, CategorySection1_TotalMarks, Image1, Image2, Image3, Catatan1, Catatan2, Catatan3) VALUES ('$answer1', '$answer2', '$answer3', '$total', '$filename1', '$filename2', '$filename3', 'catatan1', 'catatan2', 'catatan3')";
+
+  $allowTypes = array('jpg','png','jpeg','gif'); 
+  if(in_array($fileType, $allowTypes))
+  { 
+    $image1 = $_FILES['image1']['name']; 
+    $image2 = $_FILES['image2']['name']; 
+    $image3 = $_FILES['image3']['name']; 
+  
+  }
+         
+
+
+  $sql1 = "INSERT INTO qacategory_section1 (Category1, Category2, Category3, CategorySection1_TotalMarks, Image1, Image2, Image3, Catatan1, Catatan2, Catatan3) VALUES ('$answer1', '$answer2', '$answer3', '$total', '$filename1', '$filename2', '$filename3', '$catatan1', '$catatan2', '$catatan3')";
   $result1 = mysqli_query($con,$sql1);
 
     if($result1)
