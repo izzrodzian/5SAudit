@@ -6,8 +6,6 @@ session_start();
 $con = mysqli_connect('127.0.0.1','root','') or die ('Not connected.');
 mysqli_select_db($con,'5s') or die ('No database found.');
 
-
-
 ?>
 
 <html>
@@ -55,24 +53,24 @@ mysqli_select_db($con,'5s') or die ('No database found.');
       <!-- Seksyen 1  -->
       <th class="align-left" colspan="5">SEKSYEN 1: KEPERLUAN UTAMA PELAKSANAAN</th>
       <?php  
-      $query = "SELECT * FROM qacategory_section1";  
-      $result = mysqli_query($con, $query); 
+      $query1 = "SELECT * FROM qacategory_section1";  
+      $result1 = mysqli_query($con, $query1); 
 
 
-      if ($row = mysqli_fetch_array($result))  
+      if ($row1 = mysqli_fetch_array($result1))  
       { 
-        $C1 = $row['Category1'];
-        $C2 = $row['Category2'];
-        $C3 = $row['Category3'];
-        $S1 = $row['CategorySection1_TotalMarks'];
-        $Image1 = $row['Image1'];
-        $Image2 = $row['Image2'];
-        $Image3 = $row['Image3'];
-        $Catatan1 = $row['Catatan1'];
-        $Catatan2 = $row['Catatan2'];
-        $Catatan3 = $row['Catatan3'];
+        $C1 = $row1['Category1'];
+        $C2 = $row1['Category2'];
+        $C3 = $row1['Category3'];
+        $S1 = $row1['CategorySection1_TotalMarks'];
+        $Image1 = $row1['Image1'];
+        $Image2 = $row1['Image2'];
+        $Image3 = $row1['Image3'];
+        $Catatan1 = $row1['Catatan1'];
+        $Catatan2 = $row1['Catatan2'];
+        $Catatan3 = $row1['Catatan3'];
 
-        if($result)
+        if($result1)
         {
           $query2 = "SELECT * FROM qacategory_section2";  
           $result2 = mysqli_query($con, $query2);  
@@ -120,15 +118,15 @@ mysqli_select_db($con,'5s') or die ('No database found.');
             $Image17 = $row2['Image17'];
             $Image18 = $row2['Image18'];
             $Image19 = $row2['Image19'];
-            $Catatan4 = $row['Catatan4'];
-            $Catatan5 = $row['Catatan5'];
-            $Catatan6 = $row['Catatan6'];
-            $Catatan7 = $row['Catatan7'];
-            $Catatan8 = $row['Catatan8'];
-            $Catatan9 = $row['Catatan9'];
-            $Catatan10 = $row['Catatan10'];
-            $Catatan11 = $row['Catatan11'];
-            $Catatan12 = $row['Catatan12'];
+            $Catatan4 = $row2['Catatan4'];
+            $Catatan5 = $row2['Catatan5'];
+            $Catatan6 = $row2['Catatan6'];
+            $Catatan7 = $row2['Catatan7'];
+            $Catatan8 = $row2['Catatan8'];
+            $Catatan9 = $row2['Catatan9'];
+            $Catatan10 = $row2['Catatan10'];
+            $Catatan11 = $row2['Catatan11'];
+            $Catatan12 = $row2['Catatan12'];
         
 
             if($result2)
@@ -169,11 +167,11 @@ mysqli_select_db($con,'5s') or die ('No database found.');
                 $Image30 = $row3['Image30'];
                 $Image31 = $row3['Image31'];
                 $Image32 = $row3['Image32'];
-                $Catatan13 = $row['Catatan13'];
-                $Catatan14 = $row['Catatan14'];
-                $Catatan15 = $row['Catatan15'];
-                $Catatan16 = $row['Catatan16'];
-                $Catatan17 = $row['Catatan17'];
+                $Catatan13 = $row3['Catatan13'];
+                $Catatan14 = $row3['Catatan14'];
+                $Catatan15 = $row3['Catatan15'];
+                $Catatan16 = $row3['Catatan16'];
+                $Catatan17 = $row3['Catatan17'];
 
                 if($result3)
                 {
@@ -227,15 +225,15 @@ mysqli_select_db($con,'5s') or die ('No database found.');
                     $Image48 = $row4['Image48'];
                     $Image49 = $row4['Image49'];
                     $Image50 = $row4['Image50'];
-                    $Catatan18 = $row['Catatan18'];
-                    $Catatan19 = $row['Catatan19'];
-                    $Catatan20 = $row['Catatan20'];
-                    $Catatan21 = $row['Catatan21'];
-                    $Catatan22 = $row['Catatan22'];
-                    $Catatan23 = $row['Catatan23'];
-                    $Catatan24 = $row['Catatan24'];
-                    $Catatan25 = $row['Catatan25'];
-                    $Catatan26 = $row['Catatan26'];
+                    $Catatan18 = $row4['Catatan18'];
+                    $Catatan19 = $row4['Catatan19'];
+                    $Catatan20 = $row4['Catatan20'];
+                    $Catatan21 = $row4['Catatan21'];
+                    $Catatan22 = $row4['Catatan22'];
+                    $Catatan23 = $row4['Catatan23'];
+                    $Catatan24 = $row4['Catatan24'];
+                    $Catatan25 = $row4['Catatan25'];
+                    $Catatan26 = $row4['Catatan26'];
 
                     if($result4)
                     {
@@ -287,15 +285,15 @@ mysqli_select_db($con,'5s') or die ('No database found.');
                         $Image65 = $row5['Image65'];
                         $Image66 = $row5['Image66'];
                         $Image67 = $row5['Image67'];
-                        $Catatan27 = $row['Catatan27'];
-                        $Catatan28 = $row['Catatan28'];
-                        $Catatan29 = $row['Catatan29'];
-                        $Catatan30 = $row['Catatan30'];
-                        $Catatan31 = $row['Catatan31'];
-                        $Catatan32 = $row['Catatan32'];
-                        $Catatan33 = $row['Catatan33'];
-                        $Catatan34 = $row['Catatan34'];
-                        $Catatan35 = $row['Catatan35'];
+                        $Catatan27 = $row5['Catatan27'];
+                        $Catatan28 = $row5['Catatan28'];
+                        $Catatan29 = $row5['Catatan29'];
+                        $Catatan30 = $row5['Catatan30'];
+                        $Catatan31 = $row5['Catatan31'];
+                        $Catatan32 = $row5['Catatan32'];
+                        $Catatan33 = $row5['Catatan33'];
+                        $Catatan34 = $row5['Catatan34'];
+                        $Catatan35 = $row5['Catatan35'];
 
                         if($result5)
                         {
@@ -384,20 +382,20 @@ mysqli_select_db($con,'5s') or die ('No database found.');
                             $Image98 = $row6['Image98'];
                             $Image99 = $row6['Image99'];
                             $Image100 = $row6['Image100'];
-                            $Catatan36 = $row['Catatan36'];
-                            $Catatan37 = $row['Catatan37'];
-                            $Catatan38 = $row['Catatan38'];
-                            $Catatan39 = $row['Catatan39'];
-                            $Catatan40 = $row['Catatan40'];
-                            $Catatan41 = $row['Catatan41'];
-                            $Catatan42 = $row['Catatan42'];
-                            $Catatan43 = $row['Catatan43'];
-                            $Catatan44 = $row['Catatan44'];
-                            $Catatan45 = $row['Catatan45'];
-                            $Catatan46 = $row['Catatan46'];
-                            $Catatan47 = $row['Catatan47'];
-                            $Catatan48 = $row['Catatan48'];
-                            $Catatan49 = $row['Catatan49'];
+                            $Catatan36 = $row6['Catatan36'];
+                            $Catatan37 = $row6['Catatan37'];
+                            $Catatan38 = $row6['Catatan38'];
+                            $Catatan39 = $row6['Catatan39'];
+                            $Catatan40 = $row6['Catatan40'];
+                            $Catatan41 = $row6['Catatan41'];
+                            $Catatan42 = $row6['Catatan42'];
+                            $Catatan43 = $row6['Catatan43'];
+                            $Catatan44 = $row6['Catatan44'];
+                            $Catatan45 = $row6['Catatan45'];
+                            $Catatan46 = $row6['Catatan46'];
+                            $Catatan47 = $row6['Catatan47'];
+                            $Catatan48 = $row6['Catatan48'];
+                            $Catatan49 = $row6['Catatan49'];
 
                             if ($result6) 
                             {
@@ -416,7 +414,7 @@ mysqli_select_db($con,'5s') or die ('No database found.');
                                     }
                                 }
 
-                        }
+                            }
                     }      
                 }
             }          
@@ -442,7 +440,11 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td> Maklumat Lengkap dan Terkini (Merujuk pada Senarai Semak Dokumen)</td>
 
     <td> <?php echo $C1 ?></td>
-    <td><?php echo '<img src="data:image/png;base64,'.base64_encode($row["Image1"] ).'">' ?></td>
+<<<<<<< HEAD
+    <td><?php echo '<img src="data:image/png;base64,'.base64_encode($row1["Image1"] ).'">' ?></td>
+=======
+    <td><?php echo $Image1 ?></td>
+>>>>>>> ea336d21bd8a9ac6b671a9632a0f6d726368d9cf
     <td><?php echo $Catatan1 ?></td>
 </tr>
 
@@ -711,14 +713,13 @@ mysqli_select_db($con,'5s') or die ('No database found.');
 
 <table class="table table-hover  table-bordered align-center">
 
-  <th class="align-left" colspan="5" >SEKSYEN 4: OPERASI
+  <th class="align-left" colspan="4" >SEKSYEN 4: OPERASI
   (BENGKEL PENYELENGGARAAN AM, PAM MINYAK, “WASHING BAY”, BILIK KAWALAN, BILIK KIRAAN & SEBAGAINYA)</th>
   <tr>
     <th> Kategori </th>
     <th> Soalan </th>
     <th> Markah</th>
-    <th> Gambar</th>  
-    <th> Catatan</th>        
+    <th> Gambar</th>          
 </tr>
 
 <tr>
@@ -726,7 +727,10 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td> Lantai bersih, kemas dan tidak licin</td>
     <td><?php echo $A33 ?></td>
     <td><?php echo $Image33 ?></td>
-    <td rowspan="3"><?php echo $Catatan14 ?></td>
+<<<<<<< HEAD
+    <td rowspan="3"><?php echo $Catatan18 ?></td>
+=======
+>>>>>>> parent of 62a69dc... Update ViewReport.php
 </tr>
 <tr>
 
@@ -747,7 +751,10 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td>Susun atur kemas dan rapi</td>
     <td><?php echo $A36 ?></td>
     <td><?php echo $Image36 ?></td>
-    <td rowspan="6"><?php echo $Catatan14 ?></td>
+<<<<<<< HEAD
+    <td rowspan="6"><?php echo $Catatan19 ?></td>
+=======
+>>>>>>> parent of 62a69dc... Update ViewReport.php
 </tr>
 
 <tr>
@@ -781,7 +788,10 @@ mysqli_select_db($con,'5s') or die ('No database found.');
   <td>Dalam keadaan kemas dan teratur</td>
   <td><?php echo $A42 ?></td>
   <td><?php echo $Image42 ?></td>
-  <td rowspan="2"><?php echo $Catatan14 ?></td>
+<<<<<<< HEAD
+  <td rowspan="2"><?php echo $Catatan20 ?></td>
+=======
+>>>>>>> parent of 62a69dc... Update ViewReport.php
 </tr>
 
 <tr>
@@ -795,7 +805,10 @@ mysqli_select_db($con,'5s') or die ('No database found.');
   <td>Kemas dan sistematik</td>
   <td><?php echo $A44 ?></td>
   <td><?php echo $Image44 ?></td>
-  <td rowspan="2"><?php echo $Catatan14 ?></td>
+<<<<<<< HEAD
+  <td rowspan="2"><?php echo $Catatan21 ?></td>
+=======
+>>>>>>> parent of 62a69dc... Update ViewReport.php
 </tr>
 
 <tr>
@@ -810,7 +823,10 @@ mysqli_select_db($con,'5s') or die ('No database found.');
   <td>Bersih, kemas dan maklumat sentiasa kemaskini</td>
   <td><?php echo $A46 ?></td>
   <td><?php echo $Image46 ?></td>
-  <td><?php echo $Catatan14 ?></td>
+<<<<<<< HEAD
+  <td><?php echo $Catatan22 ?></td>
+=======
+>>>>>>> parent of 62a69dc... Update ViewReport.php
 </tr>
 
 <tr>
@@ -818,7 +834,10 @@ mysqli_select_db($con,'5s') or die ('No database found.');
   <td>Aspek keselamatan diutamakan</td>
   <td><?php echo $A47 ?></td>
   <td><?php echo $Image47 ?></td>
-  <td><?php echo $Catatan14 ?></td>
+<<<<<<< HEAD
+  <td><?php echo $Catatan23 ?></td>
+=======
+>>>>>>> parent of 62a69dc... Update ViewReport.php
 </tr>
 
 <tr>
@@ -826,7 +845,10 @@ mysqli_select_db($con,'5s') or die ('No database found.');
   <td>Sokongan pelaksanaan dengan mewujudkan kawalan visual dan “konsep ownership”</td>
   <td><?php echo $A48 ?></td>
   <td><?php echo $Image48 ?></td>
-  <td><?php echo $Catatan14 ?></td>
+<<<<<<< HEAD
+  <td><?php echo $Catatan24 ?></td>
+=======
+>>>>>>> parent of 62a69dc... Update ViewReport.php
 </tr>
 
 <tr>
@@ -834,7 +856,10 @@ mysqli_select_db($con,'5s') or die ('No database found.');
   <td>Kerjasama dan sikap positif untuk amalan berterusan</td>
   <td><?php echo $A49 ?></td>
   <td><?php echo $Image49 ?></td>
-  <td><?php echo $Catatan14 ?></td>
+<<<<<<< HEAD
+  <td><?php echo $Catatan25 ?></td>
+=======
+>>>>>>> parent of 62a69dc... Update ViewReport.php
 </tr>
 
 <tr>
@@ -842,12 +867,15 @@ mysqli_select_db($con,'5s') or die ('No database found.');
   <td>Penambahbaikkan yang dibuat memberikan kesan melalui (Produktiviti/Kualiti/Penghantaran/Kos/Keselamatan/Moral/Inovasi)</td>
   <td><?php echo $A50 ?></td>
   <td><?php echo $Image50 ?></td>
-  <td><?php echo $Catatan14 ?></td>
+<<<<<<< HEAD
+  <td><?php echo $Catatan26 ?></td>
+=======
+>>>>>>> parent of 62a69dc... Update ViewReport.php
 </tr>
 
 <tr>
-  <th colspan="3">JUMLAH MARKAH SEKSYEN 4</th>
-  <th colspan="3"><?php echo $S4 ?></th>
+  <th colspan="2">JUMLAH MARKAH SEKSYEN 4</th>
+  <th colspan="2"><?php echo $S4 ?></th>
 </tr>
 
 </table><br><br>
@@ -856,13 +884,12 @@ mysqli_select_db($con,'5s') or die ('No database found.');
 
 <table class="table table-hover  table-bordered align-center">
 
-  <th class="align-left" colspan="5">SEKSYEN 5: KAWASAN PERSEKITARAN LUARAN</th>
+  <th class="align-left" colspan="4">SEKSYEN 5: KAWASAN PERSEKITARAN LUARAN</th>
   <tr>
     <th> Kategori </th>
     <th> Soalan </th>
     <th> Markah</th>
-    <th> Gambar</th>  
-    <th> Catatan</th>        
+    <th> Gambar</th>          
 </tr>
 
 <tr>
@@ -870,7 +897,10 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td> Kawasan bersih dan tiada item tidak perlu</td>
     <td><?php echo $A51 ?></td>
     <td><?php echo $Image51 ?></td>
-    <td rowspan="3"><?php echo $Catatan14 ?></td>
+<<<<<<< HEAD
+    <td rowspan="3"><?php echo $Catatan27 ?></td>
+=======
+>>>>>>> parent of 62a69dc... Update ViewReport.php
 </tr>
 <tr>
 
@@ -891,7 +921,10 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td>Kawasan bersih dan tiada item tidak perlu</td>
     <td><?php echo $A54 ?></td>
     <td><?php echo $Image54 ?></td>
-    <td rowspan="2"><?php echo $Catatan14 ?></td>
+<<<<<<< HEAD
+    <td rowspan="2"><?php echo $Catatan28 ?></td>
+=======
+>>>>>>> parent of 62a69dc... Update ViewReport.php
 </tr>
 
 <tr>
@@ -905,7 +938,10 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td>Mempunyai tempat pembuangan sisa yang memuaskan mengikut keperluan undang-undang</td>
     <td><?php echo $A56 ?></td>
     <td><?php echo $Image56 ?></td>
-    <td rowspan="2"><?php echo $Catatan14 ?></td>
+<<<<<<< HEAD
+    <td rowspan="2"><?php echo $Catatan29 ?></td>
+=======
+>>>>>>> parent of 62a69dc... Update ViewReport.php
 </tr>
 
 <tr>
@@ -919,7 +955,10 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td>Kedudukan yang strategik dan berfungsi dengan baik</td>
     <td><?php echo $A58 ?></td>
     <td><?php echo $Image58 ?></td>
-    <td rowspan="3"><?php echo $Catatan14 ?></td>
+<<<<<<< HEAD
+    <td rowspan="3"><?php echo $Catatan30 ?></td>
+=======
+>>>>>>> parent of 62a69dc... Update ViewReport.php
 </tr>
 
 <tr>
@@ -939,7 +978,10 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td>Kawasan yang bersih dan teratur</td>
     <td><?php echo $A61 ?></td>
     <td><?php echo $Image61 ?></td>
-    <td rowspan="3"><?php echo $Catatan14 ?></td>
+<<<<<<< HEAD
+    <td rowspan="3"><?php echo $Catatan31 ?></td>
+=======
+>>>>>>> parent of 62a69dc... Update ViewReport.php
 </tr>
 
 <tr>
@@ -959,7 +1001,10 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td>Aspek keselamatan diutamakan</td>
     <td><?php echo $A64 ?></td>
     <td><?php echo $Image64 ?></td>
-    <td><?php echo $Catatan14 ?></td>
+<<<<<<< HEAD
+    <td><?php echo $Catatan32 ?></td>
+=======
+>>>>>>> parent of 62a69dc... Update ViewReport.php
 </tr>
 
 <tr>
@@ -967,7 +1012,10 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td>Sokongan pelaksanaan dengan mewujudkan kawalan visual dan “konsep ownership”</td>
     <td><?php echo $A65 ?></td>
     <td><?php echo $Image65 ?></td>
-    <td><?php echo $Catatan14 ?></td>
+<<<<<<< HEAD
+    <td><?php echo $Catatan33 ?></td>
+=======
+>>>>>>> parent of 62a69dc... Update ViewReport.php
 </tr>
 
 <tr>
@@ -975,7 +1023,10 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td>Kerjasama dan sikap positif untuk amalan berterusan</td>
     <td><?php echo $A66 ?></td>
     <td><?php echo $Image66 ?></td>
-    <td><?php echo $Catatan14 ?></td>
+<<<<<<< HEAD
+    <td><?php echo $Catatan34 ?></td>
+=======
+>>>>>>> parent of 62a69dc... Update ViewReport.php
 </tr>
 
 <tr>
@@ -983,12 +1034,15 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td>Penambahbaikkan yang dibuat memberikan kesan melalui (Produktiviti/Kualiti/Penghantaran/Kos/Keselamatan/Moral/Inovasi)</td>
     <td><?php echo $A67 ?></td>
     <td><?php echo $Image67 ?></td>
-    <td><?php echo $Catatan14 ?></td>
+<<<<<<< HEAD
+    <td><?php echo $Catatan35 ?></td>
+=======
+>>>>>>> parent of 62a69dc... Update ViewReport.php
 </tr>
 
 <tr>
-    <th colspan="3">JUMLAH MARKAH SEKSYEN 5</th>
-    <th colspan="3"><?php echo $S5 ?></th>
+    <th colspan="2">JUMLAH MARKAH SEKSYEN 5</th>
+    <th colspan="2"><?php echo $S5 ?></th>
 </tr>
 </table><br><br>
 
@@ -996,13 +1050,12 @@ mysqli_select_db($con,'5s') or die ('No database found.');
 
 <table class="table table-hover  table-bordered align-center">
 
-  <th class="align-left" colspan="5">SEKSYEN 6: TEMPAT UMUM</th>
+  <th class="align-left" colspan="4">SEKSYEN 6: TEMPAT UMUM</th>
   <tr>
     <th> Kategori </th>
     <th> Soalan </th>
     <th> Markah</th>
-    <th> Gambar</th>
-    <th> Catatan</th>          
+    <th> Gambar</th>          
 </tr>
 
 <tr>
@@ -1010,7 +1063,10 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td> Kawasan lantai/dinding bersih dan tiada item tidak perlu</td>
     <td><?php echo $A68 ?></td>
     <td><?php echo $Image68 ?></td>
-    <td rowspan="2"><?php echo $Catatan14 ?></td>
+<<<<<<< HEAD
+    <td rowspan="2"><?php echo $Catatan36 ?></td>
+=======
+>>>>>>> parent of 62a69dc... Update ViewReport.php
 </tr>
 <tr>
 
@@ -1026,7 +1082,10 @@ mysqli_select_db($con,'5s') or die ('No database found.');
       <td>Kawasan lantai dan dinding bersih dan tiada item tidak perlu</td>
       <td><?php echo $A70 ?></td>
       <td><?php echo $Image70 ?></td>
-      <td rowspan="3"><?php echo $Catatan14 ?></td>
+<<<<<<< HEAD
+      <td rowspan="3"><?php echo $Catatan37 ?></td>
+=======
+>>>>>>> parent of 62a69dc... Update ViewReport.php
   </tr>
 
   <tr>
@@ -1046,7 +1105,10 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td>Kawasan bersih dan tiada item tidak perlu</td>
     <td><?php echo $A73 ?></td>
     <td><?php echo $Image73 ?></td>
-    <td rowspan="3"><?php echo $Catatan14 ?></td>
+<<<<<<< HEAD
+    <td rowspan="3"><?php echo $Catatan38 ?></td>
+=======
+>>>>>>> parent of 62a69dc... Update ViewReport.php
 </tr>
 
 <tr>
@@ -1066,7 +1128,10 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td>Kawasan lantai bersih dan tiada item tidak perlu</td>
     <td><?php echo $A76 ?></td>
     <td><?php echo $Image76 ?></td>
-    <td rowspan="3"><?php echo $Catatan14 ?></td>
+<<<<<<< HEAD
+    <td rowspan="3"><?php echo $Catatan39 ?></td>
+=======
+>>>>>>> parent of 62a69dc... Update ViewReport.php
 </tr>
 
 <tr>
@@ -1086,7 +1151,10 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td>Kawasan yang bersih dan memuaskan</td>
     <td><?php echo $A79 ?></td>
     <td><?php echo $Image79 ?></td>
-    <td rowspan="3"><?php echo $Catatan14 ?></td>
+<<<<<<< HEAD
+    <td rowspan="3"><?php echo $Catatan40 ?></td>
+=======
+>>>>>>> parent of 62a69dc... Update ViewReport.php
 </tr>
 
 <tr>
@@ -1106,7 +1174,10 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td>Kawasan yang bersih dan memuaskan</td>
     <td><?php echo $A82 ?></td>
     <td><?php echo $Image82 ?></td>
-    <td rowspan="3"><?php echo $Catatan14 ?></td>
+<<<<<<< HEAD
+    <td rowspan="3"><?php echo $Catatan41 ?></td>
+=======
+>>>>>>> parent of 62a69dc... Update ViewReport.php
 </tr>
 
 <tr>
@@ -1126,7 +1197,10 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td>Kawasan yang bersih dan memuaskan</td>
     <td><?php echo $A85 ?></td>
     <td><?php echo $Image85 ?></td>
-    <td rowspan="3"><?php echo $Catatan14 ?></td>
+<<<<<<< HEAD
+    <td rowspan="3"><?php echo $Catatan42 ?></td>
+=======
+>>>>>>> parent of 62a69dc... Update ViewReport.php
 </tr>
 
 <tr>
@@ -1146,7 +1220,10 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td>Kawasan yang bersih dan memuaskan</td>
     <td><?php echo $A88 ?></td>
     <td><?php echo $Image88 ?></td>
-    <td rowspan="3"><?php echo $Catatan14 ?></td>
+<<<<<<< HEAD
+    <td rowspan="3"><?php echo $Catatan43 ?></td>
+=======
+>>>>>>> parent of 62a69dc... Update ViewReport.php
 </tr>
 
 <tr>
@@ -1166,7 +1243,10 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td>Kawasan lantai bersih dan tiada item tidak perlu</td>
     <td><?php echo $A91 ?></td>
     <td><?php echo $Image91 ?></td>
-    <td rowspan="3"><?php echo $Catatan14 ?></td>
+<<<<<<< HEAD
+    <td rowspan="3"><?php echo $Catatan44 ?></td>
+=======
+>>>>>>> parent of 62a69dc... Update ViewReport.php
 </tr>
 
 <tr>
@@ -1186,7 +1266,10 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td>Kawasan yang bersih dan memuaskan</td>
     <td><?php echo $A94 ?></td>
     <td><?php echo $Image94 ?></td>
-    <td rowspan="3"><?php echo $Catatan14 ?></td>
+<<<<<<< HEAD
+    <td rowspan="3"><?php echo $Catatan45 ?></td>
+=======
+>>>>>>> parent of 62a69dc... Update ViewReport.php
 </tr>
 
 <tr>
@@ -1207,7 +1290,10 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td>Aspek keselamatan diutamakan</td>
     <td><?php echo $A97 ?></td>
     <td><?php echo $Image97 ?></td>
-    <td><?php echo $Catatan14 ?></td>
+<<<<<<< HEAD
+    <td><?php echo $Catatan46 ?></td>
+=======
+>>>>>>> parent of 62a69dc... Update ViewReport.php
 </tr>
 
 <tr>
@@ -1215,7 +1301,10 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td>Sokongan pelaksanaan dengan mewujudkan kawalan visual dan “konsep ownership”</td>
     <td><?php echo $A98 ?></td>
     <td><?php echo $Image98 ?></td>
-    <td><?php echo $Catatan14 ?></td>
+<<<<<<< HEAD
+    <td><?php echo $Catatan47 ?></td>
+=======
+>>>>>>> parent of 62a69dc... Update ViewReport.php
 </tr>
 
 <tr>
@@ -1223,7 +1312,10 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td>Kerjasama dan sikap positif untuk amalan berterusan</td>
     <td><?php echo $A99 ?></td>
     <td><?php echo $Image99 ?></td>
-    <td><?php echo $Catatan14 ?></td>
+<<<<<<< HEAD
+    <td><?php echo $Catatan48 ?></td>
+=======
+>>>>>>> parent of 62a69dc... Update ViewReport.php
 </tr>
 
 <tr>
@@ -1231,12 +1323,15 @@ mysqli_select_db($con,'5s') or die ('No database found.');
     <td>Penambahbaikkan yang dibuat memberikan kesan melalui (Produktiviti/Kualiti/Penghantaran/Kos/Keselamatan/Moral/Inovasi)</td>
     <td><?php echo $A100 ?></td>
     <td><?php echo $Image100 ?></td>
-    <td><?php echo $Catatan14 ?></td>
+<<<<<<< HEAD
+    <td><?php echo $Catatan49 ?></td>
+=======
+>>>>>>> parent of 62a69dc... Update ViewReport.php
 </tr>
 
 <tr>
-    <th colspan="3">JUMLAH MARKAH SEKSYEN 6</th>
-    <th colspan="3"><?php echo $S6 ?></th>
+    <th colspan="2">JUMLAH MARKAH SEKSYEN 6</th>
+    <th colspan="2"><?php echo $S6 ?></th>
 </tr>
 
 </table><br>
