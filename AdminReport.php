@@ -1,5 +1,14 @@
 <!DOCTYPE html>
 
+<?php
+
+session_start();
+
+// Include the database configuration file  
+require_once 'Config.php'; 
+
+?>
+
 <html>
 <head>
   <!-- Site made with Mobirise Website Builder v4.12.0, https://mobirise.com -->

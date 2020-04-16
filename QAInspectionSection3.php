@@ -4,8 +4,8 @@
 
 session_start();
 
-$con = mysqli_connect('127.0.0.1','root','') or die ('Not connected.');
-mysqli_select_db($con,'5s') or die ('No database found.');
+// Include the database configuration file  
+require_once 'Config.php'; 
 
 $answer20 = 0;
 $answer21 = 0;

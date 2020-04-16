@@ -8,9 +8,7 @@
 echo '<script>alert("Instruction to be Adhere: Please fill all the question properly. Once wrong, you need to resubmit the inspection score. Leave any unrelated question by writing (-) or (0). Click Submit button before proceed to next section. View the report at the end of inspection process.")</script>'; 
 
 session_start();
-
-$con = mysqli_connect('127.0.0.1','root','') or die ('Not connected.');
-mysqli_select_db($con,'5s') or die ('No database found.');
+require_once 'Config.php'; 
 
 $total = 0;
 $answer1 = 0;
