@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 
 <?php  
+// PHP program to pop an alert 
+// message box on the screen 
+  
+// Display the alert box  
+echo '<script>alert("Instruction to be Adhere: Please fill all the question properly. Once wrong, you need to resubmit the inspection score. Leave any unrelated question by writing (-) or (0). Click Submit button before proceed to next section. View the report at the end of inspection process.")</script>'; 
 
 session_start();
 
