@@ -53,24 +53,24 @@ mysqli_select_db($con,'5s') or die ('No database found.');
       <!-- Seksyen 1  -->
       <th class="align-left" colspan="5">SEKSYEN 1: KEPERLUAN UTAMA PELAKSANAAN</th>
       <?php  
-      $query = "SELECT * FROM qacategory_section1";  
-      $result = mysqli_query($con, $query); 
+      $query1 = "SELECT * FROM qacategory_section1";  
+      $result1 = mysqli_query($con, $query1); 
 
 
-      if ($row = mysqli_fetch_array($result))  
+      if ($row1 = mysqli_fetch_array($result1))  
       { 
-        $C1 = $row['Category1'];
-        $C2 = $row['Category2'];
-        $C3 = $row['Category3'];
-        $S1 = $row['CategorySection1_TotalMarks'];
-        $Image1 = $row['Image1'];
-        $Image2 = $row['Image2'];
-        $Image3 = $row['Image3'];
-        $Catatan1 = $row['Catatan1'];
-        $Catatan2 = $row['Catatan2'];
-        $Catatan3 = $row['Catatan3'];
+        $C1 = $row1['Category1'];
+        $C2 = $row1['Category2'];
+        $C3 = $row1['Category3'];
+        $S1 = $row1['CategorySection1_TotalMarks'];
+        $Image1 = $row1['Image1'];
+        $Image2 = $row1['Image2'];
+        $Image3 = $row1['Image3'];
+        $Catatan1 = $row1['Catatan1'];
+        $Catatan2 = $row1['Catatan2'];
+        $Catatan3 = $row1['Catatan3'];
 
-        if($result)
+        if($result1)
         {
           $query2 = "SELECT * FROM qacategory_section2";  
           $result2 = mysqli_query($con, $query2);  
@@ -118,15 +118,15 @@ mysqli_select_db($con,'5s') or die ('No database found.');
             $Image17 = $row2['Image17'];
             $Image18 = $row2['Image18'];
             $Image19 = $row2['Image19'];
-            $Catatan4 = $row['Catatan4'];
-            $Catatan5 = $row['Catatan5'];
-            $Catatan6 = $row['Catatan6'];
-            $Catatan7 = $row['Catatan7'];
-            $Catatan8 = $row['Catatan8'];
-            $Catatan9 = $row['Catatan9'];
-            $Catatan10 = $row['Catatan10'];
-            $Catatan11 = $row['Catatan11'];
-            $Catatan12 = $row['Catatan12'];
+            $Catatan4 = $row2['Catatan4'];
+            $Catatan5 = $row2['Catatan5'];
+            $Catatan6 = $row2['Catatan6'];
+            $Catatan7 = $row2['Catatan7'];
+            $Catatan8 = $row2['Catatan8'];
+            $Catatan9 = $row2['Catatan9'];
+            $Catatan10 = $row2['Catatan10'];
+            $Catatan11 = $row2['Catatan11'];
+            $Catatan12 = $row2['Catatan12'];
         
 
             if($result2)
@@ -167,11 +167,11 @@ mysqli_select_db($con,'5s') or die ('No database found.');
                 $Image30 = $row3['Image30'];
                 $Image31 = $row3['Image31'];
                 $Image32 = $row3['Image32'];
-                $Catatan13 = $row['Catatan13'];
-                $Catatan14 = $row['Catatan14'];
-                $Catatan15 = $row['Catatan15'];
-                $Catatan16 = $row['Catatan16'];
-                $Catatan17 = $row['Catatan17'];
+                $Catatan13 = $row3['Catatan13'];
+                $Catatan14 = $row3['Catatan14'];
+                $Catatan15 = $row3['Catatan15'];
+                $Catatan16 = $row3['Catatan16'];
+                $Catatan17 = $row3['Catatan17'];
 
                 if($result3)
                 {
@@ -225,15 +225,15 @@ mysqli_select_db($con,'5s') or die ('No database found.');
                     $Image48 = $row4['Image48'];
                     $Image49 = $row4['Image49'];
                     $Image50 = $row4['Image50'];
-                    $Catatan18 = $row['Catatan18'];
-                    $Catatan19 = $row['Catatan19'];
-                    $Catatan20 = $row['Catatan20'];
-                    $Catatan21 = $row['Catatan21'];
-                    $Catatan22 = $row['Catatan22'];
-                    $Catatan23 = $row['Catatan23'];
-                    $Catatan24 = $row['Catatan24'];
-                    $Catatan25 = $row['Catatan25'];
-                    $Catatan26 = $row['Catatan26'];
+                    $Catatan18 = $row4['Catatan18'];
+                    $Catatan19 = $row4['Catatan19'];
+                    $Catatan20 = $row4['Catatan20'];
+                    $Catatan21 = $row4['Catatan21'];
+                    $Catatan22 = $row4['Catatan22'];
+                    $Catatan23 = $row4['Catatan23'];
+                    $Catatan24 = $row4['Catatan24'];
+                    $Catatan25 = $row4['Catatan25'];
+                    $Catatan26 = $row4['Catatan26'];
 
                     if($result4)
                     {
@@ -285,15 +285,15 @@ mysqli_select_db($con,'5s') or die ('No database found.');
                         $Image65 = $row5['Image65'];
                         $Image66 = $row5['Image66'];
                         $Image67 = $row5['Image67'];
-                        $Catatan27 = $row['Catatan27'];
-                        $Catatan28 = $row['Catatan28'];
-                        $Catatan29 = $row['Catatan29'];
-                        $Catatan30 = $row['Catatan30'];
-                        $Catatan31 = $row['Catatan31'];
-                        $Catatan32 = $row['Catatan32'];
-                        $Catatan33 = $row['Catatan33'];
-                        $Catatan34 = $row['Catatan34'];
-                        $Catatan35 = $row['Catatan35'];
+                        $Catatan27 = $row5['Catatan27'];
+                        $Catatan28 = $row5['Catatan28'];
+                        $Catatan29 = $row5['Catatan29'];
+                        $Catatan30 = $row5['Catatan30'];
+                        $Catatan31 = $row5['Catatan31'];
+                        $Catatan32 = $row5['Catatan32'];
+                        $Catatan33 = $row5['Catatan33'];
+                        $Catatan34 = $row5['Catatan34'];
+                        $Catatan35 = $row5['Catatan35'];
 
                         if($result5)
                         {
@@ -382,20 +382,20 @@ mysqli_select_db($con,'5s') or die ('No database found.');
                             $Image98 = $row6['Image98'];
                             $Image99 = $row6['Image99'];
                             $Image100 = $row6['Image100'];
-                            $Catatan36 = $row['Catatan36'];
-                            $Catatan37 = $row['Catatan37'];
-                            $Catatan38 = $row['Catatan38'];
-                            $Catatan39 = $row['Catatan39'];
-                            $Catatan40 = $row['Catatan40'];
-                            $Catatan41 = $row['Catatan41'];
-                            $Catatan42 = $row['Catatan42'];
-                            $Catatan43 = $row['Catatan43'];
-                            $Catatan44 = $row['Catatan44'];
-                            $Catatan45 = $row['Catatan45'];
-                            $Catatan46 = $row['Catatan46'];
-                            $Catatan47 = $row['Catatan47'];
-                            $Catatan48 = $row['Catatan48'];
-                            $Catatan49 = $row['Catatan49'];
+                            $Catatan36 = $row6['Catatan36'];
+                            $Catatan37 = $row6['Catatan37'];
+                            $Catatan38 = $row6['Catatan38'];
+                            $Catatan39 = $row6['Catatan39'];
+                            $Catatan40 = $row6['Catatan40'];
+                            $Catatan41 = $row6['Catatan41'];
+                            $Catatan42 = $row6['Catatan42'];
+                            $Catatan43 = $row6['Catatan43'];
+                            $Catatan44 = $row6['Catatan44'];
+                            $Catatan45 = $row6['Catatan45'];
+                            $Catatan46 = $row6['Catatan46'];
+                            $Catatan47 = $row6['Catatan47'];
+                            $Catatan48 = $row6['Catatan48'];
+                            $Catatan49 = $row6['Catatan49'];
 
                             if ($result6) 
                             {
