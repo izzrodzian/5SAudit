@@ -428,7 +428,8 @@ if (isset($_POST['convert']))
     <td> Maklumat Lengkap dan Terkini (Merujuk pada Senarai Semak Dokumen)</td>
 
     <td> <?php echo $C1 ?></td>
-    <td><?php echo $Image1?></td>
+    <td><img src="data:imagesuploaded/jpeg;charset=utf8;base64,<?php echo base64_encode($row1['Image1']); ?> " >
+    </td>
     <td><?php echo $Catatan1 ?></td>
 </tr>
 

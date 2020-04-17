@@ -213,7 +213,7 @@ if (isset($_POST['Submit']))
   
 </head>
 <body>
- <!--  <section class="menu cid-rPwfwJELGC" once="menu" id="menu1-h">
+  <section class="menu cid-rPwfwJELGC" once="menu" id="menu1-h">
 
     
 
@@ -233,8 +233,8 @@ if (isset($_POST['Submit']))
                          <img src="assets/images/logo5s-122x125.png" alt="Mobirise" title="" style="height: 3.8rem;">
                     
                 </span>
-                <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4" href="https://mobirise.co">
-                        5S AUDIT INSPECTION / SECTION 2</a></span>
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4" >
+                        PEMERIKSAAN AUDIT 5S / SEKSYEN 2</a></span>
             </div>
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -242,11 +242,11 @@ if (isset($_POST['Submit']))
                 <li class="nav-item dropdown">
                     <a class="nav-link link dropdown-toggle text-white display-4" href="https://mobirise.co" data-toggle="dropdown-submenu" aria-expanded="true"><span class="mobi-mbri mobi-mbri-logout mbr-iconfont mbr-iconfont-btn"></span>
                         
-                        LOGOUT</a><div class="dropdown-menu"><a class="dropdown-item text-white display-4" href="https://mobirise.co">PROFILE</a></div>
+                        KELUAR</a><div class="dropdown-menu"><a class="dropdown-item text-white display-4">PROFIL</a></div>
                 </li></ul>
         </div>
     </nav>
-</section> -->
+</section>
 
 <section class="cid-rPxomWSNoR">
 <br><br>
@@ -667,7 +667,8 @@ if (isset($_POST['Submit']))
 </div>
 
 <br><br><br>
-  <input type="Submit" name="Submit" value="Submit">
+  <input class="button" type="reset" name="Reset" value="Padam">
+  <input class="button" type="submit" name="Submit" value="Hantar">
 <br><br>
 </form>
 <div align="center"> Jumlah markah Seksyen 2: <?php echo $total ?> /80</div>

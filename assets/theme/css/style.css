@@ -358,9 +358,15 @@ nav .mbr-section-btn {
 
 .mbr-bold {
   font-weight: 700; }
+[type='reset']
+{
+  -webkit-appearance: none; 
+}
 
 [type='submit'] {
-  -webkit-appearance: none; }
+  -webkit-appearance: none; 
+}
+
 
 /*! Full-screen */
 .mbr-fullscreen .mbr-overlay {

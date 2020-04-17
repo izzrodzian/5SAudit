@@ -7,10 +7,9 @@ require_once 'Config.php';
 
   
 // Display the alert box  
-echo '<script>alert("Instruction to be Adhere: Please fill all the question properly. Once wrong, you need to resubmit the inspection score. Leave any unrelated question by writing (-) or (0). Click Submit button before proceed to next section. View the report at the end of inspection process.")</script>'; 
-
-
-
+echo '<script>alert("Patuhi arahan berikut: 
+  Sila jawab semua soalan.Tinggalkan sebarang soalan yang tidak berkaitan dengan menulis (-) atau (0). Klik butang PADAM sekiranya terdapat sebarang kesilapan. Klik butang Hantar sebelum meneruskan ke bahagian seterusnya. Lihat laporan pada akhir proses pemeriksaan.")</script>'; 
+  
 $total = 0;
 $answer1 = 0;
 $answer2 = 0;
@@ -46,33 +45,6 @@ if (isset($_POST['Submit']))
   move_uploaded_file($filetmpname1, $folder.$filename1);
   move_uploaded_file($filetmpname2, $folder.$filename2);
   move_uploaded_file($filetmpname3, $folder.$filename3);
-
-   if(!empty($_FILES["image1"]["name"])) { 
-        // Get file info 
-        $filename1 = basename($_FILES["image1"]["name"]); 
-        $fileType = pathinfo($filename1, PATHINFO_EXTENSION); 
-      } else if (!empty($_FILES["image2"]["name"])) 
-      {
-        // Get file info 
-        $filename2 = basename($_FILES["image2"]["name"]); 
-        $fileType = pathinfo($filename2, PATHINFO_EXTENSION);
-      } else if (!empty($_FILES["image3"]["name"])) 
-      {
-       // Get file info 
-        $filename3 = basename($_FILES["image3"]["name"]); 
-        $fileType = pathinfo($filename3, PATHINFO_EXTENSION);
-      }
-
-
-  $allowTypes = array('jpg','png','jpeg','gif'); 
-  if(in_array($fileType, $allowTypes))
-  { 
-    $image1 = $_FILES['image1']['name']; 
-    $image2 = $_FILES['image2']['name']; 
-    $image3 = $_FILES['image3']['name']; 
-  
-  }
-         
 
 
   $sql1 = "INSERT INTO qacategory_section1 (Category1, Category2, Category3, CategorySection1_TotalMarks, Image1, Image2, Image3, Catatan1, Catatan2, Catatan3) VALUES ('$answer1', '$answer2', '$answer3', '$total', '$filename1', '$filename2', '$filename3', '$catatan1', '$catatan2', '$catatan3')";
@@ -144,8 +116,6 @@ if (isset($_POST['Submit']))
 <body>
   <section class="menu cid-rPwfwJELGC" once="menu" id="menu1-h">
 
-    
-
     <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <div class="hamburger">
@@ -162,8 +132,8 @@ if (isset($_POST['Submit']))
                          <img src="assets/images/logo5s-122x125.png" alt="Mobirise" title="" style="height: 3.8rem;">
                     
                 </span>
-                <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4" href="https://mobirise.co">
-                        5S AUDIT INSPECTION / SECTION 1</a></span>
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4">
+                        PEMERIKSAAN AUDIT 5S / SEKSYEN 1</a></span>
             </div>
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -171,7 +141,7 @@ if (isset($_POST['Submit']))
                 <li class="nav-item dropdown">
                     <a class="nav-link link dropdown-toggle text-white display-4" href="https://mobirise.co" data-toggle="dropdown-submenu" aria-expanded="true"><span class="mobi-mbri mobi-mbri-logout mbr-iconfont mbr-iconfont-btn"></span>
                         
-                        LOGOUT</a><div class="dropdown-menu"><a class="dropdown-item text-white display-4" href="https://mobirise.co">PROFILE</a></div>
+                        KELUAR</a><div class="dropdown-menu"><a class="dropdown-item text-white display-4" >PROFIL</a></div>
                 </li></ul>
         </div>
     </nav>
@@ -292,7 +262,8 @@ Catatan:<br>
     
 </div>
 <br><br><br>
-  <input type="Submit" name="Submit" value="Submit">
+  <input class="button" type="reset" name="Reset" value="Padam">
+  <input class="button" type="submit" name="Submit" value="Hantar">
 <br><br>
 
 </form>
