@@ -7,8 +7,7 @@ require_once 'Config.php';
 
   
 // Display the alert box  
-echo '<script>alert("Patuhi arahan berikut: 
-  Sila jawab semua soalan.Tinggalkan sebarang soalan yang tidak berkaitan dengan menulis (-) atau (0). Klik butang PADAM sekiranya terdapat sebarang kesilapan. Klik butang Hantar sebelum meneruskan ke bahagian seterusnya. Lihat laporan pada akhir proses pemeriksaan.")</script>'; 
+echo '<script>alert("Patuhi arahan berikut: Sila jawab semua soalan.Tinggalkan sebarang soalan yang tidak berkaitan dengan menulis (-) atau (0). Klik butang PADAM sekiranya terdapat sebarang kesilapan. Klik butang Hantar sebelum meneruskan ke bahagian seterusnya. Lihat laporan pada akhir proses pemeriksaan.")</script>'; 
   
 $total = 0;
 $answer1 = 0;
