@@ -9,7 +9,7 @@
   <link rel="shortcut icon" href="assets/images/logo5s-122x125.png" type="image/x-icon">
   <meta name="description" content="Web Site Creator Description">
   
-  <title>Homepage</title>
+  <title>LAMAN UTAMA</title>
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons-bold/mobirise-icons-bold.css">
@@ -40,21 +40,21 @@
             </div>
         </button>
         <div class="menu-logo">
-            <div class="navbar-brand">
-                <span class="navbar-logo">
-                    
-                         <img src="assets/images/logo5s-122x125.png" title="" style="height: 3.8rem;">
-                    
-                </span>
-                <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4">
-                        5S AUDIT INSPECTION</a></span>
-            </div>
+          <div class="navbar-brand">
+            <span class="navbar-logo">
+              
+             <img src="assets/images/logo5s-122x125.png" title="" style="height: 3.8rem;">
+             
+           </span>
+           <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4">
+           PEMERIKSAAN AUDIT 5S</a></span>
+         </div>
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"></ul>
             <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-primary display-4" href="Login.php"><span class="mbrib-users mbr-iconfont mbr-iconfont-btn"></span>
                     
-                    LOGIN</a></div>
+                    LOG MASUK</a></div>
         </div>
     </nav>
 </section>

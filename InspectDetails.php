@@ -20,7 +20,7 @@ require_once 'Config.php';
   <link rel="shortcut icon" href="assets/images/logo5s-122x125.png" type="image/x-icon">
   <meta name="description" content="Web Site Creator Description">
   
-  <title>Inspection</title>
+  <title>PEMERIKSAAN</title>
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons-bold/mobirise-icons-bold.css">
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
@@ -58,68 +58,101 @@ require_once 'Config.php';
                     
                 </span>
                 <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4">
-                        5S AUDIT INSPECTION</a></span>
+                        PEMERIKSAAN AUDIT 5S</a></span>
             </div>
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item">
-                    <a class="nav-link link text-white display-4" aria-expanded="true"><span class="mbrib-left mbr-iconfont mbr-iconfont-btn"></span>
-                        
-                        BACK</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link link dropdown-toggle text-white display-4" data-toggle="dropdown-submenu" aria-expanded="true"><span class="mobi-mbri mobi-mbri-logout mbr-iconfont mbr-iconfont-btn"></span>
-                        
-                        LOGOUT</a><div class="dropdown-menu"><a class="dropdown-item text-white display-4">PROFILE</a></div>
-                </li></ul>
-        </div>
+    <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+      <li class="nav-item">
+        <a class="nav-link link text-white display-4" href="Inspection.php" aria-expanded="true"><span class="mbrib-left mbr-iconfont mbr-iconfont-btn"></span>
+
+        KEMBALI</a>
+      </li>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+          <li class="nav-item"><a class="nav-link link text-white display-4" href="Homepage.php"><span class="mbrib-login mbr-iconfont mbr-iconfont-btn"></span>
+
+          KELUAR</a></li>
+        </ul>
+      </div></ul>
+
+    </div>
     </nav>
 </section><br><br><br>
 
 <section class="cid-rPxomWSNoR"> 
 
-   <div class="container">
-        <div class="media-container-row">
+<div class="container">
+<form method="POST">
 
-            <div class="card  col-12 col-md-6 col-lg-4">
-                <div class="card-img">
-                    <span class="mbr-iconfont mbri-paper-plane"></span>
-                </div>
-                <div class="card-box align-center">
-                    <h4 class="card-title mbr-fonts-style display-7">
-                        TRAIN OPERATION</h4>
-                    <p class="mbr-text mbr-fonts-style display-7">5S audit form to inspect the facilities required in train operation.</p>
-                    <div class="mbr-section-btn text-center"><a class="btn btn-primary display-4">
-                            START INSPECTION</a></div>
-                </div>
-            </div>
+<table class="table table-hover ">
 
-            <div class="card  col-12 col-md-6 col-lg-4">
-                <div class="card-img">
-                    <span class="mbr-iconfont mbri-bookmark"></span>
-                </div>
-                <div class="card-box align-center">
-                    <h4 class="card-title mbr-fonts-style display-7">QUALITY ASSURANCE</h4>
-                    <p class="mbr-text mbr-fonts-style display-7">5S audit form to inspect the facilities required in quality assurance.</p>
-                    <div class="mbr-section-btn text-center"><a class="btn btn-primary display-4" href="QAInspectionSection1.php">
-                            START INSPECTION</a></a></div>
-                </div>
-            </div>
 
-            <div class="card  col-12 col-md-6 col-lg-4">
-                <div class="card-img">
-                    <span class="mbr-iconfont mbri-flag"></span>
-                </div>
-                <div class="card-box align-center">
-                    <h4 class="card-title mbr-fonts-style display-7">
-                        STATION OPERATION</h4>
-                    <p class="mbr-text mbr-fonts-style display-7">5S audit form to inspect the facilities required in station operation.</p>
-                    <div class="mbr-section-btn text-center"><a class="btn btn-primary display-4">
-                            START INSPECTION</a></div>
-                </div>
-            </div>       
-        </div>
-    </div>
+    <tr>
+        <th> Staff Info: </th>
+        <td>
+           <div><input class="form-control px-3 display-7" type="text" name="staffno">
+           </div></br>
+       </td>
+   </tr>
+
+    <tr>
+        <th> Inspect Date: </th>
+        <td>
+           <div><input class="form-control px-3 display-7" type="date" name="inspectdate" >
+           </div></br>
+        </td>
+    </tr>
+
+     <tr>
+        <th> Inspect Time: </th>
+        <td>
+           <div><input class="form-control px-3 display-7" type="time" name="inspecttime">
+           </div></br>
+        </td>
+    </tr>
+
+
+    <tr>
+      <th> Location:  </th>
+      <td>
+        <div><input class="form-control px-3 display-7" list="location" name ="location">
+        <datalist id="location">
+        <option value="Ampang Station">
+        <option value="Cahaya Station">
+        <option value="Cempaka Station">
+        <option value="Pandan Indah Station">
+        <option value="Pandan Jaya Station">
+        <option value="Maluri Station">
+        <option value="Miharja Station">
+        <option value="Chan Sow Lin Station">
+        <option value="Pudu Station">
+        <option value="Hang Tuah Station">
+        <option value="Plaza Rakyat Station">
+        <option value="Masjid Jamek Station">
+        <option value="Bandaraya Station">
+        <option value="Sultan Ismail Station">
+        <option value="PWTC Station">
+        <option value="Titiwangsa Station">
+        <option value="Sentul Station">
+        <option value="Sentul Timur Station">
+        </datalist> 
+      </div></br>
+    </td>
+    </tr>
+
+</table>
+
+
+<div align="right">
+    <a href="AuditorDash.php"><input type="button" name="proceed" class="btn btn-secondary" value="TERUSKAN"></a>
+    <br><br><br><br>
+</div>
+</form>
+</div>
+</div>
+  
 </section>
 
 <section once="footers" class="cid-rPwjkLZhDD" id="footer7-i">

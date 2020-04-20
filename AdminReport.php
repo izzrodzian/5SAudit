@@ -35,43 +35,45 @@ require_once 'Config.php';
 
 <section class="menu cid-rPwfwJELGC" once="menu" id="menu1-k">
 
-    
 
-    <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </button>
-        <div class="menu-logo">
-            <div class="navbar-brand">
-                <span class="navbar-logo">
-                    
-                         <img src="assets/images/logo5s-122x125.png" title="" style="height: 3.8rem;">
-                    
-                </span>
-                <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4">
-                        5S AUDIT INSPECTION / REPORTING</a></span>
-            </div>
-        </div>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
-              <li class="nav-item">
-                    <a class="nav-link link text-white display-4" href="AdminDash.php" aria-expanded="true"><span class="mbrib-left mbr-iconfont mbr-iconfont-btn"></span>
-                        
-                        BACK</a>
-                </li>
-                <li class="nav-item dropdown open">
-                    <a class="nav-link link dropdown-toggle text-white display-4" data-toggle="dropdown-submenu" aria-expanded="true"><span class="mobi-mbri mobi-mbri-logout mbr-iconfont mbr-iconfont-btn"></span>
-                        
-                        LOGOUT</a><div class="dropdown-menu"><a class="dropdown-item text-white display-4">PROFILE</a></div>
-                </li></ul>
-            
-        </div>
-    </nav>
+  <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </button>
+    <div class="menu-logo">
+      <div class="navbar-brand">
+        <span class="navbar-logo">
+
+         <img src="assets/images/logo5s-122x125.png" title="" style="height: 3.8rem;">
+
+       </span>
+       <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4">
+       PEMERIKSAAN AUDIT 5S / LAPORAN PENTADBIR</a></span>
+     </div>
+   </div>
+   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+      <li class="nav-item">
+        <a class="nav-link link text-white display-4" href="AdminDash.php" aria-expanded="true"><span class="mbrib-left mbr-iconfont mbr-iconfont-btn"></span>
+
+        KEMBALI</a>
+      </li>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+          <li class="nav-item"><a class="nav-link link text-white display-4" href="Homepage.php"><span class="mbrib-login mbr-iconfont mbr-iconfont-btn"></span>
+
+          KELUAR</a></li>
+        </ul>
+      </div></ul>
+
+    </div>
+  </nav>
 </section>
 <br><br><br><br><br>
 

@@ -238,13 +238,16 @@ if (isset($_POST['Submit']))
             </div>
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
-                <li class="nav-item dropdown">
-                    <a class="nav-link link dropdown-toggle text-white display-4" href="https://mobirise.co" data-toggle="dropdown-submenu" aria-expanded="true"><span class="mobi-mbri mobi-mbri-logout mbr-iconfont mbr-iconfont-btn"></span>
-                        
-                        KELUAR</a><div class="dropdown-menu"><a class="dropdown-item text-white display-4">PROFIL</a></div>
-                </li></ul>
-        </div>
+    <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+        <li class="nav-item"><a class="nav-link link text-white display-4" href="Homepage.php"><span class="mbrib-login mbr-iconfont mbr-iconfont-btn"></span>
+
+        KELUAR</a></li>
+      </ul>
+    </div></ul>
+
+  </div>
     </nav>
 </section>
 
