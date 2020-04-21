@@ -7,6 +7,17 @@ session_start();
 // Include the database configuration file  
 require_once 'Config.php'; 
 
+if (isset($_POST['Submit']))
+{
+  $userid = $_POST['userid'];
+  $inspectdate = $_POST['inspectdate'];
+  $inspecttime = $_POST['inspecttime'];
+  $inspectlocation = $_POST['inspectlocation'];
+
+  $sql = "INSERT INTO inspect (userID, inspectDate, inspectTime, inspectLocation) VALUES ('$userid', '$inspectdate','$inspecttime', '$inspectlocation')";
+  $result = mysqli_query($con,$sql);
+}
+
 ?>
 
 
@@ -90,9 +101,9 @@ require_once 'Config.php';
 
 
     <tr>
-        <th> Staff Info: </th>
+        <th> Staff ID: </th>
         <td>
-           <div><input class="form-control px-3 display-7" type="text" name="staffno">
+           <div><input class="form-control px-3 display-7" type="text" name="userid">
            </div></br>
        </td>
    </tr>
@@ -117,7 +128,7 @@ require_once 'Config.php';
     <tr>
       <th> Location:  </th>
       <td>
-        <div><input class="form-control px-3 display-7" list="location" name ="location">
+        <div><input class="form-control px-3 display-7" list="location" name ="inspectlocation">
         <datalist id="location">
         <option value="Ampang Station">
         <option value="Cahaya Station">
@@ -146,7 +157,7 @@ require_once 'Config.php';
 
 
 <div align="right">
-    <a href="AuditorDash.php"><input type="button" name="proceed" class="btn btn-secondary" value="TERUSKAN"></a>
+    <a href="AuditorDash.php"><input type="submit" name="Submit" class="btn btn-secondary" value="TERUSKAN"></a>
     <br><br><br><br>
 </div>
 </form>
