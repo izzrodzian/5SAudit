@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 
-<?php
+<?php  
 
 session_start();
 
 // Include the database configuration file  
 require_once 'Config.php'; 
 
-$sql = "SELECT userID, inspectDate, inspectTime, inspectLocation FROM inspect";
+$sql = "SELECT userID, userEmail, userFullname, userGender, userContact, userDept, userRole FROM users";
 $result = mysqli_query($con,$sql);
 
 if ($result->num_rows > 0) {
     // output data of each row
 
+ 
 ?>
 
 <html>
@@ -23,11 +24,12 @@ if ($result->num_rows > 0) {
   <meta name="generator" content="Mobirise v4.12.0, mobirise.com">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <link rel="shortcut icon" href="assets/images/logo5s-122x125.png" type="image/x-icon">
-  <meta name="description" content="Web Site Builder Description">
+  <meta name="description" content="Web Site Creator Description">
   
-  <title>Report</title>
-  <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
+  <title>PENTADBIRAN</title>
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons-bold/mobirise-icons-bold.css">
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
@@ -37,48 +39,69 @@ if ($result->num_rows > 0) {
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
   
+<!-- style for collapsible category & question part -->
+  <style>
+.collapsible {
+  background-color: #252d78;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: none;
+  background-color: #e1eef5;
+}
+</style>
+  
+  
 </head>
+<body>
+  <section class="menu cid-rPwfwJELGC" once="menu" id="menu1-h">
 
-<section class="menu cid-rPwfwJELGC" once="menu" id="menu1-k">
+    
 
+    <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+        <div class="menu-logo">
+            <div class="navbar-brand">
+                <span class="navbar-logo">
+                    
+                         <img src="assets/images/logo5s-122x125.png" title="" style="height: 3.8rem;">
+                    
+                </span>
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4">
+                        PEMERIKSAAN AUDIT 5S / PENGURUSAN PENGGUNA</a></span>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+                <li class="nav-item"><a class="nav-link link text-white display-4" href="Homepage.php"><span class="mbrib-login mbr-iconfont mbr-iconfont-btn"></span>
 
-  <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </button>
-    <div class="menu-logo">
-      <div class="navbar-brand">
-        <span class="navbar-logo">
-
-         <img src="assets/images/logo5s-122x125.png" title="" style="height: 3.8rem;">
-
-       </span>
-       <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4">
-       PEMERIKSAAN AUDIT 5S / LAPORAN PENTADBIR</a></span>
-     </div>
-   </div>
-   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
-      <li class="nav-item">
-        <a class="nav-link link text-white display-4" href="AdminDash.php" aria-expanded="true"><span class="mbrib-left mbr-iconfont mbr-iconfont-btn"></span>
-
-        KEMBALI</a>
-      </li>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
-          <li class="nav-item"><a class="nav-link link text-white display-4" href="Homepage.php"><span class="mbrib-login mbr-iconfont mbr-iconfont-btn"></span>
-
-          KELUAR</a></li>
-        </ul>
-      </div></ul>
-
-    </div>
+                KELUAR</a></li>
+              </ul>
+            </div></ul>
+          </div>
   </nav>
 </section>
 <br><br><br><br><br>
@@ -88,17 +111,20 @@ if ($result->num_rows > 0) {
     
  <form method="POST">
          <div>
-           <input class="form-control px-3 display-7 align-left" type="text" name="search" value="" placeholder="Search Auditor">
+           <input class="form-control px-3 display-7 align-left" type="text" name="search" value="" placeholder="Search User">
          </div></br><br>
        </form>
 
         <table class="table table-striped table-hover table-bordered align-center">
 
         <tr>
-          <th> Auditor ID</th>
-          <th> Inspection Date </th>
-          <th> Inspection Time </th>
-          <th> Inspection Location </th>
+          <th> ID </th>
+          <th> Email </th>
+          <th> Full Name </th>
+          <th> Gender </th>
+          <th> Contact Number</th>
+          <th> Department </th>
+          <th> Role </th>
           <th> Action</th>          
         </tr>
 
@@ -106,21 +132,29 @@ if ($result->num_rows > 0) {
 
          <tr>
           <td> <?php echo $row['userID']; ?> </td>
-          <td> <?php echo $row['inspectDate']; ?> </td>
-          <td> <?php echo $row['inspectTime']; ?> </td>
-          <td> <?php echo $row['inspectLocation']; ?> </td>
+          <td> <?php echo $row['userEmail']; ?> </td>
+          <td> <?php echo $row['userFullname']; ?> </td>
+          <td> <?php echo $row['userGender']; ?> </td>
+          <td> <?php echo $row['userContact']; ?> </td>
+          <td> <?php echo $row['userDept']; ?> </td>
+          <td> <?php echo $row['userRole']; ?> </td>
           <td>
             <div class="icon-block">
-              <a href="viewreport.php">
-                <input type="image" src="assets/images/viewreport.png" title="view" width="30" height="30">
+
+
+              <a href="ManageUser_Edit.php?userID=<?php echo $row['userID']; ?>">
+                <input type="image" src="assets/images/edit.png" title="Edit" width="30" height="30">
               </a>
 
-              &nbsp; &nbsp;<a href="editreport.php?reportid=<?php echo $res['reportid']; ?>">
-                <input type="image" src="assets/images/edit.png" title="edit" width="30" height="30">
+              &nbsp; &nbsp;
+
+              <a href="ManageUser_Delete.php?userID=<?php echo $row['userID']; ?>">
+                <input type="image" src="assets/images/viewreport.png" title="Delete" width="30" height="30">
               </a>
+
             </div>
           </td>
-         <?php } ?>
+        <?php } ?>
     </table><br><br>
     <?php   
       }
