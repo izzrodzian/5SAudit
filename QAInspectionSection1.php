@@ -16,7 +16,6 @@ $answer3 = 0;
 
 if (isset($_POST['Submit']))
 {
-
   $userid = $_SESSION['user']; 
   $answer1 = $_POST['answer1'];
   $answer2 = $_POST['answer2'];
@@ -50,7 +49,7 @@ if (isset($_POST['Submit']))
 
     if($result1)
     {    
-     $sql2 = "INSERT INTO qamarks (CategorySection1_TotalMarks) VALUES ('$total')"; 
+     $sql2 = "INSERT INTO qamarks (userID, CategorySection1_TotalMarks) VALUES ('$userid','$total')"; 
 
      $query2 = mysqli_query($con,$sql2);
 

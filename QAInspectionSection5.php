@@ -153,13 +153,13 @@ if (isset($_POST['Submit']))
   move_uploaded_file($filetmpname66, $folder.$filename66);
   move_uploaded_file($filetmpname67, $folder.$filename67);
 
-  $sql1 = "INSERT INTO qacategory_section5 (userID, Answer51, Answer52, Answer53, Answer54, Answer55, Answer56, Answer57, Answer58, Answer59, Answer60, Answer61, Answer62, Answer63, Answer64, Answer65, Answer66, Answer67, Category1, Category2, Category3, Category4, Category5, Category6, Category7, Category8, Category9, CategorySection5_TotalMarks,  Image51, Image52, Image53, Image54, Image55, Image56, Image57, Image58, Image59, Image60, Image61, Image62, Image63, Image64, Image65, Image66, Image67, Catatan27, Catatan28, Catatan29, Catatan30, Catatan31, Catatan32, Catatan33, Catatan34, Catatan35) VALUES ('$userid', $answer51','$answer52', '$answer53', '$answer54', '$answer55', '$answer56', '$answer57', '$answer58', '$answer59', '$answer60', '$answer61', '$answer62', '$answer63', '$answer64', '$answer65', '$answer66', '$answer67', '$totalC1', '$totalC2', '$totalC3', '$totalC4', '$totalC5', '$totalC6', '$totalC7', '$totalC8', '$totalC9', '$total', '$filename51', '$filename52', '$filename53', '$filename54', '$filename55', '$filename56', '$filename57', '$filename58', '$filename59', '$filename60', '$filename61', '$filename62', '$filename63', '$filename64', '$filename65', '$filename66', '$filename67', '$catatan27', '$catatan28', '$catatan29', '$catatan30', '$catatan31', '$catatan32', '$catatan33', '$catatan34', '$catatan35')";
+  $sql1 = "INSERT INTO qacategory_section5 (userID, Answer51, Answer52, Answer53, Answer54, Answer55, Answer56, Answer57, Answer58, Answer59, Answer60, Answer61, Answer62, Answer63, Answer64, Answer65, Answer66, Answer67, Category1, Category2, Category3, Category4, Category5, Category6, Category7, Category8, Category9, CategorySection5_TotalMarks,  Image51, Image52, Image53, Image54, Image55, Image56, Image57, Image58, Image59, Image60, Image61, Image62, Image63, Image64, Image65, Image66, Image67, Catatan27, Catatan28, Catatan29, Catatan30, Catatan31, Catatan32, Catatan33, Catatan34, Catatan35) VALUES ('$userid', '$answer51','$answer52', '$answer53', '$answer54', '$answer55', '$answer56', '$answer57', '$answer58', '$answer59', '$answer60', '$answer61', '$answer62', '$answer63', '$answer64', '$answer65', '$answer66', '$answer67', '$totalC1', '$totalC2', '$totalC3', '$totalC4', '$totalC5', '$totalC6', '$totalC7', '$totalC8', '$totalC9', '$total', '$filename51', '$filename52', '$filename53', '$filename54', '$filename55', '$filename56', '$filename57', '$filename58', '$filename59', '$filename60', '$filename61', '$filename62', '$filename63', '$filename64', '$filename65', '$filename66', '$filename67', '$catatan27', '$catatan28', '$catatan29', '$catatan30', '$catatan31', '$catatan32', '$catatan33', '$catatan34', '$catatan35')";
   $result1 = mysqli_query($con,$sql1);
 
   if($result1)
     {    
-     $sql2 = "INSERT INTO qamarks (CategorySection5_TotalMarks) VALUES ('$total')"; 
-
+     $sql2 = "UPDATE qamarks SET CategorySection5_TotalMarks = '$total' WHERE  userID = '" . $_SESSION['user'] . "'"; 
+    
      $query2 = mysqli_query($con,$sql2);
 
    }

@@ -116,12 +116,13 @@ if (isset($_POST['Submit']))
   move_uploaded_file($filetmpname31, $folder.$filename31);
   move_uploaded_file($filetmpname32, $folder.$filename32);
 
-  $sql1 = "INSERT INTO qacategory_section3 (userID, Answer20, Answer21, Answer22, Answer23, Answer24, Answer25, Answer26, Answer27, Answer28, Answer29, Answer30, Answer31, Answer32, Category1, Category2, Category3, Category4, Category5, CategorySection3_TotalMarks, Image20, Image21, Image22, Image23, Image24, Image25, Image26, Image27, Image28, Image29, Image30, Image31, Image32, Catatan13, Catatan14, Catatan15, Catatan16, Catatan17) VALUES ('$userid', $answer20','$answer21', '$answer22', '$answer23', '$answer24', '$answer25', '$answer26', '$answer27', '$answer28', '$answer29', '$answer30', '$answer31', '$answer32', '$totalC1', '$totalC2', '$totalC3', '$totalC4', '$totalC5', '$total', '$image20','$image21', '$image22', '$image23', '$image24', '$image25', '$image26', '$image27', '$image28', '$image29', '$image30', '$image31', '$image32', '$catatan13', '$catatan14', '$catatan15', '$catatan16', '$catatan17')";
+  $sql1 = "INSERT INTO qacategory_section3 (userID, Answer20, Answer21, Answer22, Answer23, Answer24, Answer25, Answer26, Answer27, Answer28, Answer29, Answer30, Answer31, Answer32, Category1, Category2, Category3, Category4, Category5, CategorySection3_TotalMarks, Image20, Image21, Image22, Image23, Image24, Image25, Image26, Image27, Image28, Image29, Image30, Image31, Image32, Catatan13, Catatan14, Catatan15, Catatan16, Catatan17) VALUES ('$userid', '$answer20','$answer21', '$answer22', '$answer23', '$answer24', '$answer25', '$answer26', '$answer27', '$answer28', '$answer29', '$answer30', '$answer31', '$answer32', '$totalC1', '$totalC2', '$totalC3', '$totalC4', '$totalC5', '$total', '$image20','$image21', '$image22', '$image23', '$image24', '$image25', '$image26', '$image27', '$image28', '$image29', '$image30', '$image31', '$image32', '$catatan13', '$catatan14', '$catatan15', '$catatan16', '$catatan17')";
   $result1 = mysqli_query($con,$sql1);
 
   if($result1)
     {    
-     $sql2 = "INSERT INTO qamarks (CategorySection3_TotalMarks) VALUES ('$total')"; 
+    $sql2 = "UPDATE qamarks SET CategorySection3_TotalMarks = '$total' WHERE  userID = '" . $_SESSION['user'] . "'"; 
+    
 
      $query2 = mysqli_query($con,$sql2);
 

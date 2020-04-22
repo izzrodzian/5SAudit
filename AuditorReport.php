@@ -13,7 +13,8 @@ $S4 = 0;
 $S5 = 0;
 $S6 = 0;
 
-$query1 = "SELECT * FROM qacategory_section1";  
+$query1 = "SELECT * FROM qacategory_section1  WHERE  userID = '" . $_SESSION['user'] . "'"; 
+
 $result1 = mysqli_query($con, $query1); 
 
 
@@ -31,7 +32,8 @@ if ($row1 = mysqli_fetch_array($result1))
     $Catatan3 = $row1['Catatan3'];
 }
 
-$query2 = "SELECT * FROM qacategory_section2";  
+$query2 = "SELECT * FROM qacategory_section2 WHERE  userID = '" . $_SESSION['user'] . "'";
+
 $result2 = mysqli_query($con, $query2);  
 if ($row2 = mysqli_fetch_array($result2))  
 { 
@@ -88,7 +90,7 @@ if ($row2 = mysqli_fetch_array($result2))
     $Catatan12 = $row2['Catatan12'];
 }
 
-$query3 = "SELECT * FROM qacategory_section3";  
+$query3 = "SELECT * FROM qacategory_section3 WHERE  userID = '" . $_SESSION['user'] . "'"; 
 $result3 = mysqli_query($con, $query3);  
 if ($row3 = mysqli_fetch_array($result3))  
 { 
@@ -132,7 +134,7 @@ if ($row3 = mysqli_fetch_array($result3))
 }
 
 
-$query4 = "SELECT * FROM qacategory_section4";  
+$query4 = "SELECT * FROM qacategory_section4 WHERE  userID = '" . $_SESSION['user'] . "'"; 
 $result4 = mysqli_query($con, $query4);  
 if ($row4 = mysqli_fetch_array($result4))  
 { 
@@ -194,7 +196,7 @@ if ($row4 = mysqli_fetch_array($result4))
 }
 
 
-$query5 = "SELECT * FROM qacategory_section5";  
+$query5 = "SELECT * FROM qacategory_section5 WHERE  userID = '" . $_SESSION['user'] . "'";  
 $result5 = mysqli_query($con, $query5);  
 if ($row5 = mysqli_fetch_array($result5))  
 { 
@@ -254,7 +256,7 @@ if ($row5 = mysqli_fetch_array($result5))
 }
 
 
-$query6 = "SELECT * FROM qacategory_section6";  
+$query6 = "SELECT * FROM qacategory_section6 WHERE  userID = '" . $_SESSION['user'] . "'";  
 $result6 = mysqli_query($con, $query6);  
 if ($row6 = mysqli_fetch_array($result6))  
 { 
@@ -361,8 +363,9 @@ $percentage = 0;
 
 if (isset($_POST['convert']))
 {
-    $sql ="INSERT INTO qamarks (TotalMarks) VALUES ('$overall')"; 
-    $r = mysqli_query($con, $sql);
+    $sql ="UPDATE qamarks SET TotalMarks = '$overall' WHERE  userID = '" . $_SESSION['user'] . "'";
+   
+       $r = mysqli_query($con, $sql);
 
     if($r)
     {
