@@ -36,7 +36,7 @@ $total = 0;
 
 if (isset($_POST['Submit']))
 {
-  
+  $userid = $_SESSION['user']; 
   $answer4 = $_POST['answer4'];
   $answer5 = $_POST['answer5'];
   $answer6 = $_POST['answer6'];
@@ -147,7 +147,7 @@ if (isset($_POST['Submit']))
   move_uploaded_file($filetmpname19, $folder.$filename19);
 
 
-  $sql1 = "INSERT INTO qacategory_section2 (Answer4, Answer5, Answer6, Answer7, Answer8, Answer9, Answer10, Answer11, Answer12, Answer13, Answer14, Answer15, Answer16, Answer17, Answer18, Answer19, Category1, Category2, Category3, Category4, Category5, Category6, Category7, Category8, Category9, CategorySection2_TotalMarks, Image4, Image5, Image6, Image7, Image8, Image9, Image10, Image11, Image12, Image13, Image14, Image15, Image16, Image17, Image18, Image19, Catatan4, Catatan5, Catatan6, Catatan7, Catatan8, Catatan9, Catatan10, Catatan11, Catatan12) VALUES ('$answer4','$answer5', '$answer6', '$answer7', '$answer8', '$answer9', '$answer10', '$answer11', '$answer12', '$answer13', '$answer14', '$answer15', '$answer16', '$answer17', '$answer18', '$answer19','$totalC1', '$totalC2', '$totalC3', '$totalC4', '$totalC5', '$totalC6', '$totalC7', '$totalC8', '$totalC9', '$total', '$filename4', '$filename5', '$filename6', '$filename7', '$filename8', '$filename9', '$filename10', '$filename11', '$filename12', '$filename13', '$filename14', '$filename15', '$filename16', '$filename17', '$filename18', '$filename19', '$catatan4', '$catatan5', '$catatan6', '$catatan7', '$catatan8', '$catatan9', '$catatan10', '$catatan11', '$catatan12')";
+  $sql1 = "INSERT INTO qacategory_section2 (userID, Answer4, Answer5, Answer6, Answer7, Answer8, Answer9, Answer10, Answer11, Answer12, Answer13, Answer14, Answer15, Answer16, Answer17, Answer18, Answer19, Category1, Category2, Category3, Category4, Category5, Category6, Category7, Category8, Category9, CategorySection2_TotalMarks, Image4, Image5, Image6, Image7, Image8, Image9, Image10, Image11, Image12, Image13, Image14, Image15, Image16, Image17, Image18, Image19, Catatan4, Catatan5, Catatan6, Catatan7, Catatan8, Catatan9, Catatan10, Catatan11, Catatan12) VALUES ('$userid',$answer4','$answer5', '$answer6', '$answer7', '$answer8', '$answer9', '$answer10', '$answer11', '$answer12', '$answer13', '$answer14', '$answer15', '$answer16', '$answer17', '$answer18', '$answer19','$totalC1', '$totalC2', '$totalC3', '$totalC4', '$totalC5', '$totalC6', '$totalC7', '$totalC8', '$totalC9', '$total', '$filename4', '$filename5', '$filename6', '$filename7', '$filename8', '$filename9', '$filename10', '$filename11', '$filename12', '$filename13', '$filename14', '$filename15', '$filename16', '$filename17', '$filename18', '$filename19', '$catatan4', '$catatan5', '$catatan6', '$catatan7', '$catatan8', '$catatan9', '$catatan10', '$catatan11', '$catatan12')";
   $result1 = mysqli_query($con,$sql1);
 
   if($result1)

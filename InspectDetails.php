@@ -7,16 +7,29 @@ session_start();
 // Include the database configuration file  
 require_once 'Config.php'; 
 
+$userid = $_SESSION['user'];
+
 if (isset($_POST['Submit']))
 {
-  $userid = $_POST['userid'];
+  $userid = $_SESSION['user']; 
   $inspectdate = $_POST['inspectdate'];
   $inspecttime = $_POST['inspecttime'];
   $inspectlocation = $_POST['inspectlocation'];
 
   $sql = "INSERT INTO inspect (userID, inspectDate, inspectTime, inspectLocation) VALUES ('$userid', '$inspectdate','$inspecttime', '$inspectlocation')";
   $result = mysqli_query($con,$sql);
+
+  if ($result) 
+{
+ 
+  header('Location:QAInspectionSection1.php');
+} else
+{
+   phpAlert("Process Failed.");
 }
+}
+
+
 
 ?>
 
@@ -103,7 +116,7 @@ if (isset($_POST['Submit']))
     <tr>
         <th> Staff ID: </th>
         <td>
-           <div><input class="form-control px-3 display-7" type="text" name="userid">
+           <div><input class="form-control px-3 display-7" type="text" name="userid" required="true" value="<?php echo $userid  ?>" >
            </div></br>
        </td>
    </tr>
@@ -111,7 +124,7 @@ if (isset($_POST['Submit']))
     <tr>
         <th> Inspect Date: </th>
         <td>
-           <div><input class="form-control px-3 display-7" type="date" name="inspectdate" >
+           <div><input class="form-control px-3 display-7" type="date" name="inspectdate" required="true" >
            </div></br>
         </td>
     </tr>
@@ -119,7 +132,7 @@ if (isset($_POST['Submit']))
      <tr>
         <th> Inspect Time: </th>
         <td>
-           <div><input class="form-control px-3 display-7" type="time" name="inspecttime">
+           <div><input class="form-control px-3 display-7" type="time" name="inspecttime" required="true">
            </div></br>
         </td>
     </tr>
@@ -128,7 +141,7 @@ if (isset($_POST['Submit']))
     <tr>
       <th> Location:  </th>
       <td>
-        <div><input class="form-control px-3 display-7" list="location" name ="inspectlocation">
+        <div><input class="form-control px-3 display-7" list="location" name ="inspectlocation" required="true">
         <datalist id="location">
         <option value="Ampang Station">
         <option value="Cahaya Station">

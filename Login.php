@@ -29,7 +29,7 @@ if (isset($_POST['login']))
     else if ($row['userID'] == $userID && $row['userPassword'] == $userPassword  && $row['userRole']== 'Auditor')
       {
         $_SESSION['user']= $_POST['userID'];
-        header("Location:Inspection.php");
+        header("Location:AuditorDash.php");
 
     } else if ($row['userID'] == $userID && $row['userPassword'] == $userPassword && $row['userRole']== 'Staff')
     {
@@ -50,7 +50,7 @@ if (isset($_POST['login']))
   <link rel="shortcut icon" href="assets/images/logo5s-122x125.png" type="image/x-icon">
   <meta name="description" content="Website Builder Description">
   
-  <title>Login</title>
+  <title>Log Masuk</title>
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons-bold/mobirise-icons-bold.css">
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
@@ -92,7 +92,7 @@ if (isset($_POST['login']))
   <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(7, 59, 76);"></div>
   <div class="container align-center">
  <center><div class="mbr-white content-container">
-        <h1 class="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-1">USER LOGIN</h1>
+        <h1 class="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-1">LOG MASUK</h1>
       </div></center>
     
       
@@ -114,8 +114,8 @@ if (isset($_POST['login']))
             </datalist> 
           </div></br>
           <div>
-            <a href="Homepage.php"><input class="btn btn-primary btn-form display-4" type="button" name="cancel" value="Cancel" /></a>
-            <input class="btn btn-primary btn-form display-4"  type="submit" name="login" value="Login">
+            <a href="Homepage.php"><input class="btn btn-primary btn-form display-4" type="button" name="cancel" value="KEMBALI" /></a>
+            <input class="btn btn-primary btn-form display-4"  type="submit" name="login" value="LOG MASUK">
           </div>
         </div>
 
