@@ -25,7 +25,7 @@ if ($result->num_rows > 0) {
   <link rel="shortcut icon" href="assets/images/logo5s-122x125.png" type="image/x-icon">
   <meta name="description" content="Web Site Builder Description">
   
-  <title>Report</title>
+  <title>Edit Report</title>
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons-bold/mobirise-icons-bold.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
@@ -85,52 +85,72 @@ if ($result->num_rows > 0) {
 
  <div class="container">
   <div class="col-ld-12">
-    
- <form method="POST">
-         <div>
-           <input class="form-control px-3 display-7 align-left" type="text" name="search" value="" placeholder="Search Auditor">
-         </div></br><br>
-       </form>
+  
+  <?php while($row = mysqli_fetch_assoc($result)){ ?>
 
-        <table class="table table-striped table-hover table-bordered align-center">
+  Auditor ID: <?php echo $row['userID']; ?> <br>
+  Inspection Date: <?php echo $row['inspectDate']; ?> <br>
+  Inspection Time: <?php echo $row['inspectTime']; ?> <br>
 
-        <tr>
-          <th> Auditor ID</th>
-          <th> Inspection Date </th>
-          <th> Inspection Time </th>
-          <th> Inspection Location </th>
-          <th> Action</th>          
-        </tr>
 
-        <?php while($row = mysqli_fetch_assoc($result)){ ?>
 
-         <tr>
-          <td> <?php echo $row['userID']; ?> </td>
-          <td> <?php echo $row['inspectDate']; ?> </td>
-          <td> <?php echo $row['inspectTime']; ?> </td>
-          <td> <?php echo $row['inspectLocation']; ?> </td>
-          <td>
-            <div class="icon-block">
 
-              <a href="AdminReport_Select.php?inspectID=<?php echo $row['inspectID']; ?>">
-                <input type="image" src="assets/images/edit.png" title="Edit" width="30" height="30">
-              </a>
+<br><br>
 
-                &nbsp; &nbsp;
+<table class="table table-striped table-hover table-bordered align-center">
 
-              <a href="AdminReport_Delete.php?inspectID=<?php echo $row['inspectID']; ?>">
-                <input type="image" src="assets/images/viewreport.png" title="Delete" width="30" height="30">
-              </a>
+  <tr>
+    <th>Section</th>
+    <th>Action</th>       
+  </tr>
 
-            </div>
-          </td>
-         <?php } ?>
-    </table><br><br>
-    <?php   
-      }
-    ?> 
-  </div>
+  <tr>
+    <td>Section 1</td>
+    <td><a href="AdminReport_EditS1.php?inspectID=<?php echo $row['inspectID']; ?>">
+          <input type="image" src="assets/images/edit.png" title="Edit" width="30" height="30">
+        </a></td>
+  </tr>
+
+  <tr>
+    <td>Section 3</td>
+    <td><a href="ManageUser_Edit.php?userID=<?php echo $row['userID']; ?>">
+          <input type="image" src="assets/images/edit.png" title="Edit" width="30" height="30">
+        </a></td>
+  </tr>
+
+  <tr>
+    <td>Section 4</td>
+    <td><a href="ManageUser_Edit.php?userID=<?php echo $row['userID']; ?>">
+          <input type="image" src="assets/images/edit.png" title="Edit" width="30" height="30">
+        </a></td></td>
+  </tr>
+
+  <tr>
+    <td>Section 5</td>
+    <td><a href="ManageUser_Edit.php?userID=<?php echo $row['userID']; ?>">
+          <input type="image" src="assets/images/edit.png" title="Edit" width="30" height="30">
+        </a></td></td>
+  </tr>
+
+  <tr>
+    <td>Section 6</td>
+    <td><a href="ManageUser_Edit.php?userID=<?php echo $row['userID']; ?>">
+          <input type="image" src="assets/images/edit.png" title="Edit" width="30" height="30">
+        </a></td>
+  </tr>
+
+    <?php 
+      }   
+    }
+  ?> 
+  
+
+</table>
+
 </div>
+</div>
+
+<br><br>
    
 <section once="footers" class="cid-rPwjkLZhDD" id="footer7-i">
 
