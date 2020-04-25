@@ -25,7 +25,7 @@ if ($result->num_rows > 0) {
   <link rel="shortcut icon" href="assets/images/logo5s-122x125.png" type="image/x-icon">
   <meta name="description" content="Web Site Builder Description">
   
-  <title>Edit Report</title>
+  <title>Delete Report</title>
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons-bold/mobirise-icons-bold.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
@@ -106,43 +106,43 @@ if ($result->num_rows > 0) {
 
   <tr>
     <td>Section 1</td>
-    <td><a href="AdminReport_EditS1.php?inspectID=<?php echo $row['inspectID']; ?>">
-          <input type="image" src="assets/images/edit.png" title="Edit" width="30" height="30">
+    <td><a href="AdminReport_DeleteS1.php?inspectID=<?php echo $row['inspectID']; ?>">
+          <input type="image" src="assets/images/viewreport.png" title="Delete" width="30" height="30">
         </a></td>
   </tr>
 
   <tr>
     <td>Section 2</td>
-    <td><a href="AdminReport_EditS2.php?inspectID=<?php echo $row['inspectID']; ?>">
-          <input type="image" src="assets/images/edit.png" title="Edit" width="30" height="30">
+    <td><a href="AdminReport_DeleteS2.php?inspectID=<?php echo $row['inspectID']; ?>">
+          <input type="image" src="assets/images/viewreport.png" title="Delete" width="30" height="30">
         </a></td>
   </tr>
 
   <tr>
     <td>Section 3</td>
-    <td><a href="AdminReport_EditS3.php?inspectID=<?php echo $row['inspectID']; ?>">
-          <input type="image" src="assets/images/edit.png" title="Edit" width="30" height="30">
+    <td><a href="AdminReport_DeleteS3.php?inspectID=<?php echo $row['inspectID']; ?>">
+          <input type="image" src="assets/images/viewreport.png" title="Delete" width="30" height="30">
         </a></td>
   </tr>
 
   <tr>
     <td>Section 4</td>
-    <td><a href="AdminReport_EditS4.php?inspectID=<?php echo $row['inspectID']; ?>">
-          <input type="image" src="assets/images/edit.png" title="Edit" width="30" height="30">
+    <td><a href="AdminReport_DeleteS4.php?inspectID=<?php echo $row['inspectID']; ?>">
+          <input type="image" src="assets/images/viewreport.png" title="Delete" width="30" height="30">
         </a></td></td>
   </tr>
 
   <tr>
     <td>Section 5</td>
-    <td><a href="AdminReport_EditS5.php?inspectID=<?php echo $row['inspectID']; ?>">
-          <input type="image" src="assets/images/edit.png" title="Edit" width="30" height="30">
+    <td><a href="AdminReport_DeleteS5.php?inspectID=<?php echo $row['inspectID']; ?>">
+          <input type="image" src="assets/images/viewreport.png" title="Delete" width="30" height="30">
         </a></td></td>
   </tr>
 
   <tr>
     <td>Section 6</td>
-    <td><a href="AdminReport_EditS6.php?inspectID=<?php echo $row['inspectID']; ?>">
-          <input type="image" src="assets/images/edit.png" title="Edit" width="30" height="30">
+    <td><a href="AdminReport_DeleteS6.php?inspectID=<?php echo $row['inspectID']; ?>">
+          <input type="image" src="assets/images/viewreport.png" title="Delete" width="30" height="30">
         </a></td>
   </tr>
 

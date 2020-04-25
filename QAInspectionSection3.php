@@ -483,7 +483,7 @@ if (isset($_POST['Submit']))
       </tr>
 
       <tr>
-      <td>Penambahbaikkan yang dibuat memberikan kesan melalui (Produktiviti/Kualiti/Penghantaran/Kos /Keselamatan/Moral/Inovasi)<p id="q2s3category5"required></p></td>
+      <td>Penambahbaikkan yang dibuat memberikan kesan melalui (Produktiviti/Kualiti/Penghantaran/Kos/Keselamatan/Moral/Inovasi)<p id="q2s3category5"required></p></td>
       <td><input type="radio" id="answer1q2s3c5NA" name="answer32" value="0"></td>
       <td><input type="radio" id="answer1q2s3c5" name="answer32" value="1"></td>
       <td><input type="radio" id="answer2q2s3c5"  name="answer32" value="2"></td>

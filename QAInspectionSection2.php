@@ -636,7 +636,7 @@ if (isset($_POST['Submit']))
 </button>
 <div class="content" style="width: 90%">
 <br>
-<div align="right"> Jumlah markah: <?php echo $totalC5 ?>/5</div>
+<div align="right"> Jumlah markah: <?php echo $totalC9 ?>/5</div>
 <br>
 <table class="table" style="width: 100%;" align="center">    
       <tr>
