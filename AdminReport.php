@@ -119,7 +119,7 @@ if ($result->num_rows > 0) {
                 &nbsp; &nbsp;
 
               <a href="AdminReport_Delete.php?inspectID=<?php echo $row['inspectID']; ?>">
-                <input type="image" src="assets/images/viewreport.png" title="Delete" width="30" height="30">
+                <input type="image" src="assets/images/delete.png" title="Delete" width="30" height="30">
               </a>
 
             </div>

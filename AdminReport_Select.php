@@ -65,7 +65,7 @@ if ($result->num_rows > 0) {
    <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
       <li class="nav-item">
-        <a class="nav-link link text-white display-4" href="AdminDash.php" aria-expanded="true"><span class="mbrib-left mbr-iconfont mbr-iconfont-btn"></span>
+        <a class="nav-link link text-white display-4" href="AdminReport.php" aria-expanded="true"><span class="mbrib-left mbr-iconfont mbr-iconfont-btn"></span>
 
         KEMBALI</a>
       </li>

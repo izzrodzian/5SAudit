@@ -109,16 +109,23 @@ if(isset($_GET['inspectID'])){
                         PEMERIKSAAN AUDIT 5S / LAPORAN PENTADBIRAN</a></span>
             </div>
         </div>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
-                <li class="nav-item"><a class="nav-link link text-white display-4" href="Homepage.php"><span class="mbrib-login mbr-iconfont mbr-iconfont-btn"></span>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+      <li class="nav-item">
+        <a class="nav-link link text-white display-4" href="AdminReport.php" aria-expanded="true"><span class="mbrib-left mbr-iconfont mbr-iconfont-btn"></span>
 
-                KELUAR</a></li>
-              </ul>
-            </div></ul>
-          </div>
+        KEMBALI</a>
+      </li>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+          <li class="nav-item"><a class="nav-link link text-white display-4" href="Homepage.php"><span class="mbrib-login mbr-iconfont mbr-iconfont-btn"></span>
+
+          KELUAR</a></li>
+        </ul>
+      </div></ul>
+
+    </div>
   </nav>
 </section>
 <br><br><br><br><br>

@@ -93,15 +93,22 @@ if ($result->num_rows > 0) {
             </div>
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
-                <li class="nav-item"><a class="nav-link link text-white display-4" href="Homepage.php"><span class="mbrib-login mbr-iconfont mbr-iconfont-btn"></span>
+    <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+      <li class="nav-item">
+        <a class="nav-link link text-white display-4" href="AdminDash.php" aria-expanded="true"><span class="mbrib-left mbr-iconfont mbr-iconfont-btn"></span>
 
-                KELUAR</a></li>
-              </ul>
-            </div></ul>
-          </div>
+        KEMBALI</a>
+      </li>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+          <li class="nav-item"><a class="nav-link link text-white display-4" href="Homepage.php"><span class="mbrib-login mbr-iconfont mbr-iconfont-btn"></span>
+
+          KELUAR</a></li>
+        </ul>
+      </div></ul>
+
+    </div>
   </nav>
 </section>
 <br><br><br><br><br>
@@ -149,7 +156,7 @@ if ($result->num_rows > 0) {
               &nbsp; &nbsp;
 
               <a href="ManageUser_Delete.php?userID=<?php echo $row['userID']; ?>">
-                <input type="image" src="assets/images/viewreport.png" title="Delete" width="30" height="30">
+                <input type="image" src="assets/images/delete.png" title="Delete" width="30" height="30">
               </a>
 
             </div>
