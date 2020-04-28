@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <?php
+
 session_start();
 
 // Include the database configuration file  
@@ -13,7 +14,7 @@ $S4 = 0;
 $S5 = 0;
 $S6 = 0;
 
-$query1 = "SELECT * FROM qacategory_section1  WHERE  userID = '" . $_SESSION['user'] . "'"; 
+$query1 = "SELECT * FROM qacategory_section1  WHERE  inspectID ='" . $_GET['inspectID'] . "'";
 
 $result1 = mysqli_query($con, $query1); 
 
@@ -32,7 +33,7 @@ if ($row1 = mysqli_fetch_array($result1))
     $Catatan3 = $row1['Catatan3'];
 }
 
-$query2 = "SELECT * FROM qacategory_section2 WHERE  userID = '" . $_SESSION['user'] . "'";
+$query2 = "SELECT * FROM qacategory_section2 WHERE  inspectID ='" . $_GET['inspectID'] . "'";
 
 $result2 = mysqli_query($con, $query2);  
 if ($row2 = mysqli_fetch_array($result2))  
@@ -90,7 +91,7 @@ if ($row2 = mysqli_fetch_array($result2))
     $Catatan12 = $row2['Catatan12'];
 }
 
-$query3 = "SELECT * FROM qacategory_section3 WHERE  userID = '" . $_SESSION['user'] . "'"; 
+$query3 = "SELECT * FROM qacategory_section3 WHERE  inspectID ='" . $_GET['inspectID'] . "'";
 $result3 = mysqli_query($con, $query3);  
 if ($row3 = mysqli_fetch_array($result3))  
 { 
@@ -134,7 +135,7 @@ if ($row3 = mysqli_fetch_array($result3))
 }
 
 
-$query4 = "SELECT * FROM qacategory_section4 WHERE  userID = '" . $_SESSION['user'] . "'"; 
+$query4 = "SELECT * FROM qacategory_section4 WHERE  inspectID ='" . $_GET['inspectID'] . "'";
 $result4 = mysqli_query($con, $query4);  
 if ($row4 = mysqli_fetch_array($result4))  
 { 
@@ -196,7 +197,7 @@ if ($row4 = mysqli_fetch_array($result4))
 }
 
 
-$query5 = "SELECT * FROM qacategory_section5 WHERE  userID = '" . $_SESSION['user'] . "'";  
+$query5 = "SELECT * FROM qacategory_section5 WHERE inspectID ='" . $_GET['inspectID'] . "'";
 $result5 = mysqli_query($con, $query5);  
 if ($row5 = mysqli_fetch_array($result5))  
 { 
@@ -256,7 +257,7 @@ if ($row5 = mysqli_fetch_array($result5))
 }
 
 
-$query6 = "SELECT * FROM qacategory_section6 WHERE  userID = '" . $_SESSION['user'] . "'";  
+$query6 = "SELECT * FROM qacategory_section6 WHERE inspectID ='" . $_GET['inspectID'] . "'";
 $result6 = mysqli_query($con, $query6);  
 if ($row6 = mysqli_fetch_array($result6))  
 { 
@@ -359,21 +360,9 @@ if ($row6 = mysqli_fetch_array($result6))
 
 
 $overall = $S1 + $S2 + $S3 + $S4 + $S5 + $S6;
-$percentage = 0;
+ $percentage = ($overall / 500) * 100;
 
-if (isset($_POST['convert']))
-{
-    $sql ="UPDATE qamarks SET TotalMarks = '$overall' WHERE  userID = '" . $_SESSION['user'] . "'";
-   
-       $r = mysqli_query($con, $sql);
-
-    if($r)
-    {
-        $percentage = ($overall / 500) * 100;
-    }
-}
 ?> 
-
 
 <html>
 <head>
@@ -385,7 +374,7 @@ if (isset($_POST['convert']))
   <link rel="shortcut icon" href="assets/images/logo5s-122x125.png" type="image/x-icon">
   <meta name="description" content="Web Site Builder Description">
   
-  <title>Laporan Audit 5S Ampang Line</title>
+  <title>LAPORAN AUDIT</title>
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons-bold/mobirise-icons-bold.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
@@ -399,7 +388,49 @@ if (isset($_POST['convert']))
   
 </head>
 
-<br><br><br><br><br>
+<section class="menu cid-rPwfwJELGC" once="menu" id="menu1-k">
+
+
+  <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </button>
+    <div class="menu-logo">
+      <div class="navbar-brand">
+        <span class="navbar-logo">
+
+         <img src="assets/images/logo5s-122x125.png" title="" style="height: 3.8rem;">
+
+       </span>
+       <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4">
+       PEMERIKSAAN AUDIT 5S / LAPORAN PENTADBIR</a></span>
+     </div>
+   </div>
+   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+      <li class="nav-item">
+        <a class="nav-link link text-white display-4" href="StaffReport_List.php" aria-expanded="true"><span class="mbrib-left mbr-iconfont mbr-iconfont-btn"></span>
+
+        KEMBALI</a>
+      </li>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+          <li class="nav-item"><a class="nav-link link text-white display-4" href="Logout.php?logout"><span class="mbrib-login mbr-iconfont mbr-iconfont-btn"></span>
+
+          KELUAR</a></li>
+        </ul>
+      </div></ul>
+
+    </div>
+  </nav>
+</section>
+<br><br><br>
 
 <div class="container align-center">
   <div class="col-ld-12">
@@ -1239,67 +1270,68 @@ if (isset($_POST['convert']))
     <tr>
         <th><b><h5>JUMLAH KESELURUHAN:</h5></b></th>
         <th><?php echo $overall ?></th>
-        <th rowspan="2"><br><input type="submit" name="convert" value="Tukar markah ke peratus" align="center"></th>
-
     </tr>
 
     <tr>
         <th><b><h5>PERATUSAN:</h5></b></th>
         <th><?php echo $percentage?>%</th> 
     </tr>
-    
 </table><br>
-
-
-<table class="table table-hover  table-bordered align-center">
-
-
-  <th class="align-left">AUDITOR</th>
-  <th class="align-left">WAKIL AUDITOR</th>   
-
-  <tr>
-    <td class="align-left">Nama:</td>
-    <td class="align-left">Nama:</td>
-</tr>
-
-<tr>
-    <td class="align-left">Tarikh:</td>
-    <td class="align-left">Tarikh:</td>
-</tr>
-<tr>
-    <td class="align-left">Cop Pengesahan:</td>
-    <td class="align-left">Cop Pengesahan:</td>
-</tr>
-</td>
-
-</table><br><br>
-<div align="right">
-    <a href="AuditorDash.php"><input type="button" class="btn btn-secondary" value="SELESAI"></a>
-    <br><br><br><br>
-</div>
 </form>
 </div>
-</div>
-
-<div align="right">
-    <a href="AuditorDash.php"><input type="button" class="btn btn-secondary" value="SELESAI"></a>
-    <br><br><br><br>
 </div>
 
 <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
 <input name="animation" type="hidden">
 
+   
+<section once="footers" class="cid-rPwjkLZhDD" id="footer7-i">
 
-<script src="assets/web/assets/jquery/jquery.min.js"></script>
-<script src="assets/popper/popper.min.js"></script>
-<script src="assets/bootstrap/js/bootstrap.min.js"></script>
-<script src="assets/tether/tether.min.js"></script>
-<script src="assets/dropdown/js/nav-dropdown.js"></script>
-<script src="assets/dropdown/js/navbar-dropdown.js"></script>
-<script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
-<script src="assets/smoothscroll/smooth-scroll.js"></script>
-<script src="assets/theme/js/script.js"></script>
+  <div class="container">
+    <div class="media-container-row align-center mbr-white">
+      <div class="row row-links">
+        <ul class="foot-menu">
 
+          <li class="foot-menu-item mbr-fonts-style display-7"></li><li class="foot-menu-item mbr-fonts-style display-7"></li><li class="foot-menu-item mbr-fonts-style display-7"></li><li class="foot-menu-item mbr-fonts-style display-7"></li><li class="foot-menu-item mbr-fonts-style display-7"></li></ul>
+        </div>
+        <div class="row social-row">
+          <div class="social-list align-right pb-2">
 
+            <div class="soc-item">
+              <a href="https://twitter.com/" target="_blank">
+                <span class="socicon-twitter socicon mbr-iconfont mbr-iconfont-social"></span>
+              </a>
+            </div><div class="soc-item">
+              <a href="https://www.facebook.com/" target="_blank">
+                <span class="socicon-facebook socicon mbr-iconfont mbr-iconfont-social"></span>
+              </a>
+            </div>
+            <div class="soc-item">
+              <a href="https://instagram.com/" target="_blank">
+                <span class="socicon-instagram socicon mbr-iconfont mbr-iconfont-social"></span>
+              </a>
+            </div>
+          </div>
+          </div>
+          <div class="row row-copirayt">
+            <p class="mbr-text mb-0 mbr-fonts-style mbr-white align-center display-7">
+              © Copyright 2020 | 5S Audit Inspection | Ampang Line - All Rights Reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/dropdown/js/nav-dropdown.js"></script>
+  <script src="assets/dropdown/js/navbar-dropdown.js"></script>
+  <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
 </body>
 </html>

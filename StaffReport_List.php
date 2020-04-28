@@ -7,23 +7,25 @@ session_start();
 // Include the database configuration file  
 require_once 'Config.php'; 
 
+$sql = "SELECT * FROM inspect ORDER BY inspectID ";
+$query = mysqli_query($con, $sql);
+$row = mysqli_fetch_array($query);
+
 ?>
 
-
-<html  >
+<html>
 <head>
   <!-- Site made with Mobirise Website Builder v4.12.0, https://mobirise.com -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Mobirise v4.12.0, mobirise.com">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
- <link rel="shortcut icon" href="assets/images/logo5s-122x125.png" type="image/x-icon">
-  <meta name="description" content="Web Site Creator Description">
+  <link rel="shortcut icon" href="assets/images/logo5s-122x125.png" type="image/x-icon">
+  <meta name="description" content="Web Site Builder Description">
   
-  <title>PEMERIKSAAN</title>
-  <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
-  <link rel="stylesheet" href="assets/web/assets/mobirise-icons-bold/mobirise-icons-bold.css">
+  <title>LAPORAN AUDIT</title>
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons-bold/mobirise-icons-bold.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
@@ -33,13 +35,12 @@ require_once 'Config.php';
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
   
-  
-  
 </head>
-<body>
-  <section class="menu cid-rPwfwJELGC" once="menu" id="menu1-h">
 
-   <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
+<section class="menu cid-rPwfwJELGC" once="menu" id="menu1-k">
+
+
+  <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <div class="hamburger">
         <span></span>
@@ -56,69 +57,61 @@ require_once 'Config.php';
 
        </span>
        <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4">
-       PEMERIKSAAN AUDIT 5S</a></span>
+       PEMERIKSAAN AUDIT 5S / LAPORAN PENTADBIR</a></span>
      </div>
    </div>
    <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
-     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
-        <li class="nav-item"><a class="nav-link link text-white display-4" href="Logout.php?logout"><span class="mbrib-login mbr-iconfont mbr-iconfont-btn"></span>
+           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+          <li class="nav-item"><a class="nav-link link text-white display-4" href="Logout.php?logout"><span class="mbrib-login mbr-iconfont mbr-iconfont-btn"></span>
 
-        KELUAR</a></li>
-      </ul>
-    </div></ul>
+          KELUAR</a></li>
+        </ul>
+      </div></ul>
 
-  </div>
-</nav>
-</section><br><br><br>
-
-<section class="cid-rPxomWSNoR"> 
-
-   <div class="container">
-        <div class="media-container-row">
-
-            <div class="card  col-12 col-md-6 col-lg-4">
-                <div class="card-img">
-                    <span class="mbr-iconfont mbri-paper-plane"></span>
-                </div>
-                <div class="card-box align-center">
-                    <h4 class="card-title mbr-fonts-style display-7">
-                        TRAIN OPERATION</h4>
-                    <p class="mbr-text mbr-fonts-style display-7">5S audit form to inspect the facilities required in train operation.</p>
-                    <div class="mbr-section-btn text-center"><a class="btn btn-primary display-4">
-                            START INSPECTION</a></div>
-                </div>
-            </div>
-
-            <div class="card  col-12 col-md-6 col-lg-4">
-                <div class="card-img">
-                    <span class="mbr-iconfont mbri-bookmark"></span>
-                </div>
-                <div class="card-box align-center">
-                    <h4 class="card-title mbr-fonts-style display-7">QUALITY ASSURANCE</h4>
-                    <p class="mbr-text mbr-fonts-style display-7">5S audit form to inspect the facilities required in quality assurance.</p>
-                    <div class="mbr-section-btn text-center"><a class="btn btn-primary display-4" href="InspectDetails.php">
-                            START INSPECTION</a></a></div>
-                </div>
-            </div>
-
-            <div class="card  col-12 col-md-6 col-lg-4">
-                <div class="card-img">
-                    <span class="mbr-iconfont mbri-flag"></span>
-                </div>
-                <div class="card-box align-center">
-                    <h4 class="card-title mbr-fonts-style display-7">
-                        STATION OPERATION</h4>
-                    <p class="mbr-text mbr-fonts-style display-7">5S audit form to inspect the facilities required in station operation.</p>
-                    <div class="mbr-section-btn text-center"><a class="btn btn-primary display-4">
-                            START INSPECTION</a></div>
-                </div>
-            </div>       
-        </div>
     </div>
+  </nav>
 </section>
+<br><br><br><br><br>
 
+ <div class="container">
+  <div class="table-wrapper">
+    <div class="table-title">
+      <div class="row">
+        <div class="col-sm-5">
+        </div>
+      </div>
+    </div>
+    <table class="table table-striped table-hover">
+      <thead>
+        <tr>
+          <th>Inspection ID</th>
+          <th>Audit By</th>           
+          <th>Date</th>
+          <th>Time</th>
+          <th>Location</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><?php echo $row['inspectID']; ?></td>
+          <td><?php echo $row['userID']; ?></td>
+          <td><?php echo $row['inspectDate']; ?></td>
+           <td><?php echo $row['inspectTime']; ?></td>
+            <td><?php echo $row['inspectLocation']; ?></td>
+          <td>
+           <a href="StaffReport.php?inspectID=<?php echo $row['inspectID']; ?>">
+          <input type="image" src="assets/images/viewreport.png" title="View" width="30" height="30">
+        </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div><br><br>     
+  
 <section once="footers" class="cid-rPwjkLZhDD" id="footer7-i">
 
   <div class="container">
@@ -156,7 +149,6 @@ require_once 'Config.php';
       </div>
     </section>
 
-
   <script src="assets/web/assets/jquery/jquery.min.js"></script>
   <script src="assets/popper/popper.min.js"></script>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
@@ -165,7 +157,6 @@ require_once 'Config.php';
   <script src="assets/dropdown/js/navbar-dropdown.js"></script>
   <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
   <script src="assets/smoothscroll/smooth-scroll.js"></script>
-  <script src="assets/parallax/jarallax.min.js"></script>
   <script src="assets/theme/js/script.js"></script>
   
   
