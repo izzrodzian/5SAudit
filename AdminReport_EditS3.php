@@ -43,7 +43,7 @@ if(isset($_GET['inspectID'])){
   <link rel="shortcut icon" href="assets/images/logo5s-122x125.png" type="image/x-icon">
   <meta name="description" content="Web Site Creator Description">
   
-  <title>PENTADBIRAN</title>
+  <title>LAPORAN AUDIT</title>
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons-bold/mobirise-icons-bold.css">
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
@@ -134,7 +134,7 @@ if(isset($_GET['inspectID'])){
   <div class="col-ld-12">
     <div class="form">
   <form method="post" action="EditReport_S3.php">
-        <h2 class="text-center">Edit Section 3 Marks</h2> <br>
+        <h2 class="text-center">Edit Markah Seksyen 3</h2> <br>
 
         <div class="form-group">
             <input type="text" class="form-control" name="inspectID" placeholder="Inspection ID" value="<?php echo $row['inspectID'];?>" readOnly="true">
@@ -221,7 +221,7 @@ if(isset($_GET['inspectID'])){
         <br>
 
         <div class="form-group">
-            <button type="Submit" name="update" value="update" class="btn btn-primary btn-block">Update</button>
+            <button type="Submit" name="update" value="update" class="btn btn-primary btn-block">Kemaskini</button>
         </div>  
 
         <br>

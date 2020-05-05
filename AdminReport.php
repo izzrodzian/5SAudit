@@ -25,7 +25,7 @@ if ($result->num_rows > 0) {
   <link rel="shortcut icon" href="assets/images/logo5s-122x125.png" type="image/x-icon">
   <meta name="description" content="Web Site Builder Description">
   
-  <title>Report</title>
+  <title>LAPORAN AUDIT</title>
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons-bold/mobirise-icons-bold.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
@@ -88,18 +88,18 @@ if ($result->num_rows > 0) {
     
  <form method="POST">
          <div>
-           <input class="form-control px-3 display-7 align-left" type="text" name="search" value="" placeholder="Search Auditor">
+           <input class="form-control px-3 display-7 align-left" type="text" name="search" value="" placeholder="Cari Juruaudit">
          </div></br><br>
        </form>
 
         <table class="table table-striped table-hover table-bordered align-center">
 
         <tr>
-          <th> Auditor ID</th>
-          <th> Inspection Date </th>
-          <th> Inspection Time </th>
-          <th> Inspection Location </th>
-          <th> Action</th>          
+          <th> ID Juruaudit</th>
+          <th> Tarikh Pemeriksaan </th>
+          <th> Masa Pemeriksaan </th>
+          <th> Lokasi Pemeriksaan</th>
+          <th> Tindakan</th>          
         </tr>
 
         <?php while($row = mysqli_fetch_assoc($result)){ ?>
@@ -119,7 +119,7 @@ if ($result->num_rows > 0) {
                 &nbsp; &nbsp;
 
               <a href="AdminReport_Delete.php?inspectID=<?php echo $row['inspectID']; ?>">
-                <input type="image" src="assets/images/delete.png" title="Delete" width="30" height="30">
+                <input type="image" src="assets/images/delete.png" title="Padam" width="30" height="30">
               </a>
 
             </div>

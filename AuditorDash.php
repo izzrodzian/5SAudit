@@ -85,9 +85,9 @@ require_once 'Config.php';
                 <div class="card-box align-center">
                     <h4 class="card-title mbr-fonts-style display-7">
                         TRAIN OPERATION</h4>
-                    <p class="mbr-text mbr-fonts-style display-7">5S audit form to inspect the facilities required in train operation.</p>
+                    <p class="mbr-text mbr-fonts-style display-7">Borang audit 5S untuk memeriksa kemudahan yang diperlukan dalam operasi kereta api.</p>
                     <div class="mbr-section-btn text-center"><a class="btn btn-primary display-4">
-                            START INSPECTION</a></div>
+                            MULA PEMERIKSAAN</a></div>
                 </div>
             </div>
 
@@ -97,9 +97,9 @@ require_once 'Config.php';
                 </div>
                 <div class="card-box align-center">
                     <h4 class="card-title mbr-fonts-style display-7">QUALITY ASSURANCE</h4>
-                    <p class="mbr-text mbr-fonts-style display-7">5S audit form to inspect the facilities required in quality assurance.</p>
+                    <p class="mbr-text mbr-fonts-style display-7">Borang audit 5S untuk memeriksa kemudahan yang diperlukan dalam jaminan kualiti.</p>
                     <div class="mbr-section-btn text-center"><a class="btn btn-primary display-4" href="InspectDetails.php">
-                            START INSPECTION</a></a></div>
+                            MULA PEMERIKSAAN</a></a></div>
                 </div>
             </div>
 
@@ -110,9 +110,9 @@ require_once 'Config.php';
                 <div class="card-box align-center">
                     <h4 class="card-title mbr-fonts-style display-7">
                         STATION OPERATION</h4>
-                    <p class="mbr-text mbr-fonts-style display-7">5S audit form to inspect the facilities required in station operation.</p>
+                    <p class="mbr-text mbr-fonts-style display-7">Borang audit 5S untuk memeriksa kemudahan yang diperlukan dalam operasi stesen.</p>
                     <div class="mbr-section-btn text-center"><a class="btn btn-primary display-4">
-                            START INSPECTION</a></div>
+                            MULA PEMERIKSAAN</a></div>
                 </div>
             </div>       
         </div>

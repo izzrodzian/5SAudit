@@ -86,12 +86,12 @@ $row = mysqli_fetch_array($query);
     <table class="table table-striped table-hover">
       <thead>
         <tr>
-          <th>Inspection ID</th>
-          <th>Audit By</th>           
-          <th>Date</th>
-          <th>Time</th>
-          <th>Location</th>
-          <th>Action</th>
+          <th>ID Pemeriksaan</th>
+          <th>ID Juruaudit</th>           
+          <th>Tarikh Pemeriksaan</th>
+          <th>Masa Pemeriksaan</th>
+          <th>Lokasi</th>
+          <th>Tindakan</th>
         </tr>
       </thead>
       <tbody>
@@ -103,7 +103,7 @@ $row = mysqli_fetch_array($query);
             <td><?php echo $row['inspectLocation']; ?></td>
           <td>
            <a href="StaffReport.php?inspectID=<?php echo $row['inspectID']; ?>">
-          <input type="image" src="assets/images/viewreport.png" title="View" width="30" height="30">
+          <input type="image" src="assets/images/viewreport.png" title="Lihat" width="30" height="30">
         </a>
           </td>
         </tr>

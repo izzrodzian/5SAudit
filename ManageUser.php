@@ -118,21 +118,21 @@ if ($result->num_rows > 0) {
     
  <form method="POST">
          <div>
-           <input class="form-control px-3 display-7 align-left" type="text" name="search" value="" placeholder="Search User">
+           <input class="form-control px-3 display-7 align-left" type="text" name="search" value="" placeholder="Cari Staf">
          </div></br><br>
        </form>
 
         <table class="table table-striped table-hover table-bordered align-center">
 
         <tr>
-          <th> ID </th>
-          <th> Email </th>
-          <th> Full Name </th>
-          <th> Gender </th>
-          <th> Contact Number</th>
-          <th> Department </th>
-          <th> Role </th>
-          <th> Action</th>          
+          <th> ID Staf </th>
+          <th> Emel </th>
+          <th> Nama Penuh </th>
+          <th> Jantina </th>
+          <th> Nombor Telefon</th>
+          <th> Jabatan </th>
+          <th> Peranan </th>
+          <th> Tindakan </th>          
         </tr>
 
         <?php while($row = mysqli_fetch_assoc($result)){ ?>
@@ -156,7 +156,7 @@ if ($result->num_rows > 0) {
               &nbsp; &nbsp;
 
               <a href="ManageUser_Delete.php?userID=<?php echo $row['userID']; ?>">
-                <input type="image" src="assets/images/delete.png" title="Delete" width="30" height="30">
+                <input type="image" src="assets/images/delete.png" title="Padam" width="30" height="30">
               </a>
 
             </div>

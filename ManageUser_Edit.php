@@ -127,34 +127,47 @@ if(isset($_GET['userID'])){
   <div class="col-ld-12">
     <div class="form">
   <form method="post" action="EditUser.php">
-        <h2 class="text-center">Edit User Details</h2>
+        <h2 class="text-center">Edit Maklumat Pengguna</h2>
+        <br><br>
 
         <div class="form-group">
-            <input type="text" class="form-control" name="userID" placeholder="User ID" value="<?php echo $row['userID'];?>" readOnly="true">
+            ID Staf: <input type="text" class="form-control" name="userID" placeholder="ID Staf" value="<?php echo $row['userID'];?>" readOnly="true">
         </div> 
 
-        <div class="form-group">
-            <input type="text" class="form-control" name="userEmail" placeholder="Email" value="<?php echo $row['userEmail'];?>" required="required">
-        </div>
+        <br>
 
         <div class="form-group">
-            <input type="text" class="form-control" name="userFullname" placeholder="Full Name" value="<?php echo $row['userFullname'];?>" required="required">
+            Emel: <input type="text" class="form-control" name="userEmail" placeholder="Emel" value="<?php echo $row['userEmail'];?>" required="required">
         </div>
 
-        <div class="form-group">
-            <input type="text" class="form-control" name="userGender" placeholder="Gender" value="<?php echo $row['userGender'];?>" required="required">
-        </div>
+        <br>
 
         <div class="form-group">
-            <input type="text" class="form-control" name="userContact" placeholder="Contact Number" value="<?php echo $row['userContact'];?>" required="required">
+            Nama Penuh: <input type="text" class="form-control" name="userFullname" placeholder="Nama Penuh" value="<?php echo $row['userFullname'];?>" required="required">
         </div>
 
-        <div class="form-group">
-            <input type="text" class="form-control" name="userDept" placeholder="Department" value="<?php echo $row['userDept'];?>" required="required">
-        </div>
+        <br>
 
         <div class="form-group">
-            <input class="form-control" list="role" name="userRole" placeholder="Role" value="<?php echo $row['userRole'];?>" readOnly="true">
+            Jantina: <input type="text" class="form-control" name="userGender" placeholder="Jantina" value="<?php echo $row['userGender'];?>" required="required">
+        </div>
+
+        <br>
+
+        <div class="form-group">
+            Nombor Telefon: <input type="text" class="form-control" name="userContact" placeholder="Nombor Telefon" value="<?php echo $row['userContact'];?>" required="required">
+        </div>
+
+        <br>
+
+        <div class="form-group">
+            Jabatan: <input type="text" class="form-control" name="userDept" placeholder="Jabatan" value="<?php echo $row['userDept'];?>" required="required">
+        </div>
+
+        <br>
+
+        <div class="form-group">
+            Peranan: <input class="form-control" list="role" name="userRole" placeholder="Peranan" value="<?php echo $row['userRole'];?>" readOnly="true">
             <datalist id="role">
                 <option value="Staff"></option>
                 <option value="Admin"></option>
@@ -162,9 +175,12 @@ if(isset($_GET['userID'])){
             </datalist>
         </div>
 
+        <br>
+
         <div class="form-group">
-            <button type="Submit" name="update" value="update" class="btn btn-primary btn-block">Update</button>
-        </div>  
+            <button type="Submit" name="update" value="update" class="btn btn-primary btn-block">Kemaskini</button>
+        </div> 
+        <br><br> 
     </form>
   </div>
 </div>

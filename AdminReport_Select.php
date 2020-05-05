@@ -88,9 +88,10 @@ if ($result->num_rows > 0) {
   
   <?php while($row = mysqli_fetch_assoc($result)){ ?>
 
-  Auditor ID: <?php echo $row['userID']; ?> <br>
-  Inspection Date: <?php echo $row['inspectDate']; ?> <br>
-  Inspection Time: <?php echo $row['inspectTime']; ?> <br>
+  ID Juruaudit: <?php echo $row['userID']; ?> <br>
+  Tarikh Pemeriksaan: <?php echo $row['inspectDate']; ?> <br>
+  Masa Pemeriksaan: <?php echo $row['inspectTime']; ?> <br>
+  Lokasi Pemeriksaan: <?php echo $row['inspectLocation']; ?> <br>
 
 
 
@@ -100,47 +101,47 @@ if ($result->num_rows > 0) {
 <table class="table table-striped table-hover table-bordered align-center">
 
   <tr>
-    <th>Section</th>
-    <th>Action</th>       
+    <th>Seksyen</th>
+    <th>Tindakan</th>       
   </tr>
 
   <tr>
-    <td>Section 1</td>
+    <td>Seksyen 1</td>
     <td><a href="AdminReport_EditS1.php?inspectID=<?php echo $row['inspectID']; ?>">
           <input type="image" src="assets/images/edit.png" title="Edit" width="30" height="30">
         </a></td>
   </tr>
 
   <tr>
-    <td>Section 2</td>
+    <td>Seksyen 2</td>
     <td><a href="AdminReport_EditS2.php?inspectID=<?php echo $row['inspectID']; ?>">
           <input type="image" src="assets/images/edit.png" title="Edit" width="30" height="30">
         </a></td>
   </tr>
 
   <tr>
-    <td>Section 3</td>
+    <td>Seksyen 3</td>
     <td><a href="AdminReport_EditS3.php?inspectID=<?php echo $row['inspectID']; ?>">
           <input type="image" src="assets/images/edit.png" title="Edit" width="30" height="30">
         </a></td>
   </tr>
 
   <tr>
-    <td>Section 4</td>
+    <td>Seksyen 4</td>
     <td><a href="AdminReport_EditS4.php?inspectID=<?php echo $row['inspectID']; ?>">
           <input type="image" src="assets/images/edit.png" title="Edit" width="30" height="30">
         </a></td></td>
   </tr>
 
   <tr>
-    <td>Section 5</td>
+    <td>Seksyen 5</td>
     <td><a href="AdminReport_EditS5.php?inspectID=<?php echo $row['inspectID']; ?>">
           <input type="image" src="assets/images/edit.png" title="Edit" width="30" height="30">
         </a></td></td>
   </tr>
 
   <tr>
-    <td>Section 6</td>
+    <td>Seksyen 6</td>
     <td><a href="AdminReport_EditS6.php?inspectID=<?php echo $row['inspectID']; ?>">
           <input type="image" src="assets/images/edit.png" title="Edit" width="30" height="30">
         </a></td>

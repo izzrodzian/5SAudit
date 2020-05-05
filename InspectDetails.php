@@ -114,7 +114,7 @@ if (isset($_POST['Submit']))
 
 
     <tr>
-        <th> Staff ID: </th>
+        <th> ID Staf: </th>
         <td>
            <div><input class="form-control px-3 display-7" type="text" name="userid" required="true" value="<?php echo $userid  ?>" >
            </div></br>
@@ -122,7 +122,7 @@ if (isset($_POST['Submit']))
    </tr>
 
     <tr>
-        <th> Inspect Date: </th>
+        <th> Tarikh Pemeriksaan: </th>
         <td>
            <div><input class="form-control px-3 display-7" type="date" name="inspectdate" required="true" >
            </div></br>
@@ -130,7 +130,7 @@ if (isset($_POST['Submit']))
     </tr>
 
      <tr>
-        <th> Inspect Time: </th>
+        <th> Masa Pemeriksaan: </th>
         <td>
            <div><input class="form-control px-3 display-7" type="time" name="inspecttime" required="true">
            </div></br>
@@ -139,28 +139,28 @@ if (isset($_POST['Submit']))
 
 
     <tr>
-      <th> Location:  </th>
+      <th> Lokasi:  </th>
       <td>
         <div><input class="form-control px-3 display-7" list="location" name ="inspectlocation" required="true">
         <datalist id="location">
-        <option value="Ampang Station">
-        <option value="Cahaya Station">
-        <option value="Cempaka Station">
-        <option value="Pandan Indah Station">
-        <option value="Pandan Jaya Station">
-        <option value="Maluri Station">
-        <option value="Miharja Station">
-        <option value="Chan Sow Lin Station">
-        <option value="Pudu Station">
-        <option value="Hang Tuah Station">
-        <option value="Plaza Rakyat Station">
-        <option value="Masjid Jamek Station">
-        <option value="Bandaraya Station">
-        <option value="Sultan Ismail Station">
-        <option value="PWTC Station">
-        <option value="Titiwangsa Station">
-        <option value="Sentul Station">
-        <option value="Sentul Timur Station">
+        <option value="Stesen Ampang">
+        <option value="Stesen Cahaya">
+        <option value="Stesen Cempaka">
+        <option value="Stesen Pandan Indah">
+        <option value="Stesen Pandan Jaya">
+        <option value="Stesen Maluri">
+        <option value="Stesen Miharja">
+        <option value="Stesen Chan Sow Lin">
+        <option value="Stesen Pudu">
+        <option value="Stesen Hang Tuah">
+        <option value="Stesen Plaza Rakyat">
+        <option value="Stesen Masjid Jamek">
+        <option value="Stesen Bandaraya">
+        <option value="Stesen Sultan Ismail">
+        <option value="Stesen PWTC">
+        <option value="Stesen Titiwangsa">
+        <option value="Stesen Sentul">
+        <option value="Stesen Sentul Timur">
         </datalist> 
       </div></br>
     </td>
