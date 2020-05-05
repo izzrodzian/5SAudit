@@ -1281,11 +1281,6 @@ if (isset($_POST['convert']))
 </div>
 </div>
 
-<div align="right">
-    <a href="AuditorDash.php"><input type="button" class="btn btn-secondary" value="SELESAI"></a>
-    <br><br><br><br>
-</div>
-
 <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
 <input name="animation" type="hidden">
 
