@@ -80,12 +80,12 @@
                             <div class="card-img pr-3 d-flex align-items-center align-left">
                                 
                                 <h4 class="py-3 mbr-fonts-style display-2">
-                                    Sort
+                                    Sisih
                                 </h4>
                             </div>
                             <div class="card-text">
                                 <p class="mbr-content-text mbr-fonts-style display-7">
-                                    Remove what is not needed and keep what is needed.
+                                   Mengasingkan barang-barang yang tidak diperlukan di tempat kerja dan membuangkannya.
                                 </p>
                             </div>
                         </div>
@@ -95,12 +95,12 @@
                             <div class="card-img pr-3 d-flex align-items-center align-left">
                                 
                                 <h3 class="py-3 mbr-fonts-style display-2">
-                                    Set in Order
+                                    Susun
                                 </h3>
                             </div>
                             <div class="card-text">
                                 <p class="mbr-content-text mbr-fonts-style display-7">
-                                    Arrange essential items in order for easy access.
+                                    Susun barang-barang yang diperlukan dengan teratur supaya ianya mudah diambil untuk digunakan.
                                 </p>
                             </div>
                         </div>
@@ -110,12 +110,12 @@
                             <div class="card-img pr-3 d-flex align-items-center align-left">
                                 
                                 <h3 class="py-3 mbr-fonts-style display-2">
-                                    Shine
+                                   Sapu
                                 </h3>
                             </div>
                             <div class="card-text">
                                 <p class="mbr-content-text mbr-fonts-style display-7">
-                                        Keep things clean and tidy; no trash or dirt in the workplace.
+                                        Bersihkan tempat kerja anda dengan rapi supaya tiada habuk di atas lantai, mesin dan perkakas.
                                 </p>
                             </div>
                         </div>
@@ -125,12 +125,12 @@
                             <div class="card-img pr-3 d-flex align-items-center align-left">
                                 
                                 <h3 class="py-3 mbr-fonts-style display-2">
-                                    Standardize
+                                    Seragam
                                 </h3>
                             </div>
                             <div class="card-texts">
                                 <p class="mbr-content-text mbr-fonts-style display-7">
-                                       Establish standards and guidelines to maintain a clean workplace.
+                                      Memelihara taraf penjagaan kebersihan dan penyusunan tempat kerja yang tinggi pada setiap masa.
                                 </p>
                             </div>
                         </div>
@@ -140,12 +140,12 @@
                             <div class="card-img pr-3 d-flex align-items-center align-left">
                                 
                                 <h3 class="py-3 mbr-fonts-style display-2">
-                                    Sustain
+                                   Sentiasa Amal
                                 </h3>
                             </div>
                             <div class="card-texts">
                                 <p class="mbr-content-text mbr-fonts-style display-7">
-                                       Make 5S a habit and teach others to adhere to established standards.
+                                       Melatih individu mematuhi peraturan penjagaan kebersihan yang baik dengan sendirinya secara berterusan.
                                 </p>
                             </div>
                         </div>
