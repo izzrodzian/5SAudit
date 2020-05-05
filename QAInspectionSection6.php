@@ -385,7 +385,7 @@ if (isset($_POST['Submit']))
 <br>
 <div align="right"> Jumlah markah: <?php echo $totalC1 ?>/10</div>
 <br>
-<form method="POST">
+<form method="POST" enctype="multipart/form-data">
 <table class="table" style="width: 100%;" align="center">    
       <tr>
       <th>Perkara</th>
