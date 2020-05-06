@@ -1,0 +1,22 @@
+Database
+1. Install Xampp (using the installer provided)
+2. Run the Xampp after installation completed.
+3. Click Start button on Apache & MySQL.
+4. Click Admin button on MySQL and will be redirected to the local host site.
+5. Create a new database by clicking on the "Database" tab and enter database name as “5s” then click create.
+6. On the left side, click the database name that has been created - 5s, click on tab “Import”.
+7. On "File to Import" section, click choose file and select “5s.sql” that has been provided inside the folder, scroll down and click button "Go".
+8. All the related database for the system will be imported.
+
+
+Placing system's folder
+1. Go to "This PC" and click partion "C:".
+2. Open "xampp" folder.
+3. In the folder, open "htdocs" folder.
+4. Paste the "5SAudit" folder that has been provided.
+
+
+Access the system
+1. Go to browser and type "localhost/5SAudit/Homepage.php".
+2. The system will be appear.
+
