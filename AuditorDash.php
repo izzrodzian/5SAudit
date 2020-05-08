@@ -84,7 +84,7 @@ require_once 'Config.php';
                 </div>
                 <div class="card-box align-center">
                     <h4 class="card-title mbr-fonts-style display-7">
-                        TRAIN OPERATION</h4>
+                        OPERASI KERETAPI</h4>
                     <p class="mbr-text mbr-fonts-style display-7">Borang audit 5S untuk memeriksa kemudahan yang diperlukan dalam operasi kereta api.</p>
                     <div class="mbr-section-btn text-center"><a class="btn btn-primary display-4">
                             MULA PEMERIKSAAN</a></div>
@@ -109,7 +109,7 @@ require_once 'Config.php';
                 </div>
                 <div class="card-box align-center">
                     <h4 class="card-title mbr-fonts-style display-7">
-                        STATION OPERATION</h4>
+                        OPERASI STESEN</h4>
                     <p class="mbr-text mbr-fonts-style display-7">Borang audit 5S untuk memeriksa kemudahan yang diperlukan dalam operasi stesen.</p>
                     <div class="mbr-section-btn text-center"><a class="btn btn-primary display-4">
                             MULA PEMERIKSAAN</a></div>
